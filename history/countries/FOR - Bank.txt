@@ -10,7 +10,6 @@ literacy = 0
 ruling_party = generic_servants
 
 upper_house = {
-	servants = 100
 }
 
 decision = FOR_start_decision

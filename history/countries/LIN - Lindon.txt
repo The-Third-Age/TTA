@@ -11,13 +11,11 @@ oob = "LIN_oob.txt"
 
 prestige = 55
 
-ruling_party = generic_high_nobility
+ruling_party = LIN_cirdan
+decision = LIN_start_decision
 
 upper_house = {
-	high_nobility = 55
-	low_nobility = 31
-	burgher = 6
-	loremaster = 8
+	falathrim_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

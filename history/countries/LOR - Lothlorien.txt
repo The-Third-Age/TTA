@@ -12,17 +12,15 @@ oob = "LOR_oob.txt"
 
 prestige = 15
 
-ruling_party = generic_high_nobility
+ruling_party = LOR_galadriel_n_celeborn
+decision = LOR_start_decision
 penal_reform = hard_labor
 slavery = no_slavery
 serfdom = banned_serfdom
 upper_house_composition = appointed
 
 upper_house = {
-	high_nobility = 55
-	low_nobility = 31
-	burgher = 6
-	loremaster = 8
+	house_of_finarfin = 100
 }
 
 schools = traditional_academic

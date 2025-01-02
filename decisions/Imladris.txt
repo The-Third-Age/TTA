@@ -1,0 +1,22 @@
+# Imladris Decisions: {
+#	Starting Decisions (Unseen)
+# }
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	IML_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Allow access to IML flavor
+			set_country_flag = IML_content
+			
+			# Set allowed leaders
+			set_country_flag = ideologies_house_half_elven_active
+			set_country_flag = ideologies_noldor_nobles_active
+			
+			# Set allowed leaders of other Noldor realms
+			HWD = { set_country_flag = ideologies_noldor_nobles_active }
+			EMB = { set_country_flag = ideologies_noldor_nobles_active }
+		}
+	}
+}

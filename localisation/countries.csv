@@ -44,40 +44,124 @@ cosmetic_2_govt_ruler;Cosmetic Government Ruler;x
 #############################;x }
 ##### POLITICAL PARTIES #####;x {
 #############################;x
-generic_servants;Servants;x
-generic_high_nobility;High Nobility;x
-generic_low_nobility;Low Nobility;x
-generic_burgher;Burgher;x
-generic_loremaster;Loremaster;x
-ADR_high_nobility;Council of Andrast;x
-ADR_low_nobility;Lords of Andrast;x
-ANF_high_nobility;Council of Anfalas;x
-ANF_low_nobility;Lords of Anfalas;x
-ANO_high_nobility;Council of Anórien;x
-ANO_low_nobility;Lords of Anórien;x
-DAL_burgher;Edhfreirs;x
-DAL_high_nobility;Lords of Dale;x
-DAL_low_nobility;Northmen Thegens;x
-ESG_servants;Master's Cult;x
-GON_burgher;Merchant Guild;x
-GON_high_nobility;Council of Gondor;x
-GON_loremaster;Loremasters of Gondor;x
-GON_low_nobility;Lords of Gondor;x
-GON_servants;Steward's Cult;x
-HRD_high_nobility;Council of Harondor;x
-HRD_low_nobility;Lords of Harondor;x
-ITH_high_nobility;Council of Ithilien;x
-ITH_low_nobility;Lords of Ithilien;x
-LAM_high_nobility;Council of Lamedon;x
-LAM_low_nobility;Lords of Lamedon;x
-LEB_high_nobility;Council of Lebennin;x
-LEB_low_nobility;Lords of Lebennin;x
-LOS_high_nobility;Council of Lossarnach;x
-LOS_low_nobility;Lords of Lossarnach;x
-MRN_high_nobility;Council of Mornan;x
-MRN_low_nobility;Lords of Mornan;x
-rivermen_high_nobility;Tribal Elders;x
-rivermen_low_nobility;River Lords;x
+generic_servants_good;Servants (Anti-Sauron);x
+generic_servants_neutral;Servants (Opportunistic);x
+generic_servants_evil;Servants (Sauronite);x
+generic_dunedain_nobles;Dúnedain Nobles;x
+generic_gondorian_nobles;Gondorian Nobles;x
+generic_amrothian_nobles;Amrothian Nobles;x
+generic_arthedani_nobles;Arthedani Nobles;x
+generic_cardolandrim_nobles;Cardolandrim Nobles;x
+generic_haeranedain_nobles;Haeranedain Nobles;x
+generic_noldor_nobles;Noldor Nobles;x
+generic_falathrim_nobles;Falathrim Nobles;x
+generic_silvan_nobles;Silvan Nobles;x
+generic_galadhrim_nobles;Galadhrim Nobles;x
+generic_avari_nobles;Avari Nobles;x
+generic_umbarrim_nobles;Umbarrim Nobles;x
+generic_harnendan_nobles;Harnendan Nobles;x
+generic_haruzani_nobles;Haruzani Nobles;x
+generic_pezarsani_nobles;Pezarsani Nobles;x
+generic_lurmsakuni_nobles;Lurmsakuni Nobles;x
+generic_arysian_nobles;Arysian Nobles;x
+generic_kingsmen_nobles;Kingsmen Nobles;x
+generic_black_numenorean_nobles;Black Numenorean Nobles;x
+generic_variag_nobles;Variag Nobles;x
+generic_nurniag_nobles;Nurniag Nobles;x
+generic_chelkiag_nobles;Chelkiag Nobles;x
+generic_sagath_nobles;Sagath Nobles;x
+generic_sekel_nobles;Sekel Nobles;x
+generic_urgath_nobles;Urgath Nobles;x
+generic_kuga_nobles;Kuga Nobles;x
+generic_logath_nobles;Logath Nobles;x
+generic_barding_nobles;Barding Nobles;x
+generic_grammas_nobles;Grammas Nobles;x
+generic_rivermen_nobles;Rivermen Nobles;x
+generic_adhalling_nobles;Adhalling Nobles;x
+generic_dorwinrim_nobles;Dorwinrim Nobles;x
+generic_aivathiuda_nobles;Aivathiuda Nobles;x
+generic_anthar_nobles;Anthar Nobles;x
+generic_gadraught_nobles;Gadraught Nobles;x
+generic_longbeard_nobles;Longbeard Nobles;x
+generic_firebeard_nobles;Firebeard Nobles;x
+generic_broadbeam_nobles;Broadbeam Nobles;x
+generic_ironfist_nobles;Ironfist Nobles;x
+generic_dourhand_nobles;Dourhand Nobles;x
+generic_shornbeard_nobles;Shornbeard Nobles;x
+generic_woodsmen_nobles;Woodsmen Nobles;x
+generic_beorning_nobles;Beorning Nobles;x
+generic_beiabarnae_nobles;Beiabarnae Nobles;x
+generic_melburgi_nobles;Melburgi Nobles;x
+generic_herimundi_nobles;Herimundi Nobles;x
+generic_ent_nobles;Ent Nobles;x
+generic_huorn_nobles;Huorn Nobles;x
+generic_black_huorn_nobles;Black Huorn Nobles;x
+generic_druedain_nobles;Druedain Nobles;x
+generic_dunnish_nobles;Dunnish Nobles;x
+generic_hollin_folk_nobles;Hollin Folk Nobles;x
+generic_enedwaithrim_nobles;Enedwaithrim Nobles;x
+generic_saerlanner_nobles;Saerlanner Nobles;x
+generic_dunir_nobles;Dunir Nobles;x
+generic_marshmen_nobles;Marshmen Nobles;x
+generic_rohirrim_nobles;Rohirrim Nobles;x
+generic_anduinmen_nobles;Anduinmen Nobles;x
+generic_isenmen_nobles;Isenmen Nobles;x
+generic_uruk_hai_nobles;Uruk Hai Nobles;x
+generic_mordor_orc_nobles;Mordor Orc Nobles;x
+generic_mordor_uruk_nobles;Mordor Uruk Nobles;x
+generic_guldurrim_nobles;Guldurrim Nobles;x
+generic_white_mountain_goblin_nobles;White Mountain Goblin Nobles;x
+generic_morian_nobles;Morian Nobles;x
+generic_goblin_towner_nobles;Goblin Towner Nobles;x
+generic_gundabad_orc_nobles;Gundabad Orc Nobles;x
+generic_snow_orc_nobles;Snow Orc Nobles;x
+generic_gram_goblin_nobles;Gram Goblin Nobles;x
+generic_blue_mountain_goblin_nobles;Blue Mountain Goblin Nobles;x
+generic_angmarrim_nobles;Angmarrim Nobles;x
+generic_hillmen_nobles;Hillmen Nobles;x
+generic_lossoth_nobles;Lossoth Nobles;x
+generic_breelander_nobles;Breelander Nobles;x
+generic_siredain_nobles;Siredain Nobles;x
+generic_stoor_nobles;Stoor Nobles;x
+generic_harfoot_nobles;Harfoot Nobles;x
+generic_fallohide_nobles;Fallohide Nobles;x
+generic_cave_trolls_nobles;Cave Troll Nobles;x
+generic_hill_trolls_nobles;Hill Troll Nobles;x
+generic_mountain_trolls_nobles;Mountain Troll Nobles;x
+generic_snow_trolls_nobles;Snow Troll Nobles;x
+generic_stone_trolls_nobles;Stone Troll Nobles;x
+generic_olog_hai_nobles;Olog Hai Nobles;x
+generic_great_eagle_nobles;Great Eagle Nobles;x
+generic_raven_nobles;Raven Nobles;x
+generic_great_spider_nobles;Great Spider Nobles;x
+generic_wight_nobles;Wight Nobles;x
+generic_oathbreaker_nobles;Oathbreaker Nobles;x
+ADR_nobles_of_andrast;Nobles of Andrast;x
+AMR_angelimir;Angelimir I;x
+AMR_adrahil;Adrahil II;x
+AMR_imrahil;Imrahil I;x
+ANF_gundor;Gundor, Lord of Anfalas;x
+ANF_golasgil;Golasgil, Lord of Anfalas;x
+ANO_nobles_of_anorien;Nobles of Anórien;x
+DND_halbarad;Halbarad;x
+IML_elrond;Elrond;x
+LIN_cirdan;Círdan the Shipwright;x
+LOR_galadriel_n_celeborn;Galadriel and Celeborn;x
+LOS_farlang;Farlang, Lord of Lossarnach;x
+LOS_forlong;Forlong, Lord of Lossarnach;x
+GON_ecthelion_ii;Ecthelion II;x
+GON_denethor_ii;Denethor II;x
+GON_council_of_gondor;Council of Gondor;x
+GON_aragorn_elessar;Aragorn II Elessar;x
+HRD_nobles_of_harondor;Nobles of Harondor;x
+ITH_nobles_of_ithilien;Nobles of Ithilien;x
+LAM_asgon;Asgon, Lord of Lamedon;x
+LAM_angbor;Angbar, Lord of Lamedon;x
+LEB_orodreth;Orodreth, Lord of Lebennin;x
+MRN_borhador;Borhador, Lord of the Blackroot Vale;x
+MRN_duinhir;Duinhir, Lord of the Blackroot Vale;x
+TOL_nobles_of_tolfalas;Nobles of Tolfalas;x
+WRM_thranduil;Thranduil;x
 #####################;x }
 ##### COUNTRIES #####;x {
 #####################;x

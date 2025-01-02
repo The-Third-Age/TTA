@@ -394,7 +394,7 @@ country_event = {
 		name = "We serve the Lord Sauron"
 		
 		MOR = { create_vassal = THIS }
-		political_reform = evil_alignment
+		ruling_party_ideology = servants_evil
 		clr_country_flag = lost_contest_of_wills_to_sauron
 	}
 }

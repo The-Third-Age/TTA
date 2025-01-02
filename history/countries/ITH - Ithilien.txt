@@ -10,10 +10,10 @@ nationalvalue = generic_leader
 civilized = yes
 literacy = 0.2
 
-ruling_party = ITH_high_nobility
+ruling_party = ITH_nobles_of_ithilien
 
 upper_house = {
-	high_nobility = 100
+	gondorian_nobles = 100
 }
 
 slavery = no_slavery

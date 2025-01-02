@@ -9,15 +9,14 @@ civilized = yes
 
 oob = "IML_oob.txt"
 
+decision = IML_start_decision
+
 prestige = 60
 
-ruling_party = generic_high_nobility
+ruling_party = IML_elrond
 
 upper_house = {
-	high_nobility = 55
-	low_nobility = 31
-	burgher = 6
-	loremaster = 8
+	house_half_elven = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

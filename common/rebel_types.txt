@@ -671,10 +671,6 @@ democratic_rebels = {
 			factor = 1.015
 			political_reform_want = 0.3
 		}
-		modifier = {
-			factor = 0.75
-			country = { has_country_flag = attempting_to_democratic }
-		}
 	}
 
 	#This is checked for EACH province in the Area of Operations
@@ -1177,43 +1173,43 @@ good_rebels = {
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 10 }
+			country = { good_alignment = 10 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 20 }
+			country = { good_alignment = 20 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 30 }
+			country = { good_alignment = 30 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 40 }
+			country = { good_alignment = 40 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 50 }
+			country = { good_alignment = 50 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 60 }
+			country = { good_alignment = 60 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 70 }
+			country = { good_alignment = 70 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 80 }
+			country = { good_alignment = 80 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 90 }
+			country = { good_alignment = 90 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 99 }
+			country = { good_alignment = 99 }
 		}
 	}
 
@@ -1370,43 +1366,43 @@ evil_rebels = {
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 10 }
+			country = { evil_alignment = 10 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 20 }
+			country = { evil_alignment = 20 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 30 }
+			country = { evil_alignment = 30 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 40 }
+			country = { evil_alignment = 40 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 50 }
+			country = { evil_alignment = 50 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 60 }
+			country = { evil_alignment = 60 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 70 }
+			country = { evil_alignment = 70 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 80 }
+			country = { evil_alignment = 80 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 90 }
+			country = { evil_alignment = 90 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 99 }
+			country = { evil_alignment = 99 }
 		}
 	}
 
@@ -1563,43 +1559,43 @@ neutral_rebels = {
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 10 }
+			country = { neutral_alignment = 10 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 20 }
+			country = { neutral_alignment = 20 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 30 }
+			country = { neutral_alignment = 30 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 40 }
+			country = { neutral_alignment = 40 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 50 }
+			country = { neutral_alignment = 50 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 60 }
+			country = { neutral_alignment = 60 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 70 }
+			country = { neutral_alignment = 70 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 80 }
+			country = { neutral_alignment = 80 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 90 }
+			country = { neutral_alignment = 90 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 99 }
+			country = { neutral_alignment = 99 }
 		}
 	}
 

@@ -8,10 +8,10 @@ party = {
 	
 	ideology = servants
 	
-	guild_autonomy_policy = controlled_guilds
-	racial_policy = all_peoples
+	trade_policy = protectionism
+	tax_policy = interventionism
 	language_policy = regional_autonomy
 	diplomatic_policy = reactive
 	war_policy = jingoism
-	good_evil_alignment_fake = no_alignment	
+	good_evil_alignment = good_alignment	
 }

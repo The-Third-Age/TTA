@@ -11,13 +11,11 @@ oob = "WRM_oob.txt"
 
 prestige = 15
 
-ruling_party = generic_high_nobility
+ruling_party = WRM_thranduil
+decision = WRM_start_decision
 
 upper_house = {
-	high_nobility = 55
-	low_nobility = 31
-	burgher = 6
-	loremaster = 8
+	house_of_oropher = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

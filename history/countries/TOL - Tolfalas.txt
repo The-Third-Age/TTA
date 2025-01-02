@@ -12,14 +12,12 @@ civilized = yes
 
 oob = "TOL_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = TOL_nobles_of_tolfalas
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	gondorian_nobles = 100
 }
+
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed

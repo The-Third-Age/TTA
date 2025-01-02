@@ -40,7 +40,7 @@ issues = {
 	#####################
 	##### ALIGNMENT #####
 	#####################
-	good_alignment_fake = {
+	good_alignment = {
 		factor = 1
 		modifier = {
 			factor = 1.1
@@ -92,17 +92,6 @@ issues = {
 			country = { any_neighbor_country = { good_evil_alignment = good_alignment } }
 		}
 		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_good }
-		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_neutral }
-				country = { has_country_flag = attempting_to_evil }
-			}
-		}
-		modifier = {
 			factor = 1.1
 			has_pop_religion = elven
 		}
@@ -111,7 +100,7 @@ issues = {
 			has_country_flag = remembered_sacrifice
 		}
 	}
-	neutral_alignment_fake = {
+	neutral_alignment = {
 		factor = 1
 		modifier = {
 			factor = 1.1
@@ -162,19 +151,8 @@ issues = {
 			factor = 1.25
 			country = { any_neighbor_country = { good_evil_alignment = neutral_alignment } }
 		}
-		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_neutral }
-		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_good }
-				country = { has_country_flag = attempting_to_evil }
-			}
-		}
 	}
-	evil_alignment_fake = {
+	evil_alignment = {
 		factor = 1
 		modifier = {
 			factor = 1.1
@@ -224,17 +202,6 @@ issues = {
 		modifier = {
 			factor = 1.25
 			country = { any_neighbor_country = { good_evil_alignment = evil_alignment } }
-		}
-		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_evil }
-		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_good }
-				country = { has_country_flag = attempting_to_neutral }
-			}
 		}
 		modifier = {
 			factor = 1.1

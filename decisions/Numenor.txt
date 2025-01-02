@@ -1,0 +1,14 @@
+# Dunedain of the North Decisions: {
+#	Starting Decisions (Unseen)
+#	}
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	NUM_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_kingsmen_nobles_active
+		}
+	}
+}

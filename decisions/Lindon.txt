@@ -1,0 +1,17 @@
+# Imladris Decisions: {
+#	Starting Decisions (Unseen)
+# }
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	LIN_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_falathrim_nobles_active
+			
+			# Set allowed leaders for other realms owned by Lindon
+			WND = { set_country_flag = ideologies_avari_nobles_active }
+		}
+	}
+}

@@ -1,0 +1,18 @@
+# Imladris Decisions: {
+#	Starting Decisions (Unseen)
+# }
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	WRM_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Allow access to WRM flavor
+			set_country_flag = WRM_content
+			
+			# Set allowed leaders
+			set_country_flag = ideologies_house_of_oropher_active
+			set_country_flag = ideologies_silvan_nobles_active
+		}
+	}
+}

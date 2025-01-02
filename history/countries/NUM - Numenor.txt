@@ -8,13 +8,11 @@ nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
 
-ruling_party = generic_high_nobility
+ruling_party = generic_kingsmen_nobles
+decision = NUM_start_decision
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	kingsmen_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

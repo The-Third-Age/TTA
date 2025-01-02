@@ -673,9 +673,6 @@ HAVE_NOT_COUNTRY_FLAG;§RNOT§! ;x
 unciv_5;Uncentralized Recruitment Limit 5%;x
 unciv_7;Uncentralized Recruitment Limit 7.5%;x
 unciv_10;Uncentralized Recruitment Limit 10%;x
-attempting_to_good;Attempts to become a good nation;x
-attempting_to_neutral;Attempts to become a neutral nation;x
-attempting_to_evil;Attempts to become a evil nation;x
 has_one_ring;Has the One Ring;x
 frodo_chose_us;Frodo arrived in our lands;x
 the_council_of_elrond_host;Hosted the Council of Elrond;x
@@ -688,3 +685,105 @@ DAL_united_gramavuld;Have taken decision §YThe United Northmen of Gramavuld§!;
 alliance_dwarves_men_voted_for;Voted for the current resolution;x
 alliance_dwarves_men_abstained;Abstained for the current resolution;x
 alliance_dwarves_men_voted_against;Voted against the current resolution;x
+GON_content;Original tag is GON (Kingdom of Gondor);x
+IML_content;Original tag is IML (Realm of Imladris);x
+LOR_content;Original tag is LOR (Realm of Lothlórien);x
+WRM_content;Original tag is WRM (Woodland Realm);x
+##################################;x }
+##### IDEOLOGY COUNTRY FLAGS #####;x {
+##################################;x
+ideologies_line_of_isildur_active;Line of Isildur Active;x
+ideologies_dunedain_nobles_active;Dúnedain Nobles Active;x
+ideologies_house_of_stewards_active;House of Stewards Active;x
+ideologies_gondorian_nobles_active;Gondorian Nobles Active;x
+ideologies_house_of_dol_amroth_active;House of Dol Amroth Active;x
+ideologies_amrothian_nobles_active;Amrothian Nobles Active;x
+ideologies_arthedani_nobles_active;Arthedani Nobles Active;x
+ideologies_cardolandrim_nobles_active;Cardolandrim Nobles Active;x
+ideologies_haeranedain_nobles_active;Haeranedain Nobles Active;x
+ideologies_house_half_elven_active;House Half-Elven Active;x
+ideologies_noldor_nobles_active;Ñoldor Nobles Active;x
+ideologies_falathrim_nobles_active;Falathrim Nobles Active;x
+ideologies_house_of_oropher_active;House of Oropher Active;x
+ideologies_silvan_nobles_active;Silvan Nobles Active;x
+ideologies_house_of_finarfin_active;House of Finarfin Active;x
+ideologies_galadhrim_nobles_active;Galadhrim Ñoldor Nobles Active;x
+ideologies_avari_nobles_active;Avari Nobles Active;x
+ideologies_umbarrim_nobles_active;Umbarrim Nobles Active;x
+ideologies_harnendan_nobles_active;Harnendan Nobles Active;x
+ideologies_haruzani_nobles_active;Haruzani Nobles Active;x
+ideologies_pezarsani_nobles_active;Pezarsani Nobles Active;x
+ideologies_lurmsakuni_nobles_active;Lrumsakuni Nobles Active;x
+ideologies_arysian_nobles_active;Arysian Nobles Active;x
+ideologies_kingsmen_nobles_active;Kingsmen Nobles Active;x
+ideologies_black_numenorean_nobles_active;Black Númenórean Nobles Active;x
+ideologies_variag_nobles_active;Variag Nobles Active;x
+ideologies_nurniag_nobles_active;Nurniag Nobles Active;x
+ideologies_chelkiag_nobles_active;Chelkiag Nobles Active;x
+ideologies_sagath_nobles_active;Sagath Nobles Active;x
+ideologies_sekel_nobles_active;Sekel Nobles Active;x
+ideologies_urgath_nobles_active;Urgath Nobles Active;x
+ideologies_kuga_nobles_active;Kuga Nobles Active;x
+ideologies_logath_nobles_active;Logath Nobles Active;x
+ideologies_barding_nobles_active;Barding Nobles Active;x
+ideologies_grammas_nobles_active;Grammas Nobles Active;x
+ideologies_rivermen_nobles_active;Rivermen Nobles Active;x
+ideologies_adhalling_nobles_active;Adhalling Nobles Active;x
+ideologies_dorwinrim_nobles_active;Dorwinrim Nobles Active;x
+ideologies_aivathiuda_nobles_active;Aivathiuda Nobles Active;x
+ideologies_anthar_nobles_active;Anthar Nobles Active;x
+ideologies_gadraught_nobles_active;Gadraught Nobles Active;x
+ideologies_longbeard_nobles_active;Longbeard Nobles Active;x
+ideologies_firebeard_nobles_active;Firebeard Nobles Active;x
+ideologies_broadbeam_nobles_active;Broadbeam Nobles Active;x
+ideologies_ironfist_nobles_active;Ironfist Nobles Active;x
+ideologies_dourhand_nobles_active;Dourhand Nobles Active;x
+ideologies_shornbeard_nobles_active;Shornbeard Nobles Active;x
+ideologies_woodsmen_nobles_active;Woodsmen Nobles Active;x
+ideologies_beorning_nobles_active;Beorning Nobles Active;x
+ideologies_beiabarnae_nobles_active;Beiabarnae Nobles Active;x
+ideologies_melburgi_nobles_active;Melburgi Nobles Active;x
+ideologies_herimundi_nobles_active;Herimundi Nobles Active;x
+ideologies_ent_nobles_active;Ent Nobles Active;x
+ideologies_huorn_nobles_active;Huorn Nobles Active;x
+ideologies_black_huorn_nobles_active;Black Huorn Nobles Active;x
+ideologies_druedain_nobles_active;Druedain Nobles Active;x
+ideologies_dunnish_nobles_active;Dunnish Nobles Active;x
+ideologies_hollin_folk_nobles_active;Hollin Folk Nobles Active;x
+ideologies_enedwaithrim_nobles_active;Enedwaithrim Nobles Active;x
+ideologies_saerlanner_nobles_active;Saerlanner Nobles Active;x
+ideologies_dunir_nobles_active;Dunir Nobles Active;x
+ideologies_marshmen_nobles_active;Marshmen Nobles Active;x
+ideologies_rohirrim_nobles_active;Rohirrim Nobles Active;x
+ideologies_anduinmen_nobles_active;Anduinmen Nobles Active;x
+ideologies_isenmen_nobles_active;Isenmen Nobles Active;x
+ideologies_uruk_hai_nobles_active;Uruk Hai Nobles Active;x
+ideologies_mordor_orc_nobles_active;Mordor Orc Nobles Active;x
+ideologies_mordor_uruk_nobles_active;Mordor Uruk Nobles Active;x
+ideologies_guldurrim_nobles_active;Guldurrim Nobles Active;x
+ideologies_white_mountain_goblin_nobles_active;White Mountain Goblin Nobles Active;x
+ideologies_morian_nobles_active;Morian Nobles Active;x
+ideologies_goblin_towner_nobles_active;Goblin Towner Nobles Active;x
+ideologies_gundabad_orc_nobles_active;Gundabad Orc Nobles Active;x
+ideologies_snow_orc_nobles_active;Snow Orc Nobles Active;x
+ideologies_gram_goblin_nobles_active;Gram Goblin Nobles Active;x
+ideologies_blue_mountain_goblin_nobles_active;Blue Mountain Goblin Nobles Active;x
+ideologies_angmarrim_nobles_active;Angmarrim Nobles Active;x
+ideologies_hillmen_nobles_active;Hillmen Nobles Active;x
+ideologies_lossoth_nobles_active;Lossoth Nobles Active;x
+ideologies_breelander_nobles_active;Breelander Nobles Active;x
+ideologies_siredain_nobles_active;Siredain Nobles Active;x
+ideologies_stoor_nobles_active;Stoor Nobles Active;x
+ideologies_harfoot_nobles_active;Harfoot Nobles Active;x
+ideologies_fallohide_nobles_active;Fallohide Nobles Active;x
+ideologies_cave_trolls_nobles_active;Cave Troll Nobles Active;x
+ideologies_hill_trolls_nobles_active;Hill Troll Nobles Active;x
+ideologies_mountain_trolls_nobles_active;Mountain Troll Nobles Active;x
+ideologies_snow_trolls_nobles_active;Snow Troll Nobles Active;x
+ideologies_stone_trolls_nobles_active;Stone Troll Nobles Active;x
+ideologies_olog_hai_nobles_active;Olog Hai Nobles Active;x
+ideologies_great_eagle_nobles_active;Great Eagle Nobles Active;x
+ideologies_raven_nobles_active;Raven Nobles Active;x
+ideologies_great_spider_nobles_active;Great Spider Nobles Active;x
+ideologies_wight_nobles_active;Wight Nobles Active;x
+ideologies_oathbreaker_nobles_active;Oathbreaker Nobles Active;x

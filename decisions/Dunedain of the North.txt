@@ -1,2 +1,30 @@
 # Dunedain of the North Decisions: {
+#	Starting Decisions (Unseen)
 #	}
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	DND_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_line_of_isildur_active
+			set_country_flag = ideologies_haeranedain_nobles_active
+			
+			# Set up substates
+			THA = { set_country_flag = ideologies_cardolandrim_nobles_active }
+			ROF = { set_country_flag = ideologies_arthedani_nobles_active }
+			
+			# Set allowed leaders of other Northern Dunedain realms
+			ART = { set_country_flag = ideologies_arthedani_nobles_active }
+			CAR = { set_country_flag = ideologies_cardolandrim_nobles_active }
+			CAL = { set_country_flag = ideologies_cardolandrim_nobles_active }
+			EDB = { set_country_flag = ideologies_cardolandrim_nobles_active }
+			GIR = { set_country_flag = ideologies_cardolandrim_nobles_active }
+			MET = { set_country_flag = ideologies_cardolandrim_nobles_active }
+			TNR = { set_country_flag = ideologies_cardolandrim_nobles_active }
+			HRV = { set_country_flag = ideologies_arthedani_nobles_active }
+			SYL = { set_country_flag = ideologies_arthedani_nobles_active }
+		}
+	}
+}

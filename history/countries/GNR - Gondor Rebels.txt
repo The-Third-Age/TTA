@@ -13,7 +13,7 @@ civilized = yes
 
 prestige = 100
 
-ruling_party = GON_high_nobility
+ruling_party = GON_council_of_gondor
 
 upper_house = {
 	high_nobility = 100

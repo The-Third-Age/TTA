@@ -9,11 +9,12 @@ government = monarchy
 nationalvalue = generic_leader
 civilized = yes
 
-ruling_party = ANO_high_nobility
+ruling_party = ANO_nobles_of_anorien
 
 upper_house = {
-	high_nobility = 100
+	gondorian_nobles = 100
 }
+
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed

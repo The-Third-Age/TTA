@@ -24,7 +24,6 @@ country_event = {
 				limit = {
 					is_core = TOL
 				}
-				remove_core = TOL
 				add_core = AMR
 			}
 			prestige = 5
@@ -46,7 +45,6 @@ country_event = {
 			limit = {
 				is_core = TOL
 			}
-			remove_core = TOL
 			add_core = AMR
 		}
 		relation = {
@@ -969,7 +967,7 @@ country_event = {
 		
 		# Audax Validator "." Ignore_1007
 		define_general = {
-			name = "§LFarlong, §MLord of Lossarnach§!"
+			name = "§LForlong, §MLord of Lossarnach§!"
 			background = lord_of_lossarnach
 			personality = stalwart
 		}

@@ -12,10 +12,10 @@ oob = "CHE_oob.txt"
 
 slavery = yes_slavery
 upper_house_composition = appointed
-ruling_party = generic_high_nobility
+ruling_party = generic_chelkiag_nobles
 
 upper_house = {
-	high_nobility = 100
+	chelkiag_nobles = 100
 }
 
 schools = traditional_academic

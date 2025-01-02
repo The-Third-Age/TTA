@@ -13,28 +13,10 @@ convert_good_evil_title;§GConvert Good/Evil§!;x
 convert_good_evil_desc;Our sphere leader's alignment does not match up with our own. We can choose to convert to their alignment.;x
 nationalize_title;§GSeize the means of production!§!;x
 nationalize_desc;No more will the foreign dogs grow fat off of the sweat of our people! The time has come to seize all assets owned by outsiders, to be cared for by the realm.;x
-become_a_monarchy_title;§GBecome a Monarchy§!;x
-become_a_monarchy_desc;We have the public support for making our realm into a monarchy.;x
-convert_to_good_title;§GBecome a Good Realm§!;x
-convert_to_good_desc;We have enough public support to become a Good Realm.;x
-convert_to_neutral_title;§GBecome a Neutral Realm§!;x
-convert_to_neutral_desc;We have enough public support to become a Neutral Realm.;x
-convert_to_evil_title;§GBecome an Evil Realm§!;x
-convert_to_evil_desc;We have enough public support to become an Evil Realm.;x
 show_government_decisions_title;§GShow Government Decisions§!;x
 show_government_decisions_desc;This decision allows you to see all government-related decisions;x
 hide_government_decisions_title;§GHide Government Decisions§!;x
 hide_government_decisions_desc;This decisions allows you to hide all government-related decisions;x
-democratizing_title;§GDemocratizing§!;x
-democratizing_desc;This decision allows you to convert your realm into a democracy. When you take the Landed Voting reform, the Utility Tag will automatically change your government to a democracy and start and election.;x
-monarchizing_title;§GMonarchizing§!;x
-monarchizing_desc;This decision allows you to begin the process of converting your realm into a monarchy. When you hit 30% of your population with Servants as their favored Interest Group, you will be able to become a monarchy of your choice.;x
-attempt_to_good_title;§GEncourage Good Alignment§!;x
-attempt_to_good_desc;If we wish to become a Good Realm, the best way is to make the people want to be in a Good Realm.;x
-attempt_to_neutral_title;§GEncourage Neutral Alignment§!;x
-attempt_to_neutral_desc;If we wish to become a Neutral Realm, the best way is to make the people want to be in a Neutral Realm.;x
-attempt_to_evil_title;§GEncourage Evil Alignment§!;x
-attempt_to_evil_desc;If we wish to become an Evil Realm, the best way is to make the people want to be in an Evil Realm.;x
 abandon_neutrality_title;§GAbandon Neutrality§!;x
 abandon_neutrality_desc;Our realm is considered politically neutral and unable to take part in wars or be attacked. We can choose to abandon this neutrality.;x
 #####################################;x }
@@ -597,10 +579,6 @@ end_war_FOR_title;End War;x
 end_war_FOR_desc;That is not allowed. Stop it.;x
 democratic_flag_clean_up_title;Democratic Flag Clean Up;x
 democratic_flag_clean_up_desc;Something has gone wrong with the democratic country flags. This decision will fix it.;x
-something_to_democracy_title;Change Government to Democracy;x
-something_to_democracy_desc;Some realm has converted themselves to a democracy. Let's make it official;x
-monarchize_flag_cleanup_title;Monarchy Flag Clean Up;x
-monarchize_flag_cleanup_desc;Some realm that was attempting to convert to a monarchy has become one. Let's get rid of some extra flags.;x
 noble_autonomy_flag_clean_up_title;Noble Autonomy Flag Clean Up;x
 noble_autonomy_flag_clean_up_desc;Something has gone wrong with the noble autonomy country flags. This decision will fix it.;x
 non_accepted_slavery_clean_up_title;Non-Accepted Slavery Clean Up;x
@@ -609,8 +587,6 @@ border_laws_clean_up_title;Border Laws Clean Up;x
 border_laws_clean_up_desc;A realm does not have the correct border policy. Let's fix that.;x
 set_initial_leader_title;Set Initial Leader;x
 set_initial_leader_desc;A realm has just spruing into existence. Let's set their initial leader traits.;x
-debug_research_flags_title;Debug Research Flags;x
-debug_research_flags_desc;This decision will only pop up if there are realms missing one of the research flags (infantry_focused, ranged_focused, cavalry_focused);x
 #################################################;x }
 ##### ORGANIZATIONS AND ALLIANCES DECISIONS #####;x {
 #################################################;x

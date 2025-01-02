@@ -2,6 +2,18 @@
 #	Lembas bread
 #	Colonise
 political_decisions = {
+	LOR_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set content access
+			set_country_flag = LOR_content
+			
+			# Set allowed leaders
+			set_country_flag = ideologies_house_of_finarfin_active
+			set_country_flag = ideologies_galadhrim_nobles_active
+		}
+	}
+	
 	lembas = {
 		picture = "lembas"
 		potential = {
@@ -18,6 +30,7 @@ political_decisions = {
 			activate_technology = flavor_6
 		}
 	}
+	
 	colonise_parth_celebrant = {
 		picture = "druwaith_iaur"
 		potential = {

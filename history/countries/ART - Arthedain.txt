@@ -8,10 +8,10 @@ government = man_tribe
 nationalvalue = generic_leader
 literacy = 0
 
-ruling_party = generic_high_nobility
+ruling_party = generic_arthedani_nobles
 
 upper_house = {
-	high_nobility = 100
+	arthedani_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

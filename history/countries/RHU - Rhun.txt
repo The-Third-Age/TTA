@@ -12,10 +12,11 @@ nationalvalue = generic_leader
 literacy = 0
 civilized = yes
 
-ruling_party = generic_high_nobility
+ruling_party = generic_urgath_nobles
+decision = RHU_start_decision
 
 upper_house = {
-	high_nobility = 100
+	urgath_nobles = 100
 }
 
 slavery = yes_slavery

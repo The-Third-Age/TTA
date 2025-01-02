@@ -11,16 +11,14 @@ nationalvalue = ecthelion_ii
 literacy = 0.2
 civilized = yes
 
-ruling_party = ANF_high_nobility
+ruling_party = ANF_gundor
 
 oob = "ANF_oob.txt"
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 30
-	burgher = 5
-	loremaster = 5
+	gondorian_nobles = 100
 }
+
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed

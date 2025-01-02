@@ -824,7 +824,7 @@ issues = {
 	#####################
 	##### ALIGNMENT #####
 	#####################
-	good_alignment_fake = {
+	good_alignment = {
 		factor = 5
 		modifier = {
 			factor = 0
@@ -856,17 +856,6 @@ issues = {
 			country = { any_neighbor_country = { good_evil_alignment = good_alignment } }
 		}
 		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_good }
-		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_neutral }
-				country = { has_country_flag = attempting_to_evil }
-			}
-		}
-		modifier = {
 			factor = 2
 			country = {
 				is_vassal = yes
@@ -882,7 +871,7 @@ issues = {
 			has_country_flag = remembered_sacrifice
 		}
 	}
-	neutral_alignment_fake = {
+	neutral_alignment = {
 		factor = 5
 		modifier = {
 			factor = 0
@@ -914,25 +903,14 @@ issues = {
 			country = { any_neighbor_country = { good_evil_alignment = neutral_alignment } }
 		}
 		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_neutral }
-		}
-		modifier = {
 			factor = 2
 			country = {
 				is_vassal = yes
 				overlord = { good_evil_alignment = neutral_alignment }
 			}
 		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_good }
-				country = { has_country_flag = attempting_to_evil }
-			}
-		}
 	}
-	evil_alignment_fake = {
+	evil_alignment = {
 		factor = 5
 		modifier = {
 			factor = 0
@@ -964,21 +942,10 @@ issues = {
 			country = { any_neighbor_country = { good_evil_alignment = evil_alignment } }
 		}
 		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_evil }
-		}
-		modifier = {
 			factor = 2
 			country = {
 				is_vassal = yes
 				overlord = { good_evil_alignment = evil_alignment }
-			}
-		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_good }
-				country = { has_country_flag = attempting_to_neutral }
 			}
 		}
 		modifier = {
@@ -993,185 +960,6 @@ issues = {
 	##########################
 	##### PARTY POLICIES #####
 	##########################
-	independent_guilds = {
-		factor = 0.9
-		modifier = {
-			factor = 0
-			NOT = { life_needs = 1 }
-			country = { guild_autonomy_policy = independent_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.25
-			country = { guild_autonomy_policy = independent_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.5
-			country = { guild_autonomy_policy = independent_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.75
-			country = { guild_autonomy_policy = independent_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 1
-			country = { guild_autonomy_policy = independent_guilds }
-		}
-	}
-	oversight_guilds = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { life_needs = 1 }
-			country = { guild_autonomy_policy = oversight_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.25
-			country = { guild_autonomy_policy = oversight_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.5
-			country = { guild_autonomy_policy = oversight_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.75
-			country = { guild_autonomy_policy = oversight_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 1
-			country = { guild_autonomy_policy = oversight_guilds }
-		}
-	}
-	controlled_guilds = {
-		factor = 1.2
-		modifier = {
-			factor = 0
-			NOT = { life_needs = 1 }
-			country = { guild_autonomy_policy = controlled_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.25
-			country = { guild_autonomy_policy = controlled_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.5
-			country = { guild_autonomy_policy = controlled_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.75
-			country = { guild_autonomy_policy = controlled_guilds }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 1
-			country = { guild_autonomy_policy = controlled_guilds }
-		}
-	}
-	all_peoples = {
-		factor = 1
-		modifier = {
-			factor = 1.1
-			consciousness = 8
-			NOT = { is_state_religion = yes }
-		}
-		modifier = {
-			factor = 1.1
-			consciousness = 6
-			NOT = { is_state_religion = yes }
-			country = { racial_policy = racial_unity }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { consciousness = 6 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { consciousness = 7 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { consciousness = 8 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { consciousness = 9 }
-		}
-	}
-	alignment_acceptance = {
-		factor = 1
-		modifier = {
-			factor = 1.1
-			consciousness = 4
-			NOT = { consciousness = 6 }
-			NOT = { is_state_religion = yes }
-		}
-		modifier = {
-			factor = 1.1
-			consciousness = 6
-		}
-		modifier = {
-			factor = 1.1
-			consciousness = 7
-		}
-		modifier = {
-			factor = 1.1
-			consciousness = 8
-		}
-		modifier = {
-			factor = 1.1
-			consciousness = 9
-		}
-	}
-	racial_unity = {
-		factor = 1
-		modifier = {
-			factor = 1.2
-			NOT = { consciousness = 4 }
-			is_state_religion = yes
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { consciousness = 4 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { consciousness = 3 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { consciousness = 2 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { consciousness = 1 }
-		}
-		modifier = {
-			factor = 0.9
-			consciousness = 6
-		}
-		modifier = {
-			factor = 0.9
-			consciousness = 7
-		}
-		modifier = {
-			factor = 0.9
-			consciousness = 8
-		}
-		modifier = {
-			factor = 0.9
-			consciousness = 9
-		}
-	}
 	official_only = {
 		factor = 1.1
 		modifier = {

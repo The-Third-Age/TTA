@@ -9,10 +9,10 @@ literacy = 0
 
 oob = "GAT_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_urgath_nobles
 
 upper_house = {
-	high_nobility = 100
+	urgath_nobles = 100
 }
 
 slavery = yes_slavery

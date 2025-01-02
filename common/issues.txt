@@ -2,105 +2,42 @@
 # Issues that parties have.
 ##########################################
 party_issues = {
-	guild_autonomy_policy = {
-		independent_guilds = {
-			factory_owner_cost = 0.3
-			factory_throughput = 0.05
-			min_tariff = -1
+	trade_policy = {
+		protectionism = {
 			max_tariff = 1
-			
-			rules = {
-				build_factory = no
-				expand_factory = no
-				open_factory = no
-				destroy_factory = no
-				build_railway = no
-				factory_priority = no
-				can_subsidise = no
-				pop_build_factory = yes
-				pop_expand_factory = yes
-				pop_open_factory = yes
-				delete_factory_if_no_input = yes
-				pop_build_factory_invest = yes
-				pop_expand_factory_invest = yes
-				open_factory_invest = yes
-				allow_foreign_investment = yes
-				build_railway_invest = yes
-				can_invest_in_pop_projects = no
-			}
+			min_tariff = -0.25
 		}
-		oversight_guilds = {
-			factory_owner_cost = 0.5
+		free_trade = {
+			max_tariff = 0.25
 			min_tariff = -1
-			max_tariff = 1
-			
-			rules = {
-				build_factory = no
-				expand_factory = yes
-				open_factory = yes
-				destroy_factory = yes
-				build_railway = yes
-				factory_priority = yes
-				can_subsidise = yes
-				pop_build_factory = yes
-				pop_expand_factory = yes
-				pop_open_factory = yes
-				delete_factory_if_no_input = no
-				pop_build_factory_invest = yes
-				pop_expand_factory_invest = yes
-				open_factory_invest = yes
-				build_factory_invest = yes
-				expand_factory_invest = yes
-				build_railway_invest = yes
-				allow_foreign_investment = yes
-				can_invest_in_pop_projects = yes
-			}
-		}
-		controlled_guilds = {
-			factory_owner_cost = 0.6
-			min_tariff = -1
-			max_tariff = 1
-			
-			rules = {
-				build_factory = yes
-				expand_factory = yes
-				open_factory = yes
-				destroy_factory = yes
-				build_railway = yes
-				factory_priority = yes
-				can_subsidise = yes
-				pop_build_factory = no
-				pop_expand_factory = yes
-				pop_open_factory = yes
-				delete_factory_if_no_input = no
-				build_factory_invest = yes
-				expand_factory_invest = yes
-				build_railway_invest = yes
-				allow_foreign_investment = yes
-				can_invest_in_pop_projects = yes
-			}
 		}
 	}
-	racial_policy = {
-		all_peoples = {
-			global_assimilation_rate = 0.5
+	tax_policy = {
+		laissez_faire = {
+			max_tax = 0.5
 		}
-		alignment_acceptance = {
-			global_assimilation_rate = 0.25
+		interventionism = {
+			min_tax = 0.15
+			max_tax = 0.65
 		}
-		racial_unity = {
+		state_capitalism = {
+			min_tax = 0.25
+			max_tax = 0.75
+		}
+		planned_economy = {
+			min_tax = 0.5
 		}
 	}
 	language_policy = {
 		official_only = {
+			global_assimilation_rate = 0.25
 			non_accepted_pop_consciousness_modifier = 0.01
 			non_accepted_pop_militancy_modifier = 0.01
 		}
 		minority_toleration = {
-			global_assimilation_rate = -0.25
+			global_assimilation_rate = 0.10
 		}
 		regional_autonomy = {
-			global_assimilation_rate = -0.5
 			non_accepted_pop_consciousness_modifier = -0.01
 			non_accepted_pop_militancy_modifier = -0.01
 		}
@@ -168,14 +105,12 @@ party_issues = {
 			reinforce_speed = -0.5
 		}
 	}
-	good_evil_alignment_fake = {
-		good_alignment_fake = {
+	good_evil_alignment = {
+		good_alignment = {
 		}
-		neutral_alignment_fake = {
+		neutral_alignment = {
 		}
-		evil_alignment_fake = {
-		}
-		no_alignment = {
+		evil_alignment = {
 		}
 	}
 }
@@ -184,15 +119,105 @@ party_issues = {
 # Political reforms.
 ##########################################
 political_reforms = {
-	good_evil_alignment = {
-		good_alignment = {
+	guild_autonomy_policy = {
+		# Player can't touch own industry, but pops can
+		independent_guilds = {
 			allow = { always = no }
+			
+			rules = {
+				# Player touch factories
+				build_factory = no
+				expand_factory = no
+				open_factory = no
+				destroy_factory = no
+				factory_priority = no
+				can_subsidise = no
+				can_invest_in_pop_projects = no
+				
+				# Pops touch factories
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				delete_factory_if_no_input = yes
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
-		neutral_alignment = {
+		# Player and pops can touch own industry
+		oversight_guilds = {
 			allow = { always = no }
+			
+			rules = {
+				# Player touch factories
+				build_factory = yes
+				expand_factory = yes
+				open_factory = yes
+				destroy_factory = yes
+				factory_priority = yes
+				can_subsidise = yes
+				can_invest_in_pop_projects = yes
+				
+				# Pops touch factories
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				delete_factory_if_no_input = yes
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
-		evil_alignment = {
+		# Player can touch own industry, but pops can't
+		controlled_guilds = {
 			allow = { always = no }
+			
+			rules = {
+				# Player touch factories
+				build_factory = yes
+				expand_factory = yes
+				open_factory = yes
+				destroy_factory = yes
+				factory_priority = yes
+				can_subsidise = yes
+				can_invest_in_pop_projects = yes
+				
+				# Pops touch factories
+				pop_build_factory = no
+				pop_expand_factory = no
+				pop_open_factory = no
+				pop_build_factory_invest = no
+				pop_expand_factory_invest = no
+				delete_factory_if_no_input = no
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
 	}
 	border_policy = {

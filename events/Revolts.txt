@@ -173,14 +173,10 @@ country_event = {
 			owner = { remove_accepted_culture = evil_culture }
 		}
 		
-		political_reform = good_alignment
+		ruling_party_ideology = servants_good
 		add_accepted_culture = good_culture
 		
-		any_pop = { dominant_issue = { value = good_alignment_fake factor = 0.2 } }
-		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
+		any_pop = { dominant_issue = { value = good_alignment factor = 0.2 } }
 		
 		random_owned = {
 			limit = {
@@ -229,14 +225,10 @@ country_event = {
 			owner = { remove_accepted_culture = neutral_culture }
 		}
 		
-		political_reform = evil_alignment
+		ruling_party_ideology = servants_evil
 		add_accepted_culture = evil_culture
 		
-		any_pop = { dominant_issue = { value = evil_alignment_fake factor = 0.2 } }
-		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
+		any_pop = { dominant_issue = { value = evil_alignment factor = 0.2 } }
 		
 		random_owned = {
 			limit = {
@@ -283,14 +275,10 @@ country_event = {
 			owner = { remove_accepted_culture = evil_culture }
 		}
 		
-		political_reform = neutral_alignment
+		ruling_party_ideology = servants_neutral
 		add_accepted_culture = neutral_culture
 		
-		any_pop = { dominant_issue = { value = neutral_alignment_fake factor = 0.2 } }
-		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
+		any_pop = { dominant_issue = { value = neutral_alignment factor = 0.2 } }
 		
 		random_owned = {
 			limit = {

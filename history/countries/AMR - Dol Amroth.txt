@@ -13,15 +13,12 @@ civilized = yes
 
 oob = "AMR_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = AMR_angelimir
 
 decision = dol_amroth_start_decision
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	house_of_dol_amroth = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

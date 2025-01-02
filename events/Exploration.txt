@@ -988,7 +988,7 @@ country_event = { # Alatar found
 					good_evil_alignment = good_alignment
 				}
 				ALA = {
-					political_reform = good_alignment
+					ruling_party_ideology = servants_good
 					add_accepted_culture = good_culture
 					remove_accepted_culture = evil_culture
 					remove_accepted_culture = neutral_culture
@@ -1000,7 +1000,7 @@ country_event = { # Alatar found
 					good_evil_alignment = evil_alignment
 				}
 				ALA = {
-					political_reform = evil_alignment
+					ruling_party_ideology = servants_evil
 					add_accepted_culture = evil_culture
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = neutral_culture
@@ -1012,7 +1012,7 @@ country_event = { # Alatar found
 					good_evil_alignment = neutral_alignment
 				}
 				ALA = {
-					political_reform = neutral_alignment
+					ruling_party_ideology = servants_neutral
 					add_accepted_culture = neutral_culture
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = evil_culture

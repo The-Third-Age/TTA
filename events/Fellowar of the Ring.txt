@@ -79,12 +79,12 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				factor = 4
-				issue = good_alignment_fake
+				issue = good_alignment
 			}
 			
 			scaled_militancy = {
 				factor = 2
-				issue = neutral_alignment_fake
+				issue = neutral_alignment
 			}
 		}
 		
@@ -236,7 +236,7 @@ country_event = {
 		any_pop = {
 			scaled_consciousness = {
 				factor = 2
-				issue = good_alignment_fake
+				issue = good_alignment
 			}
 		}
 		
@@ -305,7 +305,7 @@ country_event = {
 		any_pop = {
 			limit = {
 				# Audax Validator "." Ignore_1007
-				pop_majority_issue = good_alignment_fake
+				pop_majority_issue = good_alignment
 			}
 			dominant_issue = {
 				value = jingoism
@@ -316,7 +316,7 @@ country_event = {
 		any_pop = {
 			limit = {
 				# Audax Validator "." Ignore_1007
-				pop_majority_issue = neutral_alignment_fake
+				pop_majority_issue = neutral_alignment
 			}
 			dominant_issue = {
 				value = jingoism
@@ -822,7 +822,7 @@ country_event = {
 		prestige = -10
 		any_pop = {
 			dominant_issue = {
-				value = good_alignment_fake
+				value = good_alignment
 				factor = 0.5
 			}
 		}
@@ -986,7 +986,7 @@ country_event = {
 		prestige = -10
 		any_pop = {
 			dominant_issue = {
-				value = good_alignment_fake
+				value = good_alignment
 				factor = 0.5
 			}
 		}
@@ -1185,7 +1185,7 @@ country_event = {
 		
 		any_pop = {
 			dominant_issue = {
-				value = good_alignment_fake
+				value = good_alignment
 				factor = 0.2
 			}
 		}
@@ -1201,7 +1201,7 @@ country_event = {
 		any_pop = {
 			scaled_militancy = {
 				factor = 10
-				issue = good_alignment_fake
+				issue = good_alignment
 			}
 		}
 		

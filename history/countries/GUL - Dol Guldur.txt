@@ -14,11 +14,10 @@ oob = "GUL_oob.txt"
 
 prestige = 10
 
-ruling_party = generic_high_nobility
-
 upper_house = {
-	servants = 100
 }
+
+ruling_party = generic_high_nobility
 
 slavery = yes_slavery
 upper_house_composition = appointed

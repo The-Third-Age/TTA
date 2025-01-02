@@ -11,9 +11,9 @@ oob = "PEZ_oob.txt"
 
 slavery = yes_slavery
 upper_house_composition = appointed
-ruling_party = generic_high_nobility
+ruling_party = generic_pezarsani_nobles
 upper_house = {
-	high_nobility = 100
+	pezarsani_nobles = 100
 }
 
 schools = traditional_academic

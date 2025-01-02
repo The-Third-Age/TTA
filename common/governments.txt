@@ -143,32 +143,24 @@ dark_realm = {
 
 # Dark Lord (Special government for realms lead by Sauron)
 sauron_dictatorship = {
-	servants = yes
-	
 	election = no
 	appoint_ruling_party = yes
 }
 
 # Dark Lord (Generic puppets of Sauron)
 sauron_puppet = {
-	servants = yes
-	
 	election = no
 	appoint_ruling_party = yes
 }
 
 # Lord (Special government for realms lead by a Nazgul)
 nazgul_dictatorship = {
-	servants = yes
-	
 	election = no
 	appoint_ruling_party = yes
 }
 
 # Lord (Special government for realms lead by a Wizard)
 istari_kingdom = {
-	servants = yes
-	
 	election = no
 	appoint_ruling_party = yes
 }
@@ -215,7 +207,6 @@ northmen_tribe = {
 
 # These two government types should never show up in game -- they are used purely as placeholders to be able to use the "cosmetic" flag spots for tags
 cosmetic_1_govt = {
-	servants = yes
 	high_nobility = yes
 	low_nobility = yes
 	burgher = yes
@@ -227,7 +218,6 @@ cosmetic_1_govt = {
 }
 
 cosmetic_2_govt = {
-	servants = yes
 	high_nobility = yes
 	low_nobility = yes
 	burgher = yes

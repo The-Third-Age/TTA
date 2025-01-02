@@ -29,6 +29,8 @@ political_decisions = {
 		
 		effect = {
 			# Setting flags for flavor
+			set_country_flag = GON_flavor
+			
 			add_country_modifier = {
 				name = low_military_recruitment
 				duration = -1
@@ -60,7 +62,12 @@ political_decisions = {
 					limit = { has_pop_culture = dunedain }
 					literacy = 0.1
 				}
+				
+				set_country_flag = ideologies_gondorian_nobles_active
 			}
+			
+			# Ithilien isn't technically a substate
+			ITH = { set_country_flag = ideologies_gondorian_nobles_active }
 			
 			# Setting Orc Raids
 			any_owned = {
@@ -80,6 +87,10 @@ political_decisions = {
 			# Setting up flags stating that specific leaders are alive
 			set_global_flag = ecthelion_ii_alive
 			set_global_flag = denethor_ii_alive
+			
+			# Setting up starting leaders
+			set_country_flag = ideologies_house_of_stewards_active
+			set_country_flag = ideologies_gondorian_nobles_active
 		}
 	}
 	
@@ -105,6 +116,12 @@ political_decisions = {
 			
 			# Setting up flags stating that specific leaders are alive
 			set_global_flag = adrahil_ii_alive
+			
+			# Setting up starting leaders
+			set_country_flag = ideologies_house_of_dol_amroth_active
+			
+			# Setting up leaders of integrated realms
+			EDH = { set_country_flag = ideologies_galadhrim_nobles_active }
 		}
 	}
 }
@@ -139,14 +156,12 @@ political_decisions = {
 			inherit = LOS
 			GON_23 = {
 				aristocrats = { militancy = 2 }
-				remove_core = LOS
 				add_core = GON
 			}
 			GON_27 = {
 				aristocrats = { militancy = 2 }
 				secede_province = LEB
 				add_core = LEB
-				remove_core = LOS
 			}
 			prestige = 5
 			
@@ -156,7 +171,7 @@ political_decisions = {
 				}
 				owner = {
 					define_general = {
-						name = "§LFarlong, §MLord of Lossarnach§!"
+						name = "§LFarlang, §MLord of Lossarnach§!"
 						background = lord_of_lossarnach
 						personality = stalwart
 					}
@@ -218,12 +233,10 @@ political_decisions = {
 					aristocrats = { militancy = 2 }
 					secede_province = ANF
 					add_core = ANF
-					remove_core = MRN
 				}
 				any_owned = {
 					limit = { is_core = MRN }
 					add_core = LAM
-					remove_core = MRN
 					aristocrats = { militancy = 2 }
 				}
 				
@@ -251,7 +264,6 @@ political_decisions = {
 			}
 			any_owned = {
 				limit = { is_core = LEB }
-				remove_core = LEB
 				add_core = GON
 				aristocrats = { militancy = 2 }
 			}
@@ -377,7 +389,6 @@ political_decisions = {
 			inherit = LAM
 			any_owned = {
 				limit = { is_core = LAM }
-				remove_core = LAM
 				add_core = GON
 				aristocrats = { militancy = 2 }
 			}
@@ -489,7 +500,6 @@ political_decisions = {
 			inherit = ANF
 			any_owned = {
 				limit = { is_core = ANF }
-				remove_core = ANF
 				add_core = GON
 				aristocrats = { militancy = 2 }
 			}
@@ -1114,7 +1124,6 @@ political_decisions = {
 			prestige = 8
 			any_owned = {
 				limit = { is_core = ADR }
-				remove_core = ADR
 				add_core = GON
 				aristocrats = { militancy = 2 }
 			}
@@ -1787,8 +1796,6 @@ political_decisions = {
 					HAR_286 = { add_core = HRN }
 					HAR = { release = HRN }
 					GON = {	inherit = HRN }
-					HAR_286 = { remove_core = HRN }
-					HAR_286 = { remove_core = HAR }
 				}
 			}
 			HAR_286 = { add_core = GON }

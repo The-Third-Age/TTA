@@ -116,21 +116,24 @@ EVTDESC12068;Towering stone walls encircle a bustling metropolis of unprecedente
 ###########################;x }
 ##### ELECTION EVENTS #####;x {
 ###########################;x
-EVTNAME14000;$COUNTRY_ADJ$ Guild Autonomy Policy;;;;;;;;;;x
+EVTNAME14000;$COUNTRY_ADJ$ Trade Policy;;;;;;;;;;x
 EVTNAME14000_sub;A Heated Debate in $COUNTRY$;;;;;;;;;;x
-EVTDESC14000;The question of Guild Autonomy has come around this election cycle. There are stauch supporters across the spectrum, with major proponents for guilds being independent, the Realm having some oversight into the guilds, and the Realm completely controlling the guilds. What is the current leadership's stance?;;;;;;;;;x
-EVTNAME14001;$COUNTRY_ADJ$ Racial Policy;;;;;;;;;;x
+EVTDESC14000;The question of trade Policy has come around this election cycle. There are stauch supporters across the spectrum, with major proponents for protectionism and free trade. What is the current leadership's stance?;;;;;;;;;x
+EVTNAME14001;$COUNTRY_ADJ$ Tax Policy;;;;;;;;;;x
 EVTNAME14001_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14001;The question of Racial policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for allowing all races, non-Orcs and only our race. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14001;The question of tax policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for Laissez Faire, Inteventionism, State Capitalism and Planned Economy. What is the current leadership's stance?;;;;;;;;;x
 EVTNAME14002;$COUNTRY_ADJ$ Language Policy;;;;;;;;;;x
 EVTNAME14002_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14002;The question of Language policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for allowing all languages, giving some toleration of accepted minority languages and only our language. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14002;The question of language policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for allowing all languages, giving some toleration of accepted minority languages and only our language. What is the current leadership's stance?;;;;;;;;;x
 EVTNAME14003;$COUNTRY_ADJ$ Diplomatic Policy;;;;;;;;;;x
 EVTNAME14003_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14003;The question of Diplomatic policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for an isolationist policy, a reactive policy, a proactive policy and an interactive policy. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14003;The question of diplomatic policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for an isolationist policy, a reactive policy, a proactive policy and an interactive policy. What is the current leadership's stance?;;;;;;;;;x
 EVTNAME14004;$COUNTRY_ADJ$ War Policy;;;;;;;;;;x
 EVTNAME14004_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14004;The question of War policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for a jingoist policy, a pro-military policy, an anti-militaary policy and a pacifist policy. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14004;The question of war policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for a jingoist policy, a pro-military policy, an anti-militaary policy and a pacifist policy. What is the current leadership's stance?;;;;;;;;;x
+EVTNAME14005;$COUNTRY_ADJ$ Alignment;;;;;;;;;;x
+EVTNAME14005_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
+EVTDESC14005;The question of our alignment has come around this election cycle. There are stauch supporters across the spectrum, with major proponents for denouncing Sauron, aligning with no one, and aligning with Sauron. What is the current leadership's stance?;;;;;;;;;x
 ########################################;x }
 ##### NATIONALIST MOVEMENTS EVENTS #####;x {
 ########################################;x
