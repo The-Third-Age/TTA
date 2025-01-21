@@ -6,14 +6,28 @@ political_decisions = {
 	# Audax Validator "." Ignore_1004
 	erebor_start_decision = {
 		potential = {
-			tag = ERE
 			always = no
 		}
-		allow = {}
 		effect = {
 			# Setup Alliance of Dwarves and Men
 			add_country_modifier = { name = alliance_of_dwarves_and_men duration = -1 }
 			DAL = { add_country_modifier = { name = alliance_of_dwarves_and_men duration = -1 } }
+			
+			# Set allowed leaders
+			set_country_flag = ideologies_line_of_durin_active
+			
+			set_country_flag = ERE_content
+		}
+	}
+	RAV_start_decision = {
+		potential = {
+			always = no
+		}
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_lords_of_ravens_active
+			
+			set_country_flag = RAV_content
 		}
 	}
 	ravens_of_erebor = {

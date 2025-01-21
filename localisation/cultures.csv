@@ -21,9 +21,9 @@ spider;Spider;x
 spider_culture;§FRace: Spider§!;x
 undead;Undead;x
 undead_culture;§FRace: Undead§!;x
-good_culture;§GAlignment: Good§!;x
-neutral_culture;§PAlignment: Neutral§!;x
-evil_culture;§RAlignment: Evil§!;x
+good_culture;§GAlignment: Anti-Sauron§!;x
+neutral_culture;§PAlignment: Opportunistic§!;x
+evil_culture;§RAlignment: Sauronite§!;x
 one_ring_culture;§OOne Ring Holder§!;x
 #############################################;x }
 ##### GENERAL/ADMIRAL PORTRAIT CULTURES #####;x {

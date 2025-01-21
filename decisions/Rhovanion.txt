@@ -9,15 +9,13 @@
 # Starting Decisions
 political_decisions = {
 	# Audax Validator "." Ignore_1004
-	dorwinion_start_decision = {
-		potential = {
-			tag = DOR
-			always = no
-		}
-		
-		allow = {}
-		
+	DOR_start_decision = {
+		potential = { always = no }
 		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_house_of_koldana_active
+			
+			set_country_flag = DOR_content
 		}
 	}
 }
@@ -317,11 +315,8 @@ political_decisions = {
 				RHO = {
 					remove_accepted_culture = evil_culture
 					remove_accepted_culture = neutral_culture
-					political_reform = good_alignment
+					ruling_party_ideology = servants_good
 					add_accepted_culture = good_culture
-					clr_country_flag = attempting_to_good
-					clr_country_flag = attempting_to_neutral
-					clr_country_flag = attempting_to_evil
 				}
 			}
 			
@@ -332,11 +327,8 @@ political_decisions = {
 				RHO = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = neutral_culture
-					political_reform = evil_alignment
+					ruling_party_ideology = servants_evil
 					add_accepted_culture = evil_culture
-					clr_country_flag = attempting_to_good
-					clr_country_flag = attempting_to_neutral
-					clr_country_flag = attempting_to_evil
 				}
 			}
 			
@@ -347,11 +339,8 @@ political_decisions = {
 				RHO = {
 					remove_accepted_culture = good_culture
 					remove_accepted_culture = evil_culture
-					political_reform = neutral_alignment
+					ruling_party_ideology = servants_neutral
 					add_accepted_culture = neutral_culture
-					clr_country_flag = attempting_to_good
-					clr_country_flag = attempting_to_neutral
-					clr_country_flag = attempting_to_evil
 				}
 			}
 		}
@@ -576,8 +565,8 @@ political_decisions = {
 		allow = {
 			OR = {
 				militancy = 3
-				government = northmen_democracy
-				government = northmen_tribe
+				government = democracy
+				government = tribal
 			}
 		}
 		

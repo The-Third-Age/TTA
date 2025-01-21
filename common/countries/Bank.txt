@@ -2,16 +2,52 @@ graphical_culture = UsGC
 color = { 0 0 0 }
 
 party = {
-	name = "generic_servants"
+	name = "generic_servants_good"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = servants
+	ideology = servants_good
 	
-	guild_autonomy_policy = controlled_guilds
-	racial_policy = all_peoples
-	language_policy = regional_autonomy
-	diplomatic_policy = reactive
-	war_policy = jingoism
-	good_evil_alignment_fake = no_alignment	
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
+	good_evil_alignment = good_alignment
+}
+
+party = {
+	name = "generic_servants_neutral"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = servants_neutral
+	
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
+	good_evil_alignment = neutral_alignment
+}
+
+party = {
+	name = "generic_servants_evil"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = servants_evil
+	
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
+	good_evil_alignment = evil_alignment
+}
+
+unit_names = {
+	#example = {
+	#	name "multi word name"
+	#}
 }

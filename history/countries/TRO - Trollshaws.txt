@@ -3,16 +3,16 @@ capital = 860
 primary_culture = stone_trolls
 culture = troll_culture
 religion = orc
-government = goblin_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
 oob = "TRO_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_stone_trolls_nobles
 
 upper_house = {
-	high_nobility = 100
+	stone_trolls_nobles = 100
 }
 
 slavery = yes_slavery

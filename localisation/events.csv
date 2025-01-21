@@ -23,9 +23,9 @@ EVTDESC2901;Cleaning up cbs that don't need to exist;x
 ##########################;x
 EVTDESC3000;To our leadership's dismay, the army was overwhelmed by the Democratic Rebels that plagued $CAPITAL$. They have been able to force their demands, increasing voter rights.;x
 EVTDESC3002;To our leadership's dismay, the army was overwhelmed by the Noble Rebels that plagued $CAPITAL$. They have been able to for their demands, increasing the nobility's privileges.;x
-EVTDESC3003;To our leadership's dismay, the army was overwhelmed by the Good Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Neutrality and Evil from the government.;x
-EVTDESC3004;To our leadership's dismay, the army was overwhelmed by the Evil Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Good and Neutrality from the government.;x
-EVTDESC3005;To our leadership's dismay, the army was overwhelmed by the Neutral Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Good and Evil from the government.;x
+EVTDESC3003;To our leadership's dismay, the army was overwhelmed by the Anti-Sauron Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Oppotunistic and Sauronite from the government.;x
+EVTDESC3004;To our leadership's dismay, the army was overwhelmed by the Sauronite Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Anti-Sauron and Oppotunistic from the government.;x
+EVTDESC3005;To our leadership's dismay, the army was overwhelmed by the Oppotunistic Rebels that plagued $CAPITAL$. They have been able to for their demands, removing all influences of Anti-Sauron and Sauronite from the government.;x
 EVTDESC3006;$COUNTRY_ADJ$ patriots have risen up in a neighboring realm, and have gained sufficient control that they have sent word they wish to bring the province back to $COUNTRY$. Agreeing would mean risking war, but refusing would mean angering our people.;x
 EVTDESC3008;With the patriot rebellion now over, our provinces have now been brought under control and $COUNTRY_ADJ$ nobility are once again in command.;;;;;;;;;;;;;
 #################################;x }
@@ -116,21 +116,24 @@ EVTDESC12068;Towering stone walls encircle a bustling metropolis of unprecedente
 ###########################;x }
 ##### ELECTION EVENTS #####;x {
 ###########################;x
-EVTNAME14000;$COUNTRY_ADJ$ Guild Autonomy Policy;;;;;;;;;;x
+EVTNAME14000;$COUNTRY_ADJ$ Trade Policy;;;;;;;;;;x
 EVTNAME14000_sub;A Heated Debate in $COUNTRY$;;;;;;;;;;x
-EVTDESC14000;The question of Guild Autonomy has come around this election cycle. There are stauch supporters across the spectrum, with major proponents for guilds being independent, the Realm having some oversight into the guilds, and the Realm completely controlling the guilds. What is the current leadership's stance?;;;;;;;;;x
-EVTNAME14001;$COUNTRY_ADJ$ Racial Policy;;;;;;;;;;x
+EVTDESC14000;The question of trade Policy has come around this election cycle. There are stauch supporters across the spectrum, with major proponents for protectionism and free trade. What is the current leadership's stance?;;;;;;;;;x
+EVTNAME14001;$COUNTRY_ADJ$ Tax Policy;;;;;;;;;;x
 EVTNAME14001_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14001;The question of Racial policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for allowing all races, non-Orcs and only our race. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14001;The question of tax policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for Laissez Faire, Inteventionism, State Capitalism and Planned Economy. What is the current leadership's stance?;;;;;;;;;x
 EVTNAME14002;$COUNTRY_ADJ$ Language Policy;;;;;;;;;;x
 EVTNAME14002_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14002;The question of Language policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for allowing all languages, giving some toleration of accepted minority languages and only our language. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14002;The question of language policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for allowing all languages, giving some toleration of accepted minority languages and only our language. What is the current leadership's stance?;;;;;;;;;x
 EVTNAME14003;$COUNTRY_ADJ$ Diplomatic Policy;;;;;;;;;;x
 EVTNAME14003_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14003;The question of Diplomatic policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for an isolationist policy, a reactive policy, a proactive policy and an interactive policy. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14003;The question of diplomatic policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for an isolationist policy, a reactive policy, a proactive policy and an interactive policy. What is the current leadership's stance?;;;;;;;;;x
 EVTNAME14004;$COUNTRY_ADJ$ War Policy;;;;;;;;;;x
 EVTNAME14004_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
-EVTDESC14004;The question of War policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for a jingoist policy, a pro-military policy, an anti-militaary policy and a pacifist policy. What is the current leadership's stance?;;;;;;;;;x
+EVTDESC14004;The question of war policy have come around this election cycle. There are stauch supporters across the spectrum, with major proponents for a jingoist policy, a pro-military policy, an anti-militaary policy and a pacifist policy. What is the current leadership's stance?;;;;;;;;;x
+EVTNAME14005;$COUNTRY_ADJ$ Alignment;;;;;;;;;;x
+EVTNAME14005_sub;A Heated Debate in $COUNTRY$;;;;;;;;;x
+EVTDESC14005;The question of our alignment has come around this election cycle. There are stauch supporters across the spectrum, with major proponents for denouncing Sauron, aligning with no one, and aligning with Sauron. What is the current leadership's stance?;;;;;;;;;x
 ########################################;x }
 ##### NATIONALIST MOVEMENTS EVENTS #####;x {
 ########################################;x
@@ -453,7 +456,7 @@ EVTDESC50211;A single light in the darkness upon an abandoned outpost. The five 
 EVTDESC50212;§RThis event does nothing except notify players about Pre-Fellowship events§!. Frodo has camped at Weathertop.;x
 EVTDESC50213;During the fighting upon Weathertop, Frodo was stabbed with a Morgul Blade. His spirit did its best to fight the infection, but given the strength of the assault it was under, Frodo fell, and gave the One Ring to the Nazgûl. They fled to the south-east, undoubtedly returning the One Ring to their master.;x
 EVTDESC50214;§RThis event does nothing except notify players about Pre-Fellowship events§!. Frodo has given the One Ring to the Nazgûl.;x
-EVTDESC50215;Earlier today, our scouts found a small party of five - four Hobbits and one Ranger - in our lands, seeking aid. One of the Hobbits had suffered a terrible wound. We were able to heal him, and, after talking with the group, learned that this is Frodo Baggins, the bearer of the One Ring. This is an issue for all Good realms.;x
+EVTDESC50215;Earlier today, our scouts found a small party of five - four Hobbits and one Ranger - in our lands, seeking aid. One of the Hobbits had suffered a terrible wound. We were able to heal him, and, after talking with the group, learned that this is Frodo Baggins, the bearer of the One Ring. This is an issue for all Anti-Sauron realms.;x
 EVTDESC50216;§RThis event does nothing except notify players about Pre-Fellowship events§!. Frodo has made it safely to $FROMCOUNTRY$;x
 EVTDESC50250;My $MONARCHTITLE$, today we received a pecurliar message from $FROMCOUNTRY$. Apparently, some kind of council has been called, but the message does not state what it will discuss. All it states is that the future of the Free World depends on what is decided in this meeting. Should we send representatives?;x
 EVTDESC50251;After arriving at the meeting, our delegation quickly learned that the meeting was called to answer the threat of the Evil in the East. The Weapon of the Enemy has fallen into the hands of a Hobbit - Frodo of Bag-End. Many ideas were discussed, and a couple of axes destroyed, but eventually, the prevailing idea became that a Fellowship of the Free Peoples is needed to destroy the One Ring. How should our representatives answer this resolution?;x
@@ -464,9 +467,9 @@ EVTDESC50300;Our valiant member of the Fellowship of the Ring has perished! They
 EVTDESC50301;§RThis event does nothing except notify players about Fellowship events§!. The Fellowship member from $FROMCOUNTRY$ has perished.;x
 EVTDESC50302;The pass is long and treacherous. Even in the most stable conditions, crossing the Misty Mountains is a dangerous task. Given that there may be powerful forces attempting to stop their crossing, the Fellowship may be forced to abandon their plans to cross the Misty Mountains in favor of passing under.;x
 EVTDESC50303;§RThis event does nothing except notify players about Fellowship events§!. The Fellowship is attempting to cross Caradhras. Should they be stopped by Saruman, they will; be forced through the Mines of Moria.;x
-EVTDESC50304;The Mines of Moria. There are rumors of a terrible monster roaming the lower halls - which the Fellowship needs to cross. Should these rumors prove to have merit, it is unlikely that the entire Fellowship will survive.\n\n§RIf Moria is owned by an Orc or Evil realm, a Fellowship member is guaranteed to die§!.;x
+EVTDESC50304;The Mines of Moria. There are rumors of a terrible monster roaming the lower halls - which the Fellowship needs to cross. Should these rumors prove to have merit, it is unlikely that the entire Fellowship will survive.\n\n§RIf Moria is owned by an Orc or Sauronite realm, a Fellowship member is guaranteed to die§!.;x
 EVTDESC50305;§RThis event does nothing except notify players about Fellowship events§!. The Fellowship has passed through the Mines of Moria.;x
-EVTDESC50306;Our member of the Fellowship of the Ring sacrified themselves in the Mines of Moria to save the Fellowship from certain doom. They single-handedly fought an unbeatable foe - a Balrog of Morgoth - to buy time for the rest to escape. §RThis modifier makes you pops slightly more good-aligned§!.;x
+EVTDESC50306;Our member of the Fellowship of the Ring sacrified themselves in the Mines of Moria to save the Fellowship from certain doom. They single-handedly fought an unbeatable foe - a Balrog of Morgoth - to buy time for the rest to escape. §RThis modifier makes you pops slightly more Anti-Sauron§!.;x
 EVTDESC50307;The Golden Trees of Lothlórien are a sight to behold after the treacherous Misty Mountains. On the other hand, the inhabitants of the Golden Wood may proove to be more hostile than their abode suggests.;x
 EVTDESC50308;§RThis event does nothing except notify players about Fellowship events§!. The Fellowship has entered Lothlórien.;x
 EVTDESC50309;Once the capital of Gondor, Ithilien is barren comparatively. Orc raids are commonplace, and the Enemy roams as they please. The Rangers run from stronghold to stronghold, striking as they are able and fleeing to one stronghold or another when they are not. It will be no easy task to avoid detection in this land.;x
@@ -668,13 +671,12 @@ EVTDESC90002;The Age of Man has begun| our ambitions are now unlimited and nothi
 ##############################;x }
 ##### RAILROADING EVENTS #####;x {
 ##############################;x
-EVTDESC91000;Should railroading be enabled? If so, all realms (yours included), will be locked into "historical" routes. Additionally, should something go wrong, the game will attempt to correct it.\n\nWith railroading enabled, §M we will be unable to hold alliances with or sphere realms of the opposite alignment (§PNeutral Alignment§! realms will be able to ally and sphere all realms), §Mwe will be unable to change our own alignment§!, §Mwe will lose access to the §TChange Alignment§M cb,§! and §Mwe will be unable to take uncored states from realms with the same alignment -- if we are of §PNeutral Alignment§!§M, we can still take non-core states from other Neutral realms§!\n\nFinally, the following "tracks" will specifically affect the $COUNTRY$|;x
-EVTDESC91001;Somehow, both railroading flags are present. The player likely save-game edited, which we don't like. Let's fix this.;x
+EVTDESC91000;Should railroading be enabled? If so, all realms (yours included), will be locked into "historical" routes. Additionally, should something go wrong, the game will attempt to correct it.\n\nWith railroading enabled, §M we will be unable to hold alliances with or sphere realms of the opposite alignment (§POpportunistic§! realms will be able to ally and sphere all realms), §Mwe will be unable to change our own alignment§!, §!and §Mwe will be unable to take uncored states from realms with the same alignment -- if we are of §POpportunistic§!§M, we can still take non-core states from other Opportunistic realms§!\n\nFinally, the following "tracks" will specifically affect the $COUNTRY$|;x
 EVTDESC91002;This is the main railroading cleanup loop. This will trigger any and all events that are needed to fire.;x
-EVTDESC91003;This event will make sure that good and evil realms hate each other.;x
+EVTDESC91003;This event will make sure that Sauronite and Anti-Sauronite realms hate each other.;x
 EVTDESC91004;This event will railroad specific alliances, and break other ones.;x
 EVTDESC91005;This event will set the realm specific description on the event to choose if railroading should be enabled.;x
-EVTDESC91006;Here are the affects of railroading|\n\n§M We will be unable to hold alliances with or sphere realms of the opposite alignment (§PNeutral Alignment§! realms will be able to ally and sphere all realms)\n§Mwe will be unable to change our own alignment§!\n§Mwe will lose access to the §TChange Alignment§M cb§!\n§Mwe will be unable to take uncored states from realms with the same alignment -- if we are of §PNeutral Alignment§!§M, we can still take non-core states from other Neutral realms§!\n\nFinally, the following "tracks" will specifically affect the $COUNTRY$|;x
+EVTDESC91006;Here are the affects of railroading|\n\n§M We will be unable to hold alliances with or sphere realms of the opposite alignment (§POpportunistic§! realms will be able to ally and sphere all realms)\n§Mwe will be unable to change our own alignment§!\n§Mwe will be unable to take uncored states from realms with the same alignment -- if we are of §POpportunistic§!§M, we can still take non-core states from other Opportunistic realms§!\n\nFinally, the following "tracks" will specifically affect the $COUNTRY$|;x
 ###############################;x }
 ##### COLONIZATION EVENTS #####;x {
 ###############################;x

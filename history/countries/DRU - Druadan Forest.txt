@@ -3,14 +3,14 @@ capital = 11
 primary_culture = druedain
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
-ruling_party = generic_high_nobility
+ruling_party = generic_druedain_nobles
 
 upper_house = {
-	high_nobility = 100
+	druedain_nobles = 100
 }
 
 slavery = no_slavery

@@ -2,8 +2,22 @@
 # Audax Validator "!" Ignore_1009
 
 # Oathbreakers' Decisions {
+#	Starting Decisions (Unseen)
 #	Expansion
 #	Haunting }
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	OBS_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_kings_of_the_dead_active
+			
+			set_country_flag = OBS_content
+		}
+	}
+}
 
 # Expansion
 political_decisions = {

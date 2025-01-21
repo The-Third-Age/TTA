@@ -13,17 +13,16 @@ oob = "RAD_oob.txt"
 
 prestige = 5
 
-ruling_party = generic_high_nobility
+ruling_party = RAD_radagast
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	lords_of_rhosgobel = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed
+
+decision = RAD_start_decision
 
 schools = traditional_academic
 

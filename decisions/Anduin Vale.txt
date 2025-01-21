@@ -1,0 +1,25 @@
+# Anduin Vale Decisions: {
+#	Starting Decisions (Unseen)
+#	}
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	BEO_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_house_of_beorn_active
+			
+			set_country_flag = BEO_content
+		}
+	}
+	RAD_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_lords_of_rhosgobel_active
+			
+			set_country_flag = RAD_content
+		}
+	}
+}

@@ -303,29 +303,13 @@ country_event = {
 	picture = administration
 	
 	trigger = {
-		government = fiefdom
-		NOT = {
-			vassal_of = GON
-			vassal_of = RUN
-		}
+		always = no
 	}
 	
 	option = {
 		name = "Our new King!"
 		
 		government = monarchy
-	}
-	
-	option = {
-		name = "Our new Prince!"
-		
-		government = principality
-	}
-	
-	option = {
-		name = "Our new Lord!"
-		
-		government = lord_monarchy
 	}
 }
 
@@ -465,15 +449,11 @@ country_event = {
 	picture = administration
 	
 	trigger = {
-		government = sauron_dictatorship
-		NOT = { tag = MOR }
-		NOT = { vassal_of = MOR }
+		always = no
 	}
 	
 	option = {
 		name = "Our new Lord!"
-		
-		government = dark_realm
 	}
 }
 
@@ -489,189 +469,6 @@ country_event = {
 	
 	option = {
 		name = "Fix it please"
-		
-		# Democracies
-		any_neighbor_country = {
-			limit = {
-				OR = {
-					AND = {
-						is_culture_group = hobbits
-						OR = {
-							government = democracy
-							government = northmen_democracy
-						}
-					}
-					AND = {
-						is_culture_group = northmen
-						is_culture_group = gramavuld_northmen
-						OR = {
-							government = democracy
-							government = hobbit_realm
-						}
-					}
-					AND = {
-						NOT = { is_culture_group = hobbits }
-						NOT = { is_culture_group = northmen }
-						NOT = { is_culture_group = gramavuld_northmen }
-						OR = {
-							government = hobbit_realm
-							government = northmen_democracy
-						}
-					}
-				}
-			}
-			country_event = 100101
-		}
-		
-		# Monarchies
-		any_neighbor_country = {
-			limit = {
-				OR = {
-					AND = {
-						tag = GON
-						OR = {
-							government = fiefdom
-							government = galadhrim_monarchy
-						}
-					}
-					AND = {
-						vassal_of = GON
-						NOT = { nationalvalue = saruman } # Saruman should always have Wizard's Realm from the start
-						NOT = { government = fiefdom } # This is fine as all puppets of Gondor should be a fiefdom
-					}
-					AND = {
-						tag = LOR
-						NOT = { vassal_of = GON }
-						OR = {
-							government = monarchy
-							government = principality
-							government = lord_monarchy
-							government = stewardship
-							government = fiefdom
-						}
-					}
-					AND = {
-						NOT = { tag = GON }
-						NOT = { vassal_of = GON }
-						NOT = { tag = LOR }
-						OR = {
-							government = stewardship
-							government = fiefdom
-							government = galadhrim_monarchy
-						}
-					}
-				}
-			}
-			country_event = 100102
-		}
-		
-		# Dictatorships
-		any_neighbor_country = {
-			limit = {
-				OR = {
-					AND = {
-						nationalvalue = sauron
-						NOT = { government = sauron_dictatorship } # This is fine as any realm that has Sauron as their leader should be considered as part of Sauron's Domain
-					}
-					AND = {
-						is_vassal = yes
-						overlord = { nationalvalue = sauron }
-						NOT = { government = sauron_puppet }
-						NOT = { government = nazgul_dictatorship } # This is fine as any realm that is a puppet of Sauron should either be Sauron's Domain or a Nazgul Dictatorship
-					}
-					AND = {
-						OR = {
-							nationalvalue = khamul
-							nationalvalue = witch_king_of_angmar
-							AND = {
-								is_vassal = yes
-								overlord = { nationalvalue = khamul }
-							}
-						}
-						NOT = { government = nazgul_dictatorship } # This is fine as any realm that has a Nazgul as their leader or their overlord has a Nazgul as their leader should be considered a Nazgul Realm
-					}
-					AND = {
-						OR = {
-							nationalvalue = saruman
-							nationalvalue = radagast
-							AND = {
-								is_vassal = yes
-								overlord = { nationalvalue = saruman }
-							}
-							AND = {
-								is_vassal = yes
-								overlord = { nationalvalue = radagast }
-							}
-						}
-						NOT = { government = istari_kingdom } # This is fine as any realm that has a wizard as their leader, or any realm whose overlord has a wizard as their leader should be considered an Istari Kingdom
-					}
-					AND = {
-						NOT = { nationalvalue = sauron }
-						NOT = { nationalvalue = khamul }
-						NOT = { nationalvalue = witch_king_of_angmar }
-						NOT = { nationalvalue = saruman }
-						NOT = { nationalvalue = radagast }
-						OR = {
-							is_vassal = no
-							AND = {
-								is_vassal = yes
-								NOT = { overlord = { nationalvalue = sauron } }
-								NOT = { overlord = { nationalvalue = khamul } }
-								NOT = { overlord = { nationalvalue = witch_king_of_angmar } }
-								NOT = { overlord = { nationalvalue = saruman } }
-								NOT = { overlord = { nationalvalue = radagast } }
-							}
-						}
-						OR = {
-							government = sauron_dictatorship
-							government = nazgul_dictatorship
-							government = istari_kingdom
-						}
-					}
-				}
-			}
-			country_event = 100103
-		}
-		
-		# Tribes
-		any_neighbor_country = {
-			limit = {
-				OR = {
-					AND = {
-						OR = {
-							accepted_culture = orc_culture
-							accepted_culture = troll_culture
-						}
-						OR = {
-							government = man_tribe
-							government = northmen_tribe
-						}
-					}
-					AND = {
-						OR = {
-							is_culture_group = northmen
-							is_culture_group = gramavuld_northmen
-						}
-						OR = {
-							government = goblin_tribe
-							government = man_tribe
-						}
-					}
-					AND = {
-						NOT = { accepted_culture = orc_culture }
-						NOT = { accepted_culture = troll_culture }
-						NOT = { is_culture_group = northmen }
-						NOT = { is_culture_group = gramavuld_northmen }
-						OR = {
-							government = goblin_tribe
-							government = northmen_tribe
-						}
-					}
-				}
-			}
-			country_event = 100104
-		}
-		country_event = { id = 100100 days = 30 }
 	}
 }
 
@@ -685,53 +482,6 @@ country_event = {
 	
 	option = {
 		name = "Good"
-		
-		# Hobbits
-		random_owned = {
-			limit = {
-				owner = {
-					is_culture_group = hobbits
-					OR = {
-						government = democracy
-						government = northmen_democracy
-					}
-				}
-			}
-			owner = { government = hobbit_realm }
-		}
-		
-		# Northmen
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						is_culture_group = northmen
-						is_culture_group = gramavuld_northmen
-					}
-					OR = {
-						government = democracy
-						government = hobbit_realm
-					}
-				}
-			}
-			owner = { government = northmen_democracy }
-		}
-		
-		# Everyone else
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { is_culture_group = hobbits }
-					NOT = { is_culture_group = northmen }
-					NOT = { is_culture_group = gramavuld_northmen }
-					OR = {
-						government = hobbit_realm
-						government = northmen_democracy
-					}
-				}
-			}
-			owner = { government = democracy }
-		}
 	}
 }
 
@@ -745,87 +495,6 @@ country_event = {
 	
 	option = {
 		name = "Good"
-		
-		# Gondor [Stewards]
-		random_owned = {
-			limit = {
-				owner = {
-					tag = GON
-					OR = {
-						government = fiefdom
-						government = galadhrim_monarchy
-					}
-					NOT = { nationalvalue = aragorn_elessar }
-					NOT = { has_global_flag = GON_steward_declared_king }
-				}
-			}
-			owner = { government = stewardship }
-		}
-		
-		# Gondor [King]
-		random_owned = {
-			limit = {
-				owner = {
-					tag = GON
-					OR = {
-						government = fiefdom
-						government = galadhrim_monarchy
-					}
-					OR = {
-						nationalvalue = aragorn_elessar
-						has_global_flag = GON_steward_declared_king
-					}
-				}
-			}
-			owner = { government = monarchy }
-		}
-		
-		# Puppets of Gondor
-		random_owned = {
-			limit = {
-				owner = {
-					vassal_of = GON
-					NOT = { nationalvalue = saruman } # Saruman should always have Wizard's Realm from the start
-					NOT = { government = fiefdom } # This is fine as all puppets of Gondor should be a fiefdom
-				}
-			}
-			owner = { government = fiefdom }
-		}
-		
-		# Lothlorien
-		random_owned = {
-			limit = {
-				owner = {
-					tag = LOR
-					NOT = { vassal_of = GON }
-					OR = {
-						government = monarchy
-						government = principality
-						government = lord_monarchy
-						government = stewardship
-						government = fiefdom
-					}
-				}
-			}
-			owner = { government = galadhrim_monarchy }
-		}
-		
-		# Everyone else
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { tag = GON }
-					NOT = { vassal_of = GON }
-					NOT = { tag = LOR }
-					OR = {
-						government = stewardship
-						government = fiefdom
-						government = galadhrim_monarchy
-					}
-				}
-			}
-			owner = { country_event = 70008 }
-		}
 	}
 }
 
@@ -857,29 +526,10 @@ country_event = {
 				owner = {
 					is_vassal = yes
 					overlord = { nationalvalue = sauron }
-					NOT = { government = sauron_puppet }
-					NOT = { government = nazgul_dictatorship } # This is fine as any realm that is a puppet of Sauron should either be Sauron's Domain or a Nazgul Dictatorship
+					NOT = { government = dominion_1 }
 				}
 			}
-			owner = { government = sauron_puppet }
-		}
-		
-		# Nazgul Realms
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						nationalvalue = khamul
-						nationalvalue = witch_king_of_angmar
-						AND = {
-							is_vassal = yes
-							overlord = { nationalvalue = khamul }
-						}
-					}
-					NOT = { government = nazgul_dictatorship } # This is fine as any realm that has a Nazgul as their leader or their overlord has Sauron as their leader should be considered a Nazgul Realm
-				}
-			}
-			owner = { government = nazgul_dictatorship }
+			owner = { government = dominion_1 }
 		}
 		
 		# Wizard Realms
@@ -903,36 +553,6 @@ country_event = {
 			}
 			owner = { government = istari_kingdom }
 		}
-		
-		# Everyone else
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { nationalvalue = sauron }
-					NOT = { nationalvalue = khamul }
-					NOT = { nationalvalue = witch_king_of_angmar }
-					NOT = { nationalvalue = saruman }
-					NOT = { nationalvalue = radagast }
-					OR = {
-						is_vassal = no
-						AND = {
-							is_vassal = yes
-							NOT = { overlord = { nationalvalue = sauron } }
-							NOT = { overlord = { nationalvalue = khamul } }
-							NOT = { overlord = { nationalvalue = witch_king_of_angmar } }
-							NOT = { overlord = { nationalvalue = saruman } }
-							NOT = { overlord = { nationalvalue = radagast } }
-						}
-					}
-					OR = {
-						government = sauron_dictatorship
-						government = nazgul_dictatorship
-						government = istari_kingdom
-					}
-				}
-			}
-			owner = { government = dark_realm }
-		}
 	}
 }
 
@@ -946,58 +566,6 @@ country_event = {
 	
 	option = {
 		name = "Good"
-		
-		# Orc Tribes
-		
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						accepted_culture = orc_culture
-						accepted_culture = troll_culture
-					}
-					OR = {
-						government = man_tribe
-						government = northmen_tribe
-					}
-				}
-			}
-			owner = { government = goblin_tribe }
-		}
-		
-		# Northmen Tribes
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						is_culture_group = northmen
-						is_culture_group = gramavuld_northmen
-					}
-					OR = {
-						government = goblin_tribe
-						government = man_tribe
-					}
-				}
-			}
-			owner = { government = northmen_tribe }
-		}
-		
-		# Everyone else
-		random_owned = {
-			limit = {
-				owner = {
-					NOT = { accepted_culture = orc_culture }
-					NOT = { accepted_culture = troll_culture }
-					NOT = { is_culture_group = northmen }
-					NOT = { is_culture_group = gramavuld_northmen }
-					OR = {
-						government = goblin_tribe
-						government = northmen_tribe
-					}
-				}
-			}
-			owner = { government = man_tribe }
-		}
 	}
 }
 # }

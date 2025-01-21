@@ -21,25 +21,14 @@ nationalist_rebels = {
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
 		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
 		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 	
 	defection = culture			# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -212,32 +201,20 @@ patriot_rebels = {
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
 		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
 		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
 	independence = none
 	defect_delay = 3		# Can spontaneously declare independence after X months (earliest)
 
-	ideology = loremaster
 	allow_all_cultures = no
 	allow_all_religions = yes
 	allow_all_ideologies = yes
@@ -418,25 +395,14 @@ slave_revolt = {
 	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
 		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 
 	defection = none				# Will defect to the "best" alternative.
@@ -575,25 +541,14 @@ democratic_rebels = {
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
 		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
-		monarchy = democracy
-		monarchy_2 = democracy
-		principality = democracy
-		lord_monarchy = democracy
-		stewardship = democracy
-		fiefdom = democracy
-		galadhrim_monarchy = democracy
-		dark_realm = democracy
-		sauron_dictatorship = democracy
-		sauron_puppet = democracy
-		nazgul_dictatorship = democracy
-		istari_kingdom = democracy
-		goblin_tribe = democracy
-		man_tribe = democracy
-		northmen_tribe = northmen_democracy
-		cosmetic_1_govt = democracy
-		cosmetic_2_govt = democracy
+		merchant_republic = democracy
+		monarchy = merchant_republic
+		monarchy_2 = merchant_republic
+		tribal = merchant_republic
+		sauron_dictatorship = merchant_republic
+		istari_kingdom = merchant_republic
+		dominion_1 = merchant_republic
+		dominion_2 = merchant_republic
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -644,20 +599,11 @@ democratic_rebels = {
 				type = slaves
 				country = { civilized = no }
 				country = { vote_franschise = universal_voting }
-				pop_majority_ideology = servants
 			}
 		}
 		modifier = {
 			factor = 0.75
 			country = { good_evil_alignment = evil_alignment }
-		}
-		modifier = {
-			factor = 1.5
-			pop_majority_ideology = loremaster
-		}
-		modifier = {
-			factor = 1.25
-			pop_majority_ideology = burgher
 		}
 		modifier = {
 			factor = 1.015
@@ -670,10 +616,6 @@ democratic_rebels = {
 		modifier = {
 			factor = 1.015
 			political_reform_want = 0.3
-		}
-		modifier = {
-			factor = 0.75
-			country = { has_country_flag = attempting_to_democratic }
 		}
 	}
 
@@ -739,25 +681,14 @@ noble_rebels = {
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
 		democracy = monarchy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		merchant_republic = monarchy
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
 		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -807,9 +738,6 @@ noble_rebels = {
 			OR = {
 				type = slaves
 				country = { civilized = no }
-				pop_majority_ideology = servants
-				pop_majority_ideology = loremaster
-				pop_majority_ideology = burgher
 				strata = poor
 				AND = {
 					country = { nobility_autonomy = large_noble_autonomy }
@@ -818,14 +746,6 @@ noble_rebels = {
 					country = { knighting_rights = allowed_knighting_rights }
 				}
 			}
-		}
-		modifier = {
-			factor = 1.5
-			pop_majority_ideology = high_nobility
-		}
-		modifier = {
-			factor = 1.25
-			pop_majority_ideology = low_nobility
 		}
 		modifier = {
 			factor = 1.2
@@ -931,25 +851,14 @@ serf_rebels = {
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
 		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
 		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -1000,9 +909,6 @@ serf_rebels = {
 				NOT = { type = labourers }
 				country = { civilized = no }
 				country = { serfdom = enforced_serfdom }
-				pop_majority_ideology = servants
-				pop_majority_ideology = loremaster
-				pop_majority_ideology = burgher
 				strata = poor
 			}
 		}
@@ -1086,25 +992,14 @@ good_rebels = {
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
 		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = monarchy
+		tribal = tribal
 		sauron_dictatorship = monarchy
-		sauron_puppet = monarchy
-		nazgul_dictatorship = monarchy
 		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -1151,10 +1046,7 @@ good_rebels = {
 		
 		modifier = {
 			factor = 0
-			OR = {
-				pop_majority_ideology = servants
-				country = { good_evil_alignment = good_alignment }
-			}
+			country = { good_evil_alignment = good_alignment }
 		}
 		modifier = {
 			factor = 1.1
@@ -1177,43 +1069,43 @@ good_rebels = {
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 10 }
+			country = { good_alignment = 10 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 20 }
+			country = { good_alignment = 20 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 30 }
+			country = { good_alignment = 30 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 40 }
+			country = { good_alignment = 40 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 50 }
+			country = { good_alignment = 50 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 60 }
+			country = { good_alignment = 60 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 70 }
+			country = { good_alignment = 70 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 80 }
+			country = { good_alignment = 80 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 90 }
+			country = { good_alignment = 90 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { good_alignment_fake = 99 }
+			country = { good_alignment = 99 }
 		}
 	}
 
@@ -1278,26 +1170,15 @@ evil_rebels = {
 	
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
-		democracy = dark_realm
-		hobbit_realm = dark_realm
-		northmen_democracy = dark_realm
-		monarchy = dark_realm
-		monarchy_2 = dark_realm
-		principality = dark_realm
-		lord_monarchy = dark_realm
-		stewardship = dark_realm
-		fiefdom = dark_realm
-		galadhrim_monarchy = dark_realm
-		dark_realm = dark_realm
+		democracy = democracy
+		merchant_republic = merchant_republic
+		monarchy = monarchy
+		monarchy_2 = monarchy_2
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
 		istari_kingdom = istari_kingdom
-		goblin_tribe = dark_realm
-		man_tribe = dark_realm
-		northmen_tribe = dark_realm
-		cosmetic_1_govt = dark_realm
-		cosmetic_2_govt = dark_realm
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -1344,10 +1225,7 @@ evil_rebels = {
 		
 		modifier = {
 			factor = 0
-			OR = {
-				pop_majority_ideology = servants
-				country = { good_evil_alignment = evil_alignment }
-			}
+			country = { good_evil_alignment = evil_alignment }
 		}
 		modifier = {
 			factor = 1.1
@@ -1370,43 +1248,43 @@ evil_rebels = {
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 10 }
+			country = { evil_alignment = 10 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 20 }
+			country = { evil_alignment = 20 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 30 }
+			country = { evil_alignment = 30 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 40 }
+			country = { evil_alignment = 40 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 50 }
+			country = { evil_alignment = 50 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 60 }
+			country = { evil_alignment = 60 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 70 }
+			country = { evil_alignment = 70 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 80 }
+			country = { evil_alignment = 80 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 90 }
+			country = { evil_alignment = 90 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { evil_alignment_fake = 99 }
+			country = { evil_alignment = 99 }
 		}
 	}
 
@@ -1472,25 +1350,14 @@ neutral_rebels = {
 	# <this is the governement in the country> = <this is what the rebels want>
 	government = {
 		democracy = democracy
-		hobbit_realm = hobbit_realm
-		northmen_democracy = northmen_democracy
+		merchant_republic = merchant_republic
 		monarchy = monarchy
 		monarchy_2 = monarchy_2
-		principality = principality
-		lord_monarchy = lord_monarchy
-		stewardship = stewardship
-		fiefdom = fiefdom
-		galadhrim_monarchy = galadhrim_monarchy
-		dark_realm = dark_realm
+		tribal = tribal
 		sauron_dictatorship = sauron_dictatorship
-		sauron_puppet = sauron_puppet
-		nazgul_dictatorship = nazgul_dictatorship
 		istari_kingdom = istari_kingdom
-		goblin_tribe = goblin_tribe
-		man_tribe = man_tribe
-		northmen_tribe = northmen_tribe
-		cosmetic_1_govt = cosmetic_1_govt
-		cosmetic_2_govt = cosmetic_2_govt
+		dominion_1 = dominion_1
+		dominion_2 = dominion_2
 	}
 	
 	defection = none				# Will defect to the "best" alternative.
@@ -1537,10 +1404,7 @@ neutral_rebels = {
 		
 		modifier = {
 			factor = 0
-			OR = {
-				pop_majority_ideology = servants
-				country = { good_evil_alignment = neutral_alignment }
-			}
+			country = { good_evil_alignment = neutral_alignment }
 		}
 		modifier = {
 			factor = 1.1
@@ -1563,43 +1427,43 @@ neutral_rebels = {
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 10 }
+			country = { neutral_alignment = 10 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 20 }
+			country = { neutral_alignment = 20 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 30 }
+			country = { neutral_alignment = 30 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 40 }
+			country = { neutral_alignment = 40 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 50 }
+			country = { neutral_alignment = 50 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 60 }
+			country = { neutral_alignment = 60 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 70 }
+			country = { neutral_alignment = 70 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 80 }
+			country = { neutral_alignment = 80 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 90 }
+			country = { neutral_alignment = 90 }
 		}
 		modifier = {
 			factor = 1.1
-			country = { neutral_alignment_fake = 99 }
+			country = { neutral_alignment = 99 }
 		}
 	}
 

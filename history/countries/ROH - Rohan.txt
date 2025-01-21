@@ -13,19 +13,19 @@ oob = "ROH_oob.txt"
 
 prestige = 45
 
-ruling_party = generic_high_nobility
+ruling_party = ROH_thengel
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	house_of_eorl = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed
 
 schools = traditional_academic
+
+decision = ROH_start_decision
+
 #technologies
 merchant_marine_1 = 1
 light_ships_1 = 1

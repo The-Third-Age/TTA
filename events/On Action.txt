@@ -2467,16 +2467,4 @@ country_event = {
 		
 		government = monarchy
 	}
-	
-	option = {
-		name = "Prince"
-		
-		government = principality
-	}
-	
-	option = {
-		name = "Lord"
-		
-		government = lord_monarchy
-	}
 }

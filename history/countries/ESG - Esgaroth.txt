@@ -3,15 +3,15 @@ capital = 654
 primary_culture = barding
 culture = men_culture
 religion = men
-government = northmen_democracy
+government = democracy
 nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
 
-ruling_party = DAL_burgher
+ruling_party = generic_barding_nobles
 
 upper_house = {
-	high_nobility = 100
+	barding_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

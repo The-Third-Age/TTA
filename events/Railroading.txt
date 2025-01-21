@@ -48,41 +48,7 @@ country_event = {
 	}
 }
 
-# Railroading Confusion
-country_event = {
-	id = 91001
-	title = "Railroading Confusion"
-	desc = "EVTDESC91001"
-	picture = "railroading"
-	
-	trigger = {
-		tag = FOR
-		has_global_flag = railroading_enabled
-		has_global_flag = railroading_disabled
-	}
-	
-	option = {
-		name = "Why?"
-		
-		random_owned = {
-			limit = {
-				owner = { has_global_flag = running_railroading_cleanup_loop }
-			}
-			owner = {
-				clr_global_flag = railroading_disabled
-			}
-		}
-		
-		random_owned = {
-			limit = {
-				owner = { NOT = { has_global_flag = running_railroading_cleanup_loop } }
-			}
-			owner = {
-				clr_global_flag = railroading_enabled
-			}
-		}
-	}
-}
+# 91001 removed -- was a stupid cleanup that didn't need to exist
 
 # Railroading Cleanup
 country_event = {
@@ -96,6 +62,7 @@ country_event = {
 	option = {
 		name = "Fix things please"
 		
+		# Break alliances between good aligned and evil aligned realms
 		any_country = {
 			limit = {
 				ai = yes
@@ -107,11 +74,91 @@ country_event = {
 			country_event = 91003 # Break Alliances
 		}
 		
+		# Break sphere relationships between good aligned and evil aligned realms
+		any_country = {
+			limit = {
+				exists = yes
+				ai = yes
+				part_of_sphere = yes
+				OR = {
+					AND = {
+						good_evil_alignment = good_alignment
+						sphere_owner = { good_evil_alignment = evil_alignment }
+					}
+					AND = {
+						good_evil_alignment = evil_alignment
+						sphere_owner = { good_evil_alignment = good_alignment }
+					}
+				}
+			}
+			country_event = 2504
+		}
+		
 		country_event = 91004 # Railroaded Alliances
 		
-		country_event = { id = 91002 days = 30 } # Run once every 30 days
-		
-		set_global_flag = running_railroading_cleanup_loop
+		# Refire the cleanup event next month {
+		random_owned = {
+			limit = {
+				OR = {
+					# January
+					NOT = { month = 1 }
+					AND = { # March
+						month = 2
+						NOT = { month = 3 }
+					}
+					AND = { # May
+						month = 4
+						NOT = { month = 5 }
+					}
+					AND = { # July
+						month = 6
+						NOT = { month = 7 }
+					}
+					AND = { # August
+						month = 7
+						NOT = { month = 8 }
+					}
+					AND = { # October
+						month = 9
+						NOT = { month = 10 }
+					}
+					# December
+					month = 11
+				}
+			}
+			owner = { country_event = { id = 91002 days = 31 } }
+		}
+		random_owned = {
+			limit = { # February
+				month = 1
+				NOT = { month = 2 }
+			}
+			owner = { country_event = { id = 91002 days = 28 } }
+		}
+		random_owned = {
+			limit = {
+				OR = {
+					AND = { # April
+						month = 3
+						NOT = { month = 4 }
+					}
+					AND = { # June
+						month = 5
+						NOT = { month = 6 }
+					}
+					AND = { # September
+						month = 8
+						NOT = { month = 9 }
+					}
+					AND = { # November
+						month = 10
+						NOT = { month = 11 }
+					}
+				}
+			}
+			owner = { country_event = { id = 91002 days = 30 } }
+		}
+		# }
 	}
 }
 

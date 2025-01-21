@@ -1697,7 +1697,7 @@ remove_claim_LOS_1158_loc;§WWe will lose claims over §!§YTalvi-mûri§!§I;x
 claim_status_owns_LIN_929_loc;§YHarlindon§!: §GOwned§!§I;x
 DAL_brand_i_age_loc;§TBrand I§! has not yet been born§I;x
 add_claim_ANG_988_loc;§WWe will gain claims over §!§YTulban§!§I;x
-FFN_sphere_annex_description_loc;§GAny good-or-neutral-aligned ai Hobbit, Northmen, Anduinmen or Elven realm with a capital in Rhovanion that never joined the Alliance of Dwarves and Men will join us if we sphere them!§!§I;x
+FFN_sphere_annex_description_loc;§GAny Anti-Sauron or Opportunistic ai Hobbit, Northmen, Anduinmen or Elven realm with a capital in Rhovanion that never joined the Alliance of Dwarves and Men will join us if we sphere them!§!§I;x
 triggered_event_alliance_of_dwarves_and_men_specific_flavor_northan_core_dispute_loc;get the 'Alliance of Dwarves and Men - Northmen Core Dispute' event.§I;x
 add_claim_HAR_322_loc;§WWe will gain claims over §!§YHaradwaith§!§I;x
 claim_status_doesnt_own_WOO_709_loc;§YWoodman's Realm§!: §RUnowned§!§I;x
@@ -1763,7 +1763,7 @@ remove_claim_DAL_654_loc;§WWe will lose claims over §!§YNan Annen§!§I;x
 claim_status_doesnt_own_MOR_408_loc;§YEphel Dûath§!: §RUnowned§!§I;x
 remove_claim_STO_757_loc;§WWe will lose claims over §!§YGladden Fields§!§I;x
 claim_status_doesnt_own_DND_1269_loc;§YEn Eredoriath§!: §RUnowned§!§I;x
-settings_borders_alignment_loc;Migration between realms of opposite alignments is disabled. Realms of §PNeutral Alignment§! can receive migrants from any other realm, and they can have emigration to any other realm.§I;x
+settings_borders_alignment_loc;Migration between realms of opposite alignments is disabled. Realms of §POpportunistic§! can receive migrants from any other realm, and they can have emigration to any other realm.§I;x
 claim_status_doesnt_own_BLU_947_loc;§YVale of Thrain§!: §RUnowned§!§I;x
 remove_claim_GON_27_loc;§WWe will lose claims over §!§YLossarnach§!§I;x
 triggered_event_alliance_of_dwarves_and_men_country_selection_loc;§!get the 'Alliance of Dwarves and Men - Realm Selection' event.§I;x
@@ -2600,7 +2600,7 @@ claim_status_owns_LIN_111_loc;§YForlindon§!: §GOwned§!§I;x
 remove_claim_BRE_1014_loc;§WWe will lose claims over §!§YNan Turnath§!§I;x
 remove_claim_MOR_418_loc;§WWe will lose claims over §!§YNorthern Nurza-Shukh§!§I;x
 claim_status_owns_RHO_476_loc;§YTalath Harroch§!: §GOwned§!§I;x
-FFN_join_alliance_dwarves_men_loc;If the pass the conditions on this decision (ignoring the always false), we will almost be eligible to be invited to the Alliance of Dwarves and Men -- we also need to be allied to realm that is currently in the alliance. From here, the ai will always attempt to send an invite, however, §Rit is possible for the rest of the alliance to reject the invite proposal§!.\n\nThe full list of conditions is:\nWe are §GGood Aligned§! or §PNeutral Aligned§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion§I;x
+FFN_join_alliance_dwarves_men_loc;If the pass the conditions on this decision (ignoring the always false), we will almost be eligible to be invited to the Alliance of Dwarves and Men -- we also need to be allied to realm that is currently in the alliance. From here, the ai will always attempt to send an invite, however, §Rit is possible for the rest of the alliance to reject the invite proposal§!.\n\nThe full list of conditions is:\nWe are §GAnti-Sauron§! or §POpportunistic§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion§I;x
 triggered_event_alliance_of_dwarves_and_men_core_dispute_loc;get the 'Alliance of Dwarves and Men - Core Dispute' event.§I;x
 add_claim_RHU_604_loc;§WWe will gain claims over §!§YAgasha Dag§!§I;x
 claim_status_owns_GON_81_loc;§YTarnost§!: §GOwned§!§I;x

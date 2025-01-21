@@ -3,78 +3,93 @@ color = { 244 241 201 }
 sauron_dictatorship = { 179 125 115 }
 
 party = {
-	name = "generic_servants"
+	name = "generic_dunedain_nobles"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = servants
+	ideology = dunedain_nobles
 	
-	guild_autonomy_policy = controlled_guilds
-	racial_policy = all_peoples
+	trade_policy = protectionism
+	tax_policy = interventionism
 	language_policy = regional_autonomy
 	diplomatic_policy = reactive
 	war_policy = jingoism
-	good_evil_alignment_fake = no_alignment
+	good_evil_alignment = good_alignment
 }
 
 party = {
-	name = "ITH_high_nobility"
+	name = "ITH_nobles_of_ithilien"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = high_nobility
+	ideology = gondorian_nobles
 	
-	guild_autonomy_policy = controlled_guilds
-	racial_policy = alignment_acceptance
-	language_policy = official_only
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
 	diplomatic_policy = reactive
 	war_policy = jingoism
-	good_evil_alignment_fake = no_alignment
+	good_evil_alignment = good_alignment
 }
 
 party = {
-	name = "ITH_low_nobility"
+	name = "generic_amrothian_nobles"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = low_nobility
+	ideology = amrothian_nobles
 	
-	guild_autonomy_policy = oversight_guilds
-	racial_policy = alignment_acceptance
-	language_policy = minority_toleration
+	trade_policy = protectionism
+	tax_policy = interventionism
+	language_policy = regional_autonomy
 	diplomatic_policy = reactive
-	war_policy = pro_military
-	good_evil_alignment_fake = no_alignment
+	war_policy = jingoism
+	good_evil_alignment = good_alignment
 }
 
 party = {
-	name = "generic_burgher"
+	name = "generic_servants_good"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = burgher
+	ideology = servants_good
 	
-	guild_autonomy_policy = independent_guilds
-	racial_policy = all_peoples
-	language_policy = regional_autonomy
-	diplomatic_policy = interactive
-	war_policy = anti_military
-	good_evil_alignment_fake = no_alignment
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
+	good_evil_alignment = good_alignment
 }
 
 party = {
-	name = "generic_loremaster"
+	name = "generic_servants_neutral"
 	start_date = 2954.1.1
 	end_date = 4000.1.1
 	
-	ideology = loremaster
+	ideology = servants_neutral
 	
-	guild_autonomy_policy = oversight_guilds
-	racial_policy = all_peoples
-	language_policy = regional_autonomy
-	diplomatic_policy = proactive
-	war_policy = pacifism
-	good_evil_alignment_fake = no_alignment
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
+	good_evil_alignment = neutral_alignment
+}
+
+party = {
+	name = "generic_servants_evil"
+	start_date = 2954.1.1
+	end_date = 4000.1.1
+	
+	ideology = servants_evil
+	
+	trade_policy = vassal_protectionism
+	tax_policy = vassal_interventionism
+	language_policy = vassal_regional_autonomy
+	diplomatic_policy = vassal_reactive
+	war_policy = vassal_pro_military
+	good_evil_alignment = evil_alignment
 }
 
 unit_names = {

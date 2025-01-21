@@ -1271,6 +1271,7 @@ country_event = {
 			country_event = 2901
 		}
 		
+		# Ends wars where one side no longer exists
 		any_country = {
 			limit = {
 				exists = no
@@ -1280,6 +1281,7 @@ country_event = {
 			country_event = 99005
 		}
 		
+		# Ends vassal relationships if the overlord no longer exists
 		any_country = {
 			limit = {
 				exists = yes
@@ -1288,6 +1290,57 @@ country_event = {
 			}
 			country_event = 99006
 		}
+		
+		# Leader alignment/accepted culture mismatch {
+		any_country = {
+			limit = {
+				good_evil_alignment = good_alignment
+				OR = {
+					NOT = { accepted_culture = good_culture }
+					accepted_culture = neutral_culture
+					accepted_culture = evil_culture
+				}
+			}
+			add_accepted_culture = good_culture
+			remove_accepted_culture = neutral_culture
+			remove_accepted_culture = evil_culture
+		}
+		any_country = {
+			limit = {
+				good_evil_alignment = neutral_alignment
+				OR = {
+					accepted_culture = good_culture
+					NOT = { accepted_culture = neutral_culture }
+					accepted_culture = evil_culture
+				}
+			}
+			remove_accepted_culture = good_culture
+			add_accepted_culture = neutral_culture
+			remove_accepted_culture = evil_culture
+		}
+		any_country = {
+			limit = {
+				good_evil_alignment = evil_alignment
+				OR = {
+					accepted_culture = good_culture
+					accepted_culture = neutral_culture
+					NOT = { accepted_culture = evil_culture }
+				}
+			}
+			remove_accepted_culture = good_culture
+			remove_accepted_culture = neutral_culture
+			add_accepted_culture = evil_culture
+		}
+		# }
+		
+		# Realm attempting to do stuff with the ai {
+		any_country = {
+			leave_alliance = FOR
+			relation = { who = FOR value = -400 }
+			end_war = FOR
+		}
+		any_greater_power = { diplomatic_influence = { who = FOR value = -400 } }
+		# }
 		
 		# Refire the cleanup event next month {
 		random_owned = {
@@ -1377,11 +1430,7 @@ country_event = {
 					nationalvalue = bard_ii
 					nationalvalue = regency
 				}
-				OR = {
-					government = democracy
-					government = hobbit_realm
-					government = northmen_democracy
-				}
+				government = democracy
 			}
 			
 			country_event = 3508

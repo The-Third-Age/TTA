@@ -52,10 +52,13 @@ promote_to = {
 }
 
 ideologies = {
-	servants = {
+	servants_good = {
 		factor = 1
 	}
 }
 
 issues = {
+	good_alignment = {
+		factor = 1
+	}
 }

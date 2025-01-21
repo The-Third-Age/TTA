@@ -1130,7 +1130,7 @@ guiTypes = {
 				}
 			}
 			windowType = {
-				name = "good_evil_alignment"
+				name = "guild_autonomy_policy"
 				backGround =""
 				position = { x = 674 y = 508 }
 				size = { x=148 y=58 }

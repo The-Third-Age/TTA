@@ -40,26 +40,16 @@ issues = {
 	#####################
 	##### ALIGNMENT #####
 	#####################
-	good_alignment_fake = {
-		factor = 1
+	good_alignment = {
+		factor = 5
 		modifier = {
-			factor = 1.1
-			location = { is_core = THIS }
-			country = { good_evil_alignment = good_alignment }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.25
-			country = { good_evil_alignment = good_alignment }
+			factor = 1.25
+			NOT = { life_needs = 1 }
+			NOT = { country = { good_evil_alignment = good_alignment } }
 		}
 		modifier = {
 			factor = 1.1
 			everyday_needs = 0.5
-			country = { good_evil_alignment = good_alignment }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.75
 			country = { good_evil_alignment = good_alignment }
 		}
 		modifier = {
@@ -69,68 +59,73 @@ issues = {
 		}
 		modifier = {
 			factor = 1.1
-			luxury_needs = 0.25
-			country = { good_evil_alignment = good_alignment }
-		}
-		modifier = {
-			factor = 1.1
 			luxury_needs = 0.5
 			country = { good_evil_alignment = good_alignment }
 		}
 		modifier = {
 			factor = 1.1
-			luxury_needs = 0.75
-			country = { good_evil_alignment = good_alignment }
-		}
-		modifier = {
-			factor = 1.1
-			luxury_needs = 1
-			country = { good_evil_alignment = good_alignment }
-		}
-		modifier = {
-			factor = 1.25
 			country = { any_neighbor_country = { good_evil_alignment = good_alignment } }
 		}
 		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_good }
+			factor = 1.1
+			country = { sphere_owner = { good_evil_alignment = good_alignment } }
 		}
 		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_neutral }
-				country = { has_country_flag = attempting_to_evil }
+			factor = 2
+			country = {
+				is_vassal = yes
+				overlord = { good_evil_alignment = good_alignment }
 			}
 		}
 		modifier = {
 			factor = 1.1
-			has_pop_religion = elven
+			agree_with_ruling_party = 0.25
+			country = { good_evil_alignment = good_alignment }
+		}
+		modifier = {
+			factor = 1.1
+			agree_with_ruling_party = 0.5
+			country = { good_evil_alignment = good_alignment }
+		}
+		modifier = {
+			factor = 1.1
+			agree_with_ruling_party = 0.75
+			country = { good_evil_alignment = good_alignment }
+		}
+		modifier = {
+			factor = 1.1
+			agree_with_ruling_party = 1
+			country = { good_evil_alignment = good_alignment }
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_pop_religion = elven
+				has_pop_religion = eagle
+				AND = {
+					has_pop_religion = dwarven
+					OR = {
+						has_pop_culture = dourhand
+						has_pop_culture = shornbeard
+					}
+				}
+			}
 		}
 		modifier = {
 			factor = 1.5
 			has_country_flag = remembered_sacrifice
 		}
 	}
-	neutral_alignment_fake = {
-		factor = 1
+	neutral_alignment = {
+		factor = 5
 		modifier = {
-			factor = 1.1
-			location = { is_core = THIS }
-			country = { good_evil_alignment = neutral_alignment }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.25
-			country = { good_evil_alignment = neutral_alignment }
+			factor = 1.25
+			NOT = { life_needs = 1 }
+			NOT = { country = { good_evil_alignment = neutral_alignment } }
 		}
 		modifier = {
 			factor = 1.1
 			everyday_needs = 0.5
-			country = { good_evil_alignment = neutral_alignment }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.75
 			country = { good_evil_alignment = neutral_alignment }
 		}
 		modifier = {
@@ -140,60 +135,64 @@ issues = {
 		}
 		modifier = {
 			factor = 1.1
-			luxury_needs = 0.25
-			country = { good_evil_alignment = neutral_alignment }
-		}
-		modifier = {
-			factor = 1.1
 			luxury_needs = 0.5
 			country = { good_evil_alignment = neutral_alignment }
 		}
 		modifier = {
 			factor = 1.1
-			luxury_needs = 0.75
-			country = { good_evil_alignment = neutral_alignment }
-		}
-		modifier = {
-			factor = 1.1
-			luxury_needs = 1
-			country = { good_evil_alignment = neutral_alignment }
-		}
-		modifier = {
-			factor = 1.25
 			country = { any_neighbor_country = { good_evil_alignment = neutral_alignment } }
 		}
 		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_neutral }
+			factor = 1.1
+			country = { sphere_owner = { good_evil_alignment = neutral_alignment } }
 		}
 		modifier = {
-			factor = 0.25
+			factor = 2
+			country = {
+				is_vassal = yes
+				overlord = { good_evil_alignment = neutral_alignment }
+			}
+		}
+		modifier = {
+			factor = 1.1
+			agree_with_ruling_party = 0.25
+			country = { good_evil_alignment = neutral_alignment }
+		}
+		modifier = {
+			factor = 1.1
+			agree_with_ruling_party = 0.5
+			country = { good_evil_alignment = neutral_alignment }
+		}
+		modifier = {
+			factor = 1.1
+			agree_with_ruling_party = 0.75
+			country = { good_evil_alignment = neutral_alignment }
+		}
+		modifier = {
+			factor = 1.1
+			agree_with_ruling_party = 1
+			country = { good_evil_alignment = neutral_alignment }
+		}
+		modifier = {
+			factor = 1.25
 			OR = {
-				country = { has_country_flag = attempting_to_good }
-				country = { has_country_flag = attempting_to_evil }
+				has_pop_religion = hobbit
+				has_pop_religion = ent
+				has_pop_religion = men
+				has_pop_culture = oathbreaker
 			}
 		}
 	}
-	evil_alignment_fake = {
-		factor = 1
+	evil_alignment = {
+		factor = 5
 		modifier = {
-			factor = 1.1
-			location = { is_core = THIS }
-			country = { good_evil_alignment = evil_alignment }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.25
-			country = { good_evil_alignment = evil_alignment }
+			factor = 1.25
+			NOT = { life_needs = 1 }
+			NOT = { country = { good_evil_alignment = evil_alignment } }
 		}
 		modifier = {
 			factor = 1.1
 			everyday_needs = 0.5
-			country = { good_evil_alignment = evil_alignment }
-		}
-		modifier = {
-			factor = 1.1
-			everyday_needs = 0.75
 			country = { good_evil_alignment = evil_alignment }
 		}
 		modifier = {
@@ -203,45 +202,60 @@ issues = {
 		}
 		modifier = {
 			factor = 1.1
-			luxury_needs = 0.25
-			country = { good_evil_alignment = evil_alignment }
-		}
-		modifier = {
-			factor = 1.1
 			luxury_needs = 0.5
 			country = { good_evil_alignment = evil_alignment }
 		}
 		modifier = {
 			factor = 1.1
-			luxury_needs = 0.75
-			country = { good_evil_alignment = evil_alignment }
-		}
-		modifier = {
-			factor = 1.1
-			luxury_needs = 1
-			country = { good_evil_alignment = evil_alignment }
-		}
-		modifier = {
-			factor = 1.25
 			country = { any_neighbor_country = { good_evil_alignment = evil_alignment } }
 		}
 		modifier = {
-			factor = 25
-			country = { has_country_flag = attempting_to_evil }
+			factor = 1.1
+			country = { sphere_owner = { good_evil_alignment = evil_alignment } }
 		}
 		modifier = {
-			factor = 0.25
-			OR = {
-				country = { has_country_flag = attempting_to_good }
-				country = { has_country_flag = attempting_to_neutral }
+			factor = 2
+			country = {
+				is_vassal = yes
+				overlord = { good_evil_alignment = evil_alignment }
 			}
 		}
 		modifier = {
 			factor = 1.1
-			has_pop_religion = orc
+			agree_with_ruling_party = 0.25
+			country = { good_evil_alignment = evil_alignment }
+		}
+		modifier = {
+			factor = 1.1
+			agree_with_ruling_party = 0.5
+			country = { good_evil_alignment = evil_alignment }
+		}
+		modifier = {
+			factor = 1.1
+			agree_with_ruling_party = 0.75
+			country = { good_evil_alignment = evil_alignment }
+		}
+		modifier = {
+			factor = 1.1
+			agree_with_ruling_party = 1
+			country = { good_evil_alignment = evil_alignment }
 		}
 		modifier = {
 			factor = 1.25
+			OR = {
+				has_pop_religion = orc
+				has_pop_religion = troll
+				has_pop_religion = spider
+				AND = {
+					has_pop_religion = undead
+					NOT = { has_pop_culture = oathbreaker }
+				}
+				has_pop_culture = dourhand
+				has_pop_culture = shornbeard
+			}
+		}
+		modifier = {
+			factor = 2
 			has_country_flag = has_one_ring
 		}
 	}

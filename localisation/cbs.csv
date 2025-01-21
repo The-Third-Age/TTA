@@ -17,10 +17,6 @@ take_from_sphere;Take from sphere of influence;x
 take_from_sphere_short;Take $THIRD$ from sphere of influence;x
 take_from_sphere_setup;Take $THIRD$ from $RECIPIENT$'s sphere of influence;x
 take_from_sphere_desc;Remove a realm from someone's §YSphere of Influence§! and add it to our own;x
-change_alignment;Change Alignment;x
-change_alignment_short;Change the alignment of $RECIPIENT$;x
-change_alignment_setup;Change the alignment of $RECIPIENT$ to ours;x
-change_alignment_desc;Change the alignment of a §Yrealm§!;x
 status_quo;Status Quo;x
 status_quo_short;Status Quo;x
 status_quo_setup;All we ask is to be left alone;x
@@ -210,8 +206,6 @@ NORMAL_WAR_ACQUIRE_RING;$FIRST$ War of Ring Acquisition;x
 AGRESSION_WAR_ACQUIRE_RING;$FIRST$ War of Ring Acquisition;x
 NORMAL_WAR_OF_THE_RING;$ORDER$ War of the Ring;x
 AGRESSION_WAR_OF_THE_RING;$ORDER$ War of the Ring;x
-NORMAL_WAR_CHANGE_ALIGNMENT;$FIRST$ War of Aggression against $SECOND$;x
-AGRESSION_WAR_CHANGE_ALIGNMENT;$FIRST$ War of Aggression against $SECOND$;x
 NORMAL_WAR_DEMAND_FOR_ALLY;$ORDER$$FIRST_COUNTRY$ Conquest of $STATE$ for $COUNTRY$;x
 AGRESSION_WAR_DEMAND_FOR_ALLY;$ORDER$$FIRST_COUNTRY$ Conquest of $STATE$ for $COUNTRY$;x
 NORMAL_WAR_GRAMAVULD_NAME;$FIRST_COUNTRY$'s Conquest of Gramavuld;x

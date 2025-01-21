@@ -24,7 +24,6 @@ political_decisions = {
 	DAL_start_decision = {
 		potential = {
 			always = no
-			has_country_flag = DAL_content
 		}
 		
 		allow = {}
@@ -114,6 +113,9 @@ political_decisions = {
 				all_core = { add_province_modifier = { name = AMO_easterling_war_camp duration = 3650 } }
 				add_country_modifier = { name = AMO_upcoming_conquest duration = -1 }
 			}
+			
+			# Set allowed leaders
+			set_country_flag = ideologies_house_of_bard_active
 		}
 	}
 	

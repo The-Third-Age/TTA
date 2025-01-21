@@ -4,65 +4,39 @@
 # Election Events {
 #	14000 - 14999
 
-# A Heated Debate: Guild Autonomy
+# A Heated Debate: Trade Policy
 country_event = {
 	id = 14000
 	title = "EVTNAME14000"
 	desc = "EVTDESC14000"
 	
 	election = yes
-	issue_group = guild_autonomy_policy
+	issue_group = trade_policy
 	is_triggered_only = yes
 	
 	option = {
-		name = "Guilds should be independent!"
+		name = "Trade needs to be protected!"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = independent_guilds
+				value = protectionism
 			}
 			scaled_militancy = {
-				issue = controlled_guilds
+				issue = free_trade
 				factor = 4
 			}
-			scaled_militancy = {
-				issue = oversight_guilds
-				factor = 2
-			}
 		}
 	}
 	
 	option = {
-		name = "Guilds need some guidance from the Realm."
+		name = "Free trade for all!"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = oversight_guilds
+				value = free_trade
 			}
 			scaled_militancy = {
-				issue = controlled_guilds
-				factor = 2
-			}
-			scaled_militancy = {
-				issue = independent_guilds
-				factor = 2
-			}
-		}
-	}
-	
-	option = {
-		name = "Guilds should be controlled by the Realm!"
-		any_pop = {
-			dominant_issue = {
-				factor = 0.2
-				value = controlled_guilds
-			}
-			scaled_militancy = {
-				issue = oversight_guilds
-				factor = 2
-			}
-			scaled_militancy = {
-				issue = independent_guilds
+				issue = protectionism
 				factor = 4
 			}
 		}
@@ -72,27 +46,19 @@ country_event = {
 		name = "Let the debate take its course"
 		# Audax Validator "." Ignore_1007
 		random_list = {
-			1 = {
+			50 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
-						value = controlled_guilds
+						value = free_trade
 					}
 				}
 			}
-			3 = {
+			50 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
-						value = oversight_guilds
-					}
-				}
-			}
-			5 = {
-				any_pop = {
-					dominant_issue = {
-						factor = 0.2
-						value = independent_guilds
+						value = protectionism
 					}
 				}
 			}
@@ -100,65 +66,99 @@ country_event = {
 	}
 }
 
-# A Heated Debate: Racial Policy
+# A Heated Debate: Economic Policy
 country_event = {
 	id = 14001
 	title = "EVTNAME14001"
 	desc = "EVTDESC14001"
 	
 	election = yes
-	issue_group = racial_policy
+	issue_group = tax_policy
 	is_triggered_only = yes
 	
 	option = {
-		name = "Only our race!"
+		name = "The more money our people have, the better"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = racial_unity
+				value = laissez_faire
 			}
 			scaled_militancy = {
-				issue = alignment_acceptance
-				factor = 2
+				issue = interventionism
+				factor = 4
 			}
 			scaled_militancy = {
-				issue = all_peoples
+				issue = state_capitalism
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = planned_economy
 				factor = 4
 			}
 		}
 	}
 	
 	option = {
-		name = "Anything non-Orc should be fine."
+		name = "The realm always needs some type of income"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = alignment_acceptance
+				value = interventionism
 			}
 			scaled_militancy = {
-				issue = racial_unity
-				factor = 2
+				issue = laissez_faire
+				factor = 4
 			}
 			scaled_militancy = {
-				issue = all_peoples
-				factor = 2
+				issue = state_capitalism
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = planned_economy
+				factor = 4
 			}
 		}
 	}
 	
 	option = {
-		name = "Everyone is welcome!"
+		name = "The realm could use some more income"
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = all_peoples
+				value = state_capitalism
 			}
 			scaled_militancy = {
-				issue = alignment_acceptance
-				factor = 2
+				issue = laissez_faire
+				factor = 4
 			}
 			scaled_militancy = {
-				issue = racial_unity
+				issue = interventionism
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = planned_economy
+				factor = 4
+			}
+		}
+	}
+	
+	option = {
+		name = "The realm needs to refill its coffers"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.2
+				value = planned_economy
+			}
+			scaled_militancy = {
+				issue = laissez_faire
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = interventionism
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = state_capitalism
 				factor = 4
 			}
 		}
@@ -168,27 +168,35 @@ country_event = {
 		name = "Let the debate take its course"
 		# Audax Validator "." Ignore_1007
 		random_list = {
-			1 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
-						value = racial_unity
+						value = laissez_faire
 					}
 				}
 			}
-			3 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
-						value = alignment_acceptance
+						value = interventionism
 					}
 				}
 			}
-			5 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
-						value = all_peoples
+						value = state_capitalism
+					}
+				}
+			}
+			25 = {
+				any_pop = {
+					dominant_issue = {
+						factor = 0.2
+						value = planned_economy
 					}
 				}
 			}
@@ -215,7 +223,7 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = minority_toleration
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = regional_autonomy
@@ -233,11 +241,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = regional_autonomy
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
-				issue = all_peoples
-				factor = 2
+				issue = official_only
+				factor = 4
 			}
 		}
 	}
@@ -247,14 +255,14 @@ country_event = {
 		any_pop = {
 			dominant_issue = {
 				factor = 0.2
-				value = all_peoples
+				value = regional_autonomy
 			}
 			scaled_militancy = {
 				issue = minority_toleration
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
-				issue = regional_autonomy
+				issue = official_only
 				factor = 4
 			}
 		}
@@ -264,7 +272,7 @@ country_event = {
 		name = "Let the debate take its course"
 		# Audax Validator "." Ignore_1007
 		random_list = {
-			1 = {
+			33 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -272,7 +280,7 @@ country_event = {
 					}
 				}
 			}
-			3 = {
+			33 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -280,7 +288,7 @@ country_event = {
 					}
 				}
 			}
-			5 = {
+			33 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -311,11 +319,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = reactive
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = proactive
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = interactive
@@ -333,16 +341,16 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = isolationist
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = proactive
-				factor = 1
+				factor = 4
 			}
 			
 			scaled_militancy = {
 				issue = interactive
-				factor = 2
+				factor = 4
 			}
 		}
 	}
@@ -356,16 +364,16 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = interactive
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = reactive
-				factor = 1
+				factor = 4
 			}
 			
 			scaled_militancy = {
 				issue = isolationist
-				factor = 2
+				factor = 4
 			}
 		}
 	}
@@ -379,11 +387,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = proactive
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = reactive
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = isolationist
@@ -396,7 +404,7 @@ country_event = {
 		name = "Let the debate take its course"
 		# Audax Validator "." Ignore_1007
 		random_list = {
-			1 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -404,7 +412,7 @@ country_event = {
 					}
 				}
 			}
-			3 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -412,7 +420,7 @@ country_event = {
 					}
 				}
 			}
-			5 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -420,7 +428,7 @@ country_event = {
 					}
 				}
 			}
-			7 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -451,11 +459,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = pro_military
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = anti_military
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = pacifism
@@ -473,11 +481,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = jingoism
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = anti_military
-				factor = 1
+				factor = 4
 			}
 			
 			scaled_militancy = {
@@ -496,11 +504,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = pacifism
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = pro_military
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = jingoism
@@ -518,11 +526,11 @@ country_event = {
 			}
 			scaled_militancy = {
 				issue = anti_military
-				factor = 1
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = pro_military
-				factor = 2
+				factor = 4
 			}
 			scaled_militancy = {
 				issue = jingoism
@@ -535,7 +543,7 @@ country_event = {
 		name = "Let the debate take its course"
 		# Audax Validator "." Ignore_1007
 		random_list = {
-			1 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -543,7 +551,7 @@ country_event = {
 					}
 				}
 			}
-			3 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -551,7 +559,7 @@ country_event = {
 					}
 				}
 			}
-			5 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
@@ -559,11 +567,107 @@ country_event = {
 					}
 				}
 			}
-			7 = {
+			25 = {
 				any_pop = {
 					dominant_issue = {
 						factor = 0.2
 						value = pacifism
+					}
+				}
+			}
+		}
+	}
+}
+
+# A Heated Debate: Alignment
+country_event = {
+	id = 14005
+	title = "EVTNAME14005"
+	desc = "EVTDESC14005"
+	
+	election = yes
+	issue_group = good_evil_alignment
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sauron cannot be trusted"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.2
+				value = good_alignment
+			}
+			scaled_militancy = {
+				issue = neutral_alignment
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = evil_alignment
+				factor = 4
+			}
+		}
+	}
+	
+	option = {
+		name = "We are aligned with no others"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.2
+				value = neutral_alignment
+			}
+			scaled_militancy = {
+				issue = good_alignment
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = evil_alignment
+				factor = 4
+			}
+		}
+	}
+	
+	option = {
+		name = "Sauron is the lord and protector of Middle Earth"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.2
+				value = evil_alignment
+			}
+			scaled_militancy = {
+				issue = good_alignment
+				factor = 4
+			}
+			scaled_militancy = {
+				issue = neutral_alignment
+				factor = 4
+			}
+		}
+	}
+	
+	option = {
+		name = "Let the debate take its course"
+		# Audax Validator "." Ignore_1007
+		random_list = {
+			33 = {
+				any_pop = {
+					dominant_issue = {
+						factor = 0.2
+						value = good_alignment
+					}
+				}
+			}
+			33 = {
+				any_pop = {
+					dominant_issue = {
+						factor = 0.2
+						value = neutral_alignment
+					}
+				}
+			}
+			33 = {
+				any_pop = {
+					dominant_issue = {
+						factor = 0.2
+						value = evil_alignment
 					}
 				}
 			}

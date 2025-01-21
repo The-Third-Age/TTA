@@ -3,7 +3,7 @@ capital = 334
 primary_culture = haruzani
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
@@ -11,9 +11,9 @@ oob = "HRU_oob.txt"
 
 slavery = yes_slavery
 upper_house_composition = appointed
-ruling_party = generic_high_nobility
+ruling_party = generic_haruzani_nobles
 upper_house = {
-	high_nobility = 100
+	haruzani_nobles = 100
 }
 
 schools = traditional_academic

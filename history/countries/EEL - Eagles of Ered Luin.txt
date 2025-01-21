@@ -3,7 +3,7 @@ capital = 1160
 primary_culture = great_eagle
 culture = eagle_culture
 religion = eagle
-government = lord_monarchy
+government = monarchy
 nationalvalue = generic_leader
 literacy = 0
 civilized = yes
@@ -12,13 +12,10 @@ prestige = 10
 
 oob = "EEL_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_great_eagle_nobles
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	great_eagle_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

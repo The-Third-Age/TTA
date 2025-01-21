@@ -10,15 +10,12 @@ nationalvalue = generic_leader
 literacy = 0.3
 civilized = yes
 prestige = 50
-ruling_party = generic_high_nobility
+ruling_party = generic_longbeard_nobles
 
 oob = "THO_oob.txt"
 
 upper_house = {
-	high_nobility = 59
-	low_nobility = 29
-	burgher = 6
-	loremaster = 6
+	longbeard_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

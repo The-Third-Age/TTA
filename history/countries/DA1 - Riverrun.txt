@@ -4,7 +4,7 @@ primary_culture = rivermen
 culture = men_culture
 culture = barding
 religion = men
-government = northmen_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
@@ -13,16 +13,12 @@ prestige = 10
 
 oob = "DA1_oob.txt"
 
-ruling_party = rivermen_high_nobility
+ruling_party = generic_rivermen_nobles
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	rivermen_nobles = 100
 }
 
-govt_flag = { government = sauron_puppet flag = cosmetic_1_govt }
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed

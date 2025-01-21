@@ -3,16 +3,16 @@ capital = 1207
 primary_culture = cardolandrim
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
 oob = "TNR_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_cardolandrim_nobles
 
 upper_house = {
-	high_nobility = 100
+	cardolandrim_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

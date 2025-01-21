@@ -3,7 +3,7 @@ capital = 286
 primary_culture = harnendan
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
@@ -11,9 +11,9 @@ oob = "HRN_oob.txt"
 
 slavery = yes_slavery
 upper_house_composition = appointed
-ruling_party = generic_high_nobility
+ruling_party = generic_harnendan_nobles
 upper_house = {
-	high_nobility = 100
+	harnendan_nobles = 100
 }
 
 schools = traditional_academic

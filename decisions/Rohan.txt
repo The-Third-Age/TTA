@@ -3,6 +3,20 @@
 
 # Rohan Decisions:
 #	Colonise
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	ROH_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_house_of_eorl_active
+			
+			set_country_flag = ROH_content
+		}
+	}
+}
+
 political_decisions = {
 	colonise_amon_hen = {
 		picture = "druwaith_iaur"

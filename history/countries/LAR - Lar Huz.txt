@@ -3,7 +3,7 @@ capital = 665
 primary_culture = snow_orc
 culture = orc_culture
 religion = orc
-government = goblin_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
@@ -11,10 +11,10 @@ oob = "LAR_oob.txt"
 
 slavery = yes_slavery
 upper_house_composition = appointed
-ruling_party = generic_high_nobility
+ruling_party = generic_snow_orc_nobles
 
 upper_house = {
-	high_nobility = 100
+	snow_orc_nobles = 100
 }
 
 schools = traditional_academic

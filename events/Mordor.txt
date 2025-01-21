@@ -459,7 +459,7 @@ country_event = {
 		create_alliance = HRD
 		HRD = {
 			country_event = 2510
-			political_reform = evil_alignment
+			ruling_party_ideology = servants_evil
 			capital = 255
 		}
 		diplomatic_influence = {

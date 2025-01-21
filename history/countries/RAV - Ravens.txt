@@ -3,18 +3,20 @@ capital = 752
 primary_culture = raven
 culture = eagle_culture
 religion = eagle
-government = lord_monarchy
+government = monarchy
 nationalvalue = roac
 literacy = 0
 civilized = yes
 
-ruling_party = generic_high_nobility
+ruling_party = RAV_roac
 
 upper_house = {
-	high_nobility = 100
+	lords_of_ravens = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed
+
+decision = RAV_start_decision
 
 schools = traditional_academic

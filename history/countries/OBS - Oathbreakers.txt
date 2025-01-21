@@ -3,17 +3,18 @@ capital = 109
 primary_culture = oathbreaker
 culture = undead_culture
 religion = undead
-government = man_tribe
+government = tribal
 nationalvalue = king_of_the_dead
 literacy = 0
 civilized = yes
 
-ruling_party = generic_high_nobility
+ruling_party = OBS_king_of_the_dead
 
 upper_house = {
-	high_nobility = 100
+	kings_of_the_dead = 100
 }
 
 upper_house_composition = appointed
+decision = OBS_start_decision
 
 schools = traditional_academic

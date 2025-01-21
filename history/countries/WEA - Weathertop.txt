@@ -3,15 +3,15 @@ capital = 307
 primary_culture = gram_goblin
 culture = orc_culture
 religion = orc
-government = nazgul_dictatorship
+government = dominion_1
 nationalvalue = witch_king_of_angmar
 literacy = 0
 civilized = yes
 
-ruling_party = generic_high_nobility
+ruling_party = generic_gram_goblin_nobles
 
 upper_house = {
-	high_nobility = 100
+	gram_goblin_nobles = 100
 }
 
 slavery = yes_slavery

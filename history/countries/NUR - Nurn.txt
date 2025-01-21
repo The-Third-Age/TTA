@@ -3,16 +3,16 @@ capital = 412
 primary_culture = nurniag
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
 slavery = yes_slavery
 upper_house_composition = appointed
-ruling_party = generic_high_nobility
+ruling_party = generic_nurniag_nobles
 
 upper_house = {
-	high_nobility = 100
+	nurniag_nobles = 100
 }
 
 schools = traditional_academic

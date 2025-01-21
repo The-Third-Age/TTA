@@ -637,7 +637,7 @@ alliance_of_dwarves_and_men_economic_union_sphere_loc = { } # We will be placed 
 call_allies_tooltip_loc = { } # §WCalls all realms in the alliance into our current conflicts. This call to arms does not bypass truces. The ai is more likely to accept defensive call-to-arms and the ai still may reject the call to arms§!
 
 FFN_core_refusers_loc = { } # §RWe will gain cores on all core provinces of existing realms that abstained or voted against the formation of the §YFree Folk of the North§!§!
-FFN_sphere_annex_description_loc = { } # §GAny good-or-neutral-aligned ai Hobbit, Northmen, Anduinmen or Elven realm with a capital in Rhovanion that never joined the Alliance of Dwarves and Men will join us if we sphere them!§!
+FFN_sphere_annex_description_loc = { } # §GAny Anti-Sauron or Opportunistic ai Hobbit, Northmen, Anduinmen or Elven realm with a capital in Rhovanion that never joined the Alliance of Dwarves and Men will join us if we sphere them!
 
 # Static Tooltip Locs - Settings
 settings_disable_settings_loc = { } # The settings menu will close and the decision to reopen the menu will be disabled. §RThis cannot be undone§!
@@ -652,7 +652,7 @@ settings_unciv_7_loc = { } # This option allows uncivs to have (at most), 7.5% o
 settings_unciv_10_loc = { } # This option allows uncivs to have (at most), 10% of their population as soldiers from natural promotion
 
 settings_borders_closed_loc = { } # Migration between realms is completely disabled
-settings_borders_alignment_loc = { } # Migration between realms of opposite alignments is disabled. Realms of §PNeutral Alignment§! can receive migrants from any other realm, and they can have emigration to any other realm.
+settings_borders_alignment_loc = { } # Migration between realms of opposite alignments is disabled. Realms of §POpportunistic§! can receive migrants from any other realm, and they can have emigration to any other realm.
 settings_borders_race_loc = { } # Migration between realms is limiteed to migrations between the same race -- Orcs pops will migrate to orc realms, Elves will migrate to elven realms, etc
 settings_borders_open_loc = { } # There are no restrictions placed on migration
 
@@ -663,7 +663,7 @@ settings_province_wealth_intervention_loc = { } # For the most part, the Provinc
 settings_generic_rgo_changing_loc = { } # Selecting this option will disable the generic RGO switching that can occur when a province has more than 50% of its labourers unemployed
 
 # Static Tooltip Locs - Alliance of Dwarves and Men
-FFN_join_alliance_dwarves_men_loc = { } # If the pass the conditions on this decision (ignoring the always false), we will almost be eligible to be invited to the Alliance of Dwarves and Men -- we also need to be allied to realm that is currently in the alliance. From here, the ai will always attempt to send an invite, however, §Rit is possible for the rest of the alliance to reject the invite proposal§!.\n\nThe full list of conditions is:\nWe are §GGood Aligned§! or §PNeutral Aligned§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion
+FFN_join_alliance_dwarves_men_loc = { } # If the pass the conditions on this decision (ignoring the always false), we will almost be eligible to be invited to the Alliance of Dwarves and Men -- we also need to be allied to realm that is currently in the alliance. From here, the ai will always attempt to send an invite, however, §Rit is possible for the rest of the alliance to reject the invite proposal§!.\n\nThe full list of conditions is:\nWe are §GAnti-Sauron§! or §POpportunistic§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion
 
 # Static Tooltip Locs - Barding Realm
 DAL_bard_i_only_loc = { } # §RThis decision can only be taken while §YBard I§R is your leader§!

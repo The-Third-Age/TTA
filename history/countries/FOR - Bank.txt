@@ -3,14 +3,14 @@ capital = 1060
 primary_culture = banker
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
-ruling_party = generic_servants
+ruling_party = generic_servants_neutral
 
 upper_house = {
-	servants = 100
+	servants_neutral = 100
 }
 
 decision = FOR_start_decision

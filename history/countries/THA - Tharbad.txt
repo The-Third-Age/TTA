@@ -4,20 +4,17 @@ primary_culture = dunedain
 culture = men_culture
 culture = cardolandrim
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = aragorn
 literacy = 0.2
 civilized = yes
 
-ruling_party = generic_high_nobility
+ruling_party = generic_cardolandrim_nobles
 
 oob = "THA_oob.txt"
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	cardolandrim_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

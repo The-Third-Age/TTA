@@ -4,16 +4,17 @@ primary_culture = gondorian
 culture = men_culture
 culture = dunir
 religion = men
-government = lord_monarchy
+government = monarchy
 nationalvalue = generic_leader
 literacy = 0
 civilized = yes
 
-ruling_party = ADR_high_nobility
+ruling_party = ADR_nobles_of_andrast
 
 upper_house = {
-	high_nobility = 100
+	gondorian_nobles = 100
 }
+
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed

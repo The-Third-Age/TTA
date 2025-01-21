@@ -12,13 +12,10 @@ oob = "NRN_oob.txt"
 
 prestige = 0
 
-ruling_party = generic_high_nobility
+ruling_party = generic_ironfist_nobles
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	ironfist_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

@@ -3,7 +3,7 @@ capital = 752
 primary_culture = great_eagle
 culture = eagle_culture
 religion = eagle
-government = lord_monarchy
+government = monarchy
 nationalvalue = gwaihir
 literacy = 0
 civilized = yes
@@ -12,14 +12,14 @@ oob = "EAG_oob.txt"
 
 prestige = 10
 
-ruling_party = generic_high_nobility
+ruling_party = EAG_gwaihir
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	flightlords_of_the_mountains = 100
 }
+
+decision = EAG_start_decision
+
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed

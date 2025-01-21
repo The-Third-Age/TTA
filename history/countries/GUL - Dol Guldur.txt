@@ -5,7 +5,7 @@ culture = orc_culture
 culture = great_spider
 culture = black_numenorean
 religion = orc
-government = nazgul_dictatorship
+government = dominion_1
 nationalvalue = khamul
 literacy = 0
 civilized = yes
@@ -14,11 +14,11 @@ oob = "GUL_oob.txt"
 
 prestige = 10
 
-ruling_party = generic_high_nobility
-
 upper_house = {
-	servants = 100
+	saurons_nine = 100
 }
+
+ruling_party = GUL_khamul
 
 slavery = yes_slavery
 upper_house_composition = appointed

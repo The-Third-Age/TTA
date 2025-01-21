@@ -249,26 +249,6 @@ promotion_focus = {
 }
 
 party_loyalty_focus = {
-	high_nobility_focus = {
-		ideology = high_nobility
-		loyalty_value = 0.001
-		icon = 32
-	}
-	low_nobility_focus = {
-		ideology = low_nobility
-		loyalty_value = 0.001
-		icon = 33
-	}
-	burgher_focus = {
-		ideology = burgher
-		loyalty_value = 0.001
-		icon = 34
-	}
-	loremaster_focus = {
-		ideology = loremaster
-		loyalty_value = 0.001
-		icon = 35
-	}
 	ruling_party_focus = {
 		local_ruling_party_support = 0.25
 		icon = 37

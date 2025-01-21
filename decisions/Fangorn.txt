@@ -1,0 +1,16 @@
+# Fangorn Decisions: {
+#	Starting Decisions (Unseen)
+#	}
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	FAN_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_lords_of_fangorn_active
+			
+			set_country_flag = FAN_content
+		}
+	}
+}

@@ -3,17 +3,17 @@ capital = 141
 primary_culture = adhalling
 culture = men_culture
 religion = men
-government = northmen_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0.2
 civilized = yes
 
 prestige = 10
 
-ruling_party = generic_high_nobility
+ruling_party = generic_adhalling_nobles
 
 upper_house = {
-	high_nobility = 100
+	adhalling_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

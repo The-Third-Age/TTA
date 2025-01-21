@@ -3,16 +3,16 @@ capital = 825
 primary_culture = enedwaithrim
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
 oob = "MAG_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_enedwaithrim_nobles
 
 upper_house = {
-	high_nobility = 100
+	enedwaithrim_nobles = 100
 }
 
 slavery = no_slavery

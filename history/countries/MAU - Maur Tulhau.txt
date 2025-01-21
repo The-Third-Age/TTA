@@ -3,20 +3,17 @@ capital = 450
 primary_culture = stoor
 culture = hobbit_culture
 religion = hobbit
-government = hobbit_realm
+government = democracy
 nationalvalue = generic_leader
 literacy = 0
 civilized = yes
 
 oob = "MAU_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_stoor_nobles
 
 upper_house = {
-	high_nobility = 50
-	low_nobility = 22
-	burgher = 14
-	loremaster = 14
+	stoor_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

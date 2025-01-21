@@ -3,16 +3,16 @@ capital = 999
 primary_culture = gram_goblin
 culture = orc_culture
 religion = orc
-government = goblin_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
 oob = "GRM_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_gram_goblin_nobles
 
 upper_house = {
-	high_nobility = 100
+	gram_goblin_nobles = 100
 }
 
 slavery = yes_slavery

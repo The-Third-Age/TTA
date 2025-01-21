@@ -6,33 +6,25 @@ culture = amrothian
 culture = gondorian
 culture = galadhrim
 religion = men
-government = fiefdom
+government = dominion_2
 nationalvalue = angelimir
 literacy = 0.2
 civilized = yes
 
 oob = "AMR_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = AMR_angelimir
 
 decision = dol_amroth_start_decision
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	house_of_dol_amroth = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed
 
 schools = traditional_academic
-
-govt_flag = {
-	government = fiefdom
-	flag = cosmetic_1_govt
-}
 
 #technologies
 merchant_marine_1 = 1

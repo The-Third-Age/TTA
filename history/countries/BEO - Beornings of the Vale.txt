@@ -4,7 +4,7 @@ primary_culture = beiabarnae
 culture = beorning
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = beorn
 literacy = 0
 
@@ -12,11 +12,13 @@ oob = "BEO_oob.txt"
 
 prestige = 5
 
-ruling_party = generic_high_nobility
+ruling_party = BEO_beorn
 
 upper_house = {
-	high_nobility = 100
+	house_of_beorn = 100
 }
+
+decision = BEO_start_decision
 
 slavery = no_slavery
 upper_house_composition = appointed

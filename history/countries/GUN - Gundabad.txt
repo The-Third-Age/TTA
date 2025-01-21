@@ -3,7 +3,7 @@ capital = 993
 primary_culture = gundabad_orc
 culture = orc_culture
 religion = orc
-government = goblin_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
@@ -11,10 +11,10 @@ prestige = 5
 
 oob = "GUN_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_gundabad_orc_nobles
 
 upper_house = {
-	high_nobility = 100
+	gundabad_orc_nobles = 100
 }
 
 slavery = yes_slavery

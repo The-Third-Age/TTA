@@ -1,3 +1,4 @@
+# ANF_cosmetic_2_ALT flag is a Pinnath Gelin specific fiefdom flag. Since they are not their own tag, they have been put in as an optional backup
 # Audax Validator "!" Ignore_1009
 capital = 133
 primary_culture = dunedain
@@ -6,32 +7,25 @@ culture = gondorian
 culture = amrothian
 culture = dunir
 religion = men
-government = fiefdom
+government = dominion_2
 nationalvalue = ecthelion_ii
 literacy = 0.2
 civilized = yes
 
-ruling_party = ANF_high_nobility
+ruling_party = ANF_gundor
 
 oob = "ANF_oob.txt"
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 30
-	burgher = 5
-	loremaster = 5
+	gondorian_nobles = 100
 }
+
 penal_reform = hard_labor
 slavery = no_slavery
 upper_house_composition = appointed
 
 schools = traditional_academic
 
-# cosmetic_2 flag is a Pinnath Gelin specific fiefdom flag. Since they are not their own tag, they have been put in as an optional backup
-govt_flag = {
-	government = fiefdom
-	flag = cosmetic_1_govt
-}
 #technologies
 merchant_marine_1 = 1
 light_ships_1 = 1

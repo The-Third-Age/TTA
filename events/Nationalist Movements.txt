@@ -117,7 +117,7 @@ province_event = {
 		average_militancy = 2
 		is_colonial = no
 		owner = {
-			racial_policy = racial_unity
+			language_policy = official_only
 		}
 		controlled_by = owner
 	}
@@ -537,7 +537,7 @@ province_event = {
 		is_colonial = no
 		NOT = {
 			owner = {
-				racial_policy = all_peoples
+				language_policy = regional_autonomy
 			}
 		}
 		units_in_province = 1
@@ -630,7 +630,7 @@ province_event = {
 		owner = {
 			civilized = yes
 			NOT = {
-				racial_policy = all_peoples
+				language_policy = regional_autonomy
 			}
 		}
 		controlled_by = owner
@@ -1397,7 +1397,7 @@ province_event = {
 		is_colonial = no
 		owner = {
 			NOT = {
-				racial_policy = all_peoples
+				language_policy = regional_autonomy
 			}
 		}
 		any_pop = {
@@ -1529,7 +1529,7 @@ province_event = {
 		is_colonial = no
 		owner = {
 			civilized = yes
-			NOT = { racial_policy = all_peoples }
+			NOT = { language_policy = regional_autonomy }
 		}
 		any_pop = {
 			is_primary_culture = no
@@ -1853,7 +1853,7 @@ province_event = {
 		is_accepted_culture = no
 		is_colonial = no
 		owner = {
-			NOT = { racial_policy = all_peoples }
+			NOT = { language_policy = regional_autonomy }
 		}
 		any_greater_power = {
 			NOT = { tag = THIS }
@@ -2055,7 +2055,7 @@ province_event = {
 	trigger = {
 		owner = {
 			civilized = yes
-			NOT = { racial_policy = all_peoples }
+			NOT = { language_policy = regional_autonomy }
 		}
 		is_colonial = no
 		is_primary_culture = no
@@ -2171,7 +2171,7 @@ province_event = {
 			civilized = yes
 			NOT = {
 				has_country_modifier = minority_building_restrictions
-				racial_policy = all_peoples
+				language_policy = regional_autonomy
 			}
 		}
 		controlled_by = owner
@@ -2272,7 +2272,7 @@ province_event = {
 		owner = {
 			civilized = yes
 			has_country_modifier = minority_building_restrictions
-			NOT = { racial_policy = all_peoples }
+			NOT = { language_policy = regional_autonomy }
 		}
 		controlled_by = owner
 	}
@@ -2375,7 +2375,7 @@ province_event = {
 		is_colonial = no
 		owner = {
 			civilized = yes
-			NOT = { racial_policy = all_peoples }
+			NOT = { language_policy = regional_autonomy }
 		}
 		controlled_by = owner
 	}

@@ -4,20 +4,17 @@ primary_culture = fallohide
 culture = hobbit_culture
 culture = harfoot
 religion = hobbit
-government = hobbit_realm
+government = democracy
 nationalvalue = generic_leader
 literacy = 0
 civilized = yes
 
 oob = "BCK_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_fallohide_nobles
 
 upper_house = {
-	high_nobility = 49
-	low_nobility = 22
-	burgher = 15
-	loremaster = 14
+	fallohide_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

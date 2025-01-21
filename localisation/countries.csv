@@ -3,81 +3,160 @@
 ############################;x
 democracy;Republic;x
 democracy_ruler;Lord;x
-hobbit_realm;Hobbit Realm;x
-hobbit_realm_ruler;Mayor;x
-northmen_democracy;Northman Republic;x
-northmen_democracy_ruler;Master;x
+merchant_republic;Merchant Republic;x
+merchant_republic_ruler;Lord;x
 monarchy;Monarchy;x
 monarchy_ruler;King;x
 monarchy_2;Monarchy;x
 monarchy_2_ruler;King;x
-stewardship;Monarchy;x
-stewardship_ruler;Steward;x
-principality;Principality;x
-principality_ruler;Prince;x
-fiefdom;Fiefdom;x
-fiefdom_ruler;Lord;x
-galadhrim_monarchy;Dual Monarchy;x
-galadhrim_monarchy_ruler;Lord and Lady;x
-lord_monarchy;Monarchy;x
-lord_monarchy_ruler;Lord;x
-dark_realm;Dark Realm;x
-dark_realm_ruler;Lord;x
+tribal;Tribal;x
+tribal_ruler;Chief;x
 sauron_dictatorship;Sauron's Domain;x
 sauron_dictatorship_ruler;Dark Lord;x
-sauron_puppet;Sauron's Domain;x
-sauron_puppet_ruler;Lord;x
-nazgul_dictatorship;Nazgul's Realm;x
-nazgul_dictatorship_ruler;Lord;x
 istari_kingdom;Wizard's Realm;x
 istari_kingdom_ruler;Lord;x
-goblin_tribe;Tribe;x
-goblin_tribe_ruler;Chieftain;x
-man_tribe;Chiefdom;x
-man_tribe_ruler;Chief;x
-northmen_tribe;Northmen Tribe;x
-northmen_tribe_ruler;Thegen;x
-cosmetic_1_govt;Cosmetic Government -- Will Never Be Seen;x
-cosmetic_1_govt_ruler;Cosmetic Government Ruler;x
-cosmetic_2_govt;Cosmetic Government -- Will Never Be Seen;x
-cosmetic_2_govt_ruler;Cosmetic Government Ruler;x
+dominion_1;Sauron's Dominion;x
+dominion_1_ruler;Lord;x
+dominion_2;Dominion;x
+dominion_2_ruler;Lord;x
 #############################;x }
 ##### POLITICAL PARTIES #####;x {
 #############################;x
-generic_servants;Servants;x
-generic_high_nobility;High Nobility;x
-generic_low_nobility;Low Nobility;x
-generic_burgher;Burgher;x
-generic_loremaster;Loremaster;x
-ADR_high_nobility;Council of Andrast;x
-ADR_low_nobility;Lords of Andrast;x
-ANF_high_nobility;Council of Anfalas;x
-ANF_low_nobility;Lords of Anfalas;x
-ANO_high_nobility;Council of Anórien;x
-ANO_low_nobility;Lords of Anórien;x
-DAL_burgher;Edhfreirs;x
-DAL_high_nobility;Lords of Dale;x
-DAL_low_nobility;Northmen Thegens;x
-ESG_servants;Master's Cult;x
-GON_burgher;Merchant Guild;x
-GON_high_nobility;Council of Gondor;x
-GON_loremaster;Loremasters of Gondor;x
-GON_low_nobility;Lords of Gondor;x
-GON_servants;Steward's Cult;x
-HRD_high_nobility;Council of Harondor;x
-HRD_low_nobility;Lords of Harondor;x
-ITH_high_nobility;Council of Ithilien;x
-ITH_low_nobility;Lords of Ithilien;x
-LAM_high_nobility;Council of Lamedon;x
-LAM_low_nobility;Lords of Lamedon;x
-LEB_high_nobility;Council of Lebennin;x
-LEB_low_nobility;Lords of Lebennin;x
-LOS_high_nobility;Council of Lossarnach;x
-LOS_low_nobility;Lords of Lossarnach;x
-MRN_high_nobility;Council of Mornan;x
-MRN_low_nobility;Lords of Mornan;x
-rivermen_high_nobility;Tribal Elders;x
-rivermen_low_nobility;River Lords;x
+generic_servants_good;Servants (Anti-Sauron);x
+generic_servants_neutral;Servants (Opportunistic);x
+generic_servants_evil;Servants (Sauronite);x
+generic_dunedain_nobles;Dúnedain Nobles;x
+generic_gondorian_nobles;Gondorian Nobles;x
+generic_amrothian_nobles;Amrothian Nobles;x
+generic_arthedani_nobles;Arthedani Nobles;x
+generic_cardolandrim_nobles;Cardolandrim Nobles;x
+generic_haeranedain_nobles;Haeranedain Nobles;x
+generic_noldor_nobles;Noldor Nobles;x
+generic_falathrim_nobles;Falathrim Nobles;x
+generic_silvan_nobles;Silvan Nobles;x
+generic_galadhrim_nobles;Galadhrim Nobles;x
+generic_avari_nobles;Avari Nobles;x
+generic_umbarrim_nobles;Umbarrim Nobles;x
+generic_harnendan_nobles;Harnendan Nobles;x
+generic_haruzani_nobles;Haruzani Nobles;x
+generic_pezarsani_nobles;Pezarsani Nobles;x
+generic_lurmsakuni_nobles;Lurmsakuni Nobles;x
+generic_arysian_nobles;Arysian Nobles;x
+generic_kingsmen_nobles;Kingsmen Nobles;x
+generic_black_numenorean_nobles;Black Numenorean Nobles;x
+generic_variag_nobles;Variag Nobles;x
+generic_nurniag_nobles;Nurniag Nobles;x
+generic_chelkiag_nobles;Chelkiag Nobles;x
+generic_sagath_nobles;Sagath Nobles;x
+generic_sekel_nobles;Sekel Nobles;x
+generic_urgath_nobles;Urgath Nobles;x
+generic_kuga_nobles;Kuga Nobles;x
+generic_logath_nobles;Logath Nobles;x
+generic_barding_nobles;Lakemen Nobles;x
+generic_grammas_nobles;Grammas Nobles;x
+generic_rivermen_nobles;Rivermen Nobles;x
+generic_adhalling_nobles;Adhalling Nobles;x
+generic_dorwinrim_nobles;Dorwinrim Nobles;x
+generic_aivathiuda_nobles;Aivathiuda Nobles;x
+generic_anthar_nobles;Anthar Nobles;x
+generic_gadraught_nobles;Gadraught Nobles;x
+generic_longbeard_nobles;Longbeard Nobles;x
+generic_firebeard_nobles;Firebeard Nobles;x
+generic_broadbeam_nobles;Broadbeam Nobles;x
+generic_ironfist_nobles;Ironfist Nobles;x
+generic_dourhand_nobles;Dourhand Nobles;x
+generic_shornbeard_nobles;Shornbeard Nobles;x
+generic_woodsmen_nobles;Woodsmen Nobles;x
+generic_beorning_nobles;Beorning Nobles;x
+generic_beiabarnae_nobles;Beiabarnae Nobles;x
+generic_melburgi_nobles;Melburgi Nobles;x
+generic_herimundi_nobles;Herimundi Nobles;x
+generic_ent_nobles;Ent Nobles;x
+generic_huorn_nobles;Huorn Nobles;x
+generic_black_huorn_nobles;Black Huorn Nobles;x
+generic_druedain_nobles;Druedain Nobles;x
+generic_dunnish_nobles;Dunnish Nobles;x
+generic_hollin_folk_nobles;Hollin Folk Nobles;x
+generic_enedwaithrim_nobles;Enedwaithrim Nobles;x
+generic_saerlanner_nobles;Saerlanner Nobles;x
+generic_dunir_nobles;Dunir Nobles;x
+generic_marshmen_nobles;Marshmen Nobles;x
+generic_rohirrim_nobles;Rohirrim Nobles;x
+generic_anduinmen_nobles;Anduinmen Nobles;x
+generic_isenmen_nobles;Isenmen Nobles;x
+generic_uruk_hai_nobles;Uruk Hai Nobles;x
+generic_mordor_orc_nobles;Mordor Orc Nobles;x
+generic_mordor_uruk_nobles;Mordor Uruk Nobles;x
+generic_guldurrim_nobles;Guldurrim Nobles;x
+generic_white_mountain_goblin_nobles;White Mountain Goblin Nobles;x
+generic_morian_nobles;Morian Nobles;x
+generic_goblin_towner_nobles;Goblin Towner Nobles;x
+generic_gundabad_orc_nobles;Gundabad Orc Nobles;x
+generic_snow_orc_nobles;Snow Orc Nobles;x
+generic_gram_goblin_nobles;Gram Goblin Nobles;x
+generic_blue_mountain_goblin_nobles;Blue Mountain Goblin Nobles;x
+generic_angmarrim_nobles;Angmarrim Nobles;x
+generic_hillmen_nobles;Hillmen Nobles;x
+generic_lossoth_nobles;Lossoth Nobles;x
+generic_breelander_nobles;Breelander Nobles;x
+generic_siredain_nobles;Siredain Nobles;x
+generic_stoor_nobles;Stoor Nobles;x
+generic_harfoot_nobles;Harfoot Nobles;x
+generic_fallohide_nobles;Fallohide Nobles;x
+generic_cave_trolls_nobles;Cave Troll Nobles;x
+generic_hill_trolls_nobles;Hill Troll Nobles;x
+generic_mountain_trolls_nobles;Mountain Troll Nobles;x
+generic_snow_trolls_nobles;Snow Troll Nobles;x
+generic_stone_trolls_nobles;Stone Troll Nobles;x
+generic_olog_hai_nobles;Olog Hai Nobles;x
+generic_great_eagle_nobles;Great Eagle Nobles;x
+generic_raven_nobles;Raven Nobles;x
+generic_great_spider_nobles;Great Spider Nobles;x
+generic_wight_nobles;Wight Nobles;x
+generic_oathbreaker_nobles;Oathbreaker Nobles;x
+ADR_nobles_of_andrast;Nobles of Andrast;x
+AMR_angelimir;Angelimir I;x
+AMR_adrahil;Adrahil II;x
+AMR_imrahil;Imrahil I;x
+ANF_gundor;Gundor, Lord of Anfalas;x
+ANF_golasgil;Golasgil, Lord of Anfalas;x
+ANO_nobles_of_anorien;Nobles of Anórien;x
+BEO_beorn;Beorn;x
+DAL_bain_i;Bain I;x
+DAL_bard_i;Bard I;x
+DAL_bard_ii;Bard II;x
+DAL_brand_i;Brand I;x
+DND_halbarad;Halbarad;x
+DOR_hegon;Hegon I;x
+EAG_gwaihir;Gwaihír;x
+ERE_dain_ii;Dain II;x
+FAN_treebeard;Treebeard;x
+IML_elrond;Elrond;x
+ISE_saruman;Saruman the White;x
+LIN_cirdan;Círdan the Shipwright;x
+LOR_galadriel_n_celeborn;Galadriel and Celeborn;x
+LOS_farlang;Farlang, Lord of Lossarnach;x
+LOS_forlong;Forlong, Lord of Lossarnach;x
+GON_ecthelion_ii;Ecthelion II;x
+GON_denethor_ii;Denethor II;x
+GON_council_of_gondor;Council of Gondor;x
+GON_aragorn_elessar;Aragorn II Elessar;x
+GUL_khamul;Khamûl the Easterling;x
+HRD_nobles_of_harondor;Nobles of Harondor;x
+ITH_nobles_of_ithilien;Nobles of Ithilien;x
+LAM_asgon;Asgon, Lord of Lamedon;x
+LAM_angbor;Angbar, Lord of Lamedon;x
+LEB_orodreth;Orodreth, Lord of Lebennin;x
+MRN_borhador;Borhador, Lord of the Blackroot Vale;x
+MRN_duinhir;Duinhir, Lord of the Blackroot Vale;x
+OBS_king_of_the_dead;King of the Dead;x
+RAD_radagast;Radagast the Brown;x
+RAV_roac;Roäc;x
+ROH_thengel;Thengel;x
+MOR_sauron;Dark Lord Sauron the Great;x
+SHE_shelob;Shelob;x
+TOL_nobles_of_tolfalas;Nobles of Tolfalas;x
+WRM_thranduil;Thranduil;x
 #####################;x }
 ##### COUNTRIES #####;x {
 #####################;x
@@ -87,12 +166,10 @@ ADH;Adhallings of the Mirkwood Eaves;x
 ADH_ADJ;Adhalling;x
 ADB;Kingdom of Adûnabâr;x
 ADB_democracy;Republic of Adûnabâr;x
-ADB_sauron_dictatorship;Kingdom of Adûnabâr;x
-ADB_sauron_puppet;Kingdom of Adûnabâr;x
-ADB_nazgul_dictatorship;Kingdom of Adûnabâr;x
+ADB_dominion_1;Kingdom of Adûnabâr;x
 ADB_ADJ;Adûnabârian;x
 ADR;Andrast;x
-ADR_fiefdom;Fiefdom of Andrast;x
+ADR_dominion_2;Fiefdom of Andrast;x
 ADR_ADJ;Andrasthrim;x
 AGA;Agasha Clan;x
 AGA_ADJ;Kuga;x
@@ -107,15 +184,15 @@ ALN_ADJ;Aivathiuda;x
 AMO;Amov Clan;x
 AMO_ADJ;Logath;x
 AMR;Principality of Dol Amroth;x
-AMR_fiefdom;Fiefdom of Belfalas;x
+AMR_dominion_2;Fiefdom of Belfalas;x
 AMR_democracy;Republic of Belfalas;x
 AMR_ADJ;Amrothian;x
-AMR_fiefdom_ADJ;Belfalathrim;x
+AMR_dominion_2_ADJ;Belfalathrim;x
 ANF;Anfalas;x
-ANF_fiefdom;Fiefdom of Anfalas;x
+ANF_dominion_2;Fiefdom of Anfalas;x
 ANF_ADJ;Anfalathrim;x
 ANO;Anórien;x
-ANO_fiefdom;Fiefdom of Anórien;x
+ANO_dominion_2;Fiefdom of Anórien;x
 ANO_ADJ;Anórienrim;x
 ANT;Men of Antharsborg;x
 ANT_ADJ;Anthar;x
@@ -170,7 +247,6 @@ DND;Dúnedain of the North;x
 DND_ADJ;Dúnedain;x
 DOR;Kingdom of Dorwinion;x
 DOR_democracy;Republic of Dorwinion;x
-DOR_northmen_democracy;Republic of Dorwinion;x
 DOR_ADJ;Dorwinrim;x
 DRA;Dunir of Angast;x
 DRA_ADJ;Wildmen;x
@@ -245,17 +321,13 @@ GMO;Goblins of Moria;x
 GMO_ADJ;Moria Goblin;x
 GNR;Turmen Hyallondiéva;x
 GNR_democracy;Republic of Gondor;x
-GNR_dark_realm;Kingdom of Adûnabâr;x
-GNR_sauron_dictatorship;Kingdom of Adûnabâr;x
-GNR_sauron_puppet;Kingdom of Adûnabâr;x
-GNR_nazgul_dictatorship;Kingdom of Adûnabâr;x
+GNR_dominion_1;Kingdom of Adûnabâr;x
+GNR_monarchy_2;Stewardship of Gondir;x
 GNR_ADJ;Gondorian;x
 GON;Kingdom of Gondor;x
 GON_democracy;Republic of Gondor;x
-GON_dark_realm;Kingdom of Adûnabâr;x
-GON_sauron_dictatorship;Kingdom of Adûnabâr;x
-GON_sauron_puppet;Kingdom of Adûnabâr;x
-GON_nazgul_dictatorship;Kingdom of Adûnabâr;x
+GON_dominion_1;Kingdom of Adûnabâr;x
+GON_monarchy_2;Stewardship of Gondor;x
 GON_ADJ;Gondorian;x
 GOR;Gord Clan;x
 GOR_ADJ;Logath;x
@@ -265,7 +337,7 @@ GRM;Orcs of Mount Gram;x
 GRM_ADJ;Gram-goblin;x
 GUL;Dol Guldur;x
 GUL_ADJ;Guldurrim;x;
-GUL_nazgul_dictatorship;Nazgûl Realm of Dol Guldur;x
+GUL_dominion_1;Nazgûl Realm of Dol Guldur;x
 GUN;Orcs of Gundabad;x
 GUN_ADJ;Gundabad Orc;x
 GWA;Gwathirim;x
@@ -275,9 +347,9 @@ HAR_ADJ;Haradrim;x
 HEN;Tribes of Henlan;x
 HEN_ADJ;Helani;x
 HRD;Harondor;x
-HRD_fiefdom;South Gondor;x
+HRD_dominion_2;South Gondor;x
 HRD_ADJ;Harondan;x
-HRD_fiefdom_ADJ;South Gondorian;x
+HRD_dominion_2_ADJ;South Gondorian;x
 HRI;Herimundi of the Vale;x
 HRI_ADJ;Herimundi;x
 HRN;Harnendor;x
@@ -295,12 +367,11 @@ IML_ADJ;Half-Elven;x
 IRO;Lordship of the Iron Hills;x
 IRO_ADJ;Dwarvish;x
 ISE;Realm of Isengard;x
-ISE_fiefdom;Fiefdom of Dunfearn;x
+ISE_dominion_2;Fiefdom of Dunfearn;x
 ISE_ADJ;Isengardhrim;x
 ITH;Principality of Ithilien;x
-ITH_sauron_dictatorship;Occupied Ithilien;x
-ITH_sauron_puppet;Occupied Ithilien;x
-ITH_fiefdom;Fiefdom of Ithilien;x
+ITH_dominion_1;Occupied Ithilien;x
+ITH_dominion_2;Fiefdom of Ithilien;x
 ITH_ADJ;Ithilienrim;x
 KHA;Variags of Khand;x
 KHA_ADJ;Variag;x
@@ -315,12 +386,12 @@ KSH_ADJ;Koshrim;x
 KUG;Kug Clan;x
 KUG_ADJ;Kuga;x
 LAM;Lamedon;x
-LAM_fiefdom;Fiefdom of Lamedon;x
+LAM_dominion_2;Fiefdom of Lamedon;x
 LAM_ADJ;Lamedonrim;x
 LAR;Snow Orcs of Lar Huz;x
 LAR_ADJ;Snow Orc;x
 LEB;Lebennin;x
-LEB_fiefdom;Fiefdom of Lebennin;x
+LEB_dominion_2;Fiefdom of Lebennin;x
 LEB_ADJ;Lebenninrim;x
 LSF;Lossoth of Forochel;x
 LSF_ADJ;Losson;x
@@ -333,7 +404,7 @@ LMW_ADJ;Marsh-wight;x
 LOR;Realm of Lothlórien;x
 LOR_ADJ;Galadhrim;x
 LOS;Lossarnach;x
-LOS_fiefdom;Fiefdom of Lossarnach;x
+LOS_dominion_2;Fiefdom of Lossarnach;x
 LOS_ADJ;Lossarnachrim;x
 LUR;Lûrmsakûn;x
 LUR_ADJ;Lûrmsakûni;x
@@ -343,7 +414,7 @@ MAG;Tribes of Magur;x
 MAG_ADJ;Enedwaithrim;x
 MAN;Men of Angmar;x
 MAN_ADJ;Angmarrim;x
-MAN_nazgul_dictatorship;Witch-Kingdom of Angmar;x
+MAN_dominion_1;Witch-Kingdom of Angmar;x
 MAU;Stoors of Maur Tulhau;x
 MAU_ADJ;Stoor;x
 MEL;Mathleisbuarg;x
@@ -358,7 +429,7 @@ MOR_ADJ;Mordorim;x
 MRB;Dunlendings of Mirobel;x
 MRB_ADJ;Hollin-folk;x
 MRN;Mornan;x
-MRN_fiefdom;Fiefdom of Mornan;x
+MRN_dominion_2;Fiefdom of Mornan;x
 MRN_ADJ;Mornathrim;x
 MTN;Urukdurbzagh;x
 MTN_ADJ;Urukdurbzaghian;x
@@ -383,7 +454,7 @@ PEZ_ADJ;Pezarsani;x
 PRI;Pris Clan;x
 PRI_ADJ;Urgath;x
 PUK;Drúedain of Drúwaith Iaur;x
-PUK_fiefdom;Fiefdom of Drúwaith Iaur;x
+PUK_dominion_2;Fiefdom of Drúwaith Iaur;x
 PUK_ADJ;Drúedain;x
 RAD;Radagast of Rhosgobel;x
 RAD_ADJ;Rhosgobelean;x
@@ -394,13 +465,13 @@ RHO_ADJ;Rhovanrim;x
 RHO_monarchy;Kingdom of Rhovanion;x
 RHO_monarchy_2;Barding Kingdom of Rhovanion;x
 RHO_monarchy_2_ADJ;Barding;x
-RHO_fiefdom;Fiefdom of Dor Rhúnen;x
+RHO_dominion_2;Fiefdom of Dor Rhúnen;x
 RIV;Rivermen of the Celduin;x
 RIV_ADJ;Rivermen;x
 ROF;Royal Fold;x
 ROF_ADJ;Foldian;x
 ROH;Kingdom of Rohan;x
-ROH_fiefdom;Fiefdom of Calenardhon;x
+ROH_dominion_2;Fiefdom of Calenardhon;x
 ROH_ADJ;Rohirrim;x
 RME;Rómenost;x
 RME_ADJ;Anthar;x
@@ -447,7 +518,7 @@ TNR_ADJ;Tinerebhrim;x
 TRO;Trollshaws;x
 TRO_ADJ;Troll;x
 TOL;Isle of Tolfalas;x
-TOL_fiefdom;Fiefdom of Tolfalas;x
+TOL_dominion_2;Fiefdom of Tolfalas;x
 TOL_ADJ;Tolfalathrim;x
 TRE;Men of Tretoborg;x
 TRE_ADJ;Aivathiuda;x
@@ -461,7 +532,7 @@ VID;Men of Vidusborg;x
 VID_ADJ;Aivathiuda;x
 WEA;Weathertop;x
 WEA_ADJ;Weathertop;x
-WEA_nazgul_dictatorship;Nazgûl Realm of Weathertop;x
+WEA_dominion_1;Nazgûl Realm of Weathertop;x
 WND;Windan Elves of Harlindon;x
 WND_ADJ;Windan;x
 WOO;Woodsmen of Mirkwood;x

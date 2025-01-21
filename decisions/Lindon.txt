@@ -1,0 +1,16 @@
+# Imladris Decisions: {
+#	Starting Decisions (Unseen)
+# }
+
+# Starting Decisions (Unseen)
+political_decisions = {
+	LIN_start_decision = {
+		potential = { always = no }
+		effect = {
+			# Set allowed leaders
+			set_country_flag = ideologies_lords_of_mithlond_active
+			
+			set_country_flag = LIN_content
+		}
+	}
+}

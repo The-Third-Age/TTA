@@ -2,6 +2,22 @@
 All notable changes will be documented in this file.
 
 ## v0.5.1 - In Development
+ - Political Rework
+   - Leaders become political parties
+   - Ideologies stay as interest groups, but interest groups are much more specific than "High Nobility", "Low Nobility", etc...
+	 - Upper House now votes for a reform when the ruling party has at least 50% of the UH
+ - Alignments renamed
+   - Good Alignment --> Anti-Sauron
+   - Neutral Alignment --> Opportunistic
+   - Evil Alignment --> Sauronite
+ - Change Alignment cb removed
+ - More terrain descriptions and tweaks added
+ - Party issues updated
+   - Guild Policy turned into a setting
+   - Trade and Tax Policy re-added (from vanilla)
+ - Reforms rebalanced
+   - Reforms are always better the farther you go down
+     - This is done because pops cannot support reforms in the reverse (i.e., if you have wealth voting, pops will never want landed voting, even if it makes sense)
 
 ## [v0.5 Bearers of the Black Arrow](https://github.com/The-Third-Age/TTA-Victoria-2/releases/tag/v0.5) - 2024-12-23
 

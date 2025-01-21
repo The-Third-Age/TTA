@@ -1,120 +1,70 @@
 ##########################################
 # Issues that parties have.
 ##########################################
+# Note that pops will never support the "vassal" variants. They exist purely to not skew election results (pops with low consciousness vote randomly on their highest party issue, not by their ideology, leading to some pops wanting to vote for a vassal party)
 party_issues = {
-	guild_autonomy_policy = {
-		independent_guilds = {
-			factory_owner_cost = 0.3
-			factory_throughput = 0.05
-			min_tariff = -1
+	trade_policy = {
+		vassal_protectionism = {
 			max_tariff = 1
-			
-			rules = {
-				build_factory = no
-				expand_factory = no
-				open_factory = no
-				destroy_factory = no
-				build_railway = no
-				factory_priority = no
-				can_subsidise = no
-				pop_build_factory = yes
-				pop_expand_factory = yes
-				pop_open_factory = yes
-				delete_factory_if_no_input = yes
-				pop_build_factory_invest = yes
-				pop_expand_factory_invest = yes
-				open_factory_invest = yes
-				allow_foreign_investment = yes
-				build_railway_invest = yes
-				can_invest_in_pop_projects = no
-			}
+			min_tariff = -0.25
 		}
-		oversight_guilds = {
-			factory_owner_cost = 0.5
-			min_tariff = -1
+		protectionism = {
 			max_tariff = 1
-			
-			rules = {
-				build_factory = no
-				expand_factory = yes
-				open_factory = yes
-				destroy_factory = yes
-				build_railway = yes
-				factory_priority = yes
-				can_subsidise = yes
-				pop_build_factory = yes
-				pop_expand_factory = yes
-				pop_open_factory = yes
-				delete_factory_if_no_input = no
-				pop_build_factory_invest = yes
-				pop_expand_factory_invest = yes
-				open_factory_invest = yes
-				build_factory_invest = yes
-				expand_factory_invest = yes
-				build_railway_invest = yes
-				allow_foreign_investment = yes
-				can_invest_in_pop_projects = yes
-			}
+			min_tariff = -0.25
 		}
-		controlled_guilds = {
-			factory_owner_cost = 0.6
+		free_trade = {
+			max_tariff = 0.25
 			min_tariff = -1
-			max_tariff = 1
-			
-			rules = {
-				build_factory = yes
-				expand_factory = yes
-				open_factory = yes
-				destroy_factory = yes
-				build_railway = yes
-				factory_priority = yes
-				can_subsidise = yes
-				pop_build_factory = no
-				pop_expand_factory = yes
-				pop_open_factory = yes
-				delete_factory_if_no_input = no
-				build_factory_invest = yes
-				expand_factory_invest = yes
-				build_railway_invest = yes
-				allow_foreign_investment = yes
-				can_invest_in_pop_projects = yes
-			}
 		}
 	}
-	racial_policy = {
-		all_peoples = {
-			global_assimilation_rate = 0.5
+	tax_policy = {
+		laissez_faire = {
+			max_tax = 0.5
 		}
-		alignment_acceptance = {
-			global_assimilation_rate = 0.25
+		vassal_interventionism = {
+			min_tax = 0.15
+			max_tax = 0.65
 		}
-		racial_unity = {
+		interventionism = {
+			min_tax = 0.15
+			max_tax = 0.65
+		}
+		state_capitalism = {
+			min_tax = 0.25
+			max_tax = 0.75
+		}
+		planned_economy = {
+			min_tax = 0.5
 		}
 	}
 	language_policy = {
 		official_only = {
+			global_assimilation_rate = 0.25
 			non_accepted_pop_consciousness_modifier = 0.01
 			non_accepted_pop_militancy_modifier = 0.01
 		}
 		minority_toleration = {
-			global_assimilation_rate = -0.25
+			global_assimilation_rate = 0.10
+		}
+		vassal_regional_autonomy = {
+			non_accepted_pop_consciousness_modifier = -0.01
+			non_accepted_pop_militancy_modifier = -0.01
 		}
 		regional_autonomy = {
-			global_assimilation_rate = -0.5
 			non_accepted_pop_consciousness_modifier = -0.01
 			non_accepted_pop_militancy_modifier = -0.01
 		}
 	}
 	diplomatic_policy = {
 		isolationist = {
-			cb_generation_speed_modifier = -0.1
 			diplomatic_points_modifier = -0.1
 			max_loan_modifier = -0.25
-			suppression_points_modifier = 0.25
 			influence_modifier = -0.25
 		}
+		vassal_reactive = {
+			influence_modifier = -0.1
+		}
 		reactive = {
-			suppression_points_modifier = 0.1
 			influence_modifier = -0.1
 		}
 		proactive = {
@@ -123,10 +73,8 @@ party_issues = {
 			max_loan_modifier = 0.1
 		}
 		interactive = {
-			cb_generation_speed_modifier = 0.1
 			diplomatic_points_modifier = 0.2
 			max_loan_modifier = 0.25
-			suppression_points_modifier = -0.25
 			influence_modifier = 0.25
 		}
 	}
@@ -137,15 +85,23 @@ party_issues = {
 			war_exhaustion_effect = 0.5
 			is_jingoism = yes
 			cb_generation_speed_modifier = 0.3
-			mobilization_impact = 4
+			mobilization_impact = 5
 			org_regain = 0.5
 			reinforce_speed = 0.5
+		}
+		vassal_pro_military = {
+			max_military_spending = 1.0
+			war_exhaustion_effect = 0.7
+			cb_generation_speed_modifier = 0.2
+			mobilization_impact = 4
+			org_regain = 0.25
+			reinforce_speed = 0.25
 		}
 		pro_military = {
 			max_military_spending = 1.0
 			war_exhaustion_effect = 0.7
 			cb_generation_speed_modifier = 0.2
-			mobilization_impact = 3
+			mobilization_impact = 4
 			org_regain = 0.25
 			reinforce_speed = 0.25
 		}
@@ -154,7 +110,7 @@ party_issues = {
 			supply_consumption = -0.25
 			war_exhaustion_effect = 1.2
 			cb_generation_speed_modifier = -0.2
-			mobilization_impact = 2
+			mobilization_impact = 3
 			org_regain = -0.25
 			reinforce_speed = -0.25
 		}
@@ -163,19 +119,17 @@ party_issues = {
 			supply_consumption = -0.5
 			war_exhaustion_effect = 1.5
 			cb_generation_speed_modifier = -0.4
-			mobilization_impact = 1
+			mobilization_impact = 2
 			org_regain = -0.5
 			reinforce_speed = -0.5
 		}
 	}
-	good_evil_alignment_fake = {
-		good_alignment_fake = {
+	good_evil_alignment = {
+		good_alignment = {
 		}
-		neutral_alignment_fake = {
+		neutral_alignment = {
 		}
-		evil_alignment_fake = {
-		}
-		no_alignment = {
+		evil_alignment = {
 		}
 	}
 }
@@ -184,17 +138,109 @@ party_issues = {
 # Political reforms.
 ##########################################
 political_reforms = {
-	good_evil_alignment = {
-		good_alignment = {
+	# Guild Building Rules -- controlled by a setting
+	guild_autonomy_policy = {
+		# Player can't touch own industry, but pops can
+		independent_guilds = {
 			allow = { always = no }
+			
+			rules = {
+				# Player touch factories
+				build_factory = no
+				expand_factory = no
+				open_factory = no
+				destroy_factory = no
+				factory_priority = no
+				can_subsidise = no
+				can_invest_in_pop_projects = no
+				
+				# Pops touch factories
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				delete_factory_if_no_input = yes
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
-		neutral_alignment = {
+		# Player and pops can touch own industry
+		oversight_guilds = {
 			allow = { always = no }
+			
+			rules = {
+				# Player touch factories
+				build_factory = yes
+				expand_factory = yes
+				open_factory = yes
+				destroy_factory = yes
+				factory_priority = yes
+				can_subsidise = yes
+				can_invest_in_pop_projects = yes
+				
+				# Pops touch factories
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				delete_factory_if_no_input = yes
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
-		evil_alignment = {
+		# Player can touch own industry, but pops can't
+		controlled_guilds = {
 			allow = { always = no }
+			
+			rules = {
+				# Player touch factories
+				build_factory = yes
+				expand_factory = yes
+				open_factory = yes
+				destroy_factory = yes
+				factory_priority = yes
+				can_subsidise = yes
+				can_invest_in_pop_projects = yes
+				
+				# Pops touch factories
+				pop_build_factory = no
+				pop_expand_factory = no
+				pop_open_factory = no
+				pop_build_factory_invest = no
+				pop_expand_factory_invest = no
+				delete_factory_if_no_input = no
+				
+				# Investment
+				allow_foreign_investment = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				
+				# Other
+				build_railway = yes
+			}
 		}
 	}
+	# Immigration Rules -- controlled by a setting
 	border_policy = {
 		closed_borders = {
 			allow = { always = no }
@@ -209,6 +255,7 @@ political_reforms = {
 			allow = { always = no }
 		}
 	}
+	# Voting Rules
 	vote_franschise = {
 		next_step_only = yes
 		none_voting = {
@@ -232,61 +279,50 @@ political_reforms = {
 			rich_vote = 1
 			middle_vote = 0
 			poor_vote = 0
-			
-			global_immigrant_attract = 0.01
 		}
 		wealth_weighted_voting = {
 			allow = { has_country_flag = democratic }
 			rich_vote = 2
 			middle_vote = 1
 			poor_vote = 0
-			
-			global_immigrant_attract = 0.02
 		}
 		wealth_voting = {
 			allow = { has_country_flag = democratic }
 			rich_vote = 1
 			middle_vote = 1
 			poor_vote = 0
-			
-			global_immigrant_attract = 0.03
 		}
 		universal_weighted_voting = {
 			allow = { has_country_flag = democratic }
 			rich_vote = 3
 			middle_vote = 2
 			poor_vote = 1
-			
-			global_immigrant_attract = 0.04
 		}
 		universal_voting = {
 			allow = { has_country_flag = democratic }
 			rich_vote = 1
 			middle_vote = 1
 			poor_vote = 1
-			
-			global_immigrant_attract = 0.05
 		}
 	}
+	# Advisor Breakdown
 	upper_house_composition = {
 		party_appointed = {
 			rules = { same_as_ruling_party = yes }
 		}
 		appointed = {
 			rules = { rich_only = yes }
-			global_immigrant_attract = 0.01
 		}
 		state_equal_weight = {
 			rules = { state_vote = yes }
 			allow = { NOT = { vote_franschise = none_voting } }
-			global_immigrant_attract = 0.02
 		}
 		population_equal_weight = {
 			rules = { population_vote = yes }
 			allow = { NOT = { vote_franschise = none_voting } }
-			global_immigrant_attract = 0.03
 		}
 	}
+	# Voting Count
 	voting_system = {
 		first_past_the_post = {
 			rules = { largest_share = yes }
@@ -301,6 +337,7 @@ political_reforms = {
 			allow = { NOT = { vote_franschise = none_voting } }
 		}
 	}
+	# Issue Change Speed
 	public_meetings = {
 		next_step_only = yes
 		no_meeting = {
@@ -308,137 +345,109 @@ political_reforms = {
 		}
 		meeting_curfew = {
 			issue_change_speed = 0.5
-			suppression_points_modifier = -0.1
 		}
 		yes_meeting = {
 			issue_change_speed = 1
-			global_immigrant_attract = 0.01
-			suppression_points_modifier = -0.25
 		}
 	}
+	# Suppression Points
 	nobility_autonomy = {
 		next_step_only = yes
 		
 		large_noble_autonomy = {
 			suppression_points_modifier = -0.5
-			global_pop_militancy_modifier = -0.03
-			administrative_efficiency_modifier = -0.05
 		}
 		medium_noble_autonomy = {
 			suppression_points_modifier = -0.25
-			global_pop_militancy_modifier = -0.01
-			administrative_efficiency_modifier = -0.02
 		}
 		small_noble_autonomy = {
 		}
 	}
+	# Mobilisation Size + Economy Impact
 	noble_levy_contribution = {
 		next_step_only = yes
 		
 		large_levy_contribution = {
-			mobilisation_size = 0.05
-			global_pop_militancy_modifier = 0.01
-			supply_consumption = -0.1
+			mobilisation_economy_impact  = 0.1
 		}
 		medium_levy_contribution = {
-			mobilisation_size = 0.02
-			supply_consumption = -0.05
 			allow = { NOT = { nobility_autonomy = large_noble_autonomy } }
+			mobilisation_size = 0.02
+			mobilisation_economy_impact = 0.05
 		}
 		small_levy_contribution = {
-			global_pop_militancy_modifier = -0.01
 			allow = { nobility_autonomy = small_noble_autonomy }
+			mobilisation_size = 0.05
 		}
 	}
+	# Tax Efficiency
 	noble_tax_contribution = {
 		next_step_only = yes
 		
 		small_tax_contribution = {
 			tax_efficiency = -0.05
-			global_pop_militancy_modifier = -0.03
 		}
 		medium_tax_contribution = {
-			tax_efficiency = -0.03
 			allow = { NOT = { nobility_autonomy = large_noble_autonomy } }
-			global_pop_militancy_modifier = -0.01
+			tax_efficiency = -0.03
 		}
 		large_tax_contribution = {
 			allow = { nobility_autonomy = small_noble_autonomy }
 		}
 	}
+	# Prestige
 	knighting_rights = {
 		next_step_only = yes
 		
 		allowed_knighting_rights = {
-			prestige = -0.05
-			global_pop_consciousness_modifier = -0.03
 		}
 		restricted_knighting_rights = {
 			allow = { NOT = { nobility_autonomy = large_noble_autonomy } }
+			prestige = 0.25
 		}
 		royal_knighting_rights = {
-			prestige = 0.05
-			global_pop_consciousness_modifier = 0.03
 			allow = { nobility_autonomy = small_noble_autonomy }
+			prestige = 0.5
 		}
 	}
+	# Promotion Rate, RGO Output (inverse), Guild Throughput (inverse)
 	serfdom = {
 		next_step_only = yes
 		
 		enforced_serfdom = {
 			rgo_output = 0.1
 			factory_throughput = -0.1
-			global_pop_militancy_modifier = 0.03
 		}
 		discouraged_serfdom = {
 			rgo_output = 0.05
 			factory_throughput = -0.05
-			global_pop_militancy_modifier = 0.01
 		}
 		banned_serfdom = {
 		}
 	}
+	# Admin Efficiency
 	crown_land_ownership = {
 		next_step_only = yes
 		
 		five_land_ownership = {
-			rich_income_modifier = 0.05
-			middle_income_modifier = 0.01
-			poor_income_modifier = 0.05
-			tax_efficiency = -0.05
-			administrative_efficiency_modifier = -0.06
+			administrative_efficiency_modifier = -0.15
 		}
 		ten_land_ownership = {
-			rich_income_modifier = 0.03
-			middle_income_modifier = 0.03
-			poor_income_modifier = 0.03
-			tax_efficiency = -0.03
-			administrative_efficiency_modifier = -0.04
+			administrative_efficiency_modifier = -0.10
 		}
 		thirty_land_ownership = {
-			rich_income_modifier = 0.01
-			middle_income_modifier = 0.01
-			poor_income_modifier = 0.01
-			tax_efficiency = -0.01
-			administrative_efficiency_modifier = -0.02
+			administrative_efficiency_modifier = -0.05
 		}
 		half_land_ownership = {
 		}
 		seventy_land_ownership = {
-			rich_income_modifier = -0.01
-			middle_income_modifier = -0.01
-			poor_income_modifier = -0.01
-			tax_efficiency = 0.01
-			administrative_efficiency_modifier = 0.02
+			administrative_efficiency_modifier = 0.05
 		}
 		all_land_ownership = {
-			rich_income_modifier = -0.03
-			middle_income_modifier = -0.03
-			poor_income_modifier = -0.03
-			tax_efficiency = 0.02
-			administrative_efficiency_modifier = 0.04
+			administrative_efficiency_modifier = 0.10
 		}
 	}
+	# Slavery Rules
 	slavery = {
 		next_step_only = yes
 		yes_slavery = {
@@ -451,24 +460,24 @@ political_reforms = {
 		}
 		no_slavery = {
 			rules = { slavery_allowed = no }
-			global_immigrant_attract = 0.01
 			allow = { good_evil_alignment = good_alignment }
 		}
 	}
+	# Pop Militancy and Consciousness
 	penal_reform = {
 		next_step_only = yes
 		capital_punishment = {
-			global_pop_militancy_modifier = -0.02
-			global_pop_consciousness_modifier = -0.02
 		}
 		hard_labor = {
 			global_pop_militancy_modifier = -0.01
-			rgo_output = 0.05
+			global_pop_consciousness_modifier = -0.01
 		}
 		incarceration = {
-			global_pop_consciousness_modifier = 0.02
+			global_pop_militancy_modifier = -0.02
+			global_pop_consciousness_modifier = -0.02
 		}
 	}
+	# Who can vote rules
 	cultural_rights = {
 		next_step_only = yes
 		primary_voting = {
@@ -491,26 +500,23 @@ political_reforms = {
 # Social reforms.
 ##########################################
 social_reforms = {
+	# Tariff Efficiency
 	exclusive_trading_rights = {
 		next_step_only = yes
 		
 		granted_exclusive_tr = {
-			import_cost = 0.2
-			tariff_efficiency_modifier = 0.1
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			tariff_efficiency_modifier = -0.1
 		}
 		limited_exclusive_tr = {
-			import_cost = 0.1
-			tariff_efficiency_modifier = 0.05
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			tariff_efficiency_modifier = -0.05
 		}
 		abolished_exclusive_tr = {
 			allow = {
@@ -519,176 +525,145 @@ social_reforms = {
 			}
 		}
 	}
+	# Income Modifiers
 	state_supplies_monopoly = {
 		administrative = yes
 		next_step_only = yes
 		
 		privileged_state_supplies = {
-			supply_consumption = 0.5
-			rich_income_modifier = 0.25
-			poor_income_modifier = -0.1
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			rich_income_modifier = 0.25
+			middle_income_modifier = -0.05
+			poor_income_modifier = -0.1
 		}
 		allowed_state_supplies = {
-			supply_consumption = 0.25
+			allow = {
+				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
+				NOT = { has_country_flag = DAL_guild_supported_by_realm }
+			}
 			rich_income_modifier = 0.1
+			middle_income_modifier = -0.02
 			poor_income_modifier = -0.05
 			administrative_multiplier = 1
-			
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
 		}
 		restricted_state_supplies = {
-			administrative_multiplier = 2
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			administrative_multiplier = 2
 		}
 	}
+	# Pop Militancy and Consciousness
 	city_jurisdiction = {
 		administrative = yes
 		next_step_only = yes
 		
 		independent_cities = {
-			global_pop_militancy_modifier = 0.03
-			global_pop_consciousness_modifier = -0.06
-			administrative_efficiency_modifier = -0.03
-			tax_efficiency = -0.03
-			suppression_points_modifier = -0.2
-			leadership_modifier = -0.1
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			global_pop_militancy_modifier = 0.03
+			global_pop_consciousness_modifier = 0.03
 		}
 		chartered_cities = {
+			allow = {
+				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
+				NOT = { has_country_flag = DAL_guild_supported_by_realm }
+			}
 			administrative_multiplier = 1
 			global_pop_militancy_modifier = 0.02
-			global_pop_consciousness_modifier = -0.04
-			administrative_efficiency_modifier = -0.02
-			tax_efficiency = -0.02
-			suppression_points_modifier = -0.1
-			leadership_modifier = -0.05
-			
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
+			global_pop_consciousness_modifier = 0.02
 		}
 		territorial_cities = {
+			allow = {
+				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
+				NOT = { has_country_flag = DAL_guild_supported_by_realm }
+			}
 			administrative_multiplier = 2
 			global_pop_militancy_modifier = 0.01
-			global_pop_consciousness_modifier = -0.02
-			administrative_efficiency_modifier = -0.01
-			tax_efficiency = -0.01
-			
-			allow = {
-				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
-				NOT = { has_country_flag = DAL_guild_supported_by_realm }
-			}
+			global_pop_consciousness_modifier = 0.01
 		}
 		royal_cities = {
-			administrative_multiplier = 3
-			suppression_points_modifier = 0.1
-			leadership_modifier = 0.1
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			administrative_multiplier = 3
 		}
 	}
+	# Minimum Wage and Pensions
 	pensions = {
 		next_step_only = yes
 		
 		no_pensions = {
-			minimum_wage = 1
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			minimum_wage = 1
 		}
 		trinket_pensions = {
-			minimum_wage = 1
-			pension_level = 0.05
-			global_immigrant_attract = 0.01
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			minimum_wage = 1
+			pension_level = 0.25
 		}
 		low_pensions = {
-			minimum_wage = 1
-			pension_level = 0.10
-			global_immigrant_attract = 0.02
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			minimum_wage = 1
+			pension_level = 0.50
 		}
 		acceptable_pensions = {
-			minimum_wage = 1
-			pension_level = 0.15
-			global_immigrant_attract = 0.03
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			minimum_wage = 1
+			pension_level = 0.75
 		}
 		good_pensions = {
-			minimum_wage = 1
-			pension_level = 0.20
-			global_immigrant_attract = 0.04
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			minimum_wage = 1
+			pension_level = 1
 		}
 	}
+	# Promotion Rate
 	apprenticeship = {
 		next_step_only = yes
 		administrative = yes
 		
 		hereditary = {
-			factory_throughput = -0.05
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
 		}
 		appointment = {
-			social_reform_desire = 0.1
-			administrative_multiplier = 1
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			administrative_multiplier = 1
 		}
 		guild_school = {
-			social_reform_desire = 0.2
-			factory_throughput = 0.05
-			education_efficiency_modifier = 0.05
-			research_points_modifier = 0.01
-			administrative_multiplier = 2
-			
 			allow = {
 				NOT = { has_country_flag = DAL_merchant_supported_by_realm }
 				NOT = { has_country_flag = DAL_guild_supported_by_realm }
 			}
+			administrative_multiplier = 2
 		}
 	}
 }

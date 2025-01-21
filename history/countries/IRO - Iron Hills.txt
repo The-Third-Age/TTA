@@ -3,20 +3,17 @@ capital = 669
 primary_culture = longbeard
 culture = dwarven_culture
 religion = dwarven
-government = lord_monarchy
+government = monarchy
 nationalvalue = generic_leader
 literacy = 0.3
 civilized = yes
 
 oob = "IRO_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_longbeard_nobles
 
 upper_house = {
-	high_nobility = 60
-	low_nobility = 29
-	burgher = 6
-	loremaster = 5
+	longbeard_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

@@ -7,12 +7,12 @@ government = monarchy
 nationalvalue = generic_leader
 literacy = 0.3
 civilized = yes
-ruling_party = generic_high_nobility
+ruling_party = generic_dourhand_nobles
 
 prestige = 1
 
 upper_house = {
-	high_nobility = 100
+	dourhand_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

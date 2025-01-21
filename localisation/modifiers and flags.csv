@@ -318,13 +318,13 @@ call_to_arms_cooldown_desc;We recently had some flavor that called our allies to
 ##### WAR OF THE RING MODIFIERS #####;x {
 #####################################;x
 one_ring;The One Ring;x
-one_ring_desc;We are in possession of the One Ring. §RThis powerful artefact makes our pops more evil, and gives all other realms free cbs on us.§!;x
+one_ring_desc;We are in possession of the One Ring. §RThis powerful artefact makes our pops more aligned with Sauron, and gives all other realms free cbs on us.§!;x
 ring_hunters;Ring Hunters;x
 ring_hunters_desc;We have sent a hunting party searching for the rumored One Ring near Hobbiton.;x
 fellowship_member;Fellowship Member;x
 fellowship_member_desc;A member of our realm is part of the Fellowship of the Ring!;x
 remembered_sacrifice;Remembered Sacrifice;x
-remembered_sacrifice_desc;Our member of the Fellowship of the Ring sacrified themselves in the Mines of Moria to save the Fellowship from certain doom. They single-handedly fought an unbeatable foe - a Balrog of Morgoth - to buy time for the rest to escape. §RThis modifier makes you pops slightly more good-aligned§!.;x
+remembered_sacrifice_desc;Our member of the Fellowship of the Ring sacrified themselves in the Mines of Moria to save the Fellowship from certain doom. They single-handedly fought an unbeatable foe - a Balrog of Morgoth - to buy time for the rest to escape. §RThis modifier makes you pops slightly more Anti-Sauron§!.;x
 dont_peace_out;Don't Peace Out;x
 dont_peace_out_desc;This prevents us from Utility Tag peacing out.;x
 wotr_countdown;War of the Ring Countdown;x
@@ -665,10 +665,6 @@ promote_craftsmen;Promote Guild Artisans;x
 promote_labourers;Promote Labourers;x
 promote_soldiers;Promote Soldiers;x
 party_loyalty_focus;Interest Group Loyalty;x
-high_nobility_focus;Promote High Nobility;x
-low_nobility_focus;Promote Low Nobility;x
-burgher_focus;Promote Burghers;x
-loremaster_focus;Promote Loremasters;x
 ruling_party_focus;Promote Leading Interesting Group Loyalty;x
 #########################;x }
 ##### COUNTRY FLAGS #####;x {
@@ -678,9 +674,6 @@ HAVE_NOT_COUNTRY_FLAG;§RNOT§! ;x
 unciv_5;Uncentralized Recruitment Limit 5%;x
 unciv_7;Uncentralized Recruitment Limit 7.5%;x
 unciv_10;Uncentralized Recruitment Limit 10%;x
-attempting_to_good;Attempts to become a good nation;x
-attempting_to_neutral;Attempts to become a neutral nation;x
-attempting_to_evil;Attempts to become a evil nation;x
 has_one_ring;Has the One Ring;x
 frodo_chose_us;Frodo arrived in our lands;x
 the_council_of_elrond_host;Hosted the Council of Elrond;x
@@ -693,3 +686,46 @@ DAL_united_gramavuld;Have taken decision §YThe United Northmen of Gramavuld§!;
 alliance_dwarves_men_voted_for;Voted for the current resolution;x
 alliance_dwarves_men_abstained;Abstained for the current resolution;x
 alliance_dwarves_men_voted_against;Voted against the current resolution;x
+BEO_content;Original tag is BEO (Beornings of the Vale);x
+DAL_content;Original tag is DAL (Barding Realm);x
+DOR_content;Original tag is DOR (Kingdom of Dorwinion);x
+EAG_content;Original tag is EAG (Eagles of the Eyrie);x
+EEL_content;Original tag is EEL (Eagles of Ered Luin);x
+ERE_content;Original tag is ERE (Kingdom of Erebor);x
+FAN_content;Original tag is FAN (Ents of Fangorn);x
+GON_content;Original tag is GON (Kingdom of Gondor);x
+GUL_content;Original tag is GUL (Nazgûl Realm of Dol Guldur);x
+IML_content;Original tag is IML (Realm of Imladris);x
+ISE_content;Original tag is ISE (Realm of Isengard);x
+LIN_content;Original tag is LIN (Realm of Lindon);x
+LOR_content;Original tag is LOR (Realm of Lothlórien);x
+MOR_content;Original tag is MOR (Shadow of Mordor);x
+OBS_content;Original tag is OBS (Oathbreakers);x
+RAD_content;Original tag is RAD (Radagast of Rhosgobel);x
+RAV_content;Original tag is RAV (Ravens of Erebor);x
+SHE_content;Original tag is SHE (Shelob's Domain);x
+WRM_content;Original tag is WRM (Woodland Realm);x
+##################################;x }
+##### IDEOLOGY COUNTRY FLAGS #####;x {
+##################################;x
+ideologies_line_of_isildur_active;Line of Isildur Active;x
+ideologies_house_of_stewards_active;House of Stewards Active;x
+ideologies_house_of_dol_amroth_active;House of Dol Amroth Active;x
+ideologies_house_half_elven_active;House Half-Elven Active;x
+ideologies_lords_of_mithlond_active;Lords of Mithlond Active;x
+ideologies_house_of_oropher_active;House of Oropher Active;x
+ideologies_house_of_finarfin_active;House of Finarfin Active;x
+ideologies_house_of_bard_active;House of Bard Active;x
+ideologies_house_of_koldana_active;House of Koldana Active;x
+ideologies_line_of_durin_active;Line of Durin Active;x
+ideologies_house_of_beorn_active;House of Beorn Active;x
+ideologies_lords_of_fangorn_active;Lords of Fangorn Active;x
+ideologies_house_of_eorl_active;House of Eorl Active;x
+ideologies_flightlords_of_the_mountains_active;Flightlords of the Mountains Active;x
+ideologies_lords_of_ravens_active;Lords of the Ravens Active;x
+ideologies_great_brood_mothers_active;Great Brood Mothers Active;x
+ideologies_kings_of_the_dead_active;Kings of the Dead Active;x
+ideologies_lords_of_isengard_active;Lords of Isengard Active;x
+ideologies_lords_of_rhosgobel_active;Lords of Rhosgobel Active;x
+ideologies_lords_of_mordor_active;Lords of Mordor Active;x
+ideologies_saurons_nine_active;Sauron's Nine Active;x

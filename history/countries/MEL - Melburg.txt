@@ -3,16 +3,16 @@ capital = 748
 primary_culture = melburgi
 culture = men_culture
 religion = men
-government = man_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
 oob = "MEL_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_melburgi_nobles
 
 upper_house = {
-	high_nobility = 100
+	melburgi_nobles = 100
 }
 
 slavery = no_slavery

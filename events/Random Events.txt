@@ -1089,7 +1089,7 @@ country_event = {
 	
 	option = {
 		name = "There is good in this world"
-		any_pop = { dominant_issue = { value = good_alignment_fake factor = 0.1 } }
+		any_pop = { dominant_issue = { value = good_alignment factor = 0.1 } }
 		any_pop = { militancy = -0.2 }
 	}
 }

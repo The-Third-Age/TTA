@@ -5,16 +5,16 @@ primary_culture = aivathiuda
 culture = men_culture
 religion = men
 culture = rivermen
-government = northmen_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0.2
 
 oob = "TRE_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_aivathiuda_nobles
 
 upper_house = {
-	high_nobility = 100
+	aivathiuda_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

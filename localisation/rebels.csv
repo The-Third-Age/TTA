@@ -22,15 +22,15 @@ serf_rebels_title;Serf Rebels;x
 serf_rebels_name;Serf Rebels;x
 serf_rebels_desc;Serf Rebels seek to abolish serfdom within their realm.;x
 serf_rebels_army;Serf Rebels;x
-good_rebels_title;Good Rebels;x
-good_rebels_name;Good Rebels;x
-good_rebels_desc;Good Rebels seek to turn their realm into a good realm.;x
-good_rebels_army;Good Rebels;x
-evil_rebels_title;Evil Rebels;x
-evil_rebels_name;Evil Rebels;x
-evil_rebels_desc;Evil Rebels seek to turn their realm into an evil realm.;x
-evil_rebels_army;Evil Rebels;x
-neutral_rebels_title;Neutral Rebels;x
-neutral_rebels_name;Neutral Rebels;x
-neutral_rebels_desc;Neutral Rebels seek to turn their realm into a neutral realm.;x
-neutral_rebels_army;Neutral Rebels;x
+good_rebels_title;Anti-Sauronite Rebels;x
+good_rebels_name;Anti-Sauronite Rebels;x
+good_rebels_desc;Anti-Sauronite Rebels seek to turn their realm into an Anti-Sauronite realm.;x
+good_rebels_army;Anti-Sauronite Rebels;x
+evil_rebels_title;Sauronite Rebels;x
+evil_rebels_name;Sauronite Rebels;x
+evil_rebels_desc;Sauronite Rebels seek to turn their realm into a Sauronite realm.;x
+evil_rebels_army;Sauronite Rebels;x
+neutral_rebels_title;Opportunistic Rebels;x
+neutral_rebels_name;Opportunistic Rebels;x
+neutral_rebels_desc;Opportunistic Rebels seek to turn their realm into an Opportunistic realm.;x
+neutral_rebels_army;Opportunistic Rebels;x

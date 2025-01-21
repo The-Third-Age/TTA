@@ -5,6 +5,6 @@ government = monarchy
 nationalvalue = generic_leader
 civilized = yes
 
-ruling_party = generic_high_nobility
+ruling_party = generic_servants_neutral
 upper_house = { # inherit
 }

@@ -3,7 +3,7 @@ capital = 843
 primary_culture = morian
 culture = orc_culture
 religion = orc
-government = goblin_tribe
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
@@ -13,10 +13,10 @@ oob = "GMO_oob.txt"
 
 slavery = yes_slavery
 upper_house_composition = appointed
-ruling_party = generic_high_nobility
+ruling_party = generic_morian_nobles
 
 upper_house = {
-	high_nobility = 100
+	morian_nobles = 100
 }
 
 schools = traditional_academic

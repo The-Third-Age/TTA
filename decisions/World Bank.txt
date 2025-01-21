@@ -3,12 +3,9 @@
 
 # World Bank Decisions: {
 #	Starting Decision (unseen)
-#	Good/Evil Clean Up
-#	Leave FOR Alone
 #	Government Flags Clean Up
 #	Realm Leaders
-#	Debug
-#	Tech Clean Up }
+# }
 
 # Starting Decision
 political_decisions = {
@@ -41,68 +38,20 @@ political_decisions = {
 			
 			# For Good Realms
 			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = eldar
-						is_culture_group = teleri
-						is_culture_group = avari
-						is_culture_group = northmen
-						is_culture_group = gramavuld_northmen
-						is_culture_group = anduinrim
-						is_culture_group = ents
-						is_culture_group = eagles
-						is_culture_group = rohirrim
-						is_culture_group = lossoth
-						primary_culture = dunedain
-						primary_culture = gondorian
-						primary_culture = amrothian
-						primary_culture = longbeard
-						primary_culture = firebeard
-						primary_culture = broadbeam
-					}
-				}
-				political_reform = good_alignment
+				limit = { good_evil_alignment = good_alignment }
 				add_accepted_culture = good_culture
 			}
 			
 			# For Neutral Realms
 			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = breelander
-						is_culture_group = hobbits
-						is_culture_group = wildmen
-						primary_culture = kingsmen
-						primary_culture = ironfist
-						primary_culture = arthedani
-						primary_culture = cardolandrim
-						primary_culture = haeranedain
-						primary_culture = oathbreaker
-					}
-				}
+				limit = { good_evil_alignment = neutral_alignment }
 				add_accepted_culture = neutral_culture
-				political_reform = neutral_alignment
 			}
 			
 			# For Evil Realms
 			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = haradrim
-						primary_culture = black_numenorean
-						is_culture_group = khandish
-						is_culture_group = mordorian
-						is_culture_group = easterlings
-						is_culture_group = spiders
-						is_culture_group = uruk_hai
-						is_culture_group = northern_goblins
-						is_culture_group = angmarrim
-						primary_culture = wight
-						is_culture_group = trolls
-					}
-				}
+				limit = { good_evil_alignment = evil_alignment }
 				add_accepted_culture = evil_culture
-				political_reform = evil_alignment
 			}
 			
 			# Literacy boost for Loremasters
@@ -190,11 +139,7 @@ political_decisions = {
 			# Democratic country flag for democracies
 			any_country = {
 				limit = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
+					government = democracy
 				}
 				set_country_flag = democratic
 			}
@@ -490,210 +435,6 @@ political_decisions = {
 	}
 }
 
-# Good/Evil Clean Up
-political_decisions = {
-	good_evil_messed_up = {
-		potential = {
-			tag = FOR
-			OR = {
-				any_neighbor_country = {
-					good_evil_alignment = good_alignment
-					OR = {
-						NOT = { accepted_culture = good_culture }
-						accepted_culture = neutral_culture
-						accepted_culture = evil_culture
-					}
-				}
-				any_neighbor_country = {
-					good_evil_alignment = neutral_alignment
-					OR = {
-						accepted_culture = good_culture
-						NOT = { accepted_culture = neutral_culture }
-						accepted_culture = evil_culture
-					}
-				}
-				any_neighbor_country = {
-					good_evil_alignment = evil_alignment
-					OR = {
-						accepted_culture = good_culture
-						accepted_culture = neutral_culture
-						NOT = { accepted_culture = evil_culture }
-					}
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					good_evil_alignment = good_alignment
-					OR = {
-						NOT = { accepted_culture = good_culture }
-						accepted_culture = neutral_culture
-						accepted_culture = evil_culture
-					}
-				}
-				add_accepted_culture = good_culture
-				remove_accepted_culture = neutral_culture
-				remove_accepted_culture = evil_culture
-			}
-			any_neighbor_country = {
-				limit = {
-					good_evil_alignment = neutral_alignment
-					OR = {
-						accepted_culture = good_culture
-						NOT = { accepted_culture = neutral_culture }
-						accepted_culture = evil_culture
-					}
-				}
-				remove_accepted_culture = good_culture
-				add_accepted_culture = neutral_culture
-				remove_accepted_culture = evil_culture
-			}
-			any_neighbor_country = {
-				limit = {
-					good_evil_alignment = evil_alignment
-					OR = {
-						accepted_culture = good_culture
-						accepted_culture = neutral_culture
-						NOT = { accepted_culture = evil_culture }
-					}
-				}
-				remove_accepted_culture = good_culture
-				remove_accepted_culture = neutral_culture
-				add_accepted_culture = evil_culture
-			}
-		}
-	}
-	
-	good_evil_wrong_sphere = {
-		potential = {
-			tag = FOR
-			any_neighbor_country = {
-				ai = yes
-				part_of_sphere = yes
-				OR = {
-					AND = {
-						good_evil_alignment = good_alignment
-						sphere_owner = { good_evil_alignment = evil_alignment }
-					}
-					AND = {
-						good_evil_alignment = evil_alignment
-						sphere_owner = { good_evil_alignment = good_alignment }
-					}
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					ai = yes
-					part_of_sphere = yes
-					OR = {
-						AND = {
-							good_evil_alignment = good_alignment
-							sphere_owner = { good_evil_alignment = evil_alignment }
-						}
-						AND = {
-							good_evil_alignment = evil_alignment
-							sphere_owner = { good_evil_alignment = good_alignment }
-						}
-					}
-				}
-				country_event = 2504
-			}
-		}
-	}
-}
-
-# Leave FOR Alone
-political_decisions = {
-	break_alliance_with_FOR = {
-		picture = "dont_do_that"
-		
-		potential = {
-			FOR = { any_neighbor_country = { alliance_with = FOR } }
-			OR = {
-				tag = FOR
-				AND = {
-					alliance_with = FOR
-					ai = yes
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_country = {
-				limit = {
-					alliance_with = FOR
-				}
-				leave_alliance = FOR
-				relation = {
-					who = FOR
-					value = -400
-				}
-			}
-		}
-	}
-	
-	leave_sphere_FOR = {
-		picture = "dont_do_that"
-		
-		potential = {
-			FOR = { part_of_sphere = yes }
-			OR = {
-				tag = FOR
-				AND = {
-					is_sphere_leader_of = FOR
-					ai = yes
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_country = {
-				limit = {
-					is_sphere_leader_of = FOR
-				}
-				diplomatic_influence = {
-					who = FOR
-					value = -400
-				}
-			}
-		}
-	}
-	
-	end_war_FOR = {
-		picture = "dont_do_that"
-		
-		potential = {
-			tag = FOR
-			war = yes
-			NOT = { has_country_modifier = dont_peace_out }
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					war_with = FOR
-				}
-				end_war = FOR
-			}
-		}
-	}
-}
-
 # Government Flags Clean Up
 political_decisions = {
 	democratic_flag_clean_up = {
@@ -703,20 +444,12 @@ political_decisions = {
 				# Has democratic flag but not a democracy
 				any_neighbor_country = {
 					has_country_flag = democratic
-					NOT = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
+					NOT = { government = democracy }
 				}
 				# A democracy without democratic flag
 				any_neighbor_country = {
 					NOT = { has_country_flag = democratic }
-					OR = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
+					government = democracy
 				}
 			}
 		}
@@ -727,137 +460,16 @@ political_decisions = {
 			any_neighbor_country = {
 				limit = {
 					has_country_flag = democratic
-					OR = {
-						AND = {
-							NOT = { government = hobbit_realm }
-							is_culture_group = hobbits
-						}
-						AND = {
-							NOT = { government = northmen_democracy }
-							OR = {
-								is_culture_group = northmen
-								is_culture_group = gramavuld_northmen
-							}
-						}
-						AND = {
-							NOT = { government = democracy }
-							NOT = { is_culture_group = hobbits }
-							NOT = { is_culture_group = northmen }
-							NOT = { is_culture_group = gramavuld_northmen }
-						}
-					}
+					NOT = { government = democracy }
 				}
 				clr_country_flag = democratic
 			}
 			any_neighbor_country = {
 				limit = {
 					NOT = { has_country_flag = democratic }
-					OR = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
+					government = democracy
 				}
 				set_country_flag = democratic
-			}
-		}
-	}
-	
-	something_to_democracy = {
-		potential = {
-			tag = FOR
-			any_neighbor_country = {
-				has_country_flag = attempting_to_democratic
-				vote_franschise = landed_voting
-				NOT = {
-					OR = {
-						government = hobbit_realm
-						government = democracy
-						government = northmen_democracy
-					}
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_democratic
-					vote_franschise = landed_voting
-					is_culture_group = hobbits
-					NOT = { government = hobbit_realm }
-				}
-				clr_country_flag = attempting_to_democratic
-				set_country_flag = democratic
-				government = hobbit_realm
-				election = yes
-			}
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_democratic
-					vote_franschise = landed_voting
-					OR = {
-						is_culture_group = northmen
-						is_culture_group = gramavuld_northmen
-					}
-					NOT = { government = northmen_democracy }
-				}
-				clr_country_flag = attempting_to_democratic
-				set_country_flag = democratic
-				government = northmen_democracy
-				election = yes
-			}
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_democratic
-					vote_franschise = landed_voting
-					NOT = { is_culture_group = hobbits }
-					NOT = { is_culture_group = northmen }
-					NOT = { is_culture_group = gramavuld_northmen }
-					NOT = { government = democracy }
-				}
-				clr_country_flag = attempting_to_democratic
-				set_country_flag = democratic
-				government = democracy
-				election = yes
-			}
-		}
-	}
-	
-	monarchize_flag_cleanup = {
-		potential = {
-			tag = FOR
-			any_neighbor_country = {
-				has_country_flag = attempting_to_monarchize
-				OR = {
-					government = monarchy
-					government = principality
-					government = stewardship
-					government = fiefdom
-					government = galadhrim_monarchy
-					government = lord_monarchy
-				}
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					has_country_flag = attempting_to_monarchize
-					OR = {
-						government = monarchy
-						government = principality
-						government = stewardship
-						government = fiefdom
-						government = galadhrim_monarchy
-						government = lord_monarchy
-					}
-				}
-				clr_country_flag = attempting_to_monarchize
 			}
 		}
 	}
@@ -1072,34 +684,6 @@ political_decisions = {
 					NOT = { has_country_flag = existing_country }
 				}
 				set_country_flag = existing_country
-			}
-		}
-	}
-}
-
-# Debug
-political_decisions = {
-	debug_research_flags = {
-		potential = {
-			tag = FOR
-			ai = no
-			any_neighbor_country = {
-				NOT = { has_country_flag = infantry_focused }
-				NOT = { has_country_flag = ranged_focused }
-				NOT = { has_country_flag = cavalry_focused }
-			}
-		}
-		
-		allow = {}
-		
-		effect = {
-			any_neighbor_country = {
-				limit = {
-					NOT = { has_country_flag = infantry_focused }
-					NOT = { has_country_flag = ranged_focused }
-					NOT = { has_country_flag = cavalry_focused }
-				}
-				treasury = 1
 			}
 		}
 	}

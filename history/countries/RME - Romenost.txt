@@ -3,17 +3,17 @@ capital = 472
 primary_culture = anthar
 culture = men_culture
 religion = men
-government = northmen_tribe
+government = tribal
 plurality = 5
 nationalvalue = generic_leader
 literacy = 0.2
 
 oob = "RME_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_anthar_nobles
 
 upper_house = {
-	high_nobility = 100
+	anthar_nobles = 100
 }
 penal_reform = hard_labor
 slavery = no_slavery

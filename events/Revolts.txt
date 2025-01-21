@@ -19,11 +19,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
+					government = democracy
 					vote_franschise = universal_weighted_voting
 				}
 			}
@@ -32,11 +28,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
+					government = democracy
 					vote_franschise = wealth_voting
 				}
 			}
@@ -46,11 +38,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
+					government = democracy
 					vote_franschise = wealth_weighted_voting
 				}
 			}
@@ -60,47 +48,11 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					OR = {
-						government = democracy
-						government = hobbit_realm
-						government = northmen_democracy
-					}
+					government = democracy
 					vote_franschise = landed_voting
 				}
 			}
 			owner = { political_reform = wealth_weighted_voting }
-		}
-		random_owned = {
-			limit = {
-				owner = {
-					is_culture_group = hobbits
-					NOT = { government = hobbit_realm }
-				}
-			}
-			owner = {
-				government = hobbit_realm
-				political_reform = landed_voting
-				set_country_flag = democratic
-				election = yes
-			}
-		}
-		
-		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						is_culture_group = northmen
-						is_culture_group = gramavuld_northmen
-					}
-					NOT = { government = northmen_democracy }
-				}
-			}
-			owner = {
-				government = northmen_democracy
-				political_reform = landed_voting
-				set_country_flag = democracy
-				election = yes
-			}
 		}
 		
 		random_owned = {
@@ -173,25 +125,13 @@ country_event = {
 			owner = { remove_accepted_culture = evil_culture }
 		}
 		
-		political_reform = good_alignment
+		ruling_party_ideology = servants_good
 		add_accepted_culture = good_culture
 		
-		any_pop = { dominant_issue = { value = good_alignment_fake factor = 0.2 } }
-		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
+		any_pop = { dominant_issue = { value = good_alignment factor = 0.2 } }
 		
 		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						government = dark_realm
-						government = sauron_dictatorship
-						government = nazgul_dictatorship
-					}
-				}
-			}
+			limit = { owner = { government = sauron_dictatorship } }
 			owner = { government = monarchy }
 		}
 	}
@@ -229,27 +169,13 @@ country_event = {
 			owner = { remove_accepted_culture = neutral_culture }
 		}
 		
-		political_reform = evil_alignment
+		ruling_party_ideology = servants_evil
 		add_accepted_culture = evil_culture
 		
-		any_pop = { dominant_issue = { value = evil_alignment_fake factor = 0.2 } }
-		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
+		any_pop = { dominant_issue = { value = evil_alignment factor = 0.2 } }
 		
 		random_owned = {
-			limit = {
-				NOT = {
-					owner = {
-						OR = {
-							government = dark_realm
-							government = sauron_dictatorship
-							government = nazgul_dictatorship
-						}
-					}
-				}
-			}
+			limit = { NOT = { owner = { government = sauron_dictatorship } } }
 			owner = {
 				government = dark_realm
 				political_reform = none_voting
@@ -283,25 +209,13 @@ country_event = {
 			owner = { remove_accepted_culture = evil_culture }
 		}
 		
-		political_reform = neutral_alignment
+		ruling_party_ideology = servants_neutral
 		add_accepted_culture = neutral_culture
 		
-		any_pop = { dominant_issue = { value = neutral_alignment_fake factor = 0.2 } }
-		
-		clr_country_flag = attempting_to_good
-		clr_country_flag = attempting_to_neutral
-		clr_country_flag = attempting_to_evil
+		any_pop = { dominant_issue = { value = neutral_alignment factor = 0.2 } }
 		
 		random_owned = {
-			limit = {
-				owner = {
-					OR = {
-						government = dark_realm
-						government = sauron_dictatorship
-						government = nazgul_dictatorship
-					}
-				}
-			}
+			limit = { owner = { government = sauron_dictatorship } }
 			owner = { government = monarchy }
 		}
 	}

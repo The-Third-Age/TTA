@@ -6,36 +6,16 @@ NATIONALIST_UNION_MOVEMENT_DESC;Movement calling for the forming of §Y$COUNTRY$
 NATIONALIST_LIBERATION_MOVEMENT_DESC;Movement calling for the liberation of §Y$COUNTRY$§!;x
 political_reforms;Political Reforms;x
 POLITICS_NOBILITY_PRIVILEGE;Nobility Privilege;x
-good_evil_alignment;Alignment;x
-good_alignment;§GGood Alignment§!;x
-good_alignment_l;Good Alignment;x
-good_alignment_desc;We are considered a Good Realm;x
-movement_good_alignment;Movement to become a Good Realm;x
-neutral_alignment;§PNeutral Alignment§!;x
-neutral_alignment_l;Neutral Alignment;x
-neutral_alignment_desc;We are considered a Neutral Realm;x
-movement_neutral_alignment;Movement to become a Neutral Realm;x
-evil_alignment;§REvil Alignment§!;x
-evil_alignment_l;Evil Alignment;x
-evil_alignment_desc;We are considered an Evil Realm;x
-movement_evil_alignment;Movement to become an Evil Realm;x
-good_evil_alignment_fake;Alignment;x
-good_alignment_fake;§GGood Alignment§!;x
-good_alignment_fake_l;Good Alignment;x
-good_alignment_fake_desc;Our Leading Interest Group is Good.;x
-movement_good_alignment_fake;Movement to become a Good Realm;x
-neutral_alignment_fake;§PNeutral Alignment§!;x
-neutral_alignment_fake_l;Neutral Alignment;x
-neutral_alignment_fake_desc;Our Leading Interest Group is Neutral.;x
-movement_neutral_alignment_fake;Movement to become a Neutral Realm;x
-evil_alignment_fake;§REvil Alignment§!;x
-evil_alignment_fake_l;Evil Alignment;x
-evil_alignment_fake_desc;Our Leading Interest Group is Evil.;x
-movement_evil_alignment_fake;Movement to become an Evil Realm;x
-no_alignment;No Alignment;x
-no_alignment_l;No Alignment;x
-no_alignment_desc;Our Leading Interest Group doesn't have an alignment.;x
-movement_no_alignment;Movement to have no alignment;x
+guild_autonomy_policy;Guild Autonomy;x
+independent_guilds;Independent;x
+independent_guilds_desc;Guilds are completely independent of the ruler of the realm. The realm has no influence over guilds whatsoever.;x
+independent_guilds_l;Independent;x
+oversight_guilds;Oversight;x
+oversight_guilds_desc;Guilds are overseen by servants of the realm. The realm cannot tell guilds where they should be or what their economic goals should be. However, they can enforce rules and support important guilds as needed.;x
+oversight_guilds_l;Oversight;x
+controlled_guilds;Controlled;x
+controlled_guilds_desc;Guilds are completely controlled by the realm.;x
+controlled_guilds_l;Controlled;x
 border_policy;Borders;x
 closed_borders;Closed Borders;x
 closed_borders_l;Closed Borders;x
@@ -134,11 +114,11 @@ movement_all_land_ownership;Movement to increase realm land control;x
 serfdom;Serfdom;
 enforced_serfdom;Enforced Serfdom;
 enforced_serfdom_l;Enforced Serfdom;x
-enforced_serfdom_desc;Serfdom is enforced. Serfs are bound to the land they work unless they are specifically granted leave or property by their master.\n\n§RThis will massively decrease promotion for the poor§!;x
+enforced_serfdom_desc;Serfdom is enforced. Serfs are bound to the land they work unless they are specifically granted leave or property by their master.\nPoor Pop Promotion Rate: §R1.0%§!;x
 movement_enforced_serfdom;Movement to enforce serfdom;x
 discouraged_serfdom;Discouraged Serfdom;
 discouraged_serfdom_l;Discouraged Serfdom;x
-discouraged_serfdom_desc;Serfdom is legal but discouraged. The rulers want to bring the realm on the way towards abolishing serfdom, be it because of the aspirations of their own or because of practical reasons. Serfdom appears to be a unliked institution that will mostly be replaced by a system of indentured servitude or through ownership of land by freeholding peasants.\n\n§RThis will mildly decrease promotion for the poor§!;x
+discouraged_serfdom_desc;Serfdom is legal but discouraged. The rulers want to bring the realm on the way towards abolishing serfdom, be it because of the aspirations of their own or because of practical reasons. Serfdom appears to be a unliked institution that will mostly be replaced by a system of indentured servitude or through ownership of land by freeholding peasants.\nPoor Pop Promotion Rate: §R0.5%§!;x
 movement_discouraged_serfdom;Movement to restrict serfdom;x
 banned_serfdom;Serfdom Banned;
 banned_serfdom_l;Serfdom Banned;x
@@ -277,11 +257,11 @@ hereditary_desc;Apprentices are determined by a person's bloodline. A son will b
 movement_hereditary;Movement to make apprenticeships based upon family;x
 appointment;Appointment;x
 appointment_l;Appointed Apprenticeship;x
-appointment_desc;Apprentices can either be hereditary or appointed.;x
+appointment_desc;Apprentices can either be hereditary or appointed.\nPop Promotion Rate: §G0.2%§!;x
 movement_appointment;Movement to allow apprentices to be appointed;x
 guild_school;Guild School;x
 guild_school_l;Guild School;x
-guild_school_desc;Existing guilds have schools in which students can learn their trade. From here, these students can get apprenticeships with guild members.;x
+guild_school_desc;Existing guilds have schools in which students can learn their trade. From here, these students can get apprenticeships with guild members.\nPop Promotion Rate: §G0.4%§!;x
 movement_guild_school;Movement to create guild schools;x
 state_supplies_monopoly;State Supplies;x
 privileged_state_supplies;Privileged;x
@@ -400,26 +380,32 @@ new_guilds_desc;Guilds are starting to gain traction among the upper class.;x
 ##### INTEREST GROUP ISSUES #####;x {
 #################################;x
 party_issues;Interest Group Issues;x
-guild_autonomy_policy;Guild Autonomy Policy;x
-independent_guilds;Independent;x
-independent_guilds_desc;Guilds are completely independent of the ruler of the realm. The realm has no influence over guilds whatsoever.;x
-independent_guilds_l;Independent;x
-oversight_guilds;Oversight;x
-oversight_guilds_desc;Guilds are overseen by servants of the realm. The realm cannot tell guilds where they should be or what their economic goals should be. However, they can enforce rules and support important guilds as needed.;x
-oversight_guilds_l;Oversight;x
-controlled_guilds;Controlled;x
-controlled_guilds_desc;Guilds are completely controlled by the realm.;x
-controlled_guilds_l;Controlled;x
-racial_policy;Racial Policy;x
-all_peoples;All Peoples;x
-all_peoples_desc;Every person, regardless of their race, is accepted by the realm.;x
-all_peoples_l;All Peoples;x
-alignment_acceptance;Alignment Acceptance;x
-alignment_acceptance_desc;Every person, as long as they follow our alignment, is accepted by the realm.;x
-alignment_acceptance_l;Alignment Acceptance;x
-racial_unity;Unity;x
-racial_unity_desc;Only those of the ruling race are accepted by the realm.;x
-racial_unity_l;Racial Unity;x
+trade_policy;Trade Policy;x
+vassal_protectionism;Protectionism;x
+vassal_protectionism_desc;Trade between realms is restricted.;x
+vassal_protectionism_l;Protectionism;x
+protectionism;Protectionism;x
+protectionism_desc;Trade between realms is restricted.;x
+protectionism_l;Protectionism;x
+free_trade;Free Trade;x
+free_trade_desc;Traders are able to act and transact without interference from the realm.;x
+free_trade_l;Free Trade;x
+tax_policy;Tax Policy;x
+laissez_faire;Laissez Faire;x
+laissez_faire_desc;The realm reduces taxes as much as possible, even incurring debt if it serves the best interests of the people.;x
+laissez_faire_l;Laissez Faire;x
+vassal_interventionism;Interventionism;x
+vassal_interventionism_desc;The realm reduces taxes as much as possible, but will not go into debt unless at the utmost need.;x
+vassal_interventionism_l;Interventionism;x
+interventionism;Interventionism;x
+interventionism_desc;The realm reduces taxes as much as possible, but will not go into debt unless at the utmost need.;x
+interventionism_l;Interventionism;x
+state_capitalism;State Capitalism;x
+state_capitalism_desc;The realm reduces taxes when possible, but places the economic health of the realm over that of its people.;x
+state_capitalism_l;State Capitalism;x
+planned_economy;Planned Economy;x
+planned_economy_desc;The realm spares no pity for its people - they are but another resource.;x
+planned_economy_l;Planned Economy;x
 language_policy;Language Policy;x
 official_only;Official Only;x
 official_only_desc;Only the official language of the realm is allowed in public settings.;x
@@ -427,6 +413,9 @@ official_only_l;Official Only;x
 minority_toleration;Minority Toleration;x
 minority_toleration_desc;Minority languages are allowed in public as long as it does not involve matters of realm.;x
 minority_toleration_l;Minority Toleration;x
+vassal_regional_autonomy;Regional Autonomy;x
+vassal_regional_autonomy_desc;All languages are allowed in every setting.;x
+vassal_regional_autonomy_l;Regional Autonomy;x
 regional_autonomy;Regional Autonomy;x
 regional_autonomy_desc;All languages are allowed in every setting.;x
 regional_autonomy_l;Regional Autonomy;x
@@ -434,6 +423,9 @@ diplomatic_policy;Diplomatic Policy;x
 isolationist;Isolationist;x
 isolationist_desc;Who cares what happens in the outside world? Our realm is great!;x
 isolationist_l;Isolationist;x
+vassal_reactive;Reactive;x
+vassal_reactive_desc;The ruler reacts to things that happens outside the realm after news of it arrives. No proactive actions occur.;x
+vassal_reactive_l;Reactive;x
 reactive;Reactive;x
 reactive_desc;The ruler reacts to things that happens outside the realm after news of it arrives. No proactive actions occur.;x
 reactive_l;Reactive;x
@@ -447,6 +439,9 @@ war_policy;War Policy;x
 jingoism;Jingoism;x
 jingoism_desc;The military is the centrepiece of the state and military spending is prioritised.;x
 jingoism_l;Jingoism;x
+vassal_pro_military;Pro Military;x
+vassal_pro_military_desc;The government is a strong supporter of the armed services.;x
+vassal_pro_military_l;Pro Military;x
 pro_military;Pro Military;x
 pro_military_desc;The government is a strong supporter of the armed services.;x
 pro_military_l;Pro Military;x
@@ -456,6 +451,19 @@ anti_military_l;Anti Military;x
 pacifism;Pacifism;x
 pacifism_desc;The government is actively hostile to the interests of the military, feeling they are opposed to the government policies.;x
 pacifism_l;Pacifism;x
+good_evil_alignment;Alignment;x
+good_alignment;Anti-Sauron;x
+good_alignment_l;Anti-Sauron;x
+good_alignment_desc;We are aligned against Sauron;x
+movement_good_alignment;Movement to become a realm aligned against Sauron;x
+neutral_alignment;Opportunistic;x
+neutral_alignment_l;Opportunistic;x
+neutral_alignment_desc;We are considered a realm indifferent to Sauron;x
+movement_neutral_alignment;Movement to become a realm indifferent to Sauron;x
+evil_alignment;Sauronite;x
+evil_alignment_l;Sauronite;x
+evil_alignment_desc;We are considered a realm aligned with Sauron;x
+movement_evil_alignment;Movement to become a realm aligned with Sauron;x
 ###############################;x }
 ##### INTEREST GROUP TEXT #####;x {
 ###############################;x
@@ -572,23 +580,264 @@ POLITICS_CAN_DO_SOCIAL_REFROMS;Can enact burgher reforms;x
 ######################;x
 disenfranchised_group;Disenfranchised;x
 slave_ideology;Slaves;x
-slave_ideology_uh;Slave advisors will vote to follow whatever the realm wants.;x
+slave_ideology_uh;Slave ideology supporters will vote to follow whatever the realm wants.;x
 tribal_ideology;Tribal;x
-tribal_ideology_uh;Tribal advisors will vote against progress in the realm and active look to reverse it.;x
-prosauron_group;Servants;x
-servants;Servants;x
-servants_uh;Servants advisors will vote to follow whatever the realm wants.;x
-nobility_group;Nobles;x
-high_nobility;High Nobility;x
-high_nobility_uh;High Nobility advisors will never vote for political reforms. Instead, they hope to repeal them. They will vote for burgher reforms with high enough militancy.;x
-low_nobility;Low Nobility;x
-low_nobility_uh;Low Nobility advisors will vote for political and burgher reforms with high enough militancy;x
-burgher_group;Burgers;x
-burgher;Burghers;x
-burgher_uh;Burgher advisors will vote for political reforms with high enough militancy. They will always vote for burgher reforms.;x
-loremaster_group;Loremasters;x
-loremaster;Loremasters;x
-loremaster_uh;Loremaster advisors will always vote for political and burgher reforms.;x
+tribal_ideology_uh;Tribal ideology supporters will vote against progress in the realm and active look to reverse it.;x
+vassal_group;Servants;x
+servants_good;Servants (Anti-Sauron);x
+servants_good_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
+servants_neutral;Servants (Opportunistic);x
+servants_neutral_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
+servants_evil;Servants (Sauronite);x
+servants_evil_uh;Servants supporters will never vote to reform the realm. They only serve our overlord.;x
+dunedain_nobility;Dúnedain Nobility;x
+line_of_isildur;Line of Isildur;x
+line_of_isildur_uh;Line of Isildur supporters will vote for all reforms while in power.;x
+dunedain_nobles;Dúnedain Nobles;x
+dunedain_nobles_uh;Dúnedain Noble supporters will vote for all reforms while in power.;x
+house_of_stewards;House of Stewards;x
+house_of_stewards_uh;House of Stewards supporters will vote for all reforms while in power.;x
+gondorian_nobles;Gondorian Nobles;x
+gondorian_nobles_uh;Gondorian Noble supporters will vote for all reforms while in power.;x
+house_of_dol_amroth;House of Dol Amroth;x
+house_of_dol_amroth_uh;House of Dol Amroth supporters will vote for all reforms while in power.;x
+amrothian_nobles;Amrothian Nobles;x
+amrothian_nobles_uh;Amrothian Noble supporters will vote for all reforms while in power.;x
+arthedani_nobles;Arthedani Nobles;x
+arthedani_nobles_uh;Arthedani Noble supporters will vote for all reforms while in power.;x
+cardolandrim_nobles;Cardolandrim Nobles;x
+cardolandrim_nobles_uh;Cardolandrim Noble supporters will vote for all reforms while in power.;x
+haeranedain_nobles;Haeranedain Nobles;x
+haeranedain_nobles_uh;Haeranedain Noble supporters will vote for all reforms while in power.;x
+noldor_nobility;Ñoldor Nobility;x
+house_half_elven;House Half-Elven;x
+house_half_elven_uh;House Half-Elven supporters will vote for all reforms while in power.;x
+noldor_nobles;Ñoldor Nobles;x
+noldor_nobles_uh;Ñoldor Noble supporters will vote for all reforms while in power.;x
+teleri_nobility;Teleri Nobility;x
+lords_of_mithlond;Lords of Mithlond;x
+lords_of_mithlond_uh;Lords of Mithlond supporters will vote for all reforms while in power.;x
+falathrim_nobles;Falathrim Nobles;x
+falathrim_nobles_uh;Falathrim Noble supporters will vote for all reforms while in power.;x
+house_of_oropher;House of Oropher;x
+house_of_oropher_uh;House of Oropher supporters will vote for all reforms while in power.;x
+silvan_nobles;Silvan Nobles;x
+silvan_nobles_uh;Silvan Noble supporters will vote for all reforms while in power.;x
+house_of_finarfin;House of Finarfin;x
+house_of_finarfin_uh;House of Finarfin supporters will vote for all reforms while in power.;x
+galadhrim_nobles;Galadhrim Nobles;x
+galadhrim_nobles_uh;Galadhrim Noble supporters will vote for all reforms while in power.;x
+avari_nobility;Avarim Nobility;x
+avari_nobles;Avari Nobles;x
+avari_nobles_uh;Avari Noble supporters will vote for all reforms while in power.;x
+haradrim_nobility;Haradrim Nobility;x
+umbarrim_nobles;Umbarrim Nobles;x
+umbarrim_nobles_uh;Umbarrim Noble supporters will vote for all reforms while in power.;x
+harnendan_nobles;Harnendan Nobles;x
+harnendan_nobles_uh;Harnendan Noble supporters will vote for all reforms while in power.;x
+haruzani_nobles;Haruzani Nobles;x
+haruzani_nobles_uh;Haruzani Noble supporters will vote for all reforms while in power.;x
+pezarsani_nobles;Pezarsani Nobles;x
+pezarsani_nobles_uh;Pezarsani Noble supporters will vote for all reforms while in power.;x
+lurmsakuni_nobles;Lurmsakuni Nobles;x
+lurmsakuni_nobles_uh;Lurmsakuni Noble supporters will vote for all reforms while in power.;x
+arysian_nobles;Arysian Nobles;x
+arysian_nobles_uh;Arysian Noble supporters will vote for all reforms while in power.;x
+kingsmen_nobility;Kingsmen Nobility;x
+kingsmen_nobles;Kingsmen Nobles;x
+kingsmen_nobles_uh;Kingsmen Noble supporters will vote for all reforms while in power.;x
+black_numenorean_nobles;Black Númenórean Nobles;x
+black_numenorean_nobles_uh;Black Númenórean Noble supporters will vote for all reforms while in power.;x
+khandish_nobility;Khandish Nobility;x
+variag_nobles;Variag Nobles;x
+variag_nobles_uh;Variag Noble supporters will vote for all reforms while in power.;x
+nurniag_nobles;Nurniag Nobles;x
+nurniag_nobles_uh;Nurniag Noble supporters will vote for all reforms while in power.;x
+chelkiag_nobles;Chelkiag Nobles;x
+chelkiag_nobles_uh;Chelkiag Noble supporters will vote for all reforms while in power.;x
+easterlings_nobility;Easterling Nobility;x
+sagath_nobles;Sagath Nobles;x
+sagath_nobles_uh;Sagath Noble supporters will vote for all reforms while in power.;x
+sekel_nobles;Sekel Nobles;x
+sekel_nobles_uh;Sekel Noble supporters will vote for all reforms while in power.;x
+urgath_nobles;Urgath Nobles;x
+urgath_nobles_uh;Urgath Noble supporters will vote for all reforms while in power.;x
+kuga_nobles;Kuga Nobles;x
+kuga_nobles_uh;Kuga Noble supporters will vote for all reforms while in power.;x
+logath_nobles;Logath Nobles;x
+logath_nobles_uh;Logath Noble supporters will vote for all reforms while in power.;x
+gramavuld_northmen_nobility;Gramavuld Northmen Nobility;x
+house_of_bard;House of Bard;x
+house_of_bard_uh;House of Bard supporters will vote for all reforms while in power.;x
+barding_nobles;Lakemen Nobles;x
+barding_nobles_uh;Lakemen Noble supporters will vote for all reforms while in power.;x
+grammas_nobles;Grammas Nobles;x
+grammas_nobles_uh;Grammas Noble supporters will vote for all reforms while in power.;x
+rivermen_nobles;Rivermen Nobles;x
+rivermen_nobles_uh;Rivermen Noble supporters will vote for all reforms while in power.;x
+adhalling_nobles;Adhalling Nobles;x
+adhalling_nobles_uh;Adhalling Noble supporters will vote for all reforms while in power.;x
+northmen_nobility;Northmen Nobility;x
+house_of_koldana;House of Koldana;x
+house_of_koldana_uh;House of Koldana supporters will vote for all reforms while in power.;x
+dorwinrim_nobles;Dorwinrim Nobles;x
+dorwinrim_nobles_uh;Dorwinrim Noble supporters will vote for all reforms while in power.;x
+aivathiuda_nobles;Aivathiuda Nobles;x
+aivathiuda_nobles_uh;Aivathiuda Noble supporters will vote for all reforms while in power.;x
+anthar_nobles;Anthar Nobles;x
+anthar_nobles_uh;Anthar Noble supporters will vote for all reforms while in power.;x
+gadraught_nobles;Gadraught Nobles;x
+gadraught_nobles_uh;Gadraught Noble supporters will vote for all reforms while in power.;x
+dwarves_nobility;Dwarves Nobility;x
+line_of_durin;Line of Durin;x
+line_of_durin_uh;Line of Durin supporters will vote for all reforms while in power.;x
+longbeard_nobles;Longbeard Nobles;x
+longbeard_nobles_uh;Longbeard Noble supporters will vote for all reforms while in power.;x
+firebeard_nobles;Firebeard Nobles;x
+firebeard_nobles_uh;Firebeard Noble supporters will vote for all reforms while in power.;x
+broadbeam_nobles;Broadbeam Nobles;x
+broadbeam_nobles_uh;Broadbeam Noble supporters will vote for all reforms while in power.;x
+ironfist_nobles;Ironfist Nobles;x
+ironfist_nobles_uh;Ironfist Noble supporters will vote for all reforms while in power.;x
+wicked_dwarves_nobility;Wicked Dwarves Nobility;x
+dourhand_nobles;Dourhand Nobles;x
+dourhand_nobles_uh;Dourhand Noble supporters will vote for all reforms while in power.;x
+shornbeard_nobles;Shornbeard Nobles;x
+shornbeard_nobles_uh;Shornbeard Noble supporters will vote for all reforms while in power.;x
+anduinrim_nobility;Anduinrim Nobility;x
+woodsmen_nobles;Woodsmen Nobles;x
+woodsmen_nobles_uh;Woodsmen Noble supporters will vote for all reforms while in power.;x
+beorning_nobles;Beorning Nobles;x
+beorning_nobles_uh;Beorning Noble supporters will vote for all reforms while in power.;x
+house_of_beorn;House of Beorn;x
+house_of_beorn_uh;House of Beorn supporters will vote for all reforms while in power.;x
+beiabarnae_nobles;Beiabarnae Nobles;x
+beiabarnae_nobles_uh;Beiabarnae Noble supporters will vote for all reforms while in power.;x
+melburgi_nobles;Melburgi Nobles;x
+melburgi_nobles_uh;Melburgi Noble supporters will vote for all reforms while in power.;x
+herimundi_nobles;Herimundi Nobles;x
+herimundi_nobles_uh;Herimundi Noble supporters will vote for all reforms while in power.;x
+ents_nobility;Ents Nobility;x
+lords_of_fangorn;Lords of Fangorn;x
+lords_of_fangorn_uh;Lords of Fangorn supporters will vote for all reforms while in power.;x
+ent_nobles;Ent Nobles;x
+ent_nobles_uh;Ent Noble supporters will vote for all reforms while in power.;x
+huorn_nobles;Huorn Nobles;x
+huorn_nobles_uh;Huorn Noble supporters will vote for all reforms while in power.;x
+black_huorn_nobles;Black Huorn Nobles;x
+black_huorn_nobles_uh;Black Huorn Noble supporters will vote for all reforms while in power.;x
+wildmen_nobility;Wildmen Nobility;x
+druedain_nobles;Druedain Nobles;x
+druedain_nobles_uh;Druedain Noble supporters will vote for all reforms while in power.;x
+dunnish_nobles;Dunnish Nobles;x
+dunnish_nobles_uh;Dunnish Noble supporters will vote for all reforms while in power.;x
+hollin_folk_nobles;Hollin Folk Nobles;x
+hollin_folk_nobles_uh;Hollin Folk Noble supporters will vote for all reforms while in power.;x
+enedwaithrim_nobles;Enedwaithrim Nobles;x
+enedwaithrim_nobles_uh;Enedwaithrim Noble supporters will vote for all reforms while in power.;x
+saerlanner_nobles;Saerlanner Nobles;x
+saerlanner_nobles_uh;Saerlanner Noble supporters will vote for all reforms while in power.;x
+dunir_nobles;Dunir Nobles;x
+dunir_nobles_uh;Dunir Noble supporters will vote for all reforms while in power.;x
+marshmen_nobles;Marshmen Nobles;x
+marshmen_nobles_uh;Marshmen Noble supporters will vote for all reforms while in power.;x
+rohirrim_nobility;Rohirrim Nobility;x
+house_of_eorl;House of Eorl;x
+house_of_eorl_uh;House of Eorl supporters will vote for all reforms while in power.;x
+rohirrim_nobles;Rohirrim Nobles;x
+rohirrim_nobles_uh;Rohirrim Noble supporters will vote for all reforms while in power.;x
+anduinmen_nobles;Anduinmen Nobles;x
+anduinmen_nobles_uh;Anduinmen Noble supporters will vote for all reforms while in power.;x
+isenmen_nobles;Isenmen Nobles;x
+isenmen_nobles_uh;Isenmen Noble supporters will vote for all reforms while in power.;x
+uruk_hai_nobility;Uruk Hai Nobility;x
+uruk_hai_nobles;Uruk Hai Nobles;x
+uruk_hai_nobles_uh;Uruk Hai Noble supporters will vote for all reforms while in power.;x
+mordorian_nobility;Mordorian Nobility;x
+mordor_orc_nobles;Mordor Orc Nobles;x
+mordor_orc_nobles_uh;Mordor Orc Noble supporters will vote for all reforms while in power.;x
+mordor_uruk_nobles;Mordor Uruk Nobles;x
+mordor_uruk_nobles_uh;Mordor Uruk Noble supporters will vote for all reforms while in power.;x
+guldurrim_nobles;Guldurrim Nobles;x
+guldurrim_nobles_uh;Guldurrim Noble supporters will vote for all reforms while in power.;x
+white_mountain_goblin_nobles;White Mountain Goblin Nobles;x
+white_mountain_goblin_nobles_uh;White Mountain Goblin Noble supporters will vote for all reforms while in power.;x
+northern_goblins_nobility;Northern Goblins Nobility;x
+morian_nobles;Morian Nobles;x
+morian_nobles_uh;Morian Noble supporters will vote for all reforms while in power.;x
+goblin_towner_nobles;Goblin Towner Nobles;x
+goblin_towner_nobles_uh;Goblin Towner Noble supporters will vote for all reforms while in power.;x
+gundabad_orc_nobles;Gundabad Orc Nobles;x
+gundabad_orc_nobles_uh;Gundabad Orc Noble supporters will vote for all reforms while in power.;x
+snow_orc_nobles;Snow Orc Nobles;x
+snow_orc_nobles_uh;Snow Orc Noble supporters will vote for all reforms while in power.;x
+gram_goblin_nobles;Gram Goblin Nobles;x
+gram_goblin_nobles_uh;Gram Goblin Noble supporters will vote for all reforms while in power.;x
+blue_mountain_goblin_nobles;Blue Mountain Goblin Nobles;x
+blue_mountain_goblin_nobles_uh;Blue Mountain Goblin Noble supporters will vote for all reforms while in power.;x
+angmarrim_nobility;Angmarrim Nobility;x
+angmarrim_nobles;Angmarrim Nobles;x
+angmarrim_nobles_uh;Angmarrim Noble supporters will vote for all reforms while in power.;x
+hillmen_nobles;Hillmen Nobles;x
+hillmen_nobles_uh;Hillmen Noble supporters will vote for all reforms while in power.;x
+lossoth_nobility;Lossoth Nobility;x
+lossoth_nobles;Lossoth Nobles;x
+lossoth_nobles_uh;Lossoth Noble supporters will vote for all reforms while in power.;x
+breelander_nobility;Breelander Nobility;x
+breelander_nobles;Breelander Nobles;x
+breelander_nobles_uh;Breelander Noble supporters will vote for all reforms while in power.;x
+siredain_nobles;Siredain Nobles;x
+siredain_nobles_uh;Siredain Noble supporters will vote for all reforms while in power.;x
+hobbits_nobility;Hobbits Nobility;x
+stoor_nobles;Stoor Nobles;x
+stoor_nobles_uh;Stoor Noble supporters will vote for all reforms while in power.;x
+harfoot_nobles;Harfoot Nobles;x
+harfoot_nobles_uh;Harfoot Noble supporters will vote for all reforms while in power.;x
+fallohide_nobles;Fallohide Nobles;x
+fallohide_nobles_uh;Fallohide Noble supporters will vote for all reforms while in power.;x
+trolls_nobility;Troll Nobility;x
+cave_trolls_nobles;Cave Troll Nobles;x
+cave_trolls_nobles_uh;Cave Troll Noble supporters will vote for all reforms while in power.;x
+hill_trolls_nobles;Hill Troll Nobles;x
+hill_trolls_nobles_uh;Hill Troll Noble supporters will vote for all reforms while in power.;x
+mountain_trolls_nobles;Mountain Troll Nobles;x
+mountain_trolls_nobles_uh;Mountain Troll Noble supporters will vote for all reforms while in power.;x
+snow_trolls_nobles;Snow Troll Nobles;x
+snow_trolls_nobles_uh;Snow Troll Noble supporters will vote for all reforms while in power.;x
+stone_trolls_nobles;Stone Troll Nobles;x
+stone_trolls_nobles_uh;Stone Troll Noble supporters will vote for all reforms while in power.;x
+olog_hai_nobles;Olog Hai Nobles;x
+olog_hai_nobles_uh;Olog Hai Noble supporters will vote for all reforms while in power.;x
+eagles_nobility;Eagles Nobility;x
+flightlords_of_the_mountains;Flightlords of the Mountains;x
+flightlords_of_the_mountains_uh;Flightlords of the Mountains supporters will vote for all reforms while in power.;x
+great_eagle_nobles;Great Eagle Nobles;x
+great_eagle_nobles_uh;Great Eagle Noble supporters will vote for all reforms while in power.;x
+lords_of_ravens;Lords of Ravens;x
+lords_of_ravens_uh;Lords of Ravens supporters will vote for all reforms while in power.;x
+raven_nobles;Raven Nobles;x
+raven_nobles_uh;Raven Noble supporters will vote for all reforms while in power.;x
+spiders_nobility;Spiders Nobility;x
+great_brood_mothers;Great Brood Mothers;x
+great_brood_mothers_uh;Great Brood Mothers supporters will vote for all reforms while in power.;x
+great_spider_nobles;Great Spider Nobles;x
+great_spider_nobles_uh;Great Spider Noble supporters will vote for all reforms while in power.;x
+undead_nobility;Undead Nobility;x
+wight_nobles;Wight Nobles;x
+wight_nobles_uh;Wight Noble supporters will vote for all reforms while in power.;x
+kings_of_the_dead;Kings of the Dead;x
+kings_of_the_dead_uh;Kinds of the Dead supporters will vote for all reforms while in power.;x
+oathbreaker_nobles;Oathbreaker Nobles;x
+oathbreaker_nobles_uh;Oathbreaker Noble supporters will vote for all reforms while in power.;x
+immortal_beings;Immortal Beings;x
+lords_of_isengard;Lords of Isengard;x
+lords_of_isengard_uh;Lords of Isengard supporters will vote for all reforms while in power.;x
+lords_of_rhosgobel;Lords of Rhosgobel;x
+lords_of_rhosgobel_uh;Lords of Rhosgobel supporters will vote for all reforms while in power.;x
+lords_of_mordor;Lords of Mordor;x
+lords_of_mordor_uh;Lords of Mordor supporters will vote for all reforms while in power.;x
+saurons_nine;Sauron's Nine;x
+saurons_nine_uh;Sauron's Nine supporters will vote for all reforms while in power.;x
 #########################;x }
 ##### ADVISORS TEXT #####;x {
 #########################;x

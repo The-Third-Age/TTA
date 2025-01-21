@@ -3,16 +3,16 @@ capital = 884
 primary_culture = wight
 culture = undead_culture
 religion = undead
-government = dark_realm
+government = tribal
 nationalvalue = generic_leader
 literacy = 0
 
 oob = "BAR_oob.txt"
 
-ruling_party = generic_high_nobility
+ruling_party = generic_wight_nobles
 
 upper_house = {
-	high_nobility = 100
+	wight_nobles = 100
 }
 
 upper_house_composition = appointed

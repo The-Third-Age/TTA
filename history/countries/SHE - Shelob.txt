@@ -3,16 +3,16 @@ capital = 434
 primary_culture = great_spider
 culture = spider_culture
 religion = spider
-government = sauron_puppet
+government = dominion_1
 nationalvalue = generic_leader
 literacy = 0
 
 prestige = 5
 
-ruling_party = generic_high_nobility
+ruling_party = SHE_shelob
 
 upper_house = {
-	high_nobility = 100
+	great_brood_mothers = 100
 }
 
 slavery = yes_slavery

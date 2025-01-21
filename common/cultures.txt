@@ -3,6 +3,8 @@
 
 # NOTE: When adding new cultures (or removing them), don't forget to also update the assimilation chance in common/pop_types.txt to prevent accepted cultures whose race doesn't match the realm's don't break assimilation
 #		Also don't forget to update event 70007 in events/On Action.txt
+#		Also add an associated ideology (culture_noble)
+#		Also add the ideology flag in event 99000 events/World Bank.txt (# Ideologies (primary/accepted cultures) and FOR's starting decision (decisions/World Bank.txt)
 
 # Banker culture. Cosmetic, doesn't need names
 banker = {
