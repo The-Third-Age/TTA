@@ -2730,3 +2730,60 @@ country_event = {
 		}
 	}
 }
+
+# Choice of capital for Rhovanion
+country_event = {
+	id = 50965
+	title = "A new capital for the Kingdom"
+	desc = "EVTDESC50965"
+	picture = "annuminas"
+
+	trigger = {
+		tag = RHO
+		primary_culture = lakemen
+		war = no
+		owns = 652
+		owns = 654
+		NOT = { has_country_flag = barding_RHO_chosen_capital }
+	}
+
+	mean_time_to_happen = { days = 180 }
+
+	option = {
+		name = "Dale shall remain the capital"
+		prestige = 10
+		capital = 652
+		652 = {
+			any_pop = {
+				consciousness = -1
+				militancy = -1
+			}
+		}
+		654 = {
+			any_pop = {
+				consciousness = 1
+				militancy = 1
+			}
+		}
+		set_country_flag = barding_RHO_chosen_capital
+	}
+
+	option = {
+		name = "We will move our capital to Esgaroth"
+		prestige = 10
+		capital = 654
+		654 = {
+			any_pop = {
+				consciousness = -1
+				militancy = -1
+			}
+		}
+		652 = {
+			any_pop = {
+				consciousness = 1
+				militancy = 1
+			}
+		}
+		set_country_flag = barding_RHO_chosen_capital
+	}
+}
