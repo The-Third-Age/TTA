@@ -368,15 +368,15 @@ objectTypes = {
 		scale = 2.0
 	}
 	
-	EMFXActorType = {
-		name = "GenericCaravel"
-		actorfile = "gfx\anims\Caravele.xac"
+	# EMFXActorType = {
+		# name = "GenericCaravel"
+		# actorfile = "gfx\anims\Caravele.xac"
 		
-		idle   = "gfx\anims\Ships_Moving.xsm"
-		move   = "gfx\anims\Ships_Moving.xsm"
-		attack = "gfx\anims\Ships_Attack.xsm"
-		scale = 2.0
-	}
+		# idle   = "gfx\anims\Ships_Moving.xsm"
+		# move   = "gfx\anims\Ships_Moving.xsm"
+		# attack = "gfx\anims\Ships_Attack.xsm"
+		# scale = 2.0
+	# }
 	
 	EMFXActorType = {
 		name = "GenericTransportship"
@@ -388,35 +388,35 @@ objectTypes = {
 		scale = 2.0
 	}
 	
-	EMFXActorType = {
-		name = "GenericGalleass"
-		actorfile = "gfx\anims\Galleass.xac"
+	# EMFXActorType = {
+		# name = "GenericGalleass"
+		# actorfile = "gfx\anims\Galleass.xac"
 		
-		idle   = "gfx\anims\Ships_Moving.xsm"
-		move   = "gfx\anims\Ship_Oars.xsm"
-		attack = "gfx\anims\Ships_Moving.xsm"
-		scale = 2.0
-	}
+		# idle   = "gfx\anims\Ships_Moving.xsm"
+		# move   = "gfx\anims\Ship_Oars.xsm"
+		# attack = "gfx\anims\Ships_Moving.xsm"
+		# scale = 2.0
+	# }
 	
-	EMFXActorType = {
-		name = "GenericGaliot"
-		actorfile = "gfx\anims\Chebeck.xac"
+	# EMFXActorType = {
+		# name = "GenericGaliot"
+		# actorfile = "gfx\anims\Chebeck.xac"
 		
-		idle   = "gfx\anims\Ships_Moving.xsm"
-		move   = "gfx\anims\Ships_Moving.xsm"
-		attack = "gfx\anims\Ships_Moving.xsm"
-		scale = 1.5
-	}
+		# idle   = "gfx\anims\Ships_Moving.xsm"
+		# move   = "gfx\anims\Ships_Moving.xsm"
+		# attack = "gfx\anims\Ships_Moving.xsm"
+		# scale = 1.5
+	# }
 	
-	EMFXActorType = {
-		name = "GenericBrigantine"
-		actorfile = "gfx\anims\Early_frigate.xac"
+	# EMFXActorType = {
+		# name = "GenericBrigantine"
+		# actorfile = "gfx\anims\Early_frigate.xac"
 		
-		idle   = "gfx\anims\Ships_Moving.xsm"
-		move   = "gfx\anims\Ships_Moving.xsm"
-		attack = "gfx\anims\Ships_Moving.xsm"
-		scale = 2.5
-	}
+		# idle   = "gfx\anims\Ships_Moving.xsm"
+		# move   = "gfx\anims\Ships_Moving.xsm"
+		# attack = "gfx\anims\Ships_Moving.xsm"
+		# scale = 2.5
+	# }
 	
 	# Ships end
 	

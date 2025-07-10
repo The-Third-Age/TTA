@@ -1,0 +1,42 @@
+corsair_ship = {
+	icon = 7
+	naval_icon = 4
+	
+	# Audax Validator "." Ignore_1007
+	sail = yes
+	
+	type = naval
+	sprite = Cog
+	unit_type = big_ship
+	capital = yes
+	floating_flag = yes
+
+	#Core Abilities
+	priority = 25
+	max_strength = 100
+	default_organisation = 30
+	maximum_speed = 5
+	weighted_value = 3.0
+
+	#Building Costs
+	build_time = 360
+	build_cost = {
+		clipper_convoy = 15
+		artillery = 10
+	}
+	min_port_level = 1
+	limit_per_port = -1
+	supply_consumption_score = 3
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		clipper_convoy = 0.24
+		artillery = 0.08 #0.16
+	}
+	
+	#Naval Abilities
+	hull = 6
+	gun_power = 10
+	fire_range = 0.58
+	evasion = 0
+}

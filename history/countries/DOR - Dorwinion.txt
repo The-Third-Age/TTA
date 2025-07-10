@@ -23,7 +23,7 @@ slavery = no_slavery
 
 decision = DOR_start_decision
 
-schools = traditional_academic
+schools = no_organization
 #technologies
 merchant_marine_1 = 1
 light_ships_1 = 1

@@ -19,16 +19,13 @@ political_decisions = {
 		picture = "lembas"
 		potential = {
 			owns = 765
-			OR = {
-				is_culture_group = eldar
-				is_culture_group = teleri
-				is_culture_group = avari
-			}
-			NOT = { flavor_6 = 1 }
+			accepted_culture = elven_culture
+			NOT = { has_country_flag = lembas_bread_unlock }
 		}
-		allow = { farming_tech_1 = 1 }
+		allow = { rgo_tech_1 = 1 }
 		effect = {
-			activate_technology = flavor_6
+			set_country_flag = lembas_bread_unlock
+			LOR_unlock_invention_lembas_bread_loc = { }
 		}
 	}
 	

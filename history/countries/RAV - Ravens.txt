@@ -18,4 +18,4 @@ slavery = no_slavery
 
 decision = RAV_start_decision
 
-schools = traditional_academic
+schools = no_organization

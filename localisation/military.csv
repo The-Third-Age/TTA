@@ -85,20 +85,44 @@ archers;Archers;x
 archers_sm;Archers;x
 artillery;Artillery;x
 artillery_sm;Artillery;x
+elite_swordsmen;Elite Swordsmen;x
+elite_swordsmen_sm;Elite Swordsmen;x
+elite_pikemen;Elite Pikemen;x
+elite_pikemen_sm;Elite Pikemen;x
+elite_horse_archers;Elite Horse Archers;x
+elite_horse_archers_sm;Elite Horse Archers;x
+elite_heavy_cavalry;Elite Heavy Cavalry;x
+elite_heavy_cavalry_sm;Elite Heavy Cavalry;x
+elite_archers;Elite Archers;x
+elite_archers_sm;Elite Archers;x
+elite_artillery;Elite Artillery;x
+elite_artillery_sm;Elite Artillery;x
+skirmishers;Skirmishers;x
+skirmishers_sm;Skirmishers;x
+royal_guard;Royal Guard;x
+royal_guard_sm;Royal Guard;x
+rangers;Rangers;x
+rangers_sm;Rangers;x
+berserkers;Berserkers;x
+berserkers_sm;Berserkers;x
+mumakil;Mûmakil;x
+mumakil_sm;Mûmakil;x
+ents_unit;Ents;x
+ents_unit_sm;Ents;x
+eagles;Eagles;x
+eagles_sm;Eagles;x
+spiders;Spiders;x
+spiders_sm;Spiders;x
+wights;Wights;x
+wights_sm;Wights;x
 transport;Merchantmen;x
 transport_short;MM;x
 galley;Galley;x
 galley_short;GY;x
-galleass;Galleass;x
-galleass_short;GS;x
-galiot;Galiot;x
-galiot_short;GT;x
 cog;Cog;x
 cog_short;CG;x
-caravel;Caravel;x
-caravel_short;CL;x
-brigantine;Brigantine;x
-brigantine_short;BR;x
+corsair_ship;Corsair Ship;x
+corsair_ship_short;CS;x
 ########################;x }
 ##### MOBILIZATION #####;x {
 ########################;x

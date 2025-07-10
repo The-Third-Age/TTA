@@ -14,4 +14,4 @@ upper_house = {
 
 slavery = yes_slavery
 
-schools = traditional_academic
+schools = no_organization

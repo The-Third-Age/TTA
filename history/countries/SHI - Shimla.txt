@@ -25,4 +25,4 @@ serfdom = banned_serfdom
 vote_franschise = wealth_weighted_voting
 cultural_rights = accepted_voting
 
-schools = traditional_academic
+schools = no_organization

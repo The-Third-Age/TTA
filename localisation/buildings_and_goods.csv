@@ -90,7 +90,17 @@ fort_short;Castle;;Burg;x
 naval_base;Port;;Hafen;x
 naval_base_short;Port;;Hafen;x
 railroad;Road;;Straße;x
-railraod_short;Road;;Straße;x
+railroad_short;Road;;Straße;x
+barracks;Barracks;x
+barracks_short;Barracks;x
+scriptorium;Scriptorium;x
+scriptorium_short;Scriptorium;x
+market_square;Market Square;x
+market_square_short;Market Square;x
+public_house;Public House;x
+public_house_short;Public House;x
+province_selector;Province Selector;x
+province_selector_short;Province Selector;x
 ########################;x }
 ##### KEYWORD TEXT #####;x {
 ########################;x

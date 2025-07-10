@@ -656,7 +656,7 @@ MODIFIER_UNCIV_MILITARY_UH;Council of the Realm support;x
 ##### CENTRALIZATION TEXT #####;x {
 ###############################;x
 DIPLOMACY_CIVILIZEDNATION_STATUS;Centralized Realm;x
-DIPLOMACY_UNCIVILIZEDNATION_STATUS;Uncentralized Realm;x
+DIPLOMACY_UNCIVILIZEDNATION_STATUS;No Organizations;x
 DIPLOMACY_UNCIVILIZEDNATION_APPEND;(Uncentralized);x
 AIREASON_CIV_VS_UNCIV;Centralized vs Uncentralized;x
 MAPMODE_19;Centralization Level;x

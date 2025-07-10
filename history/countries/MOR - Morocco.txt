@@ -25,7 +25,7 @@ ruling_party = MOR_sauron
 
 slavery = yes_slavery
 
-schools = traditional_academic
+schools = no_organization
 
 #tech
 magic_1 = 1

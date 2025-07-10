@@ -22,4 +22,4 @@ ruling_party = GUL_khamul
 
 slavery = yes_slavery
 
-schools = traditional_academic
+schools = no_organization

@@ -5,7 +5,6 @@ heavy_cavalry = {
 	sprite = HeavyCavalry
 	active = yes
 	unit_type = cavalry
-	primary_culture = yes
 	
 	#Avatar
 	sprite_override = HeavyCavalry
@@ -37,10 +36,10 @@ heavy_cavalry = {
 		liquor = 0.1
 	}
 	
-	#Land Abilties
+	#Land Abilities
 	reconnaissance = 0
 	attack = 5
-	defence = 3
+	defence = 1
 	discipline = 1.1
 	support = 0.0
 	maneuver = 2

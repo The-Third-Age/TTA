@@ -32,7 +32,7 @@ galley = {
 		clipper_convoy = 0.08
 	}
 	
-	#Naval Abilties
+	#Naval Abilities
 	hull = 3
 	gun_power = 4
 	fire_range = 0.50

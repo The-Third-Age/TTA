@@ -1,5 +1,8 @@
+#################################
+# NAVAL CONSTRUCTION INVENTIONS #
+#################################
 shipbuilding = {
-	limit = { merchant_marine_1 = 1 }
+	limit = { naval_construction_1 = 1 }
 	chance = {
 		base = 0
 		
@@ -12,4 +15,70 @@ shipbuilding = {
 	}
 	
 	effect = { activate_building = clipper_shipyard }
+}
+grand_shipyards = {
+	limit = { naval_construction_5 = 1 }
+	chance = {
+		base = 0
+		
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				is_coastal = yes
+			}
+		}
+	}
+	effect = {
+		max_naval_base = 1
+	}
+}
+#########################
+# LIGHT SHIP INVENTIONS #
+#########################
+ramming = {
+	limit = { light_ships_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		galley = {
+			torpedo_attack = 2
+		}
+	}
+}
+advanced_ramming = {
+	limit = { light_ships_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		galley = {
+			torpedo_attack = 8
+		}
+	}
+}
+#########################
+# HEAVY SHIP INVENTIONS #
+#########################
+boarding = {
+	limit = { heavy_ships_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		cog = {
+			gun_power = 3
+		}
+	}
+}
+boarding_bridges = {
+	limit = { heavy_ships_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		cog = {
+			gun_power = 5
+		}
+	}
 }

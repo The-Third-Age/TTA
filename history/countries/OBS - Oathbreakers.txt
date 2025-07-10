@@ -16,4 +16,4 @@ upper_house = {
 
 decision = OBS_start_decision
 
-schools = traditional_academic
+schools = no_organization

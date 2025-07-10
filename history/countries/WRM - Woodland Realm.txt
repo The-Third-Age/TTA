@@ -21,7 +21,7 @@ penal_reform = hard_labor
 slavery = no_slavery
 serfdom = banned_serfdom
 
-schools = traditional_academic
+schools = no_organization
 #tech
 archer_tech_1 = 1
 education_1 = 1

@@ -656,7 +656,7 @@ province_event = {
 		owner = {
 			tag = GON
 			owns = 16
-			flavor_1 = 1
+			invention = houses_of_healing_invention
 		}
 	}
 	

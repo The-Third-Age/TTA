@@ -84,9 +84,7 @@ political_decisions = {
 			NOT = {
 				primary_culture = great_eagle
 			}
-			NOT = {
-				flavor_19 = 1
-			}
+			NOT = { has_country_flag = eagles_unlock }
 		}
 		allow = {
 			war = yes
@@ -134,12 +132,11 @@ political_decisions = {
 					}
 				}
 			}
-			war_countries = {
-				flavor_20 = 1
-			}
+			war_countries = { invention = fellbeasts_invention }
 		}
 		effect = {
-			activate_technology = flavor_19
+			set_country_flag = eagles_unlock
+			good_unlock_invention_eagles_loc = { }
 		}
 		ai_will_do = {
 			factor = 1
@@ -149,9 +146,7 @@ political_decisions = {
 		picture = "eagles"
 		potential = {
 			primary_culture = great_eagle
-			NOT = {
-				flavor_19 = 1
-			}
+			NOT = { has_country_flag = eagles_unlock }
 		}
 		allow = {
 			OR = {
@@ -166,7 +161,8 @@ political_decisions = {
 			}
 		}
 		effect = {
-			activate_technology = flavor_19
+			set_country_flag = eagles_unlock
+			good_unlock_invention_eagles_loc = { }
 		}
 		ai_will_do = {
 			factor = 1
@@ -176,9 +172,7 @@ political_decisions = {
 		picture = "fellbeast"
 		potential = {
 			good_evil_alignment = evil_alignment
-			NOT = {
-				flavor_20 = 1
-			}
+			NOT = { has_country_flag = fellbeasts_unlock }
 		}
 		allow = {
 			owns = 381
@@ -195,7 +189,8 @@ political_decisions = {
 			}
 		}
 		effect = {
-			activate_technology = flavor_20
+			set_country_flag = fellbeasts_unlock
+			evil_unlock_invention_fellbeasts_loc = { }
 		}
 		ai_will_do = {
 			factor = 1

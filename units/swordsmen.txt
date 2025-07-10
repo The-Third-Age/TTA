@@ -6,7 +6,6 @@ swordsmen = {
 	active = yes
 	unit_type = infantry
 	floating_flag = no
-	primary_culture = yes
 	
 	#Core Abilities
 	priority = 10
@@ -16,7 +15,7 @@ swordsmen = {
 	weighted_value = 2.0
 
 	#Building Costs
-	build_time = 40
+	build_time = 50
 	build_cost = {
 		food = 10
 		melee_gear = 10
@@ -28,7 +27,7 @@ swordsmen = {
 		melee_gear = 0.03
 	}
 	
-	#Land Abilties
+	#Land Abilities
 	reconnaissance = 0
 	attack = 3
 	defence = 3

@@ -17,25 +17,25 @@ light_ships;Light Ships;x
 heavy_ships;Heavy Ships;x
 naval_construction;Naval Construction;x
 commerce_tech;Commerce;x
-farming_tech;Farming;x
-mining_tech;Mining;x
+rgo_tech;Extraction;x
 guilds;Guilds;x
+trade_tech;Trade;x
 infrastructure_tech;Infrastructure;x
-population_tech;Population;x
+population_tech;Society;x
 taxes;Taxes;x
-population;Population;x
-education;Education;x
-magic;Magical Secrets;x
+administration_tech;Administration;x
+population;Government;x
+entertainment_tech;Entertainment;x
 diplomacy_tech;Diplomacy;x
+knowledge_tech;Knowledge;x
+herblore_tech;Herblore;x
+magic;Magical Secrets;x
+education;Education;x
+scholarship_tech;Scholarship;x
 expansion;Expansion;x
 diplomacy;Diplomacy;x
 wilderness;Wilderness;x
 culture;Culture;x
-flavor_tech;Unique;x
-flavor_cat_1;Unique;x
-flavor_cat_2;Unique;x
-flavor_cat_3;Unique;x
-flavor_cat_4;Unique;x
 ########################;x }
 ##### TECHNOLOGIES #####;x {
 ########################;x
@@ -47,7 +47,7 @@ infantry_tech_5;Supreme Infantry Weapons;x
 archer_tech_1;Basic Archery;x
 archer_tech_2;Improved Bowmanry;x
 archer_tech_3;Powerful Bows;x
-archer_tech_4;Composite Bows;x
+archer_tech_4;Elite Bows;x
 archer_tech_5;Archer Supremacy;x
 cavalry_tech_1;Horsemanship;x
 cavalry_tech_2;Organised Cavalry;x
@@ -69,11 +69,11 @@ army_tactics_2;Improved Army Tactics;x
 army_tactics_3;Advanced Army Tactics;x
 army_tactics_4;Elite Army Tactics;x
 army_tactics_5;Supreme Army Tactics;x
-training_1;Militias;x
-training_2;Lance Retinues;x
-training_3;Basic Training;x
-training_4;Military Drill;x
-training_5;Discipline;x
+training_1;Barracks;x
+training_2;Pressed Service;x
+training_3;Recruitment Campaigns;x
+training_4;Standing Armies;x
+training_5;Professional Armies;x
 naval_theory_1;Basic Naval Theory;x
 naval_theory_2;Improved Naval Theory;x
 naval_theory_3;Advanced Naval Theory;x
@@ -98,22 +98,22 @@ naval_construction_1;Naval Construction;x
 naval_construction_2;Naval Equipment;x
 naval_construction_3;Drydocks;x
 naval_construction_4;Shipyards;x
-naval_construction_5;Grand shipyards;x
-farming_tech_1;Herding & Gathering;x
-farming_tech_2;Farming;x
-farming_tech_3;Granary System;x
-farming_tech_4;Crop Rotation;x
-farming_tech_5;Agricultural Revolution;x
-mining_tech_1;Surface Mining;x
-mining_tech_2;Open-cast Mines;x
-mining_tech_3;Tunnels;x
-mining_tech_4;Shafts;x
-mining_tech_5;Deep Level Extraction;x
+naval_construction_5;Expanded Shipyards;x
+rgo_tech_1;Herding, Gathering & Surface Mining;x
+rgo_tech_2;Farming & Open-cast Mines;x
+rgo_tech_3;Granary System & Tunnels;x
+rgo_tech_4;Crop Rotation & Shafts;x
+rgo_tech_5;Agricultural Revolution & Deep Level Extraction;x
 guilds_1;Trade Associations;x
 guilds_2;Merchant Guilds;x
 guilds_3;Craft Guilds;x
 guilds_4;Mechanisation;x
 guilds_5;Manufacturing;x
+trade_tech_1;Grain Exchanges;x
+trade_tech_2;Caravanaserai;x
+trade_tech_3;Trading Posts;x
+trade_tech_4;Market Squares;x
+trade_tech_5;Grand Markets;x
 infrastructure_tech_1;Land Clearing;x
 infrastructure_tech_2;Pathways;x
 infrastructure_tech_3;Roads;x
@@ -124,21 +124,41 @@ taxes_2;Levies & Tithes;x
 taxes_3;Ad-hoc Taxation;x
 taxes_4;Organised Taxation;x
 taxes_5;Tax System;x
+administration_tech_1;Administration;x
+administration_tech_2;Institutions;x
+administration_tech_3;Ministries;x
+administration_tech_4;Meritocracy;x
+administration_tech_5;Bureaucracy;x
 population_1;Right to Rule;x
-population_2;Administration & Institutions;x
+population_2;Mandate;x
 population_3;Rights & Responsibilities;x
 population_4;Citizenship;x
 population_5;State & Government;x
-education_1;Home Education;x
-education_2;Tutelage;x
-education_3;Ad-hoc Schooling;x
-education_4;Private Schools;x
-education_5;Formal Education;x
+entertainment_tech_1;Taverns;x
+entertainment_tech_2;Alehouses;x
+entertainment_tech_3;Social Clubs;x
+entertainment_tech_4;Public Entertainment;x
+entertainment_tech_5;Bread & Circuses;x
+herblore_tech_1;Herbalism;x
+herblore_tech_2;Healers;x
+herblore_tech_3;Apothecaries;x
+herblore_tech_4;Physicians & Dentists;x
+herblore_tech_5;Medicine;x
 magic_1;Magia and Goeteia;x
 magic_2;Sources of Power;x
 magic_3;The Seen and Unseen;x
 magic_4;Artefacts of Lost Ages;x
 magic_5;Enchantment;x
+education_1;Home Education;x
+education_2;Tutelage;x
+education_3;Ad-hoc Schooling;x
+education_4;Private Schools;x
+education_5;Formal Education;x
+scholarship_tech_1;Scriptoria;x
+scholarship_tech_2;Archives;x
+scholarship_tech_3;Athenaea;x
+scholarship_tech_4;Libraries;x
+scholarship_tech_5;Academies;x
 expansion_1;Territorial Ambitions;x
 expansion_2;Expansion;x
 expansion_3;Just War;x
@@ -159,26 +179,6 @@ culture_2;Period Music;x
 culture_3;Marching Songs;x
 culture_4;Lamentations;x
 culture_5;Last Songs;x
-flavor_1;Houses of Healing;x
-flavor_2; ;x
-flavor_3; ;x
-flavor_4; ;x
-flavor_5; ;x
-flavor_6;Lembas Bread;x
-flavor_7; ;x
-flavor_8; ;x
-flavor_9; ;x
-flavor_10; ;x
-flavor_11;Minasdirath;x
-flavor_12; ;x
-flavor_13; ;x
-flavor_14; ;x
-flavor_15; ;x
-flavor_16; ;x
-flavor_17; ;x
-flavor_18; ;x
-flavor_19;Eagles;x
-flavor_20;Fellbeasts;x
 ############################;x }
 ##### RESEARCH BONUSES #####;x {
 ############################;x
@@ -186,12 +186,11 @@ army_tech_research_bonus;Army Tech Research;x
 military_theory_tech_research_bonus;Military Theory Tech Research;x
 navy_tech_research_bonus;Navy Tech Research;x
 commerce_tech_research_bonus;Commerce Tech Research;x
-population_tech_research_bonus;Population Tech Research;x
+population_tech_research_bonus;Society Tech Research;x
+knowledge_tech_research_bonus;Knowledge Tech Research;x
 diplomacy_tech_research_bonus;Diplomacy Tech Research;x
 ###################;x }
 ##### SCHOOLS #####;x {
 ###################;x
-traditional_academic;Traditional Academia;x
-army_tech_school;Army Focused;x
-navy_tech_school;Navy Focused;x
-commerce_tech_school;Commerce Focused;x
+no_organization;No Organizations;x
+member_alliance_dwarves_men;Alliance of Dwarves and Men;x

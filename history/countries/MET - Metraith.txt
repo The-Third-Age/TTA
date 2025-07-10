@@ -14,6 +14,6 @@ upper_house = {
 	nobility = 100
 }
 
-schools = traditional_academic
+schools = no_organization
 
 oob = "MET_oob.txt"

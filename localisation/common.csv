@@ -806,7 +806,7 @@ RD;rd;x
 ##################################################;;x
 TRAIT_ATTACK;Attack;x
 TRAIT_DEFEND;Defence;x
-TRAIT_MORALE;Morale;x
+TRAIT_MORALE;Organization Regain;x
 TRAIT_ORGANISATION;Organisation;x
 TRAIT_RECONAISSANCE;Reconnaissance;x
 TRAIT_SPEED;Speed;x
@@ -1010,7 +1010,7 @@ MILITARY_CREATE_ADMIRAL;Create Admiral($VALUE$);x
 MILITARY_AUTOCREATE;Auto-Create Leaders;x
 MILITARY_AUTOASSIGN;Auto-Assign Leaders;x
 MILITARY_LEADER_TOOLTIP;§Y$NAME$§W\nSkill: §Y$SKILL$§W;x
-MILITARY_MORALE_TOOLTIP;Morale: §Y$VALUE$%§W;x
+MILITARY_MORALE_TOOLTIP;Organization Regain: §Y$VALUE$%§W;x
 MILITARY_MOVING_TOOLTIP;This unit is moving.\nIt will arrive in §Y$LOCATION$§W at §Y$DATE$§W.;x
 MILITARY_DIGIN_TOOLTIP;This unit digging in.\nSo far, it has spent §Y$DAYS$ days§W doing so.;x
 MILITARY_GENERAL_TOOLTIP;General;x
@@ -1023,6 +1023,8 @@ MILITARY_BUILD_NAVY_TOOLTIP;Build Navy;x
 MILITARY_AUTOCREATE_TOOLTIP;Toggle auto-creation of leaders;x
 MILITARY_AUTOASSIGN_TOOLTIP;Toggle auto-assignment of leaders;x
 MILITARY_BUILD_ARMY_LABEL;Build Army;x
+MILITARY_BUILD_LOCATION_LABEL;Pop and Location;x
+MILITARY_BUILD_COST_LABEL;Goods Required;x
 MILITARY_BUILD_NAVY_LABEL;Build Navy;x
 MILITARY_UNITS_BEING_BUILT_LABEL;Units Being Built;x
 MILITARY_ADMIRALS_LABEL;Admirals:;x
@@ -2810,7 +2812,7 @@ GAIN;Gain;x
 LOSE;Lose;x
 SM_COUNTERS;Use Counters;x
 NO_COMMANDER;(No Commander);x
-MORALE;Morale;x
+MORALE;Organization Regain;x
 Owned by $owner$, but currently occupied by $control$;Owned by $owner$, but currently occupied by $control$;x
 Owned by $owner$.;Owned by $owner$.;x
 CATEGORY;($TYPE$)\n;x
@@ -2901,7 +2903,7 @@ pti;Permanent Terra Incognita;x
 nobuilding;nobuilding;x
 nogovernment;nogovernment;x
 nogovernment_ruler;nogovernment_ruler;x
-COMBAT_MORALE;Morale:;x
+COMBAT_MORALE;Organization Regain:;x
 COMBAT_BREAKING;Breaking;x
 MAPMODE;Map-mode;x
 LEDGER_CORE;Core;x
@@ -3687,14 +3689,14 @@ RULE_RICH_ONLY;Rich Only;x
 RULE_STATE_VOTE;State Vote;x
 RULE_POPULATION_VOTE;Population Vote;x
 RULE_SLAVERY_ALLOWED;Slavery Allowed;x
-ENABLE_CRIME_TECH;Allow ;x
+ENABLE_CRIME_TECH; ;x
 DIGIN_FROM_TECH;Dig-In Cap;x
 ENABLE_UNIT_TECH;Allows construction of;x
 ENABLE_BUILDING_TECH;Allows;x
 REPAIR_RATE_TECH;Repair Rate;x
 ACTIVATE_GOODS;Activate: ;x
 TECH_TAX_EFF;Tax Efficiency: ;x
-MORALE_TECH;Morale;x
+MORALE_TECH;Organization Regain;x
 REINFORCE_TECH;Reinforcement;x
 SOLDIER_TO_POP_LOSS_TECH;Military Hospitals;x
 REGULAR_EXP_TECH;Reg. Experience;x
@@ -4797,7 +4799,7 @@ INVENTION_1;Major Discovery;x
 INVENTION_2;Loremasters in our realm have discovered;x
 INVENTION_3;$INVENTION$;x
 INVENTION_4;$DESC$;x
-INVENTION_5;EFFECT:;x
+INVENTION_5;§YEFFECT§!:;x
 INVENTION_6;$EFFECT$;x
 INVENTION_LOG;We have discovered how $INVENTION$ works.;x
 INVENTION_BTN1;OK;x
@@ -5127,7 +5129,7 @@ CONFIRM_CREATE_STATE_DESC2;(All local effects will be removed.);x
 UNIT_ENABLE_REBEL_HUNT;Hunt Rebels;x
 UNIT_DISABLE_REBEL_HUNT;(hunting rebels);x
 UNIT_REBEL_HUNT_WILL_HUNT;§GArmy is ready for rebel hunting.§!;x
-UNIT_REBEL_HUNT_LOW_MORALE;§RArmy has too low morale, and will not hunt any rebels right now.§!;x
+UNIT_REBEL_HUNT_LOW_MORALE;§RArmy has too low organization, and will not hunt any rebels right now.§!;x
 UNIT_REBEL_HUNT_NO_VALID;§REnemy rebels has been detected, but our army will not attack them, because they are too strong for us, or couldn't find a safe path to get there.§!;x
 NOT_RELEASE_AT_WAR;§R(It is not possible to release realms when at war.)§W;x
 COLONY_SUCCESS_5;§Y$PRESTIGE$§! prestige gained.;x
@@ -5174,7 +5176,7 @@ CONFIRM_REMOVE_COLONY_NF_DESC;Your colonization progress will be lost. Do you wa
 CB_ALLOWED_INSTALL_COMMUNIST_GOV_TYPE;Install communist government;x
 po_install_communist_gov_type;Install communist government;x
 CB_ALLOWED_UNINSTALL_COMMUNIST_GOV_TYPE;Uninstall communist government;x
-PRESTIGE_MORALE_BONUS;Morale bonus: §Y$VAL$§!;x
+PRESTIGE_MORALE_BONUS;Organization Regain bonus: §Y$VAL$§!;x
 PRESTIGE_MAX_ORG_BONUS;Organization bonus: §Y$VAL$§!;x
 PRESTIGE_PENALTY_ON_LEADER_TRANSFER_TITLE;Prestige penalty.;x
 PRESTIGE_PENALTY_ON_LEADER_TRANSFER_DESC;Our realm will suffer §R$VAL$§! prestige loss, if we unassign the current leader §Y$NAME$§! from that unit, while at war.\nDo you still want to do that?;x
@@ -5891,8 +5893,8 @@ TOPBAR_DATE_IS_PAUSED;This is the current date of the Third Age.\n(click to unpa
 TOPBAR_PAUSE_INDICATOR;The game is currently paused.;x
 TOPBAR_SPEED_INDICATOR;The game is running at §Y$SPEED$§W.;x
 PLAYER_COUNTRY_TOPBAR_RANK;$NAME$ is a §Y$RANK$§W.;x
-HAS_TECH_SCHOOL;Currently §Y$TECH$§W.\n;x
-HAS_NOT_TECH_SCHOOL;Not embracing §Y$TECH$§W.\n;x
+HAS_TECH_SCHOOL;Current organization is §Y$TECH$§W.\n;x
+HAS_NOT_TECH_SCHOOL;Not part of organization §Y$TECH$§W.\n;x
 NEW_CORE_EFFECT_TAG;$TAG$ will gain §Yall§W as core.\n;x
 ANY_OWNED_LIMITED;For Any province that is\n;x
 TECH_MINE_SIZE;Mine Size;x
@@ -6025,7 +6027,7 @@ COLONIZE_CLOSEST_BASE_SPEC;Closest port is in §Y$PROV$§W.\n(Naval range: §G$N
 BUILDING_INFRASTRUCTURE;Infrastructure: §Y$VALUE$§W;x
 UNITVIEW_POP_INFO;§Y$TYPE$§W from §Y$LOC$§W.;x
 UNITVIEW_POP_INFO_FACTION;Part of §Y$FACTION$§W.;x
-SCHOOL_EFFECT;Change to §Y$NAME$§W!\n;x
+SCHOOL_EFFECT;SEE EVENT 110163 IN events/Alliance of Dwarves and Men.txt TO LOC CORRECTLY PLEASE\n;x
 SOCIAL_DESC2;The social spending budget goes towards funding your enacted social reforms. The amount of money to distribute depends on your §YRealm administrative efficiency§W;x
 HAVE_INDUSTRIAL_SCORE_MORE_THAN;Have a higher Industrial Score than: ;x
 STATE_NONCORES;Non-core provinces in state: §R$VALUE$§W;x

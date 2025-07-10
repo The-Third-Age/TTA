@@ -22,7 +22,7 @@ slavery = no_slavery
 
 decision = gondor_start_decision
 
-schools = army_tech_school
+schools = no_organization
 #technologies
 merchant_marine_1 = 1
 light_ships_1 = 1

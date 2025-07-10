@@ -903,7 +903,7 @@ country_event = {
 			has_country_modifier = observer_mode
 		}
 		diplomacy_3 = 1
-		NOT = { flavor_19 = 1 } # Eagles
+		NOT = { invention = eagles_invention } # Eagles
 		civilized = yes
 		good_evil_alignment = good_alignment
 		EAG = {

@@ -1,6 +1,18 @@
-###########################
-# POPULATION_1 INVENTIONS #
-###########################
+#########################
+# GOVERNMENT INVENTIONS #
+#########################
+province_selector_unlock = {
+	limit = { population_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			ai = no
+		}
+	}
+	
+	effect = { activate_building = province_selector }
+}
 anarrima = {
 	limit = { population_1 = 1 }
 	chance = {
@@ -13,194 +25,55 @@ anarrima = {
 	
 	effect = { permanent_prestige = 1 }
 }
-##########################
-# EDUCATION_1 INVENTIONS #
-##########################
-##########################
-# EDUCATION_2 INVENTIONS #
-##########################
-scriptoriums = {
-	limit = { education_2 = 1 }
-	
-	chance = {
-		base = 1
-	}
-	
-	effect = { education_efficiency = 0.1 }
-}
-##########################
-# EDUCATION_3 INVENTIONS #
-##########################
-##########################
-# EDUCATION_4 INVENTIONS #
-##########################
-##########################
-# EDUCATION_5 INVENTIONS #
-##########################
-######################
-# MAGIC_1 INVENTIONS #
-######################
-magical_secrets = { # Generic prestige event
-	limit = { magic_1 = 1 }
-	
-	chance = {
-		base = 1
-	}
-	
-	effect = { shared_prestige = 5 }
-}
-astronomy = { # Generic prestige
-	limit = { magic_1 = 1 }
-	
-	chance = {
-		base = 1
-	}
-	
-	effect = { shared_prestige = 5 }
-}
-######################
-# MAGIC_2 INVENTIONS #
-######################
-first_lesser_ring = { # Search and find a lesser ring
-	limit = { magic_2 = 1 }
-	
-	chance = {
-		base = 1
-	}
-	
-	effect = { shared_prestige = 5 }
-}
-palantiri = { # Gaze into the palantiri
-	limit = { magic_2 = 1 }
-	
-	chance = {
-		base = 3
-	}
-	
-	effect = { shared_prestige = 5 }
-}
-######################
-# MAGIC_3 INVENTIONS #
-######################
-blue_wizards = { # Search for the blue wizards
-	limit = { magic_3 = 1 }
-	
-	chance = {
-		base = 1
-	}
-	
-	effect = { shared_prestige = 5 }
-}
-entwives = { # Search for the entwives
-	limit = { magic_3 = 1 }
-	
+houses_of_healing_invention = {
+	limit = { population_1 = 1 }
 	chance = {
 		base = 0
 		modifier = {
-			factor = 1
-			owns = 773
+			factor = 100
+			has_country_flag = houses_of_healing_unlock
 		}
 	}
-	
-	effect = { shared_prestige = 5 }
-}
-######################
-# MAGIC_4 INVENTIONS #
-######################
-second_lesser_ring = { # Search and find a lesser ring
-	limit = {
-		magic_4 = 1
-		invention = first_lesser_ring
-	}
-	
-	chance = {
-		base = 0
-		modifier = {
-			factor = 1
-			invention = first_lesser_ring
-		}
-	}
-	
-	effect = { shared_prestige = 5 }
-}
-silmarils = { # Search and find a silmaril
-	limit = { magic_4 = 1 }
-	
-	chance = {
-		base = 1
-	}
-	
-	effect = { shared_prestige = 5 }
-}
-######################
-# MAGIC_5 INVENTIONS #
-######################
-magical_crafting = { # Creating one's own artefacts
-	limit = { magic_5 = 1 }
-	
-	chance = {
-		base = 1
-	}
-	
-	effect = { shared_prestige = 5 }
-}
-magical_crafting_warriors = {
-	limit = { magic_5 = 1 }
-	
-	chance = {
-		base = 0
-		modifier = {
-			factor = 1
-			invention = magical_crafting
-		}
-	}
-
 	effect = {
-		morale = 0.5
+		soldier_to_pop_loss = 0.01
 	}
 }
-magical_crafting_craftsmen = {
-	limit = { magic_5 = 1 }
-	
+rationing = {
+	limit = { population_3 = 1 }
 	chance = {
 		base = 0
 		modifier = {
-			factor = 1
-			invention = magical_crafting
+			factor = 2
+			war_exhaustion = 10
 		}
 	}
-	
 	effect = {
-		factory_input = -0.02
-		factory_output = 0.02
-		factory_throughput = 0.05
+		war_exhaustion = -0.1
+		army_base = { supply_consumption = -0.1 }
 	}
 }
-magical_crafting_workers = {
-	limit = { magic_5 = 1 }
-	
+breeding_pits = {
+	limit = { population_3 = 1 }
 	chance = {
 		base = 0
 		modifier = {
-			factor = 1
-			invention = magical_crafting
+			factor = 2
+			accepted_culture = orc_culture
 		}
 	}
-	
 	effect = {
-		rgo_output = 0.05
+		pop_growth = 0.0001
 	}
 }
-third_lesser_ring = { # Search and find a lesser ring
-	limit = { magic_5 = 1 }
-	
+############################
+# ENTERTAINMENT INVENTIONS #
+############################
+inns = {
+	limit = { entertainment_tech_5 = 1 }
 	chance = {
-		base = 0
-		modifier = {
-			factor = 1
-			invention = second_lesser_ring
-		}
+		base = 2
 	}
-	
-	effect = { shared_prestige = 5 }
+	effect = {
+		max_public_house = 1
+	}
 }

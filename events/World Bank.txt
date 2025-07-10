@@ -6657,6 +6657,7 @@ country_event = {
 				owner = {
 					remove_country_modifier = alliance_of_dwarves_and_men
 					add_country_modifier = { name = alliance_of_dwarves_and_men duration = -1 }
+					# No need to add the diplomacy text as it should be already added when the tag was added
 				}
 			}
 			# }

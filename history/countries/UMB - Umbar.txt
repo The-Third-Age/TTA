@@ -20,7 +20,7 @@ upper_house = {
 	nobility = 100
 }
 
-schools = traditional_academic
+schools = no_organization
 
 #technologies
 merchant_marine_1 = 1

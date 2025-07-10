@@ -1,6 +1,6 @@
-##########################
-# DIPLOMACY_1 INVENTIONS #
-##########################
+########################
+# DIPLOMACY INVENTIONS #
+########################
 telumendil = {
 	limit = { diplomacy_1 = 1 }
 	chance = {
@@ -13,9 +13,18 @@ telumendil = {
 	
 	effect = { permanent_prestige = 1 }
 }
-########################
-# CULTURE_1 INVENTIONS #
-########################
+couriers = {
+	limit = { diplomacy_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		influence = 0.1
+	}
+}
+######################
+# CULTURE INVENTIONS #
+######################
 all_that_is_gold = {
 	limit = { culture_1 = 1 }
 	
@@ -362,9 +371,9 @@ old_fat_spider = {
 	effect = { shared_prestige = 5 }
 }
 
-########################
-# CULTURE_2 INVENTIONS #
-########################
+######################
+# CULTURE INVENTIONS #
+######################
 man_in_the_moon_stayed_up_too_late = {
 	limit = { culture_2 = 1 }
 	
@@ -689,9 +698,9 @@ ioreths_song = {
 	effect = { shared_prestige = 10 }
 }
 
-########################
-# CULTURE_3 INVENTIONS #
-########################
+######################
+# CULTURE INVENTIONS #
+######################
 song_of_earendil = {
 	limit = { culture_3 = 1 }
 	
@@ -849,9 +858,9 @@ where_theres_a_whip = {
 	effect = { shared_prestige = 15 }
 }
 
-########################
-# CULTURE_4 INVENTIONS #
-########################
+######################
+# CULTURE INVENTIONS #
+######################
 over_the_land_there_lies_a_long_shadow = {
 	limit = { culture_4 = 1 }
 	
@@ -936,7 +945,7 @@ houses_of_healing_song = {
 		modifier = {
 			factor = 2
 			accepted_culture = men_culture
-			flavor_1 = 1
+			invention = houses_of_healing_invention
 		}
 		modifier = {
 			factor = 1
@@ -1006,9 +1015,9 @@ lament_of_avor_taul = {
 	effect = { shared_prestige = 20 }
 }
 
-########################
-# CULTURE_5 INVENTIONS #
-########################
+######################
+# CULTURE INVENTIONS #
+######################
 fires_of_war = {
 	limit = { culture_5 = 1 }
 	

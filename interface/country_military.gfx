@@ -67,8 +67,7 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\military_bg.dds"
 	}
 	
-	#unit folders.
-	
+	# Army
 	spriteType = {
 		name = "GFX_unit_folder_army_1_swordsmen"
 		texturefile = "gfx\\interface\\unit_folder_army_1_swordsmen.dds"
@@ -85,30 +84,107 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_unit_folder_army_4_pikemen"
-		texturefile = "gfx\\interface\\unit_folder_army_1_pikemen.dds"
+		name = "GFX_unit_folder_army_4_elite_heavy_cavalry"
+		texturefile = "gfx\\interface\\unit_folder_army_4_elite_heavy_cavalry.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_unit_folder_army_5_levies"
-		texturefile = "gfx\\interface\\unit_folder_army_1_levies.dds"
+		name = "GFX_unit_folder_army_5_elite_pikemen"
+		texturefile = "gfx\\interface\\unit_folder_army_5_elite_pikemen.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_unit_folder_army_6_horse_archers"
-		texturefile = "gfx\\interface\\unit_folder_army_2_horse_archers.dds"
+		name = "GFX_unit_folder_army_6_elite_horse_archers"
+		texturefile = "gfx\\interface\\unit_folder_army_6_elite_horse_archers.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_folder_army_7_heavy_cavalry"
-		texturefile = "gfx\\interface\\unit_folder_army_2_heavy_cavalry.dds"
+		texturefile = "gfx\\interface\\unit_folder_army_7_heavy_cavalry.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_folder_army_8_artillery"
-		texturefile = "gfx\\interface\\unit_folder_army_3_artillery.dds"
+		texturefile = "gfx\\interface\\unit_folder_army_8_artillery.dds"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_unit_folder_army_9_pikemen"
+		texturefile = "gfx\\interface\\unit_folder_army_9_pikemen.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_10_levies"
+		texturefile = "gfx\\interface\\unit_folder_army_10_levies.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_11_horse_archers"
+		texturefile = "gfx\\interface\\unit_folder_army_11_horse_archers.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_12_elite_archers"
+		texturefile = "gfx\\interface\\unit_folder_army_12_elite_archers.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_13_elite_swordsmen"
+		texturefile = "gfx\\interface\\unit_folder_army_13_elite_swordsmen.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_14_elite_artillery"
+		texturefile = "gfx\\interface\\unit_folder_army_14_elite_artillery.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_15_skirmishers"
+		texturefile = "gfx\\interface\\unit_folder_army_15_skirmishers.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_16_royal_guard"
+		texturefile = "gfx\\interface\\unit_folder_army_16_royal_guard.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_17_rangers"
+		texturefile = "gfx\\interface\\unit_folder_army_17_rangers.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_18_berserkers"
+		texturefile = "gfx\\interface\\unit_folder_army_18_berserkers.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_19_mumakil"
+		texturefile = "gfx\\interface\\unit_folder_army_19_mumakil.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_20_ents"
+		texturefile = "gfx\\interface\\unit_folder_army_20_ents.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_21_eagles"
+		texturefile = "gfx\\interface\\unit_folder_army_21_eagles.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_22_spiders"
+		texturefile = "gfx\\interface\\unit_folder_army_22_spiders.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_folder_army_23_wights"
+		texturefile = "gfx\\interface\\unit_folder_army_23_wights.dds"
+		noOfFrames = 2
+	}
+	
+	# Navy
 	spriteType = {
 		name = "GFX_unit_folder_navy_1_transport"
 		texturefile = "gfx\\interface\\unit_folder_navy_1_transport.dds"
@@ -120,28 +196,13 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_unit_folder_navy_3_galleass"
-		texturefile = "gfx\\interface\\unit_folder_navy_2_galleass.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_folder_navy_4_galliot"
-		texturefile = "gfx\\interface\\unit_folder_navy_2_galliot.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_folder_navy_5_cog"
+		name = "GFX_unit_folder_navy_3_cog"
 		texturefile = "gfx\\interface\\unit_folder_navy_3_cog.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_unit_folder_navy_6_caravel"
-		texturefile = "gfx\\interface\\unit_folder_navy_3_caravel.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_folder_navy_7_brigantine"
-		texturefile = "gfx\\interface\\unit_folder_navy_3_brigantine.dds"
+		name = "GFX_unit_folder_navy_4_corsair_ship"
+		texturefile = "gfx\\interface\\unit_folder_navy_4_corsair_ship.dds"
 		noOfFrames = 2
 	}
 	

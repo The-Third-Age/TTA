@@ -2,7 +2,7 @@
 expansion_1 = {
 	area = expansion
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	colonial_points = 100
 	cb_creation_speed = 0.05
@@ -41,7 +41,7 @@ expansion_1 = {
 expansion_2 = {
 	area = expansion
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	colonial_points = 100
 	cb_creation_speed = 0.05
@@ -80,10 +80,10 @@ expansion_2 = {
 expansion_3 = {
 	area = expansion
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	colonial_points = 200
-	cb_creation_speed = 0.1
+	cb_creation_speed = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -119,10 +119,10 @@ expansion_3 = {
 expansion_4 = {
 	area = expansion
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
-	colonial_points = 200
-	cb_creation_speed = 0.1
+	colonial_points = 300
+	cb_creation_speed = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -158,10 +158,10 @@ expansion_4 = {
 expansion_5 = {
 	area = expansion
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
-	colonial_points = 400
-	cb_creation_speed = 0.2
+	colonial_points = 300
+	cb_creation_speed = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -198,11 +198,10 @@ expansion_5 = {
 diplomacy_1 = {
 	area = diplomacy
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	diplomatic_points = 0.05
 	influence = 0.05
-	loan_interest = -0.001
 	
 	ai_chance = {
 		factor = 1
@@ -229,11 +228,10 @@ diplomacy_1 = {
 diplomacy_2 = {
 	area = diplomacy
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	diplomatic_points = 0.05
 	influence = 0.05
-	loan_interest = -0.001
 	
 	ai_chance = {
 		factor = 1
@@ -260,11 +258,10 @@ diplomacy_2 = {
 diplomacy_3 = {
 	area = diplomacy
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
-	diplomatic_points = 0.1
-	influence = 0.1
-	loan_interest = -0.002
+	diplomatic_points = 0.05
+	influence = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -291,11 +288,10 @@ diplomacy_3 = {
 diplomacy_4 = {
 	area = diplomacy
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
-	diplomatic_points = 0.1
-	influence = 0.1
-	loan_interest = -0.002
+	diplomatic_points = 0.05
+	influence = 0.05
 	
 	ai_chance = {
 		factor = 1
@@ -322,11 +318,11 @@ diplomacy_4 = {
 diplomacy_5 = {
 	area = diplomacy
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
-	diplomatic_points = 0.2
-	influence = 0.2
-	loan_interest = -0.004
+	diplomatic_points = 0.05
+	influence = 0.05
+	enable_crime = alliance_dwarves_men_tag_unlock_effect
 	
 	ai_chance = {
 		factor = 1
@@ -354,7 +350,7 @@ diplomacy_5 = {
 wilderness_1 = {
 	area = wilderness
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	colonial_migration = 0.05
 	colonial_prestige = 0.05
@@ -385,9 +381,8 @@ wilderness_1 = {
 wilderness_2 = {
 	area = wilderness
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
-	colonial_life_rating = -5
 	colonial_migration = 0.05
 	colonial_prestige = 0.05
 	colonial_points = 100
@@ -417,10 +412,11 @@ wilderness_2 = {
 wilderness_3 = {
 	area = wilderness
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
-	colonial_migration = 0.1
-	colonial_prestige = 0.1
+	colonial_life_rating = -5
+	colonial_migration = 0.05
+	colonial_prestige = 0.05
 	colonial_points = 200
 	
 	ai_chance = {
@@ -448,12 +444,12 @@ wilderness_3 = {
 wilderness_4 = {
 	area = wilderness
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	colonial_life_rating = -5
-	colonial_migration = 0.1
-	colonial_prestige = 0.1
-	colonial_points = 200
+	colonial_migration = 0.05
+	colonial_prestige = 0.05
+	colonial_points = 300
 	
 	ai_chance = {
 		factor = 1
@@ -480,12 +476,12 @@ wilderness_4 = {
 wilderness_5 = {
 	area = wilderness
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	colonial_life_rating = -5
-	colonial_migration = 0.2
-	colonial_prestige = 0.2
-	colonial_points = 400
+	colonial_migration = 0.05
+	colonial_prestige = 0.05
+	colonial_points = 300
 	
 	ai_chance = {
 		factor = 1
@@ -513,7 +509,7 @@ wilderness_5 = {
 culture_1 = {
 	area = culture
 	year = 2954
-	cost = 3600
+	cost = 2500
 	
 	prestige = 0.05
 	permanent_prestige = 5
@@ -543,7 +539,7 @@ culture_1 = {
 culture_2 = {
 	area = culture
 	year = 2954
-	cost = 7200
+	cost = 3000
 	
 	prestige = 0.05
 	permanent_prestige = 10
@@ -573,7 +569,7 @@ culture_2 = {
 culture_3 = {
 	area = culture
 	year = 2965
-	cost = 10800
+	cost = 4000
 	
 	prestige = 0.05
 	permanent_prestige = 15
@@ -603,7 +599,7 @@ culture_3 = {
 culture_4 = {
 	area = culture
 	year = 2980
-	cost = 14400
+	cost = 5500
 	
 	prestige = 0.05
 	permanent_prestige = 20
@@ -633,7 +629,7 @@ culture_4 = {
 culture_5 = {
 	area = culture
 	year = 3000
-	cost = 18000
+	cost = 7000
 	
 	prestige = 0.05
 	permanent_prestige = 25

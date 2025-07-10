@@ -21,4 +21,4 @@ upper_house = {
 penal_reform = hard_labor
 slavery = no_slavery
 
-schools = army_tech_school
+schools = no_organization

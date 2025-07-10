@@ -642,8 +642,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = farming_tech_1
-					activate_technology = mining_tech_1
+					activate_technology = rgo_tech_1
 				}
 			}
 		}

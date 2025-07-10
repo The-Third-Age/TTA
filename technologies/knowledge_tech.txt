@@ -1,0 +1,568 @@
+#herblore
+herblore_tech_1 = {
+	area = herblore_tech
+	year = 2954
+	cost = 2500
+	
+	pop_growth = 0.0001
+	land_attrition = -0.01
+	soldier_to_pop_loss = 0.01
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 2960
+		}
+	}
+}
+
+herblore_tech_2 = {
+	area = herblore_tech
+	year = 2954
+	cost = 3000
+	
+	pop_growth = 0.0001
+	land_attrition = -0.02
+	soldier_to_pop_loss = 0.02
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 2965
+		}
+	}
+}
+
+herblore_tech_3 = {
+	area = herblore_tech
+	year = 2965
+	cost = 4000
+	
+	pop_growth = 0.0001
+	land_attrition = -0.03
+	soldier_to_pop_loss = 0.03
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 2980
+		}
+	}
+}
+
+herblore_tech_4 = {
+	area = herblore_tech
+	year = 2980
+	cost = 5500
+	
+	pop_growth = 0.0001
+	land_attrition = -0.04
+	soldier_to_pop_loss = 0.04
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 3000
+		}
+	}
+}
+
+herblore_tech_5 = {
+	area = herblore_tech
+	year = 3000
+	cost = 7000
+	
+	pop_growth = 0.0001
+	land_attrition = -0.05
+	soldier_to_pop_loss = 0.05
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 3010
+		}
+	}
+}
+
+#magic
+magic_1 = {
+	area = magic
+	year = 2954
+	cost = 2500
+	
+	ai_chance = {
+		factor = 0.1
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 10
+			government = istari_kingdom
+		}
+		modifier = {
+			factor = 10
+			government = sauron_dictatorship
+		}
+		modifier = {
+			factor = 1.1
+			year = 2960
+		}
+	}
+}
+
+magic_2 = {
+	area = magic
+	year = 2954
+	cost = 3000
+	
+	ai_chance = {
+		factor = 0.1
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 10
+			government = istari_kingdom
+		}
+		modifier = {
+			factor = 10
+			government = sauron_dictatorship
+		}
+		modifier = {
+			factor = 1.1
+			year = 2965
+		}
+	}
+}
+
+magic_3 = {
+	area = magic
+	year = 2965
+	cost = 4000
+	
+	ai_chance = {
+		factor = 0.1
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 10
+			government = istari_kingdom
+		}
+		modifier = {
+			factor = 10
+			government = sauron_dictatorship
+		}
+		modifier = {
+			factor = 1.1
+			year = 2980
+		}
+	}
+}
+
+magic_4 = {
+	area = magic
+	year = 2980
+	cost = 5500
+	
+	ai_chance = {
+		factor = 0.1
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 10
+			government = istari_kingdom
+		}
+		modifier = {
+			factor = 10
+			government = sauron_dictatorship
+		}
+		modifier = {
+			factor = 1.1
+			year = 3000
+		}
+	}
+}
+
+magic_5 = {
+	area = magic
+	year = 3000
+	cost = 7000
+	
+	ai_chance = {
+		factor = 0.1
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 10
+			government = istari_kingdom
+		}
+		modifier = {
+			factor = 10
+			government = sauron_dictatorship
+		}
+		modifier = {
+			factor = 1.1
+			year = 3010
+		}
+	}
+}
+
+#education
+education_1 = {
+	area = education
+	year = 2954
+	cost = 2500
+	
+	education_efficiency = 0.1
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 3
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.1
+			year = 2960
+		}
+	}
+}
+
+education_2 = {
+	area = education
+	year = 2954
+	cost = 3000
+	
+	education_efficiency = 0.1
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 3
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.1
+			year = 2965
+		}
+	}
+}
+
+education_3 = {
+	area = education
+	year = 2965
+	cost = 4000
+	
+	education_efficiency = 0.2
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 3
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.1
+			year = 2980
+		}
+	}
+}
+
+education_4 = {
+	area = education
+	year = 2980
+	cost = 5500
+	
+	education_efficiency = 0.3
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 3
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.1
+			year = 3000
+		}
+	}
+}
+
+education_5 = {
+	area = education
+	year = 3000
+	cost = 7000
+	
+	education_efficiency = 0.3
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 3
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.1
+			year = 3010
+		}
+	}
+}
+
+#scholarship_tech
+scholarship_tech_1 = {
+	area = scholarship_tech
+	year = 2954
+	cost = 2500
+	
+	increase_research = 0.1
+	activate_building = scriptorium
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 2960
+		}
+	}
+}
+
+scholarship_tech_2 = {
+	area = scholarship_tech
+	year = 2954
+	cost = 3000
+	
+	increase_research = 0.1
+	max_scriptorium = 1
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 2965
+		}
+	}
+}
+
+scholarship_tech_3 = {
+	area = scholarship_tech
+	year = 2965
+	cost = 4000
+	
+	increase_research = 0.2
+	max_scriptorium = 1
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 2980
+		}
+	}
+}
+
+scholarship_tech_4 = {
+	area = scholarship_tech
+	year = 2980
+	cost = 5500
+	
+	increase_research = 0.3
+	max_scriptorium = 1
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 3000
+		}
+	}
+}
+
+scholarship_tech_5 = {
+	area = scholarship_tech
+	year = 3000
+	cost = 7000
+	
+	increase_research = 0.3
+	max_scriptorium = 1
+	
+	ai_chance = {
+		factor = 10
+		
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 3010
+		}
+	}
+}

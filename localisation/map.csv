@@ -1509,6 +1509,7 @@ claim_status_doesnt_own_GMO_843_loc;§YDark of Moria§!: §RUnowned§!§I;x
 remove_claim_ENE_837_loc;§WWe will lose claims over §!§YGreyflood Vale§!§I;x
 claim_status_doesnt_own_KHA_361_loc;§YDesert of Khand§!: §RUnowned§!§I;x
 remove_claim_DUN_1448_loc;§WWe will lose claims over §!§YIsendale§!§I;x
+good_unlock_invention_eagles_loc;Unlocks invention §YEagles§! at the §Ystart of the next month§!, giving the following effects:\nPrestige gain: §G+5.0%§!\nCan use Aerial Support§I;x
 claim_status_doesnt_own_RHU_1253_loc;§YCaill na Trowe§!: §RUnowned§!§I;x
 claim_status_owns_BLU_940_loc;§YDor Lelvin§!: §GOwned§!§I;x
 add_claim_RHO_1382_loc;§WWe will gain claims over §!§YEhwathrumavuld§!§I;x
@@ -1551,7 +1552,7 @@ remove_claim_GON_205_loc;§WWe will lose claims over §!§YEmyn Arnen§!§I;x
 add_claim_RHO_461_loc;§WWe will gain claims over §!§YThe Desolation§!§I;x
 claim_status_owns_BRE_1014_loc;§YNan Turnath§!: §GOwned§!§I;x
 remove_claim_LIN_936_loc;§WWe will lose claims over §!§YRhûlindon§!§I;x
-DAL_merchant_guild_bop_desc_loc;Unlike many Medieval societies, the merchants of the Lakemen function as the landed nobles and aristocrats of society. This puts them at direct odds with the Fisher's Guild, leading to an ever-present internal strife.\n\nFor the past couple centuries, the Merchants have had distinct control over society, culminating in the Master of Laketown that the Company of Thorin met. Since the downfall of the merchant Master and the rebalance of power over with the ascent of Bard I, the Fisher's guild has been demanding more and more rights, attempting to sway economic power in their favor.\n\nMechanically, this balance of power runs on a scale of 10 points in favor of the Merchants, to 10 points in favor of the Fisher's Guild (total range of 21 -- 10 in favor of the Merchants, 1 for a tie, and an additional 10 in favor of the Fisher's Guild). On top on a small amount of interaction with other flavor, any Burgher's Reform will move the scale 2 points in favor of the Fisher's Guild, while repealing any Burgher's Reform will move the scale 2 points in favor of the Merchants. Should the balance of power reach 8 points in favor of either side, the realm can decide to officially support that side, ending the mechanic and permanently gaining the bonuses associated with that side.;x
+DAL_merchant_guild_bop_desc_loc;Unlike many Medieval societies, the merchants of the Lakemen function as the landed nobles and aristocrats of society. This puts them at direct odds with the Fisher's Guild, leading to an ever-present internal strife.\n\nFor the past couple centuries, the Merchants have had distinct control over society, culminating in the Master of Laketown that the Company of Thorin met. Since the downfall of the merchant Master and the rebalance of power over with the ascent of Bard I, the Fisher's guild has been demanding more and more rights, attempting to sway economic power in their favor.\n\nMechanically, this balance of power runs on a scale of 10 points in favor of the Merchants, to 10 points in favor of the Fisher's Guild (total range of 21 -- 10 in favor of the Merchants, 1 for a tie, and an additional 10 in favor of the Fisher's Guild). Should the balance of power reach 8 points in favor of either side, the realm can decide to officially support that side, ending the mechanic and permanently gaining the bonuses associated with that side.;x
 claim_status_owns_DAL_652_loc;§YDalelands§!: §GOwned§!§I;x
 remove_claim_RHU_859_loc;§WWe will lose claims over §!§YRann Gasta§!§I;x
 add_claim_RHU_634_loc;§WWe will gain claims over §!§YNorthern Gazar Narkad§!§I;x
@@ -1879,6 +1880,7 @@ add_claim_SHI_1031_loc;§WWe will gain claims over §!§YWestfarthing§!§I;x
 remove_claim_CAR_886_loc;§WWe will lose claims over §!§YPinnath Ceren§!§I;x
 admiral_loc;§TAdmirals§!;x
 claim_status_owns_GON_232_loc;§YForethir§!: §GOwned§!§I;x
+GON_unlock_invention_minasdirath_loc;Unlocks invention §YMinasdirith§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Build Time §G-3§! Days\nReg. Experience: §G+5.00§!§I;x
 remove_claim_RHU_602_loc;§WWe will lose claims over §!§YLeshen§!§I;x
 fourth_age_start_date_loc;The Fourth Age hasn't started yet§I;x
 claim_status_owns_DND_1358_loc;§YCilab§!: §GOwned§!§I;x
@@ -2390,6 +2392,7 @@ claim_status_doesnt_own_DOR_558_loc;§YCairn Angle§!: §RUnowned§!§I;x
 DAL_unlock_establish_celduin_trading_post_cb_loc;Activates §YEstablish Trading Post§! cb§I;x
 remove_claim_GON_57_loc;§WWe will lose claims over §!§YEmyn Ernil§!§I;x
 add_claim_ENE_838_loc;§WWe will gain claims over §!§YWinterdowns§!§I;x
+evil_unlock_invention_fellbeasts_loc;Unlocks invention §YFellbeasts§! at the §Ystart of the next month§!, giving the following effects:\nPrestige gain: §G+5.0%§!\nCan use Aerial Support§I;x
 claim_status_owns_GON_249_loc;§YEraguk§!: §GOwned§!§I;x
 DAL_reforms_fishers_guild_loc;§GThis decision will either give us the reforms of the Fishers Guild' for free or if we have completed all of the Fishers' Guilds reforms, it will give us some prestige and reduce popular anxiety§!\n§I;x
 claim_status_doesnt_own_IML_865_loc;§YElven Fells§!: §RUnowned§!§I;x
@@ -2553,10 +2556,12 @@ remove_claim_HAR_356_loc;§WWe will lose claims over §!§YLûrmsakûn§!§I;x
 claim_status_owns_MOR_423_loc;§YLithlad§!: §GOwned§!§I;x
 claim_status_owns_BRE_1013_loc;§YBree-land§!: §GOwned§!§I;x
 resolve_conflicting_cores_loc;Resolve Conflicting Cores;x
+GON_unlock_invention_houses_of_healing_loc;Unlocks invention §YHouses of Healing§! at the §Ystart of the next month§!, giving the following effects:\nMilitary Hospitals: §G+1.00%§!§I;x
 claim_status_doesnt_own_ENE_825_loc;§YMagur§!: §RUnowned§!§I;x
 add_claim_ROH_780_loc;§WWe will gain claims over §!§YLower East Emnet§!§I;x
 claim_status_owns_LIN_1153_loc;§YThargelion§!: §GOwned§!§I;x
 claim_status_owns_RHO_462_loc;§YNindalf§!: §GOwned§!§I;x
+LOR_unlock_invention_lembas_bread_loc;Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!§I;x
 claim_status_owns_SHI_1040_loc;§YEastfarthing§!: §GOwned§!§I;x
 add_claim_GON_78_loc;§WWe will gain claims over §!§YDor-en-Edhel§!§I;x
 claim_status_owns_GON_188_loc;§YCentral Drúwaith Iaur§!: §GOwned§!§I;x

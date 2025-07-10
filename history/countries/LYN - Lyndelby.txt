@@ -17,4 +17,4 @@ slavery = no_slavery
 serfdom = banned_serfdom
 vote_franschise = wealth_weighted_voting
 
-schools = traditional_academic
+schools = no_organization

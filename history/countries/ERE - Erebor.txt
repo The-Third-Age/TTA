@@ -22,7 +22,7 @@ slavery = no_slavery
 
 decision = erebor_start_decision
 
-schools = traditional_academic
+schools = member_alliance_dwarves_men
 #tech
-mining_tech_1 = 1
+rgo_tech_1 = 1
 infantry_tech_1 = 1

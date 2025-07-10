@@ -41,11 +41,6 @@ spriteTypes = {
 		noOfFrames = 7
 	}
 	spriteType = {
-		name = "GFX_tech_fake_icons"
-		texturefile = "gfx\\interface\\tech_fake_icons.tga"
-		noOfFrames = 7
-	}
-	spriteType = {
 		name = "GFX_tech_invention_strip"
 		texturefile = "gfx\\interface\\tech_invention_strip.tga"
 		noOfFrames = 3

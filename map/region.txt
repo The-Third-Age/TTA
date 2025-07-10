@@ -468,7 +468,7 @@ DAL_trade_with_other_realms_loc = { } # §GTrade with Other Realms§!
 DAL_trade_with_other_realms_desc_loc = { } # Gain trade agreements with allied or sphere realms! When a realm accepts, both you and your trade partner may get a small economic boost. Esgaroth will display your current level of economic boost.
 
 DAL_merchant_guild_bop_title_loc = { } # Merchants and Fisher's Guild
-DAL_merchant_guild_bop_desc_loc = { } # Unlike many Medieval societies, the merchants of the Lakemen function as the landed nobles and aristocrats of society. This puts them at direct odds with the Fisher's Guild, leading to an ever-present internal strife.\n\nFor the past couple centuries, the Merchants have had distinct control over society, culminating in the Master of Laketown that the Company of Thorin met. Since the downfall of the merchant Master and the rebalance of power over with the ascent of Bard I, the Fisher's guild has been demanding more and more rights, attempting to sway economic power in their favor.\n\nMechanically, this balance of power runs on a scale of 10 points in favor of the Merchants, to 10 points in favor of the Fisher's Guild (total range of 21 -- 10 in favor of the Merchants, 1 for a tie, and an additional 10 in favor of the Fisher's Guild). On top on a small amount of interaction with other flavor, any Burgher's Reform will move the scale 2 points in favor of the Fisher's Guild, while repealing any Burgher's Reform will move the scale 2 points in favor of the Merchants. Should the balance of power reach 8 points in favor of either side, the realm can decide to officially support that side, ending the mechanic and permanently gaining the bonuses associated with that side.
+DAL_merchant_guild_bop_desc_loc = { } # Unlike many Medieval societies, the merchants of the Lakemen function as the landed nobles and aristocrats of society. This puts them at direct odds with the Fisher's Guild, leading to an ever-present internal strife.\n\nFor the past couple centuries, the Merchants have had distinct control over society, culminating in the Master of Laketown that the Company of Thorin met. Since the downfall of the merchant Master and the rebalance of power over with the ascent of Bard I, the Fisher's guild has been demanding more and more rights, attempting to sway economic power in their favor.\n\nMechanically, this balance of power runs on a scale of 10 points in favor of the Merchants, to 10 points in favor of the Fisher's Guild (total range of 21 -- 10 in favor of the Merchants, 1 for a tie, and an additional 10 in favor of the Fisher's Guild). Should the balance of power reach 8 points in favor of either side, the realm can decide to officially support that side, ending the mechanic and permanently gaining the bonuses associated with that side.
 DAL_merchant_guild_bop_merchants_lead_loc = { } # Currently the §TMerchants§! lead (+
 DAL_merchant_guild_bop_guild_lead_loc = { } # Currently the §TFisher's Guild§! lead (+
 DAL_merchant_guild_bop_desc_ii_loc = { } # )
@@ -599,31 +599,11 @@ unlocks_voting_reform_loc = { } # §YUnlocks Voting Reform§!
 no_effects_loc = { } # No effect
 become_sauron_vassal_loc = { } # We will start the path to becoming §RSauron's vassal§!
 strong_leader_beats_saurons_will_loc = { } # Due to our leader's strong will, we will completely avert the chance to become §RSauron's vassal§!. However, we will not avoid the after-effects of the contest of wills...
+good_unlock_invention_eagles_loc = { } # Unlocks invention §YEagles§! at the §Ystart of the next month§!, giving the following effects:\nPrestige gain: §G+5.0%§!\nCan use Aerial Support
+evil_unlock_invention_fellbeasts_loc = { } # Unlocks invention §YFellbeasts§! at the §Ystart of the next month§!, giving the following effects:\nPrestige gain: §G+5.0%§!\nCan use Aerial Support
 
 # Static Tooltip Locs - Random
 conversion_to_tribal_loc = { } # §RAny unaccepted soldier pop in the newly conquered lands will convert into tribals§!
-
-# Static Tooltops Locs - Alliance of Dwarves and Men
-triggered_event_alliance_of_dwarves_and_men_loc = { } # get the 'Alliance of Dwarves and Men' event.
-triggered_event_alliance_of_dwarves_and_men_core_dispute_loc = { } # get the 'Alliance of Dwarves and Men - Core Dispute' event.
-triggered_event_alliance_of_dwarves_and_men_region_selection_loc = { } # get the 'Alliance of Dwarves and Men - Region Selection' event.
-triggered_event_alliance_of_dwarves_and_men_country_selection_loc = { } # §!get the 'Alliance of Dwarves and Men - Realm Selection' event.
-triggered_event_alliance_of_dwarves_and_men_specific_flavor_loc = { } # get the 'Alliance of Dwarves and Men - Specific Flavor' event.
-triggered_event_alliance_of_dwarves_and_men_specific_flavor_northan_core_dispute_loc = { } # get the 'Alliance of Dwarves and Men - Northmen Core Dispute' event.
-triggered_event_alliance_of_dwarves_and_men_diplomatic_strategy_loc = { } # §!get the 'Alliance of Dwarves and Men - Diplomatic Strategy' event.
-triggered_event_alliance_of_dwarves_and_men_voting_results_loc = { } # get the 'Alliance of Dwarves and Men Voting Results' event.
-triggered_event_alliance_of_dwarves_and_men_economic_union_loc = { } # get the 'Alliance of Dwarves and Men Economic Union' event.
-triggered_event_alliance_of_dwarves_and_men_political_union_loc = { } # get the 'Alliance of Dwarves and Men Political Union' event.
-
-alliance_of_dwarves_and_men_region_selection_loc = { } # The named region will be chosen
-alliance_of_dwarves_and_men_country_selection_loc = { } # The named realm will be chosen
-alliance_of_dwarves_and_men_country_selection_return_cores_loc = { } # We will cede the chosen region to this realm
-alliance_of_dwarves_and_men_economic_union_sphere_loc = { } # We will be placed in the highest-ranked GP in the alliance. If there is a lower rank GP that is of our culture group, that realm will be favored over the higher rank GP
-
-call_allies_tooltip_loc = { } # §WCalls all realms in the alliance into our current conflicts. This call to arms does not bypass truces. The ai is more likely to accept defensive call-to-arms and the ai still may reject the call to arms§!
-
-FFN_core_refusers_loc = { } # §RWe will gain cores on all core provinces of existing realms that abstained or voted against the formation of the §YFree Folk of the North§!§!
-FFN_sphere_annex_description_loc = { } # §GAny Anti-Sauron or Opportunistic ai Hobbit, Northmen, Anduinmen or Elven realm with a capital in Rhovanion that never joined the Alliance of Dwarves and Men will join us if we sphere them!
 
 # Static Tooltip Locs - Settings
 settings_disable_settings_loc = { } # The settings menu will close and the decision to reopen the menu will be disabled. §RThis cannot be undone§!
@@ -652,8 +632,31 @@ settings_annex_all_loc = { } # This option annexes all of colonizable Middle Ear
 settings_province_wealth_intervention_loc = { } # For the most part, the Province Wealth mechanic works in the background, without player intervention. However, there are a couple of random events that can fire related to no other mechanic, allowing the realm to intervene in the wealth of a province. This option toggles these events firing
 settings_generic_rgo_changing_loc = { } # Selecting this option will disable the generic RGO switching that can occur when a province has more than 50% of its labourers unemployed
 
-# Static Tooltip Locs - Alliance of Dwarves and Men
+# Static Tooltops Locs - Alliance of Dwarves and Men
+triggered_event_alliance_of_dwarves_and_men_loc = { } # get the 'Alliance of Dwarves and Men' event.
+triggered_event_alliance_of_dwarves_and_men_core_dispute_loc = { } # get the 'Alliance of Dwarves and Men - Core Dispute' event.
+triggered_event_alliance_of_dwarves_and_men_region_selection_loc = { } # get the 'Alliance of Dwarves and Men - Region Selection' event.
+triggered_event_alliance_of_dwarves_and_men_country_selection_loc = { } # §!get the 'Alliance of Dwarves and Men - Realm Selection' event.
+triggered_event_alliance_of_dwarves_and_men_specific_flavor_loc = { } # get the 'Alliance of Dwarves and Men - Specific Flavor' event.
+triggered_event_alliance_of_dwarves_and_men_specific_flavor_northan_core_dispute_loc = { } # get the 'Alliance of Dwarves and Men - Northmen Core Dispute' event.
+triggered_event_alliance_of_dwarves_and_men_diplomatic_strategy_loc = { } # §!get the 'Alliance of Dwarves and Men - Diplomatic Strategy' event.
+triggered_event_alliance_of_dwarves_and_men_voting_results_loc = { } # get the 'Alliance of Dwarves and Men Voting Results' event.
+triggered_event_alliance_of_dwarves_and_men_economic_union_loc = { } # get the 'Alliance of Dwarves and Men Economic Union' event.
+triggered_event_alliance_of_dwarves_and_men_political_union_loc = { } # get the 'Alliance of Dwarves and Men Political Union' event.
+
+alliance_of_dwarves_and_men_region_selection_loc = { } # The named region will be chosen
+alliance_of_dwarves_and_men_country_selection_loc = { } # The named realm will be chosen
+alliance_of_dwarves_and_men_country_selection_return_cores_loc = { } # We will cede the chosen region to this realm
+alliance_of_dwarves_and_men_economic_union_sphere_loc = { } # We will be placed in the highest-ranked GP in the alliance. If there is a lower rank GP that is of our culture group, that realm will be favored over the higher rank GP
+
+call_allies_tooltip_loc = { } # §WCalls all realms in the alliance into our current conflicts. This call to arms does not bypass truces. The ai is more likely to accept defensive call-to-arms and the ai still may reject the call to arms§!
+
+FFN_core_refusers_loc = { } # §RWe will gain cores on all core provinces of existing realms that abstained or voted against the formation of the §YFree Folk of the North§!§!
+FFN_sphere_annex_description_loc = { } # §GAny Anti-Sauron or Opportunistic ai Hobbit, Northmen, Anduinmen or Elven realm with a capital in Rhovanion that never joined the Alliance of Dwarves and Men will join us if we sphere them!
 FFN_join_alliance_dwarves_men_loc = { } # If the pass the conditions on this decision (ignoring the always false), we will almost be eligible to be invited to the Alliance of Dwarves and Men -- we also need to be allied to realm that is currently in the alliance. From here, the ai will always attempt to send an invite, however, §Rit is possible for the rest of the alliance to reject the invite proposal§!.\n\nThe full list of conditions is:\nWe are §GAnti-Sauron§! or §POpportunistic§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion
+
+# Static Tooltip Locs - Amov Clan
+AMO_sent_out_raiders_loc = { } # §GWe will send out raiding parties, occasionally decreasing the affected provinces wealth, and increasing our own
 
 # Static Tooltip Locs - Barding Realm
 DAL_bard_i_only_loc = { } # §RThis decision can only be taken while §YBard I§R is your leader§!
@@ -683,8 +686,12 @@ DAL_increase_erebor_relations_2_loc = { } # §GErebor Alliance points increased 
 DAL_remove_trading_alignment_restrictions_loc = { } # Removes the alignment restrictions of the §YPropose a Trade Agreement with Allied or Sphered Realm§! decision. The AI is gauranteed to accept your trade agreement
 DAL_unlock_establish_celduin_trading_post_cb_loc = { } # Activates §YEstablish Trading Post§! cb
 
-# Static Tooltip Locs - Amov Clan
-AMO_sent_out_raiders_loc = { } # §GWe will send out raiding parties, occasionally decreasing the affected provinces wealth, and increasing our own
+# Static Tooltip Locs - Gondor
+GON_unlock_invention_houses_of_healing_loc = { } # Unlocks invention §YHouses of Healing§! at the §Ystart of the next month§!, giving the following effects:\nMilitary Hospitals: §G+1.00%§!
+GON_unlock_invention_minasdirath_loc = { } # Unlocks invention §YMinasdirith§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Build Time §G-3§! Days\nReg. Experience: §G+5.00§!
+
+# Static Tooltip Locs - Lothlorien
+LOR_unlock_invention_lembas_bread_loc = { } # Unlocks invention §YLembas Bread§! at the §Ystart of the next month§!, giving the following effects:\nArmies: Supply Consumption: §G-10%§!\nRGO output efficiency tech: §G+5.0%§!
 
 # Static Tooltip Locs - Region Claiming
 add_claim_GON_4_loc = { } # §WWe will gain claims over §!§YFar Anórien§!

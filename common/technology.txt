@@ -21,16 +21,22 @@ folders = {
 		naval_construction
 	}
 	commerce_tech = {
-		farming_tech
-		mining_tech
+		rgo_tech
 		guilds
+		trade_tech
 		infrastructure_tech
 	}
 	population_tech = {
 		taxes
+		administration_tech
 		population
-		education
+		entertainment_tech
+	}
+	knowledge_tech = {
+		herblore_tech
 		magic
+		education
+		scholarship_tech
 	}
 	diplomacy_tech = {
 		expansion
@@ -38,54 +44,13 @@ folders = {
 		wilderness
 		culture
 	}
-	flavor_tech = {
-		flavor_cat_1
-		flavor_cat_2
-		flavor_cat_3
-		flavor_cat_4
-	}
 }
 
 # These are treated like modifiers, so any country modifier works in these
 schools = {
-	traditional_academic = {
-		army_tech_research_bonus = 0.01
-		military_theory_tech_research_bonus = 0.01
-		navy_tech_research_bonus = 0.01
-		commerce_tech_research_bonus = 0.01
-		population_tech_research_bonus = 0.01
-		diplomacy_tech_research_bonus = 0.01
-		unciv_economic_modifier = -0.01
-		unciv_military_modifier = -0.01
+	no_organization = {
 	}
-	army_tech_school = {
-		army_tech_research_bonus = 0.15
-		military_theory_tech_research_bonus = 0.1
-		navy_tech_research_bonus = -0.05
-		commerce_tech_research_bonus = 0.0
-		population_tech_research_bonus = -0.1
-		diplomacy_tech_research_bonus = -0.1
-		unciv_economic_modifier = 0.02
-		unciv_military_modifier = -0.02
-	}
-	navy_tech_school = {
-		army_tech_research_bonus = -0.05
-		military_theory_tech_research_bonus = 0.1
-		navy_tech_research_bonus = 0.15
-		commerce_tech_research_bonus = 0.0
-		population_tech_research_bonus = -0.1
-		diplomacy_tech_research_bonus = -0.1
-		unciv_economic_modifier = 0.02
-		unciv_military_modifier = -0.02
-	}
-	commerce_tech_school = {
-		army_tech_research_bonus = -0.05
-		military_theory_tech_research_bonus = -0.1
-		navy_tech_research_bonus = -0.1
-		commerce_tech_research_bonus = 0.15
-		population_tech_research_bonus = 0.05
-		diplomacy_tech_research_bonus = 0.05
-		unciv_economic_modifier = -0.02
-		unciv_military_modifier = 0.02
+	
+	member_alliance_dwarves_men = {
 	}
 }

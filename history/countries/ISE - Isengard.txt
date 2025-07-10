@@ -25,7 +25,7 @@ upper_house = {
 slavery = no_slavery
 penal_reform = hard_labor
 
-schools = traditional_academic
+schools = no_organization
 
 #tech
 magic_1 = 1

@@ -3167,8 +3167,7 @@ political_decisions = {
 		}
 		allow = {
 			money = 250000
-			farming_tech_4 = 1
-			mining_tech_4 = 1
+			rgo_tech_4 = 1
 		}
 		effect = {
 			treasury = -250000

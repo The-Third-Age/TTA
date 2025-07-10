@@ -1,0 +1,196 @@
+#######################
+# HERBLORE INVENTIONS #
+#######################
+athelas = {
+	limit = { herblore_tech_2 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			NOT = { accepted_culture = orc_culture }
+		}
+	}
+	effect = {
+		pop_growth = 0.0001
+	}
+}
+orc_draught = {
+	limit = { herblore_tech_2 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = orc_culture
+		}
+	}
+	effect = {
+		pop_growth = 0.0001
+	}
+}
+##############################
+# MAGICAL SECRETS INVENTIONS #
+##############################
+magical_secrets = { # Generic prestige event
+	limit = { magic_1 = 1 }
+	
+	chance = {
+		base = 1
+	}
+	
+	effect = { shared_prestige = 5 }
+}
+astronomy = { # Generic prestige
+	limit = { magic_1 = 1 }
+	
+	chance = {
+		base = 1
+	}
+	
+	effect = { shared_prestige = 5 }
+}
+first_lesser_ring = { # Search and find a lesser ring
+	limit = { magic_2 = 1 }
+	
+	chance = {
+		base = 1
+	}
+	
+	effect = { shared_prestige = 5 }
+}
+palantiri = { # Gaze into the palantiri
+	limit = { magic_2 = 1 }
+	
+	chance = {
+		base = 3
+	}
+	
+	effect = { shared_prestige = 5 }
+}
+blue_wizards = { # Search for the blue wizards
+	limit = { magic_3 = 1 }
+	
+	chance = {
+		base = 1
+	}
+	
+	effect = { shared_prestige = 5 }
+}
+entwives = { # Search for the entwives
+	limit = { magic_3 = 1 }
+	
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			owns = 773
+		}
+	}
+	
+	effect = { shared_prestige = 5 }
+}
+second_lesser_ring = { # Search and find a lesser ring
+	limit = {
+		magic_4 = 1
+		invention = first_lesser_ring
+	}
+	
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			invention = first_lesser_ring
+		}
+	}
+	
+	effect = { shared_prestige = 5 }
+}
+silmarils = { # Search and find a silmaril
+	limit = { magic_4 = 1 }
+	
+	chance = {
+		base = 1
+	}
+	
+	effect = { shared_prestige = 5 }
+}
+magical_crafting = { # Creating one's own artefacts
+	limit = { magic_5 = 1 }
+	
+	chance = {
+		base = 1
+	}
+	
+	effect = { shared_prestige = 5 }
+}
+magical_crafting_warriors = {
+	limit = { magic_5 = 1 }
+	
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			invention = magical_crafting
+		}
+	}
+
+	effect = {
+		morale = 0.5
+	}
+}
+magical_crafting_craftsmen = {
+	limit = { magic_5 = 1 }
+	
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			invention = magical_crafting
+		}
+	}
+	
+	effect = {
+		factory_input = -0.02
+		factory_output = 0.02
+		factory_throughput = 0.05
+	}
+}
+magical_crafting_workers = {
+	limit = { magic_5 = 1 }
+	
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			invention = magical_crafting
+		}
+	}
+	
+	effect = {
+		rgo_output = 0.05
+	}
+}
+third_lesser_ring = { # Search and find a lesser ring
+	limit = { magic_5 = 1 }
+	
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			invention = second_lesser_ring
+		}
+	}
+	
+	effect = { shared_prestige = 5 }
+}
+##########################
+# SCHOLARSHIP INVENTIONS #
+##########################
+universities = {
+	limit = { scholarship_tech_5 = 1 }
+	
+	chance = {
+		base = 2
+	}
+	
+	effect = { max_scriptorium = 1 }
+}

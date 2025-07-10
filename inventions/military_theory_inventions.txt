@@ -1,6 +1,72 @@
-############################
+#############################
+# FORTIFICATIONS INVENTIONS #
+#############################
+caltrops = {
+	limit = { fortifications_1 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+archer_towers = {
+	limit = { fortifications_2 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+flaming_bolts = {
+	limit = { fortifications_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+boiling_tar = {
+	limit = { fortifications_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+archers_stake = {
+	limit = { fortifications_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+chevaux_de_frise = {
+	limit = { fortifications_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		dig_in_cap = 1
+	}
+}
+field_fortifications = {
+	limit = { fortifications_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		max_fort = 1
+	}
+}
+###########################
 # ARMY_TACTICS INVENTIONS #
-############################
+###########################
 menelmacar = {
 	limit = { army_tactics_1 = 1 }
 	chance = {
@@ -13,3 +79,265 @@ menelmacar = {
 	
 	effect = { permanent_prestige = 1 }
 }
+forced_march = {
+	limit = { army_tactics_2 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		army_base = {
+			maximum_speed = 1
+		}
+	}
+}
+focused_attacks = {
+	limit = { army_tactics_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		army_base = {
+			maneuver = 1
+		}
+	}
+}
+mountain_hordes = {
+	limit = { army_tactics_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			is_culture_group = northern_goblins
+		}
+	}
+	effect = {
+		mobilisation_size = 0.1
+	}
+}
+rapid_deployment = {
+	limit = { army_tactics_4 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		army_base = {
+			maximum_speed = 1
+		}
+	}
+}
+banners_of_command = {
+	limit = { army_tactics_4 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		morale = 0.25
+	}
+}
+battlefield_mobility = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		army_base = {
+			maneuver = 1
+		}
+	}
+}
+rally_points = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 2
+	}
+	
+	effect = {
+		morale = 0.25
+	}
+}
+eagles_invention = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = eagles_unlock
+			NOT = { invention = fellbeasts_invention }
+		}
+	}
+	effect = {
+		prestige = 0.05
+		gas_attack = yes
+	}
+}
+
+fellbeasts_invention = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = fellbeasts_unlock
+			NOT = { invention = eagles_invention }
+		}
+	}
+	effect = {
+		prestige = 0.05
+		gas_attack = yes
+	}
+}
+aerial_combat = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		
+		modifier = {
+			factor = 1
+			war = yes
+			OR = {
+				invention = eagles_invention
+				invention = fellbeasts_invention
+			}
+			war_countries = {
+				OR = {
+					invention = eagles_invention
+					invention = fellbeasts_invention
+				}
+			}
+		}
+	}
+	
+	effect = { gas_defence = yes }
+}
+soronume = {
+	limit = { army_tactics_5 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			invention = astronomy
+		}
+	}
+	
+	effect = { permanent_prestige = 1 }
+}
+#######################
+# TRAINING INVENTIONS #
+#######################
+minasdirith_invention = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = minasdirith_unlock
+		}
+	}
+	
+	effect = {
+		rgo_output = 0.05
+		army_base = {
+			supply_consumption = -0.1
+		}
+	}
+}
+militias = {
+	limit = { training_1 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		regular_experience_level = 2
+		army_base = {
+			discipline = 0.02
+		}
+	}
+}
+lance_retinues = {
+	limit = { training_2 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		regular_experience_level = 3
+		army_base = {
+			discipline = 0.03
+		}
+	}
+}
+basic_training = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		regular_experience_level = 5
+		army_base = {
+			discipline = 0.05
+		}
+	}
+}
+snaga_skirmishers = {
+	limit = { training_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			is_culture_group = northern_goblins
+		}
+	}
+	effect = {
+		infantry = {
+			support = 0.5
+			supply_consumption = 0.5
+		}
+	}
+}
+military_drill = {
+	limit = { training_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		regular_experience_level = 5
+		army_base = {
+			discipline = 0.05
+		}
+	}
+}
+military_schools = {
+	limit = { training_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		enable_crime = military_schools_effect
+	}
+}
+discipline_invention = {
+	limit = { training_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		regular_experience_level = 5
+		army_base = {
+			discipline = 0.05
+		}
+	}
+}
+outposts = {
+	limit = { training_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		max_barracks = 1
+	}
+}
+###########################
+# NAVAL THEORY INVENTIONS #
+###########################

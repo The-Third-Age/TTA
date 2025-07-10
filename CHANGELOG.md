@@ -3,6 +3,23 @@ All notable changes will be documented in this file.
 
 ## v0.6 - In Development
 
+### Highlights
+ - Tech Rework
+
+### Tech Rework
+ - Rebalanced tech effects
+ - "Flavor" tech section removed
+   - Previous "flavor" tech added as inventions for standard tech
+ - Farming and Mining tech lines removed/combined into one
+ - New tech lines added
+   - Extraction (combination of Farming and Mining)
+   - Trade
+   - Administration
+   - Entertainment
+   - Herblore
+   - Scholarship
+ - Replaced tech schools to allow displaying organizations (Alliance of Dwarves and Men, White Council and other future mechanics)
+
 ## [v0.5.1](https://github.com/The-Third-Age/TTA/releases/tag/v0.5.1) - 2025-05-11
 
 ### Highlights

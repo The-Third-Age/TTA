@@ -2,19 +2,16 @@
 fortifications_1 = {
 	area = fortifications
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
-	dig_in_cap = 1
 	activate_building = fort
+	army_base = {
+		supply_consumption = 0.1
+	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -56,19 +53,16 @@ fortifications_1 = {
 fortifications_2 = {
 	area = fortifications
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
-	dig_in_cap = 1
 	max_fort = 1
+	army_base = {
+		supply_consumption = 0.1
+	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -110,19 +104,16 @@ fortifications_2 = {
 fortifications_3 = {
 	area = fortifications
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
-	dig_in_cap = 1
 	max_fort = 1
+	army_base = {
+		supply_consumption = 0.2
+	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -164,18 +155,16 @@ fortifications_3 = {
 fortifications_4 = {
 	area = fortifications
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
-	dig_in_cap = 1
+	max_fort = 1
+	army_base = {
+		supply_consumption = 0.3
+	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -211,18 +200,16 @@ fortifications_4 = {
 fortifications_5 = {
 	area = fortifications
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
-	dig_in_cap = 1
+	max_fort = 1
+	army_base = {
+		supply_consumption = 0.3
+	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -259,33 +246,14 @@ fortifications_5 = {
 army_tactics_1 = {
 	area = army_tactics
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
-	morale = 0.25
+	morale = 0.1
 	military_tactics = 0.25
-	combat_width = 1
-	
-	army_base = {
-		default_organisation = 5
-		supply_consumption = 0.1
-	}
-	
-	heavy_cavalry = {
-		default_organisation = 5
-	}
-	
-	pikemen = {
-		default_organisation = 5
-	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -321,33 +289,14 @@ army_tactics_1 = {
 army_tactics_2 = {
 	area = army_tactics
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
-	morale = 0.25
+	morale = 0.15
 	military_tactics = 0.25
-	combat_width = 2
-	
-	army_base = {
-		default_organisation = 5
-		supply_consumption = 0.1
-	}
-	
-	heavy_cavalry = {
-		default_organisation = 5
-	}
-	
-	pikemen = {
-		default_organisation = 5
-	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -383,33 +332,14 @@ army_tactics_2 = {
 army_tactics_3 = {
 	area = army_tactics
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	morale = 0.25
 	military_tactics = 0.25
-	combat_width = 4
-	
-	army_base = {
-		default_organisation = 5
-		supply_consumption = 0.2
-	}
-	
-	heavy_cavalry = {
-		default_organisation = 5
-	}
-	
-	pikemen = {
-		default_organisation = 5
-	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -445,33 +375,14 @@ army_tactics_3 = {
 army_tactics_4 = {
 	area = army_tactics
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	morale = 0.25
 	military_tactics = 0.25
-	combat_width = 6
-	
-	army_base = {
-		default_organisation = 5
-		supply_consumption = 0.2
-	}
-	
-	heavy_cavalry = {
-		default_organisation = 5
-	}
-	
-	pikemen = {
-		default_organisation = 5
-	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -507,34 +418,14 @@ army_tactics_4 = {
 army_tactics_5 = {
 	area = army_tactics
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
-	morale = 0.5
-	military_tactics = 0.5
-	combat_width = 7
-	
-	army_base = {
-		maneuver = 1
-		default_organisation = 10
-		supply_consumption = 0.4
-	}
-	
-	heavy_cavalry = {
-		default_organisation = 10
-	}
-	
-	pikemen = {
-		default_organisation = 10
-	}
+	morale = 0.25
+	military_tactics = 0.25
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -571,27 +462,14 @@ army_tactics_5 = {
 training_1 = {
 	area = training
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
-
-	regular_experience_level = 5
-	org_regain = 0.05
 	
-	army_base = {
-		# Audax Validator "." Ignore_1007
-		build_time = 1
-		default_organisation = 5
-		supply_consumption = -0.05
-		maximum_speed = 1
-	}
+	activate_building = barracks
+	mobilisation_size = 0.01
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -627,28 +505,14 @@ training_1 = {
 training_2 = {
 	area = training
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
-
-	unit = 1
-	regular_experience_level = 5
-	org_regain = 0.05
 	
-	army_base = {
-		# Audax Validator "." Ignore_1007
-		build_time = 2
-		default_organisation = 5
-		supply_consumption = -0.05
-		discipline = 0.05
-	}
+	mobilisation_size = 0.02
+	max_barracks = 1
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -684,26 +548,15 @@ training_2 = {
 training_3 = {
 	area = training
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
-
-	regular_experience_level = 5
-	org_regain = 0.05
 	
-	army_base = {
-		# Audax Validator "." Ignore_1007
-		build_time = 3
-		default_organisation = 5
-		supply_consumption = -0.1
-	}
+	mobilisation_size = 0.03
+	max_barracks = 1
+	unit = 1
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -739,27 +592,14 @@ training_3 = {
 training_4 = {
 	area = training
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
-
-	regular_experience_level = 5
-	org_regain = 0.05
 	
-	army_base = {
-		# Audax Validator "." Ignore_1007
-		build_time = 4
-		default_organisation = 5
-		supply_consumption = -0.1
-		discipline = 0.05
-	}
+	mobilisation_size = 0.04
+	max_barracks = 1
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -795,29 +635,15 @@ training_4 = {
 training_5 = {
 	area = training
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
-
-	unit = 2
-	regular_experience_level = 5
-	org_regain = 0.05
 	
-	army_base = {
-		# Audax Validator "." Ignore_1007
-		build_time = 5
-		default_organisation = 10
-		supply_consumption = -0.1
-		discipline = 0.1
-		maximum_speed = 1
-	}
+	mobilisation_size = 0.05
+	max_barracks = 1
+	unit = 2
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -854,7 +680,7 @@ training_5 = {
 naval_theory_1 = {
 	area = naval_theory
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	navy_base = {
@@ -871,10 +697,6 @@ naval_theory_1 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -913,15 +735,15 @@ naval_theory_1 = {
 naval_theory_2 = {
 	area = naval_theory
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	navy_base = {
-		default_organisation = 5
-		gun_power = 1
+		default_organisation = 10
+		gun_power = 2
 	}
 	transport = {
-		gun_power = -1
+		gun_power = -2
 	}
 	
 	ai_chance = {
@@ -930,10 +752,6 @@ naval_theory_2 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -972,15 +790,15 @@ naval_theory_2 = {
 naval_theory_3 = {
 	area = naval_theory
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	navy_base = {
-		default_organisation = 10
-		gun_power = 2
+		default_organisation = 12
+		gun_power = 3
 	}
 	transport = {
-		gun_power = -2
+		gun_power = -3
 	}
 	
 	ai_chance = {
@@ -989,10 +807,6 @@ naval_theory_3 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -1031,15 +845,15 @@ naval_theory_3 = {
 naval_theory_4 = {
 	area = naval_theory
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	navy_base = {
-		default_organisation = 10
-		gun_power = 2
+		default_organisation = 18
+		gun_power = 4
 	}
 	transport = {
-		gun_power = -2
+		gun_power = -4
 	}
 	
 	ai_chance = {
@@ -1048,10 +862,6 @@ naval_theory_4 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25
@@ -1090,15 +900,15 @@ naval_theory_4 = {
 naval_theory_5 = {
 	area = naval_theory
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	navy_base = {
-		default_organisation = 20
-		gun_power = 3
+		default_organisation = 25
+		gun_power = 5
 	}
 	transport = {
-		gun_power = -3
+		gun_power = -5
 	}
 	
 	ai_chance = {
@@ -1107,10 +917,6 @@ naval_theory_5 = {
 		modifier = {
 			factor = 0
 			NOT = { total_num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 1.05
-			tech_school = navy_tech_school
 		}
 		modifier = {
 			factor = 1.25

@@ -1878,7 +1878,7 @@ ideologies = {
 		modifier = {
 			factor = 2
 			OR = {
-				is_culture_group = easterling
+				is_culture_group = easterlings
 				is_culture_group = khandish
 				is_culture_group = haradrim
 			}

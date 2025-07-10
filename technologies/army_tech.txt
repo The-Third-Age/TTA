@@ -1,34 +1,22 @@
-#infantry_tech
+#infantry_tech -- base 6, stat boost of 2, 4, 6, 8, 10 = 36 total stats (18 for levies [infantry])
 infantry_tech_1 = {
 	area = infantry_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	pikemen = {
-		attack = 2
-		defence = 4
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
 	swordsmen = {
-		attack = 3
-		defence = 3
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
-	
 	infantry = {
-		attack = 2
-		defence = 2
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = infantry_focused
@@ -68,33 +56,21 @@ infantry_tech_1 = {
 infantry_tech_2 = {
 	area = infantry_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	pikemen = {
-		attack = 2
-		defence = 4
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
 	swordsmen = {
-		attack = 3
-		defence = 3
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
-	
 	infantry = {
-		attack = 2
-		defence = 2
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = infantry_focused
@@ -134,33 +110,21 @@ infantry_tech_2 = {
 infantry_tech_3 = {
 	area = infantry_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	pikemen = {
-		attack = 4
-		defence = 8
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	swordsmen = {
-		attack = 6
-		defence = 6
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	infantry = {
-		attack = 4
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = infantry_focused
@@ -200,33 +164,21 @@ infantry_tech_3 = {
 infantry_tech_4 = {
 	area = infantry_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	pikemen = {
-		attack = 4
-		defence = 8
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	swordsmen = {
-		attack = 6
-		defence = 6
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	infantry = {
-		attack = 4
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = infantry_focused
@@ -266,33 +218,21 @@ infantry_tech_4 = {
 infantry_tech_5 = {
 	area = infantry_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	pikemen = {
-		attack = 8
-		defence = 12
-		supply_consumption = 0.4
+		default_organisation = 5
 	}
 	swordsmen = {
-		attack = 12
-		defence = 12
-		supply_consumption = 0.4
+		default_organisation = 5
 	}
-	
 	infantry = {
-		attack = 8
-		defence = 8
-		supply_consumption = 0.4
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = infantry_focused
@@ -329,25 +269,19 @@ infantry_tech_5 = {
 	}
 }
 
-#archer_tech
+#archer_tech -- base 2, stat boost of 1, 1.5, 1,5, 2, 3 = 11 total stats (500% support max, total backline 55)
 archer_tech_1 = {
 	area = archer_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	archers = {
-		attack = 0.5
-		defence = 0.5
+		default_organisation = 2
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = ranged_focused
@@ -387,21 +321,15 @@ archer_tech_1 = {
 archer_tech_2 = {
 	area = archer_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	archers = {
-		attack = 0.5
-		defence = 0.5
+		default_organisation = 3
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = ranged_focused
@@ -441,21 +369,15 @@ archer_tech_2 = {
 archer_tech_3 = {
 	area = archer_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	archers = {
-		attack = 0.5
-		defence = 0.5
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = ranged_focused
@@ -495,21 +417,15 @@ archer_tech_3 = {
 archer_tech_4 = {
 	area = archer_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	archers = {
-		attack = 0.5
-		defence = 0.5
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = ranged_focused
@@ -549,21 +465,15 @@ archer_tech_4 = {
 archer_tech_5 = {
 	area = archer_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	archers = {
-		attack = 1
-		defence = 1
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = ranged_focused
@@ -600,38 +510,27 @@ archer_tech_5 = {
 	}
 }
 
-#cavalry_tech
+#cavalry_tech -- heavy cav 6, stat boost of 2, 4, 6, 8, 10 = 36 total stats
+			# -- horse arc 6, stat boost of 2, 2, 4, 4, 6 = 24 total stats (200% support max, total backline 48)
+			# -- scouts    3, stat boost of 2, 3, 4, 6, 8 = 26 total stats
 cavalry_tech_1 = {
 	area = cavalry_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	heavy_cavalry = {
-		attack = 4
-		defence = 1
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
-	
 	horse_archers = {
-		attack = 2
-		defence = 2
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
-	
 	scouts = {
-		attack = 3
-		defence = 1
-		supply_consumption = 0.1
+		default_organisation = 2
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = cavalry_focused
@@ -671,34 +570,21 @@ cavalry_tech_1 = {
 cavalry_tech_2 = {
 	area = cavalry_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	heavy_cavalry = {
-		attack = 4
-		defence = 1
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
-	
 	horse_archers = {
-		attack = 2
-		defence = 2
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
-	
 	scouts = {
-		attack = 3
-		defence = 1
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = cavalry_focused
@@ -738,35 +624,21 @@ cavalry_tech_2 = {
 cavalry_tech_3 = {
 	area = cavalry_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	heavy_cavalry = {
-		attack = 8
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	horse_archers = {
-		attack = 4
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	scouts = {
-		attack = 6
-		defence = 2
-		supply_consumption = 0.2
-		reconnaissance = 1
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = cavalry_focused
@@ -806,34 +678,21 @@ cavalry_tech_3 = {
 cavalry_tech_4 = {
 	area = cavalry_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	heavy_cavalry = {
-		attack = 8
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	horse_archers = {
-		attack = 4
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	scouts = {
-		attack = 6
-		defence = 2
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = cavalry_focused
@@ -873,34 +732,21 @@ cavalry_tech_4 = {
 cavalry_tech_5 = {
 	area = cavalry_tech
 	year = 2954
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	heavy_cavalry = {
-		attack = 16
-		defence = 8
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	horse_archers = {
-		attack = 8
-		defence = 8
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
-	
 	scouts = {
-		attack = 12
-		defence = 4
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.1
 			has_country_flag = cavalry_focused
@@ -937,25 +783,19 @@ cavalry_tech_5 = {
 	}
 }
 
-#artillery_tech
+#artillery_tech -- 2, stat boost of 2, 2, 4, 4, 6 = 20 (200% support max, total backline 40)
 artillery_tech_1 = {
 	area = artillery_tech
 	year = 2954
-	cost = 3600
+	cost = 2500
 	unciv_military = yes
 
 	artillery = {
-		supply_consumption = 0.1
-		siege = 1
+		default_organisation = 2
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -991,22 +831,15 @@ artillery_tech_1 = {
 artillery_tech_2 = {
 	area = artillery_tech
 	year = 2954
-	cost = 7200
+	cost = 3000
 	unciv_military = yes
 
 	artillery = {
-		attack = 1
-		defence = 1
-		supply_consumption = 0.1
+		default_organisation = 3
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -1042,22 +875,15 @@ artillery_tech_2 = {
 artillery_tech_3 = {
 	area = artillery_tech
 	year = 2965
-	cost = 10800
+	cost = 4000
 	unciv_military = yes
 
 	artillery = {
-		attack = 1
-		defence = 1
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -1093,22 +919,15 @@ artillery_tech_3 = {
 artillery_tech_4 = {
 	area = artillery_tech
 	year = 2980
-	cost = 14400
+	cost = 5500
 	unciv_military = yes
 
 	artillery = {
-		attack = 1
-		defence = 1
-		supply_consumption = 0.2
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -1144,23 +963,15 @@ artillery_tech_4 = {
 artillery_tech_5 = {
 	area = artillery_tech
 	year = 3000
-	cost = 18000
+	cost = 7000
 	unciv_military = yes
 
 	artillery = {
-		attack = 2
-		defence = 2
-		siege = 1
-		supply_consumption = 0.4
+		default_organisation = 5
 	}
 	
 	ai_chance = {
 		factor = 1
-		
-		modifier = {
-			factor = 1.05
-			tech_school = army_tech_school
-		}
 		modifier = {
 			factor = 1.2
 			civilized = yes

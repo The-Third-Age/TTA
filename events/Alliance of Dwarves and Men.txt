@@ -20326,6 +20326,13 @@ country_event = {
 		name = "Yes, we accept"
 		add_country_modifier = { name = alliance_of_dwarves_and_men duration = -1 }
 		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { tech_school = member_alliance_dwarves_men }
+		}
+		clr_global_flag = hidden_effects
+		
 		ai_chance = { factor = 100 }
 	}
 	

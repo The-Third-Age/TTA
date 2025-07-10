@@ -20,11 +20,11 @@ upper_house = {
 penal_reform = hard_labor
 slavery = no_slavery
 
-schools = traditional_academic
+schools = no_organization
 #technologies
 merchant_marine_1 = 1
 light_ships_1 = 1
 heavy_ships_1 = 1
 naval_construction_1 = 1
-mining_tech_1 = 1
+rgo_tech_1 = 1
 infantry_tech_1 = 1

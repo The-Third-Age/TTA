@@ -1,8 +1,8 @@
-######################
-# FARMING INVENTIONS #
-######################
+##################
+# RGO INVENTIONS #
+##################
 wilwarin = {
-	limit = { farming_tech_1 = 1 }
+	limit = { rgo_tech_1 = 1 }
 	chance = {
 		base = 0
 		modifier = {
@@ -10,11 +10,26 @@ wilwarin = {
 			invention = astronomy
 		}
 	}
-	
 	effect = { permanent_prestige = 1 }
 }
+lembas_bread_invention = {
+	limit = { rgo_tech_1 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 100
+			has_country_flag = lembas_bread_unlock
+		}
+	}
+	effect = {
+		rgo_output = 0.05
+		army_base = {
+			supply_consumption = -0.1
+		}
+	}
+}
 valacirca = {
-	limit = { farming_tech_2 = 1 }
+	limit = { rgo_tech_2 = 1 }
 	chance = {
 		base = 0
 		modifier = {
@@ -22,21 +37,110 @@ valacirca = {
 			invention = astronomy
 		}
 	}
-	
 	effect = { permanent_prestige = 1 }
+}
+stone_sense = {
+	limit = { rgo_tech_3 = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			accepted_culture = dwarven_culture
+		}
+	}
+	effect = {
+		mine_rgo_size = 0.25
+		mine_rgo_eff = 0.25
+	}
+}
+#####################
+# GUILDS INVENTIONS #
+#####################
+fires_of_industry = {
+	limit = { guilds_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		factory_throughput = 0.05
+	}
+}
+####################
+# TRADE INVENTIONS #
+####################
+centers_of_trade = {
+	limit = { trade_tech_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		max_market_square = 1
+	}
 }
 #############################
 # INFRASTRUCTURE INVENTIONS #
 #############################
+mobilization_planning = {
+	limit = { infrastructure_tech_1 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		supply_limit = 0.1
+		mobilisation_economy_impact = -0.01
+		reinforce_rate = 0.01
+	}
+}
+caravans = {
+	limit = { infrastructure_tech_2 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		supply_limit = 0.1
+		mobilisation_economy_impact = -0.01
+		reinforce_rate = 0.02
+	}
+}
+supply_lines = {
+	limit = { infrastructure_tech_3 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		supply_limit = 0.2
+		mobilisation_economy_impact = -0.01
+		reinforce_rate = 0.03
+	}
+}
+planned_logistics = {
+	limit = { infrastructure_tech_4 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		supply_limit = 0.3
+		mobilisation_economy_impact = -0.01
+		reinforce_rate = 0.04
+	}
+}
 great_roads = {
 	limit = { infrastructure_tech_4 = 1 }
-	
 	chance = {
-		base = 5
+		base = 2
 	}
-	
-	factory_throughput = 0.5
-	rgo_output = 0.5
-	# Audax Validator "!" Ignore_1007
-	artisan_throughput = 0.5
+	effect = {
+		max_railroad = 1
+	}
+}
+distribution_channels = {
+	limit = { infrastructure_tech_5 = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		supply_limit = 0.3
+		mobilisation_economy_impact = -0.01
+		reinforce_rate = 0.05
+	}
 }

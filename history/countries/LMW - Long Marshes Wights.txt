@@ -14,4 +14,4 @@ upper_house = {
 }
 
 
-schools = traditional_academic
+schools = no_organization

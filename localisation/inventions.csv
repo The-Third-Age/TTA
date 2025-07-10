@@ -1,68 +1,213 @@
 ###########################;x
 ##### ARMY INVENTIONS #####;x {
 ###########################;x
+infantry_tech_1_equipment;Basic Infantry Equipment;x
+infantry_tech_1_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
+infantry_tech_2_equipment;Improved Infantry Equipment;x
+infantry_tech_2_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 standardised_infantry_equipment;Standardised Infantry Equipment;x
 standardised_infantry_equipment_desc;Standardising the production output of our weapon and arour smiths will make their production more efficient.;x
+infantry_tech_3_equipment;Advanced Infantry Weapons;x
+infantry_tech_3_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 competition_infantry;Competition Infantry;x
 competition_infantry_desc;Tournaments have held competitions for infantry since men first equipped clubs. Melees were held, either with two competitors or a whole group, with the winners rewarded handsomely.;x
+infantry_tech_4_equipment;Elite Infantry Weapons;
+infantry_tech_4_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
+infantry_tech_5_equipment;Supreme Infantry Weapons;x
+infantry_tech_5_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
+archer_tech_1_equipment;Basic Archer Equipment;x
+archer_tech_1_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 short_bows;Short Bows;x
 short_bows_desc;The simple bow is a omnipresent tool in society with vast military potential.;x
+archer_tech_2_equipment;Improved Archer Equipment;x
+archer_tech_2_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 recurve_bows;Recurve Bows;x
 recurve_bows_desc;With limbs that curve, a recurve bow stores more energy and transfers energy more efficiently to arrows than straight bows.;x
 barbed_arrows;Barbed Arrows;x
 barbed_arrows_desc;Barbed arrows cut into the flesh and lacerate the skin, causing increased pain and bleeding to the victim pincushion.;x
 standardised_archery_equipment;Standrdised Archery Equipment;x
 standardised_archery_equipment_desc;Standardising the production output of our fletchers will make their production more efficient.;x
+archer_tech_3_equipment;Advanced Archer Equipment;x
+archer_tech_3_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 long_bows;Long Bows;
 long_bows_desc;Longer and bigger bows enable greater force to be stored in the bow when drawing the bowstring, and thus greater power to be transferred to the arrow.;x
 competition_archery;Competition Archery;x
 competition_archery_desc;Tournaments have held competitions for archers since time the bow was first picked up. Bowmen with the best accuracy against targets were often rewarded lavishly.;x
+archer_tech_4_equipment;Elite Archer Equipment;x
+archer_tech_4_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 composite_bows;Composite Bows;x
 composite_bows_desc;As a devlopment of recurve bows, composite bows utilise two distinct materials in their construction, usually wood and horn. As the bowstring is drawn and stretched, and the horn on the bow is compressed, meaning greater energy can be stored in the bow and transferred to the arrow on release;x
 bodkin_arrows;Bodkin Arrows;
 bodkin_arrows_desc;Bodkin pointed arrows are a relatively simple squared metal spike designed primarily to pierce through mail armour, making them more effective against well-equipped foes.;x
+archer_tech_5_equipment;Supreme Archer Equipment;x
+archer_tech_5_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 war_bows;War Bows;x
 war_bows_desc;War Bows are the peak evolution of long bow development.;x
 war_arrows;War Arrows;x
 war_arrows_desc;The pinnacle of arrow design and innovation.;x
 fire_arrows;Fire Arrows;x
 fire_arrows_desc;Specialised arrows can be opportunistically used to wreck havoc when sieging enemy fortresses;x
+cavalry_tech_1_equipment;Basic Rider Equipment;x
+cavalry_tech_1_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 animal_husbandry;Animal Husbandry;x
 animal_husbandry_desc;The use of pack and draft animals will make our farms significantly more efficient.;x
+cavalry_tech_2_equipment;Improved Rider Equipment;x
+cavalry_tech_2_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 standardised_horse_rearing;Standardised Horse Rearing;x
 standardised_horse_rearing_desc;Standardising the kinds of horses, whether they be destriers or coursers, that our farmers are producing will make the production more efficient.;x
+cavalry_tech_3_equipment;Advanced Rider Equipment;x
+cavalry_tech_3_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
+outriders;Outriders;x
+outriders_desc;The forward soldiers of an army, outriders perform key operations primarily as scouts and messangers.;x
 competition_cavalry;Competition Cavalry;x
 competition_cavalry_desc;Tournaments have held competitions for cavalry since man first rode. Jousts, pitting the finest horsemen against either other in fierce and deadly combat, were fought, with the winners rewarded handsomely.;x
+cavalry_tech_4_equipment;Elite Rider Equipment;x
+cavalry_tech_4_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
+nomad_bows;Nomad Bows;x
+nomad_bows_desc;A type of recurve bow, the nomad bow has been made specifically for horse archers - it is purposefully designed to be small, but powerful and accurate.;x
+cavalry_tech_5_equipment;Supreme Rider Equipment;x
+cavalry_tech_5_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
+scout_waystations;Scout Waystations;x
+scout_waystations_desc;Sometimes, messages are too important to stop to rest, and horses to not have the strength to continue riding. By establishing a series of waystations, scouts and messangers can switch their horses for a fresh one to avoid resting.;x
+maeras_riders;Maeras Riders;x
+maeras_riders_desc;The Maeras are the horses descended from Felaróf, one of the horses of Eorl, the first King of Rohan. These horses are bred specifically for their size, speed and strength, and bear none other than the royalty of the Mark.;x
+artillery_tech_1_equipment;Basic Artillery Construction;x
+artillery_tech_1_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
+artillery_tech_2_equipment;Improved Artillery Construction;x
+artillery_tech_2_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 standardised_artillery_construction;Standardised Artillery Construction;x
 standardised_artillery_construction_desc;Standardising the production output of our artillery craftsmen will make their production more efficient.;x
+artillery_tech_3_equipment;Advanced Artillery Construction;x
+artillery_tech_3_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 competition_artillery;Competition Artillery;x
 competition_artillery_desc;Engineering achievements must be rewarded and thus tournaments for the finest siege engines must be held to reward those in our service.;x
+artillery_tech_4_equipment;Elite Artillery Construction;x
+artillery_tech_4_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
+artillery_tech_5_equipment;Supreme Artillery Construction;
+artillery_tech_5_equipment_desc;Despite having recently developed new equipment for our army, it takes some time to craft and deploy the equipment.;x
 ######################################;x }
 ##### MILITARY THEORY INVENTIONS #####;x {
 ######################################;x
+caltrops;Caltrops;x
+caltrops_desc;Spiked, area of denial weapons, caltrops are often scattered in front of defensive lines and choke points to slow enemy movement;x
+archer_towers;Archer Towers;x
+archer_towers_desc;Archers manning towers may put them at higher risk, but their aim will not be truer;x
+flaming_bolts;Flaming Bolts;x
+flaming_bolts_desc;Great balls of file that generally are used as fire ammunition on siege engines or as a method of using gravity against advancing enemies.;x
+boiling_tar;Boiling Tar;x
+boiling_tar_desc;Battering ram approaching the gate and don't have a way to set it on fire? No problem! Just pour some tar over those manning the ram...;x
+archers_stake;Archer's Stake;x
+archers_stake_desc;Wood sharpened into stakes, these were generally placed in front of archers to deter cavalry charges.;x
+chevaux_de_frise;Chevaux de Frise;x
+chevaux_de_frise_desc;a defensive obstacle consisting of a portable frame, often a log, studded with spikes used to restrict enemy movement;x
+field_fortifications;Field Fortifications;x
+field_fortifications_desc;As we have tested various defensive positions, we have discovered ways to quickly set up adhoc fortifications in the field;x
 menelmacar;Menelmacar;x
 menelmacar_desc;Menelmacar, the Swordsman of the Sky, is one of the constellations of Arda;x
+forced_march;Forced March;x
+forced_march_desc;Sometimes the army needs to be somewhere that it cannot reasonably travel in a day. Luckily, that time suck known as sleep isn't required...;x
+focused_attacks;Focused Attacks;x
+focused_attacks_desc;By targeting one position and breaking it, we can gain an advantage over our enemies in a given battle.;x
+mountain_hordes;Mountain Hordes;x
+mountain_hordes_desc;The Northern Goblins have never been known to deploy well trained, or even heavily armored troops. In fact, the one thing that they're known for is having endless hordes descending from the mountains.;x
+rapid_deployment;Rapid Deployment;x
+rapid_deployment_desc;The faster our troops get into position, the sooner the battle can begin.;x
+banners_of_command;Banners of Command;x
+banners_of_command_desc;In the midst of combat, many times verbal commands cannot be heard, or are missed. Banners signifying different commands can overcome these liabilities.;x
+battlefield_mobility;Battlefied Mobility;x
+battlefield_mobility_desc;Troops commonly are in the wrong position to be effective. By quickly moving troops around as needed, we can ensure that our enemy breaks before we do.;x
+rally_points;Rally Points;x
+rally_points_desc;After combat, troops need to be reorganized. By establishing rally points, we can more quickly accomplish that.;x
+eagles_invention;Eagles;x
+eagles_invention_desc;From Tolkien Gateway:\n\n"Eagles, also known as Great Eagles, were immense, sentient birds that served as messengers of Manwë. They were capable of speech and often helped Men, Elves and Wizards in their efforts to defeat foes such as Morgoth and Sauron.";x
+fellbeasts_invention;Fellbeasts;x
+fellbeasts_invention_desc;From Tolkien Gateway:\n\n"Fell beasts were huge winged creatures with a beak and claws and were described as similar to carrion birds but much greater and more monstrous than any kind of bird, including Eagles. They were dark and appeared shadow-like even at night. Their body was plain and naked, lacking any quills or feathers. They had a long neck as well as vast pinions consisting of a web-like "hide between horned fingers". They possessed a "fell speed" which allowed them to fly faster than the wind. Furthermore, fell beasts also gave off a stench. In battle they swooped upon prey with their feet to drop foes from the sky, crushed enemies under their sheer weight, and used their vast wings to blow foul gusts of wind.";x
+aerial_combat;Air-to-air combat;x
+aerial_combat_desc;Our enemy's aerial support can now be countered.;x
+soronume;Soronúmë;x
+soronume_desc;Soronúmë, the Eagle of the West, is one of the constellations of Arda;x
+minasdirith_invention;Minasdirith;x
+minasdirith_invention_desc;The Minasdirath, otherwise known as the Order of the Guard, is a military order that all beacon guards belong to. Besides remaining vigilant and protecting/lighting beacons, members of the Minasdirath also conscripts young men from nearby villages and trains them to be beacon-guards to help ease up on Gondor's soldier shortage.;x
+militias;Militias;x
+militias_desc;Conscripts pressed into service, militias lack many of the skills of a standing army. However, by employing militias, we can ensure that our troops have more training should we need to go to war.;x
+lance_retinues;Lance Retinues;x
+lance_retinues_desc;Soldiers serving a knight, lance retinues remain the core of our standing armies.;x
+basic_training;Basic Training;x
+basic_training_desc;All soldiers need training before they can join the army. Basic training ensures that soldiers understand just that, the basics.;x
+snaga_skirmishers;Snaga Skirmishers;x
+snaga_skirmishers_desc;By arming our militias with javelins, we can press our numbers advantage.;x
+military_drill;Military Drill;x
+military_drill_desc;Basic training isn't enough. Our troops need to have reoccurring training to ensure that they retain their skills.;x
+military_schools;Military Schools;x
+military_schools_desc;A good army is only as good as its decision makers. By establishing military schools, we can ensure that our leaders and officers understand how to lead.;x
+discipline_invention;Discipline;x
+discipline_invention_desc;If our troops rout from combat, it doesnt matter how effective they are with a blade.;x
+outposts;Outposts;x
+outposts_desc;By establishing outposts in border territory, we can better defend out lands.;x
 ###########################;x }
 ##### NAVY INVENTIONS #####;x {
 ###########################;x
+ramming;Ramming;x
+ramming_desc;Sometimes, the best way to defeat an enemy navy is to sink each ship.;x
+advanced_ramming;Advanced Ramming;x
+advanced_ramming_desc;Our engineers and admiralty has developed stronger ships, more easily allowing ramming.;x
+boarding;Boarding;x
+boarding_desc;Sometimes, the best way to defeat an enemy navy is to board each ship and commandeer it.;x
+boarding_bridges;Boarding Bridges;x
+boarding_bridges_desc;Sometimes, ships are too far apart to board easily. By placing a secured plank between two ships, we can more easily board the enemy.;x
 shipbuilding;Shipbuilding;x
 shipbuilding_desc;Commercial shipbuilding is key to ensuring a strong naval presence.;x
+grand_shipyards;Grand Shipyards;x
+grand_shipyards_desc;Large harbors dedicated to ship constructure, allowing allowing more ships to be serviced and built at once.;x
 ###############################;x }
 ##### COMMERCE INVENTIONS #####;x {
 ###############################;x
 wilwarin;Wilwarin;x
 wilwarin_desc;Wilwarin, the Butterfly, is one of the constellations of Arda;x
+lembas_bread_invention;Lembas Bread;
+lembas_bread_invention_desc;From Tolkien Gateway:\n\n"Lembas, Elvish Waybread were very nutritious, stayed fresh for months when wrapped in leaves, and were used for sustenance on long journeys. Lembas had a brownish colour on the outside and a cream colour on the inside.\n\nAccording to Gimli, it was a food of the same kind as Cram, although one of the Elves of Lothlórien commented that it was more pleasant, and more strengthening than any food made by Men.\n\nLike other products of the Elves, it was offensive to evil creatures; Gollum refused outright to eat of it. When Frodo was captured by Orcs in Mordor, the Orcs hated the look of the lembas even more than Gollum had.";x
 valacirca;Valacirca;x
 valacirca_desc;Valacirca, the Sickle of the Valar, is one of the constellations of Arda;x
+stone_sense;Stone Sense;x
+stone_sense_desc;Dwarves have an innate connection with the earth, and with enough practice, can hear the stone singing. These melodies more quickly lead them to ore veins and gemstones.;x
+fires_of_industry;Fires of Industry;x
+fires_of_industry_desc;Streamlining guilds into "industries" will undoubtedly yield high outputs over time.;x
+centers_of_trade;Centers of Trade;x
+centers_of_trade_desc;Large cities with even larger markets bring merchants from far and wide.;x
+mobilization_planning;Mobilization Planning;x
+mobilization_planning_desc;Raising militias is no easy task. Movements need to be coordinated, supplies need to be moved, and rally points need to be deterimed. By making plans ahead of time, we can streamline this process.;x
+caravans;Caravans;x
+caravans_desc;By moving reinforcements and supplies together in caravans, we can more easily reinforce the front.;x
+supply_lines;Supply Lines;x
+supply_lines_desc;By establishing supply lines, we can ensure that our troops are regularly reinforced and supplied.;x
+planned_logistics;Planned Logistics;x
+planned_logistics_desc;Before starting an offensive, if we can determine where we will establish supply lines, the better our offensive will perform.;x
 great_roads;Great Roads;x
 great_roads_desc;The most well-traversed roads in Middle-Earth are known as "Great Roads". These roads are larger and more well maintained than other roads, allowing more goods to flow across them.;x
+distribution_channels;Distribution Channels;x
+distribution_channels_desc;By working with guilds directly, we can ensure that military goods are shipped directly to armies.;x
 #################################;x }
 ##### POPULATION INVENTIONS #####;x {
 #################################;x
+province_selector_unlock;Province Selectors;x
+province_selector_unlock_desc;A debug building that can be built to access the province menu.;x
 anarrima;Anarríma;x
 anarrima_desc;Anarríma, Sun-border, is one of the constellations of Arda;x
-scriptoriums;Scriptoriums;x
-scriptoriums_desc;Scriptoriums are dedicated places for scholars to copy and share manuscripts.;x
+houses_of_healing_invention;Houses of Healing;x
+houses_of_healing_invention_desc;From Tolkien Gateway:\n\n"The Houses of Healing was an infirmary in Minas Tirith.\n\nThe Houses were surrounded by lawns and trees, set near to the Citadel-gate and the southward wall in the sixth circle of Minas Tirith. The chief healer was the Warden of the Houses of Healing.";x
+rationing;Rationing;x
+rationing_desc;By appropriately rationing food, we can ensure that our armies can function even with supply loss.;x
+breeding_pits;Breeding Pits;x
+breeding_pits_desc;"Ashes and dust and thirst there is, and pits, pits, pits. And Orcses, thousands of Orcses."
+inns;Inns;x
+inns_desc;Large accommodations for travellors, inns also house regular bards and other entertainment.;x
+################################;x }
+##### KNOWLEDGE INVENTIONS #####;x {
+################################;x
+athelas;Athelas;x
+athelas_desc;"Kingsfoil, aye, it's a weed."\n\nA sweet smelling herb that helps cure wounds and poison.;x
+orc_draught;Orc Draught;x
+orc_draught_desc;Potent and invegorating, Orc Draught gives the drinker a burning sensation to revitalize strength and relieve pain.;x
 magical_secrets;Magical Secrets;x
 magical_secrets_desc;The world is awash with magical secrets of the past, what is there to discover in the world?;x
 astronomy;Astronomy;x
@@ -89,11 +234,15 @@ magical_crafting_workers;Enchanted Workers' Tools;x
 magical_crafting_workers_desc;Our workers benefit from enchanted tools.;x
 third_lesser_ring;Yet another Lesser Ring;x
 third_lesser_ring_desc;Before Sauron and Celebrimbor forged the One Ring, they created dozens or perhaps hundreds of lesser rings - essays in the craft of ring making to perfect their expertise. Acquiring another one of these rings may prove fruitful.;x
+universities;Universities;x
+universities_desc;By establishing higher education for those who can afford it, we can more easily push our realm forward.;x
 ################################;x }
 ##### DIPLOMACY INVENTIONS #####;x {
 ################################;x
 telumendil;Telumendil;x
 telumendil_desc;Telumendil, the Lover of the Heavens, is one of the constellations of Arda;x
+couriers;Couriers;x
+couriers_desc;What better way to show goodwill to our neighbors than to send couriers with gold and other fine items?;x
 all_that_is_gold;All that is gold does not glitter;x
 all_that_is_gold_desc;All that is gold does not glitter, Not all those who wander are lost. The old that is strong does not wither, Deep roots are not reached by the frost.;x
 seek_for_the_Sword;Seek for the Sword that was broken;x
@@ -204,12 +353,3 @@ ioreths_song;Ioreth's song;x
 ioreths_song_desc;On winds and waters may you cross, See mountains white and blue. But on your road, let's not forget, The love I have for you Dance on beaches in Anfalas, Sleep in moonlit fields of view, May you cross another golden age, With preciousness free-flowing, With Halfling, Elves, and Dwarves engage, Their wisdom on you bestowing.;x
 fires_of_war;Fires of War;x
 fires_of_war_desc;Stone by stone... Cracked, crushed, fallen... Beauty burned, erased... But not forgotten... I’ll take your melodies... May your last breath... Fill the air with embers... I... inhale. In their blood, I will stand! Let the waning light of Man, Cast my shadow on the Fires of War, Till our time burns away, Till our embers fade to grey, Cast my shadow on the Fires of War!;x
-##############################;x }
-##### FLAVOUR INVENTIONS #####;x {
-##############################;x
-eagles_aerial_combat;Air-to-air combat;x
-eagles_aerial_combat_desc;Our enemy's aerial support can now be countered.;x
-fellbeasts_aerial_combat;Air-to-air combat;x
-fellbeasts_aerial_combat_desc;Our enemy's aerial support can now be countered.;x
-soronume;Soronúmë;x
-soronume_desc;Soronúmë, the Eagle of the West, is one of the constellations of Arda;x

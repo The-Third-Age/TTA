@@ -6,13 +6,12 @@ pikemen = {
 	active = yes
 	unit_type = infantry
 	floating_flag = no
-	primary_culture = yes
 	
 	#Core Abilities
 	priority = 10
 	max_strength = 3
 	default_organisation = 40
-	maximum_speed = 3.00
+	maximum_speed = 4.00
 	weighted_value = 2.0
 
 	#Building Costs
@@ -31,7 +30,7 @@ pikemen = {
 		liquor = 0.1
 	}
 	
-	#Land Abilties
+	#Land Abilities
 	reconnaissance = 0
 	attack = 1
 	defence = 5

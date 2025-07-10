@@ -34,7 +34,7 @@ transport = {
 		clipper_convoy = 0.064
 	}
 	
-	#Naval Abilties
+	#Naval Abilities
 	hull = 1
 	gun_power = 1
 	fire_range = 0.4

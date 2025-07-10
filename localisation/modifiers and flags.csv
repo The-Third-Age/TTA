@@ -74,6 +74,8 @@ province_wealth_4;§OProvince Wealth:§! §GBountiful (+4)§!;x
 desc_province_wealth_4; ;x
 province_wealth_5;§OProvince Wealth:§! §GRich (+5)§!;x
 desc_province_wealth_5; ;x
+military_schools_effect;Recruit Generals §Wand §YRecruit Admirals §Wevent will no longer give generals with negative stats;x
+alliance_dwarves_men_tag_unlock_effect;§WUnlocks the ability to form the §YFree Folk of the North §Wvia the §YAlliance of Dwarves and Men §Wmenu (requires §YRailroading §Wto be §Rturned off§W);x
 ##################################;x }
 ##### ORGANIZATION MODIFIERS #####;x {
 ##################################;x
@@ -810,6 +812,11 @@ RAD_content;Original tag is RAD (Radagast of Rhosgobel);x
 RAV_content;Original tag is RAV (Ravens of Erebor);x
 SHE_content;Original tag is SHE (Shelob's Domain);x
 WRM_content;Original tag is WRM (Woodland Realm);x
+houses_of_healing_unlock;@GON §YGondor Flavor§!: Has taken decision §YHouses of Healing§!;x
+minasdirith_unlock;@GON §YGondor Flavor§!: Has taken decision §YExpand the Minasdirith§!;x
+lembas_bread_unlock;§YElven Flavor§!: Has taken decision §YLembas Bread§!;x
+eagles_unlock;§YAnti-Sauron Flavor§!: Has taken decision §YCall for help from the Eagles§!;x
+fellbeasts_unlock;§YSauronite Flavor§!: Has taken decision §YTame the Fellbeasts§!;x
 ##################################;x }
 ##### IDEOLOGY COUNTRY FLAGS #####;x {
 ##################################;x

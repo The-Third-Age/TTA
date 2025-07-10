@@ -22,4 +22,4 @@ decision = BEO_start_decision
 
 slavery = no_slavery
 
-schools = traditional_academic
+schools = no_organization

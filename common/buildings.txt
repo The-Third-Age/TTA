@@ -417,3 +417,89 @@ railroad = {
 	pop_build_factory = yes
 	spawn_railway_track = yes
 }
+
+barracks = {
+	type = barracks
+	goods_cost = {
+		lumber = 50
+		cut_stone = 100
+		melee_gear = 5
+		ranged_gear = 5
+	}
+	time = 365
+	visibility = yes
+	onmap = no
+	max_level = 6
+	province = yes
+	
+	supply_limit = 1
+	
+	pop_build_factory = yes
+}
+
+scriptorium = {
+	type = scriptorium
+	goods_cost = {
+		timber = 200
+		cut_stone = 200
+	}
+	time = 180
+	visibility = yes
+	onmap = no
+	max_level = 6
+	province = yes
+	one_per_state = yes
+	
+	research_points = 0.01
+	# research_points_modifier  = 0.001 # From TGC
+	
+	pop_build_factory = yes
+}
+
+market_square = {
+	type = market_square
+	goods_cost = {
+		timber = 200
+		lumber = 200
+		rock = 100
+	}
+	time = 180
+	visibility = yes
+	onmap = no
+	max_level = 6
+	province = yes
+	
+	local_rgo_output = 0.25
+	
+	pop_build_factory = yes
+}
+
+public_house = {
+	type = public_house
+	goods_cost = {
+		timber = 50
+		lumber = 50
+		rock = 100
+	}
+	time = 180
+	visibility = yes
+	onmap = no
+	max_level = 6
+	province = yes
+	
+	pop_militancy_modifier  = -0.01
+	
+	pop_build_factory = yes
+}
+
+province_selector = {
+	type = province_selector
+	goods_cost = {
+		# Purposefully empty
+	}
+	time = 1
+	visibility = yes
+	onmap = no
+	max_level = 1
+	province = yes
+}

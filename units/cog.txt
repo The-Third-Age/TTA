@@ -34,9 +34,9 @@ cog = {
 		artillery = 0.08 #0.16
 	}
 	
-	#Naval Abilties
-	hull = 4
-	gun_power = 8
+	#Naval Abilities
+	hull = 6
+	gun_power = 10
 	fire_range = 0.58
 	evasion = 0
 }

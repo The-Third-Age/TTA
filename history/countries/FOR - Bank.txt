@@ -15,4 +15,4 @@ upper_house = {
 
 decision = FOR_start_decision
 
-schools = traditional_academic
+schools = no_organization

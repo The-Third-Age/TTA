@@ -29,7 +29,7 @@ exclusive_trading_rights = limited_exclusive_tr
 apprenticeship = appointment
 state_supplies_monopoly = allowed_state_supplies
 
-schools = traditional_academic
+schools = member_alliance_dwarves_men
 #technologies
 merchant_marine_1 = 1
 light_ships_1 = 1
