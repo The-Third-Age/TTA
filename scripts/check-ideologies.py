@@ -6,6 +6,12 @@ ideologies_file = 'common/ideologies.txt'
 countries_folder = 'common/countries'
 localisation_file = 'localisation/politics.csv'
 
+#TODO: Add checks for ideologies in pops, flags, elections, national focus files
+pops_folder = 'poptypes'
+flags_localisation_file = 'localisation/modifiers and flags.csv'
+election_event_file = 'events/Election.txt'
+national_focus_file = 'common/national_focus.txt'
+
 disenfranchised_ideologies = {
     'slave_ideology', 'tribal_ideology'
 }
@@ -38,7 +44,6 @@ def get_ideologies_from_ideologies_file():
             depth += line.count("{")
             depth -= line.count("}")
     return groups, ideologies
-
 
 """
 Get all ideologies that are found in the political parties of the countries files
