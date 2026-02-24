@@ -69,6 +69,7 @@ Get all ideologies that are found in the localisation file
 '''
 def get_ideologies_from_localisation():
     ideologies = set()
+    ideologies_uh = set()
     found_start_line = False
     found_end_line = False
     with open(localisation_file, 'r', encoding='windows-1252') as f:
@@ -90,20 +91,23 @@ def get_ideologies_from_localisation():
             ideology = parts[0].strip()
             # Ignore _uh which refers to upper house localisation
             if ideology.endswith('_uh'):
-                continue
-            ideologies.add(ideology)
-    return ideologies
+                ideologies_uh.add(ideology[:-3])
+            else:
+                ideologies.add(ideology)
+    return ideologies, ideologies_uh
 
 def main():
     ideologies_file_groups, ideologies_file_ideologies = get_ideologies_from_ideologies_file()
     countries_ideologies = get_ideologies_from_countries()
-    localisation_ideologies = get_ideologies_from_localisation() - ideologies_file_groups
+    localisation_ideologies, localisation_ideologies_uh = get_ideologies_from_localisation()
+    localisation_ideologies = localisation_ideologies - ideologies_file_groups
 
-    all_ideologies = ideologies_file_ideologies | countries_ideologies | localisation_ideologies
+    all_ideologies = ideologies_file_ideologies | countries_ideologies | localisation_ideologies | localisation_ideologies_uh
 
     missing_in_ideologies_file = all_ideologies - ideologies_file_ideologies
     missing_in_countries = all_ideologies - countries_ideologies - disenfranchised_ideologies # We don't expect disenfranchised ideologies to be in the countries files as they are not used for political parties
     missing_in_localisation = all_ideologies - localisation_ideologies
+    missing_in_localisation_uh = all_ideologies - localisation_ideologies_uh
 
     problems = False
     if missing_in_ideologies_file:
@@ -115,6 +119,9 @@ def main():
     if missing_in_localisation:
         problems = True
         print(f'\nIdeologies missing in localisation file: {missing_in_localisation}')
+    if missing_in_localisation_uh:
+        problems = True
+        print(f'\nIdeologies missing upper house localisation: {missing_in_localisation_uh}')
 
     sys.exit(1 if problems else 0)
 
