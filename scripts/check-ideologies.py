@@ -7,21 +7,20 @@ countries_folder = 'common/countries'
 localisation_file = 'localisation/politics.csv'
 national_focus_file = 'common/national_focus.txt'
 election_event_file = 'events/Election.txt'
-
-#TODO: Add checks for ideologies in pops, flags, elections, national focus files
-pops_folder = 'poptypes'
 flags_localisation_file = 'localisation/modifiers and flags.csv'
+pops_folder = 'poptypes'
 
 default_ideologies = {
     'nobility', 'tribal_ideology', 'burgher', 'slave_ideology', 'servants', 'loremaster'
 }
-
 disenfranchised_ideologies = {
     'slave_ideology', 'tribal_ideology'
 }
-
 unpromotable_ideologies = {
     'slave_ideology', 'tribal_ideology', 'servants'
+}
+poptypes_to_ignore = {
+    'slaves', 'tribals', 'bankers'
 }
 
 """
@@ -168,6 +167,26 @@ def get_ideologies_from_flag_localisation():
                 ideologies.add(ideology)
     return ideologies
 
+'''
+Check that every ideology appears in every applicable pop file
+'''
+def check_ideologies_appear_in_all_pop_files(ideologies):
+    problems = False
+    for filename in os.listdir(pops_folder):
+        if filename.endswith('.txt'):
+            raw_filename = filename.rsplit('.', 1)[0]
+            if raw_filename in poptypes_to_ignore:
+                continue
+            # Just check if the ideology is mentioned in the pop file, we don't care about the context
+            with open(os.path.join(pops_folder, filename), 'r', encoding='windows-1252') as f:
+                file_contents = f.read()
+                for ideology in ideologies:
+                    if ideology in file_contents:
+                        continue
+                    print(f'Ideology {ideology} is missing in pop file {filename}')
+                    problems = True
+    return problems
+
 def main():
     ideologies_file_groups, ideologies_file_ideologies = get_ideologies_from_ideologies_file()
     countries_ideologies = get_ideologies_from_countries()
@@ -177,7 +196,7 @@ def main():
     ideologies_14006, ideologies_14007 = get_ideologies_from_election_event()
     flag_localisation_ideologies = get_ideologies_from_flag_localisation()
 
-    all_ideologies = ideologies_file_ideologies | countries_ideologies | localisation_ideologies | localisation_ideologies_uh | flag_localisation_ideologies
+    all_ideologies = ideologies_file_ideologies | countries_ideologies | localisation_ideologies | localisation_ideologies_uh | flag_localisation_ideologies | promote_ideologies | demote_ideologies | ideologies_14006 | ideologies_14007
 
     missing_in_ideologies_file = all_ideologies - ideologies_file_ideologies
     missing_in_countries = all_ideologies - countries_ideologies - disenfranchised_ideologies # We don't expect disenfranchised ideologies to be in the countries files as they are not used for political parties
@@ -189,7 +208,7 @@ def main():
     missing_in_14007 = all_ideologies - ideologies_14007 - disenfranchised_ideologies # We don't expect disenfranchised ideologies in election events
     missing_in_flag_localisation = all_ideologies - flag_localisation_ideologies - default_ideologies # We don't expect default ideologies in flag localisation
 
-    problems = False
+    problems = check_ideologies_appear_in_all_pop_files(all_ideologies - disenfranchised_ideologies)
     if missing_in_ideologies_file:
         problems = True
         print(f'\nIdeologies missing in ideologies file: {missing_in_ideologies_file}')
