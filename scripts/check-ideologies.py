@@ -5,15 +5,19 @@ import re
 ideologies_file = 'common/ideologies.txt'
 countries_folder = 'common/countries'
 localisation_file = 'localisation/politics.csv'
+national_focus_file = 'common/national_focus.txt'
 
 #TODO: Add checks for ideologies in pops, flags, elections, national focus files
 pops_folder = 'poptypes'
 flags_localisation_file = 'localisation/modifiers and flags.csv'
 election_event_file = 'events/Election.txt'
-national_focus_file = 'common/national_focus.txt'
 
 disenfranchised_ideologies = {
     'slave_ideology', 'tribal_ideology'
+}
+
+unpromotable_ideologies = {
+    'slave_ideology', 'tribal_ideology', 'servants'
 }
 
 """
@@ -96,11 +100,34 @@ def get_ideologies_from_localisation():
                 ideologies.add(ideology)
     return ideologies, ideologies_uh
 
+def get_ideologies_from_national_focuses():
+    promote_ideologies = set()
+    demote_ideologies = set()
+    found_start_line = False
+    with open(national_focus_file, 'r', encoding='windows-1252') as f:
+        for line in f:
+            line = line.strip()
+            if line.startswith('#') or not line:
+                continue
+            if 'promotion_ideologies' in line:
+                found_start_line = True
+                continue
+            if 'promote_' in line and found_start_line:
+                national_focus_label = line.split(' ')[0].strip() # promote_[ideology]
+                ideology = national_focus_label.split('_', 1)[1]
+                promote_ideologies.add(ideology)
+            elif 'demote_' in line and found_start_line:
+                national_focus_label = line.split(' ')[0].strip() # demote_[ideology]
+                ideology = national_focus_label.split('_', 1)[1]
+                demote_ideologies.add(ideology)
+    return promote_ideologies, demote_ideologies
+    
 def main():
     ideologies_file_groups, ideologies_file_ideologies = get_ideologies_from_ideologies_file()
     countries_ideologies = get_ideologies_from_countries()
     localisation_ideologies, localisation_ideologies_uh = get_ideologies_from_localisation()
     localisation_ideologies = localisation_ideologies - ideologies_file_groups
+    promote_ideologies, demote_ideologies = get_ideologies_from_national_focuses()
 
     all_ideologies = ideologies_file_ideologies | countries_ideologies | localisation_ideologies | localisation_ideologies_uh
 
@@ -108,6 +135,8 @@ def main():
     missing_in_countries = all_ideologies - countries_ideologies - disenfranchised_ideologies # We don't expect disenfranchised ideologies to be in the countries files as they are not used for political parties
     missing_in_localisation = all_ideologies - localisation_ideologies
     missing_in_localisation_uh = all_ideologies - localisation_ideologies_uh
+    missing_in_promote_ideologies = all_ideologies - promote_ideologies - unpromotable_ideologies # We don't expect unpromotable ideologies in national focuses
+    missing_in_demote_ideologies = all_ideologies - demote_ideologies - unpromotable_ideologies # We don't expect unpromotable ideologies in national focuses
 
     problems = False
     if missing_in_ideologies_file:
@@ -122,6 +151,12 @@ def main():
     if missing_in_localisation_uh:
         problems = True
         print(f'\nIdeologies missing upper house localisation: {missing_in_localisation_uh}')
+    if missing_in_promote_ideologies:
+        problems = True
+        print(f'\nIdeologies missing in promote_ideologies: {missing_in_promote_ideologies}')
+    if missing_in_demote_ideologies:
+        problems = True
+        print(f'\nIdeologies missing in demote_ideologies: {missing_in_demote_ideologies}')
 
     sys.exit(1 if problems else 0)
 
