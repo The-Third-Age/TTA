@@ -6,11 +6,11 @@ ideologies_file = 'common/ideologies.txt'
 countries_folder = 'common/countries'
 localisation_file = 'localisation/politics.csv'
 national_focus_file = 'common/national_focus.txt'
+election_event_file = 'events/Election.txt'
 
 #TODO: Add checks for ideologies in pops, flags, elections, national focus files
 pops_folder = 'poptypes'
 flags_localisation_file = 'localisation/modifiers and flags.csv'
-election_event_file = 'events/Election.txt'
 
 disenfranchised_ideologies = {
     'slave_ideology', 'tribal_ideology'
@@ -121,13 +121,42 @@ def get_ideologies_from_national_focuses():
                 ideology = national_focus_label.split('_', 1)[1]
                 demote_ideologies.add(ideology)
     return promote_ideologies, demote_ideologies
-    
+
+'''
+Get all ideologies that are found in events 14006 and 14007 
+'''
+def get_ideologies_from_election_event():
+    ideologies_14006 = set()
+    ideologies_14007 = set()
+    in_14006 = False
+    in_14007 = False
+    with open(election_event_file, 'r', encoding='windows-1252') as f:
+        for line in f:
+            line = line.strip()
+            if line.startswith('#') or not line:
+                continue
+            if 'id = 14006' in line:
+                in_14006, in_14007 = True, False
+                continue
+            if 'id = 14007' in line:
+                in_14006, in_14007 = False, True
+                continue
+            if 'ruling_party_ideology = ' in line:
+                # The line looks like 'limit = { owner = { ruling_party_ideology = [ideology] } }'
+                ideology = line.split('ruling_party_ideology = ')[1].strip(' }')
+                if in_14006:
+                    ideologies_14006.add(ideology)
+                elif in_14007:
+                    ideologies_14007.add(ideology)
+    return ideologies_14006, ideologies_14007
+
 def main():
     ideologies_file_groups, ideologies_file_ideologies = get_ideologies_from_ideologies_file()
     countries_ideologies = get_ideologies_from_countries()
     localisation_ideologies, localisation_ideologies_uh = get_ideologies_from_localisation()
     localisation_ideologies = localisation_ideologies - ideologies_file_groups
     promote_ideologies, demote_ideologies = get_ideologies_from_national_focuses()
+    ideologies_14006, ideologies_14007 = get_ideologies_from_election_event()
 
     all_ideologies = ideologies_file_ideologies | countries_ideologies | localisation_ideologies | localisation_ideologies_uh
 
@@ -137,6 +166,8 @@ def main():
     missing_in_localisation_uh = all_ideologies - localisation_ideologies_uh
     missing_in_promote_ideologies = all_ideologies - promote_ideologies - unpromotable_ideologies # We don't expect unpromotable ideologies in national focuses
     missing_in_demote_ideologies = all_ideologies - demote_ideologies - unpromotable_ideologies # We don't expect unpromotable ideologies in national focuses
+    missing_in_14006 = ideologies_14006 - all_ideologies
+    missing_in_14007 = ideologies_14007 - all_ideologies
 
     problems = False
     if missing_in_ideologies_file:
@@ -157,6 +188,12 @@ def main():
     if missing_in_demote_ideologies:
         problems = True
         print(f'\nIdeologies missing in demote_ideologies: {missing_in_demote_ideologies}')
+    if missing_in_14006:
+        problems = True
+        print(f'\nIdeologies missing in event 14006: {missing_in_14006}')
+    if missing_in_14007:
+        problems = True
+        print(f'\nIdeologies missing in event 14007: {missing_in_14007}')
 
     sys.exit(1 if problems else 0)
 
