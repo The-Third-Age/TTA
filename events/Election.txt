@@ -721,6 +721,7 @@ province_event = {
 	option = {
 		name = "We are the true ruler of the realm"
 		
+		# Default ideologies
 		state_scope = {
 			random_owned = {
 				limit = { owner = { ruling_party_ideology = servants } }
@@ -734,6 +735,46 @@ province_event = {
 				}
 			}
 		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = burgher } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = burgher
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = nobility } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = nobility
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = loremaster } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = 0.1
+							value = loremaster
+						}
+					}
+				}
+			}
+		}
+		# Custom ideologies
 		state_scope = {
 			random_owned = {
 				limit = { owner = { ruling_party_ideology = line_of_isildur } }
@@ -1091,6 +1132,7 @@ province_event = {
 	option = {
 		name = "We are the true ruler of the realm"
 		
+		# Default ideologies
 		state_scope = {
 			random_owned = {
 				limit = { owner = { ruling_party_ideology = servants } }
@@ -1104,6 +1146,46 @@ province_event = {
 				}
 			}
 		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = burgher } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = burgher
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = nobility } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = nobility
+						}
+					}
+				}
+			}
+		}
+		state_scope = {
+			random_owned = {
+				limit = { owner = { ruling_party_ideology = loremaster } }
+				state_scope = {
+					any_pop = {
+						ideology = {
+							factor = -0.1
+							value = loremaster
+						}
+					}
+				}
+			}
+		}
+		# Custom ideologies
 		state_scope = {
 			random_owned = {
 				limit = { owner = { ruling_party_ideology = line_of_isildur } }
