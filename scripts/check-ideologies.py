@@ -12,6 +12,10 @@ election_event_file = 'events/Election.txt'
 pops_folder = 'poptypes'
 flags_localisation_file = 'localisation/modifiers and flags.csv'
 
+default_ideologies = {
+    'nobility', 'tribal_ideology', 'burgher', 'slave_ideology', 'servants', 'loremaster'
+}
+
 disenfranchised_ideologies = {
     'slave_ideology', 'tribal_ideology'
 }
@@ -150,6 +154,20 @@ def get_ideologies_from_election_event():
                     ideologies_14007.add(ideology)
     return ideologies_14006, ideologies_14007
 
+def get_ideologies_from_flag_localisation():
+    ideologies = set()
+    with open(flags_localisation_file, 'r', encoding='windows-1252') as f:
+        for line in f:
+            line = line.strip()
+            if line.startswith('#') or not line:
+                continue
+            parts = line.split(';')
+            key = parts[0].strip()
+            if key.startswith('ideologies_') and key.endswith('_active'):
+                ideology = key.split('ideologies_')[1].split('_active')[0]
+                ideologies.add(ideology)
+    return ideologies
+
 def main():
     ideologies_file_groups, ideologies_file_ideologies = get_ideologies_from_ideologies_file()
     countries_ideologies = get_ideologies_from_countries()
@@ -157,8 +175,9 @@ def main():
     localisation_ideologies = localisation_ideologies - ideologies_file_groups
     promote_ideologies, demote_ideologies = get_ideologies_from_national_focuses()
     ideologies_14006, ideologies_14007 = get_ideologies_from_election_event()
+    flag_localisation_ideologies = get_ideologies_from_flag_localisation()
 
-    all_ideologies = ideologies_file_ideologies | countries_ideologies | localisation_ideologies | localisation_ideologies_uh
+    all_ideologies = ideologies_file_ideologies | countries_ideologies | localisation_ideologies | localisation_ideologies_uh | flag_localisation_ideologies
 
     missing_in_ideologies_file = all_ideologies - ideologies_file_ideologies
     missing_in_countries = all_ideologies - countries_ideologies - disenfranchised_ideologies # We don't expect disenfranchised ideologies to be in the countries files as they are not used for political parties
@@ -166,8 +185,9 @@ def main():
     missing_in_localisation_uh = all_ideologies - localisation_ideologies_uh
     missing_in_promote_ideologies = all_ideologies - promote_ideologies - unpromotable_ideologies # We don't expect unpromotable ideologies in national focuses
     missing_in_demote_ideologies = all_ideologies - demote_ideologies - unpromotable_ideologies # We don't expect unpromotable ideologies in national focuses
-    missing_in_14006 = ideologies_14006 - all_ideologies
-    missing_in_14007 = ideologies_14007 - all_ideologies
+    missing_in_14006 = all_ideologies - ideologies_14006 - disenfranchised_ideologies # We don't expect disenfranchised ideologies in election events
+    missing_in_14007 = all_ideologies - ideologies_14007 - disenfranchised_ideologies # We don't expect disenfranchised ideologies in election events
+    missing_in_flag_localisation = all_ideologies - flag_localisation_ideologies - default_ideologies # We don't expect default ideologies in flag localisation
 
     problems = False
     if missing_in_ideologies_file:
@@ -194,6 +214,9 @@ def main():
     if missing_in_14007:
         problems = True
         print(f'\nIdeologies missing in event 14007: {missing_in_14007}')
+    if missing_in_flag_localisation:
+        problems = True
+        print(f'\nIdeologies missing in flag localisation: {missing_in_flag_localisation}')
 
     sys.exit(1 if problems else 0)
 
