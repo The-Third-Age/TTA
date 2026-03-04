@@ -144,6 +144,8 @@ def get_ideologies_from_election_event():
             if 'id = 14007' in line:
                 in_14006, in_14007 = False, True
                 continue
+            if 'id = 14008' in line:
+                break
             if 'ruling_party_ideology = ' in line:
                 # The line looks like 'limit = { owner = { ruling_party_ideology = [ideology] } }'
                 ideology = line.split('ruling_party_ideology = ')[1].strip(' }')
