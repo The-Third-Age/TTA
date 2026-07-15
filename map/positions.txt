@@ -7606,8 +7606,8 @@
         }
 
         naval_base = {
-            x = 1679.255000
-            y = 904.180000
+            x = 1675.510000
+            y = 901.440000
         }
 
     }
@@ -8577,14 +8577,6 @@
 # Roshiril
 924 = {
     text_scale = 3
-    building_position = {
-        naval_base = {
-            x = 426.370000
-            y = 1393.116667
-        }
-
-    }
-
     building_rotation = {
         naval_base = 5.358902
     }
@@ -12296,7 +12288,7 @@
     text_scale = 3
 }
 
-# Tir Morbad
+# Blackmarch Fort
 1447 = {
     text_scale = 3
 }
@@ -13117,7 +13109,7 @@
     text_scale = 3
 }
 
-# Blackmarch Fort
+# Eastwatch
 1532 = {
     text_scale = 3
 }
