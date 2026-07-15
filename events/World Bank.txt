@@ -6134,7 +6134,7 @@ country_event = {
 		}
 		# }
 		
-		# Alliance of Two Towers {
+		# Alliance of Two Towers
 		random_country = {
 			limit = {
 				has_global_flag = alliance_of_two_towers

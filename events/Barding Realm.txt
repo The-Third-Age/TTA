@@ -2978,7 +2978,7 @@ province_event = {
 	option = {
 		name = "May the trade keep flowing"
 		trade_goods = precious_goods
-		add_province_modifier = { name = DAL_trading_post_modifier days = -1 }
+		add_province_modifier = { name = DAL_trading_post_modifier duration = -1 }
 	}
 }
 
