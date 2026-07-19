@@ -70,6 +70,7 @@
 # Red Leader				59						61
 # Yellow Leader				60						62
 # Saruman Icon				61						63
+# Alliance of Two Towers	62						64
 
 #############################
 ##### VANILLA MODIFIERS ##### {
@@ -164,6 +165,11 @@ CB_gen_minus = {
 # Country Modifier - Organization
 alliance_of_dwarves_and_men = {
 	icon = 53
+}
+
+# Country Modifier - Organization
+alliance_of_two_towers = {
+	icon = 62
 }
 # }
 ##### ORGANIZATION SUPPLEMENTARY MODIFIERS ##### {

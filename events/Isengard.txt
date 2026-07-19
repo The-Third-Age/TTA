@@ -831,8 +831,9 @@ country_event = {
 		}
 		
 		MOR_alliance_of_two_towers_loc = { }
+		add_country_modifier = { name = alliance_of_two_towers duration = -1 }
 		
-		set_global_flag = alliance_of_two_towers
+		set_global_flag = alliance_of_two_towers_flag
 		
 		FROM = { country_event = 50135 }
 		
@@ -875,6 +876,8 @@ country_event = {
 	
 	option = {
 		name = "Good"
+		
+		add_country_modifier = { name = alliance_of_two_towers duration = -1 }
 	}
 }
 
