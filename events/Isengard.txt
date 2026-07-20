@@ -624,6 +624,13 @@ country_event = {
 			war = no
 			NOT = { good_evil_alignment = good_alignment }
 		}
+		OR = {
+			year = 2985
+			AND = {
+				year = 2975
+				has_global_flag = railroading_disabled
+			}
+		}
 	}
 
 	mean_time_to_happen = { months = 48 }
