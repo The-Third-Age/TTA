@@ -6091,7 +6091,7 @@ country_event = {
 	}
 }
 
-# ISE Flavor Cleanup
+# ISE Flavor + Alliance of the Two Towers Cleanup
 country_event = {
 	id = 99010
 	title = "ISE Flavor Cleanup"
@@ -6134,7 +6134,8 @@ country_event = {
 		}
 		# }
 		
-		# Alliance of Two Towers
+		# Alliance of the Two Towers {
+		# Force alliance + war cleanup
 		random_country = {
 			limit = {
 				has_global_flag = alliance_of_two_towers_flag
@@ -6144,6 +6145,7 @@ country_event = {
 			end_war = MOR
 			relation = { who = MOR value = 400 }
 		}
+		# }
 		
 		# Refire the cleanup event next month {
 		random_owned = {
