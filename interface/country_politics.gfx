@@ -297,7 +297,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_politics_nationalvalue"
 		texturefile = "gfx\\interface\\politics_nationalvalue.tga"
-		noOfFrames = 17 # 42 x 57
+		noOfFrames = 18 # 42 x 57
 	}
 	spriteType = {
 		name = "GFX_politics_pluralism"

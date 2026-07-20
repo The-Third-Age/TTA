@@ -1,69 +1,80 @@
 no_heirloom = {
-}
-
-horn_of_gondor = {
-	army_tech_research_bonus = 0.02
-}
-
-horn_of_the_mark = {
-	army_tech_research_bonus = 0.02
-}
-
-red_book_of_the_westmarch = {
-	population_tech_research_bonus = 0.02
-}
-
-black_arrow = {
-	army_tech_research_bonus = 0.02
-}
-
-narya = {
-	population_tech_research_bonus = 0.02
-}
-
-nenya = {
-	population_tech_research_bonus = 0.02
-}
-
-vilya = {
-	population_tech_research_bonus = 0.02
-}
-
-one_ring_of_power = {
-	population_tech_research_bonus = 0.02
-}
-
-ring_of_barahir = {
+	army_tech_research_bonus = 0.01
+	military_theory_tech_research_bonus = 0.01
+	navy_tech_research_bonus = 0.01
+	commerce_tech_research_bonus = 0.01
 	population_tech_research_bonus = 0.01
+	knowledge_tech_research_bonus = 0.01
 	diplomacy_tech_research_bonus = 0.01
 }
 
+horn_of_gondor = {
+	army_tech_research_bonus = 0.05
+}
+
+horn_of_the_mark = {
+	army_tech_research_bonus = 0.05
+}
+
+red_book_of_the_westmarch = {
+	population_tech_research_bonus = 0.05
+}
+
+black_arrow = {
+	army_tech_research_bonus = 0.05
+}
+
+narya = {
+	population_tech_research_bonus = 0.05
+}
+
+nenya = {
+	population_tech_research_bonus = 0.05
+}
+
+vilya = {
+	population_tech_research_bonus = 0.05
+}
+
+one_ring_of_power = {
+	population_tech_research_bonus = 0.05
+}
+
+ring_of_barahir = {
+	population_tech_research_bonus = 0.025
+	diplomacy_tech_research_bonus = 0.025
+}
+
 durins_axe = {
-	army_tech_research_bonus = 0.01
-	commerce_tech_research_bonus = 0.01
+	army_tech_research_bonus = 0.025
+	commerce_tech_research_bonus = 0.025
 }
 
 arkenstone = {
-	population_tech_research_bonus = 0.02
+	population_tech_research_bonus = 0.05
 }
 
 star_of_elendil = {
-	population_tech_research_bonus = 0.02
+	population_tech_research_bonus = 0.05
 }
 
 sceptre_of_annuminas = {
-	diplomacy_tech_research_bonus = 0.02
+	diplomacy_tech_research_bonus = 0.05
 }
 
 narsil = {
-	army_tech_research_bonus = 0.02
+	army_tech_research_bonus = 0.05
 }
 
 masters_gold_coin = {
-	commerce_tech_research_bonus = 0.02
+	commerce_tech_research_bonus = 0.05
 }
 
 guildmasters_crest = {
-	commerce_tech_research_bonus = 0.01
-	population_tech_research_bonus = 0.01
+	commerce_tech_research_bonus = 0.025
+	population_tech_research_bonus = 0.025
+}
+
+staff_of_saruman = {
+	knowledge_tech_research_bonus = 0.05
 }

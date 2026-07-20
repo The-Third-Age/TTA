@@ -5,7 +5,7 @@ culture = men_culture
 culture = isenmen
 religion = men
 government = istari_kingdom
-nationalvalue = no_heirloom
+nationalvalue = staff_of_saruman
 literacy = 0.2
 civilized = yes
 
