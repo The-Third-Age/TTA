@@ -6145,6 +6145,37 @@ country_event = {
 			end_war = MOR
 			relation = { who = MOR value = 400 }
 		}
+		
+		# Detecting the collapse of the Alliance (0 or 1 members) {
+		set_variable = { which = alliance_two_towers_member_count value = 0 }
+		
+		any_country = {
+			limit = { has_country_modifier = alliance_of_two_towers }
+			THIS = { change_variable = { which = alliance_two_towers_member_count value = 1 } }
+		}
+		
+		random_owned = {
+			limit = {
+				owner = {
+					has_global_flag = alliance_of_two_towers_flag
+					NOT = { check_variable = { which = alliance_two_towers_member_count value = 1.9 } }
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						OR = {
+							has_country_modifier = alliance_of_two_towers
+							ai = no
+						}
+					}
+					clr_global_flag = alliance_of_two_towers_flag
+					country_event = 50137 # The end of the Alliance of Dwarves and Men
+				}
+			}
+		}
+		# }
+		
 		# }
 		
 		# Refire the cleanup event next month {

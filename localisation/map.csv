@@ -2621,6 +2621,7 @@ remove_claim_HAR_356_loc;§WWe will lose claims over §!§YLûrmsakûn§!§I;x
 claim_status_owns_MOR_423_loc;§YLithlad§!: §GOwned§!§I;x
 claim_status_owns_BRE_1013_loc;§YBree-land§!: §GOwned§!§I;x
 resolve_conflicting_cores_loc;Resolve Conflicting Cores;x
+manual_end_alliance_two_towers_loc;The §YAlliance of the Two Towers§! will end!\n\nThe other power will gain a §Rpermanent§! §YHumiliate§! CB on us, and if we are not a Great Power, they will also receive a §Rpermanent§! §YCreate Vassal§! CB,§I;x
 GON_unlock_invention_houses_of_healing_loc;Unlocks invention §YHouses of Healing§! at the §Ystart of the next month§!, giving the following effects:\nMilitary Hospitals: §G+1.00%§!§I;x
 claim_status_doesnt_own_ENE_825_loc;§YMagur§!: §RUnowned§!§I;x
 add_claim_ROH_780_loc;§WWe will gain claims over §!§YLower East Emnet§!§I;x

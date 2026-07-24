@@ -53,4 +53,7 @@ schools = {
 	
 	member_alliance_dwarves_men = {
 	}
+	
+	member_alliance_two_towers = {
+	}
 }

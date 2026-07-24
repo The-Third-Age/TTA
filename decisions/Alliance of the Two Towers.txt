@@ -1,0 +1,43 @@
+# Remove this line to have the claim get that interior arguments are correct
+# Audax Validator "!" Ignore_1009
+
+# Alliance of the Two Towers Decisions: {
+#	Menu/Info
+#	Actions }
+
+# Actions
+political_decisions = {
+	end_alliance_of_two_towers = {
+		picture = "Organizations/alliance_of_the_two_towers"
+		potential = {
+			ai = no
+			has_country_modifier = alliance_of_two_towers
+			is_vassal = no
+		}
+		effect = {
+			random_country = {
+				limit = {
+					OR = {
+						has_country_flag = ISE_content
+						has_country_flag = MOR_content
+					}
+					NOT = { tag = THIS }
+				}
+				
+				country_event = 50136
+			}
+			
+			clr_global_flag = alliance_of_two_towers_flag
+			remove_country_modifier = alliance_of_two_towers
+			
+			set_global_flag = hidden_effects
+			random_owned = {
+				limit = { owner = { has_global_flag = hidden_effects } }
+				owner = { tech_school = no_organization }
+			}
+			clr_global_flag = hidden_effects
+			
+			manual_end_alliance_two_towers_loc = {}
+		}
+	}
+}

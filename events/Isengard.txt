@@ -809,7 +809,7 @@ country_event = {
 	id = 50133
 	title = "The Alliance of the Two Towers"
 	desc = "EVTDESC50133"
-	picture = "palantir"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
 
 	is_triggered_only = yes
 
@@ -839,6 +839,13 @@ country_event = {
 		
 		MOR_alliance_of_two_towers_loc = { }
 		add_country_modifier = { name = alliance_of_two_towers duration = -1 }
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { tech_school = member_alliance_two_towers }
+		}
+		clr_global_flag = hidden_effects
 		
 		set_global_flag = alliance_of_two_towers_flag
 		
@@ -877,7 +884,7 @@ country_event = {
 	id = 50135
 	title = "The Alliance of the Two Towers"
 	desc = "EVTDESC50135"
-	picture = "palantir_saruman"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
 	
 	is_triggered_only = yes
 	
@@ -885,6 +892,106 @@ country_event = {
 		name = "Good"
 		
 		add_country_modifier = { name = alliance_of_two_towers duration = -1 }
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { tech_school = member_alliance_two_towers }
+		}
+		clr_global_flag = hidden_effects
+	}
+}
+
+# Manual End of the Alliance
+country_event = {
+	id = 50136
+	title = "The End of The Alliance of the Two Towers"
+	desc = "EVTDESC50136"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They will pay"
+		
+		remove_country_modifier = alliance_of_two_towers
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { tech_school = no_organization }
+		}
+		clr_global_flag = hidden_effects
+		
+		casus_belli = { target = FROM type = humiliate months = 1200 }
+		
+		# No special actions if both realms are not great powers
+		
+		# If triggering realm is NOT a great power, regardless of our status
+		random_country = {
+			limit = {
+				tag = FROM
+				is_greater_power = no
+			}
+			THIS = { casus_belli = { target = FROM type = make_puppet months = 1200 } }
+		}
+		
+		# If triggering realm is NOT a great power, but we are
+		random_country = {
+			limit = {
+				tag = FROM
+				is_greater_power = no
+				THIS = { is_greater_power = yes }
+			}
+			THIS = {
+				diplomatic_influence = { who = FROM value = -400 }
+				relation = { who = FROM value = -400 }
+			}
+		}
+		
+		leave_alliance = FROM
+		
+		# If triggering realm is a great power, but we are NOT
+		random_owned = {
+			limit = {
+				owner = {
+					is_greater_power = no
+					FROM = { is_greater_power = yes }
+				}
+			}
+			owner = {
+				FROM = {
+					diplomatic_influence = { who = THIS value = -400 }
+					relation = { who = THIS value = -400 }
+				}
+			}
+		}
+	}
+}
+
+# Collapse of the Alliance
+country_event = {
+	id = 50137
+	title = "  The Collapse of the Alliance of the Two Towers"
+	desc = "EVTDESC50137"
+	picture = "organizations/saruman_palantir_alliance_of_two_towers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "and into the history books it goes"
+		
+		random_owned = {
+			limit = { owner = { has_country_modifier = alliance_of_two_towers } }
+			owner = { remove_country_modifier = alliance_of_two_towers }
+		}
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = { tech_school = no_organization }
+		}
+		clr_global_flag = hidden_effects
 	}
 }
 
