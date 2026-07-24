@@ -1,7 +1,7 @@
 # Remove this line to have the claim get that interior arguments are correct
 # Audax Validator "!" Ignore_1009
 
-# Organization and Alliances Decisions: {
+# Alliance of Dwarves and Men Decisions: {
 #	Menu/Info
 #	FFN QOL }
 
