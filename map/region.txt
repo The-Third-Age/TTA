@@ -659,7 +659,7 @@ FFN_sphere_annex_description_loc = { } # §GAny Anti-Sauron or Opportunistic ai 
 FFN_join_alliance_dwarves_men_loc = { } # If the pass the conditions on this decision (ignoring the always false), we will almost be eligible to be invited to the Alliance of Dwarves and Men -- we also need to be allied to realm that is currently in the alliance. From here, the ai will always attempt to send an invite, however, §Rit is possible for the rest of the alliance to reject the invite proposal§!.\n\nThe full list of conditions is:\nWe are §GAnti-Sauron§! or §POpportunistic§!\nWe are not a vassal\nWe are either a Dwarven realm, a Northman realm, a secondary power or a great power\nOur capital is in Rhovanion
 
 # Static Tooltips Locs - Alliance of the Two Towers
-manual_end_alliance_two_towers_loc = { } # \nThe other power will gain a §Rpermanent§! §YHumiliate§! CB on us, and if we are not a Great Power, they will also receive a §Rpermanent§! §YCreate Vassal§! CB,
+manual_end_alliance_two_towers_loc = { } # \nThe other power will gain a §Rpermanent§! §YHumiliate§! CB on us, and if we are not a Great Power, they will also receive a §Rpermanent§! §YCreate Vassal§! CB
 
 # Static Tooltip Locs - Amov Clan
 AMO_sent_out_raiders_loc = { } # §GWe will send out raiding parties, occasionally decreasing the affected provinces wealth, and increasing our own
