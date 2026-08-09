@@ -8,12 +8,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Validation Scripts
 
-Three Python scripts in [scripts/](scripts/) validate mod consistency. Run them from the repo root after making relevant changes:
+Python scripts in [scripts/](scripts/) validate mod consistency. Run them from the repo root after making relevant changes:
 
 ```bash
 python scripts/check-encoding.py        # Verify all localisation/ files are Windows-1252 encoded
 python scripts/check-terrains.py        # Verify custom terrains exist across all required files
 python scripts/check-ideologies.py      # Verify ideologies are registered in all required places
+python scripts/check-provinces.py       # Verify every province is consistent across map/provinces.bmp, definition.csv, history files, localisation, positions, continents, and regions (requires Pillow: pip install Pillow)
 ```
 
 These also run automatically in CI on push/PR to `main`. Most content (events, decisions, history, etc.) is **not** covered by these scripts - changes there must be verified by running the game.
