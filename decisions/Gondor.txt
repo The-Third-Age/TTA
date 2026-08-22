@@ -1396,6 +1396,7 @@ political_decisions = {
 		picture = "druwaith_iaur"
 		potential = {
 			tag = GON
+			always = no
 			any_owned_province = {
 				has_province_modifier = gondorification
 				is_core = PUK
