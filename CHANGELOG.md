@@ -55,6 +55,12 @@ All notable changes will be documented in this file.
    - Most land provinces that newly border the "sea" will be unable to build naval bases
    - River crossings denoted by "islands"
 
+### Graphics
+ - Updated diplomacy screen to better work with 4 GPs (instead of 8)
+   - Made "Show Great Power" entries longer to fill the space of missing GPs 5 - 8
+   - Adjusted lower table to remove sorting and influence of GPs 5 - 8
+   - Extended text box for realm status and organizations and made sizing adjustments to the right column accordingly
+
 ## [v0.5.1](https://github.com/The-Third-Age/TTA/releases/tag/v0.5.1) - 2025-05-11
 
 ### Highlights
