@@ -502,13 +502,13 @@ guiTypes = {
 		guiButtonType = {
 			name = "sort_by_country"
 			position = { x=27 y =343 }
-			quadTextureSprite ="GFX_sortbutton_164"
+			quadTextureSprite ="GFX_sortbutton_264"
 			buttonText = "DIPLOMACY_COUNTRY"
 			buttonFont = "vic_18_black"
 		}
 		guiButtonType = {
 			name = "sort_by_prio"
-			position = { x=193 y =343 }
+			position = { x=293 y =343 }
 			quadTextureSprite ="GFX_sortbutton_42"
 			buttonText = "DIPLOMACY_PRIO"
 			buttonFont = "vic_18_black"
@@ -516,7 +516,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "sort_by_gp0"
-			position = { x=235 y =343 }
+			position = { x=335 y =343 }
 			quadTextureSprite ="GFX_sortbutton_24"
 			buttonText = "0"
 			buttonFont = "vic_18_black"
@@ -524,12 +524,12 @@ guiTypes = {
 		iconType = {
 			name = "sort_by_gpflag0"
 			spriteType = "GFX_flag_new_transp"
-			position = { x= 235 y = 351 }
+			position = { x= 335 y = 351 }
 			Orientation = "UPPER_LEFT"
 		}
 		guiButtonType = {
 			name = "sort_by_gp1"
-			position = { x=260 y =343 }
+			position = { x=360 y =343 }
 			quadTextureSprite ="GFX_sortbutton_24"
 			buttonText = "1"
 			buttonFont = "vic_18_black"
@@ -537,12 +537,12 @@ guiTypes = {
 		iconType = {
 			name = "sort_by_gpflag1"
 			spriteType = "GFX_flag_new_transp"
-			position = { x= 260 y = 351 }
+			position = { x= 360 y = 351 }
 			Orientation = "UPPER_LEFT"
 		}
 		guiButtonType = {
 			name = "sort_by_gp2"
-			position = { x=285 y =343 }
+			position = { x=385 y =343 }
 			quadTextureSprite ="GFX_sortbutton_24"
 			buttonText = "2"
 			buttonFont = "vic_18_black"
@@ -550,70 +550,18 @@ guiTypes = {
 		iconType = {
 			name = "sort_by_gpflag2"
 			spriteType = "GFX_flag_new_transp"
-			position = { x= 285 y = 351 }
+			position = { x= 385 y = 351 }
 			Orientation = "UPPER_LEFT"
 		}
 		guiButtonType = {
 			name = "sort_by_gp3"
-			position = { x=310 y =343 }
+			position = { x=410 y =343 }
 			quadTextureSprite ="GFX_sortbutton_24"
 			buttonText = "3"
 			buttonFont = "vic_18_black"
 		}
 		iconType = {
 			name = "sort_by_gpflag3"
-			spriteType = "GFX_flag_new_transp"
-			position = { x= 310 y = 351 }
-			Orientation = "UPPER_LEFT"
-		}
-		guiButtonType = {
-			name = "sort_by_gp4"
-			position = { x=335 y =343 }
-			quadTextureSprite ="GFX_sortbutton_24"
-			buttonText = "4"
-			buttonFont = "vic_18_black"
-		}
-		iconType = {
-			name = "sort_by_gpflag4"
-			spriteType = "GFX_flag_new_transp"
-			position = { x= 335 y = 351 }
-			Orientation = "UPPER_LEFT"
-		}
-		guiButtonType = {
-			name = "sort_by_gp5"
-			position = { x=360 y =343 }
-			quadTextureSprite ="GFX_sortbutton_24"
-			buttonText = "5"
-			buttonFont = "vic_18_black"
-		}
-		iconType = {
-			name = "sort_by_gpflag5"
-			spriteType = "GFX_flag_new_transp"
-			position = { x= 360 y = 351 }
-			Orientation = "UPPER_LEFT"
-		}
-		guiButtonType = {
-			name = "sort_by_gp6"
-			position = { x=385 y =343 }
-			quadTextureSprite ="GFX_sortbutton_24"
-			buttonText = "6"
-			buttonFont = "vic_18_black"
-		}
-		iconType = {
-			name = "sort_by_gpflag6"
-			spriteType = "GFX_flag_new_transp"
-			position = { x= 385 y = 351 }
-			Orientation = "UPPER_LEFT"
-		}
-		guiButtonType = {
-			name = "sort_by_gp7"
-			position = { x=410 y =343 }
-			quadTextureSprite ="GFX_sortbutton_24"
-			buttonText = "7"
-			buttonFont = "vic_18_black"
-		}
-		iconType = {
-			name = "sort_by_gpflag7"
 			spriteType = "GFX_flag_new_transp"
 			position = { x= 410 y = 351 }
 			Orientation = "UPPER_LEFT"
@@ -1284,20 +1232,20 @@ guiTypes = {
 			position = { x = 29 y = 5 }
 			font = "Arial12_bold_black"
 			text = "France"
-			maxWidth = 135
+			maxWidth = 235
 			maxHeight = 16
 			fixedsize = yes
 		}
 		
 		guiButtonType = {
 			name = "country_prio"
-			position = { x=166 y =0 }
+			position = { x=266 y =0 }
 			quadTextureSprite = "GFX_diplo_priobutton"
 		}
 		
 		instantTextBoxType = {
 			name = "country_gp0"
-			position = { x = 210 y = 5 }
+			position = { x = 310 y = 5 }
 			font = "Arial12_black"
 			text = "0"
 			maxWidth = 25
@@ -1305,7 +1253,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "country_gp1"
-			position = { x = 235 y = 5 }
+			position = { x = 335 y = 5 }
 			font = "Arial12_black"
 			text = "1"
 			maxWidth = 25
@@ -1313,7 +1261,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "country_gp2"
-			position = { x = 260 y = 5 }
+			position = { x = 360 y = 5 }
 			font = "Arial12_black"
 			text = "2"
 			maxWidth = 25
@@ -1321,41 +1269,9 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "country_gp3"
-			position = { x = 285 y = 5 }
-			font = "Arial12_black"
-			text = "3"
-			maxWidth = 25
-			maxHeight = 20
-		}
-		instantTextBoxType = {
-			name = "country_gp4"
-			position = { x = 310 y = 5 }
-			font = "Arial12_black"
-			text = "4"
-			maxWidth = 25
-			maxHeight = 20
-		}
-		instantTextBoxType = {
-			name = "country_gp5"
-			position = { x = 335 y = 5 }
-			font = "Arial12_black"
-			text = "5"
-			maxWidth = 110
-			maxHeight = 20
-		}
-		instantTextBoxType = {
-			name = "country_gp6"
-			position = { x = 360 y = 5 }
-			font = "Arial12_black"
-			text = "6"
-			maxWidth = 25
-			maxHeight = 20
-		}
-		instantTextBoxType = {
-			name = "country_gp7"
 			position = { x = 385 y = 5 }
 			font = "Arial12_black"
-			text = "7"
+			text = "3"
 			maxWidth = 25
 			maxHeight = 20
 		}
