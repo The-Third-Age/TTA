@@ -1445,7 +1445,7 @@ guiTypes = {
 			position = { x = 70 y = 10 }
 			font = "vic_22"
 			text = "France"
-			maxWidth = 180
+			maxWidth = 480
 			maxHeight = 20
 			fixedsize = yes
 		}
@@ -1461,7 +1461,7 @@ guiTypes = {
 		OverlappingElementsBoxType = {
 			name = "country_puppets"
 			position = { x = 63 y = 37 }
-			size = { x=187 y= 32 }
+			size = { x=500 y= 32 }
 			Orientation = "UPPER_LEFT"
 			format = left
 			spacing = 1.0
@@ -1470,53 +1470,57 @@ guiTypes = {
 		iconType = {
 			name = "prestige_icon"
 			spriteType = "GFX_topbar_prestige_opaque"
-			position = { x= 249 y = 1 }
+			position = { x= 560 y = 2 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
 			name = "industry_icon"
 			spriteType = "GFX_topbar_production"
-			position = { x= 247 y = 12 }
+			position = { x= 560 y = 18 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
 			name = "military_icon"
 			spriteType = "GFX_army_icon_2"
-			position = { x= 247 y = 27 }
+			position = { x= 560 y = 37 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "gp_prestige"
-			position = { x = 269 y = 5 }
+			position = { x = 564 y = 6 }
 			font = "Arial12_black"
 			text = "123"
 			maxWidth = 50
 			maxHeight = 20
+			format = right
 		}
 		instantTextBoxType = {
 			name = "gp_economic"
-			position = { x = 269 y = 18 }
+			position = { x = 564 y = 24 }
 			font = "Arial12_black"
 			text = "123"
 			maxWidth = 50
 			maxHeight = 20
+			format = right
 		}
 		instantTextBoxType = {
 			name = "gp_military"
-			position = { x = 269 y = 31 }
+			position = { x = 564 y = 43 }
 			font = "Arial12_black"
 			text = "123"
 			maxWidth = 50
 			maxHeight = 20
+			format = right
 		}
 		instantTextBoxType = {
 			name = "gp_total"
-			position = { x = 269 y = 44 }
-			font = "Arial12_bold_black"
+			position = { x = 508 y = 11 }
+			font = "vic_22_black"
 			text = "1234"
 			maxWidth = 50
 			maxHeight = 20
+			format = centre
 		}
 	}
 	
