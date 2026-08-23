@@ -1909,6 +1909,7 @@ add_claim_RHU_632_loc;§WWe will gain claims over §!§YSouthern Gazar Gord§!§
 add_claim_ROH_794_loc;§WWe will gain claims over §!§YFolde§!§I;x
 recruit_admirals_loc;We will recruit §G10§! admirals. If we have the §YMilitary Schools§! invention from §YStanding Armies§!, these admirals will not have negative attack or defence stats§I;x
 remove_claim_DAL_652_loc;§WWe will lose claims over §!§YDalelands§!§I;x
+province_selector_turn_into_colony_loc;The selected province will be turned into a territory. You may see the provinces "flicker" as part of the flip -- that is intentional and unavoidable due to modding limitations§I;x
 claim_status_doesnt_own_MOR_449_loc;§YBauglith-en-Sauron§!: §RUnowned§!§I;x
 claim_status_owns_RHO_461_loc;§YThe Desolation§!: §GOwned§!§I;x
 claim_status_owns_BRE_1284_loc;§YUimirrildor§!: §GOwned§!§I;x

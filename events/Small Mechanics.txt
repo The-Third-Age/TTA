@@ -883,3 +883,75 @@ province_event = {
 	}
 }
 # }
+
+# Province Selector {
+# 5060 - 5061
+# Province Selected
+country_event = {
+	id = 5060
+	title = "Province Selected"
+	desc = "EVTDESC5060"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_owned = {
+			limit = { has_building = province_selector }
+			add_province_modifier = { name = province_target_province_selectors duration = 1 }
+		}
+	}
+	
+	option = {
+		name = "Turn into a territory"
+		
+		random_owned = {
+			limit = { has_province_modifier = province_target_province_selectors }
+			province_selector = -1
+			province_selector_turn_into_colony_loc = {}
+		}
+		
+		set_global_flag = hidden_effects
+		random_owned = {
+			limit = { owner = { has_global_flag = hidden_effects } }
+			owner = {
+				random_state = {
+					limit = { any_owned_province = { has_province_modifier = province_target_province_selectors } }
+					any_owned = {
+						province_selector = -1
+						secede_province = FOR
+						add_province_modifier = { name = province_target_province_selectors duration = 1 }
+					}
+				}
+				FOR = { country_event = 5061 }
+			}
+		}
+		clr_global_flag = hidden_effects
+	}
+	
+	option = {
+		name = "On second thought, no"
+		
+		random_owned = {
+			limit = { has_province_modifier = province_target_province_selectors }
+			province_selector = -1
+		}
+	}
+}
+
+country_event  {
+	id = 5061
+	title = "Return Provinces"
+	desc = "EVTDESC5061"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Return to $FROMCOUNTRY$"
+		
+		any_owned = {
+			limit = { has_province_modifier = province_target_province_selectors }
+			secede_province = FROM
+		}
+	}
+}
+# }

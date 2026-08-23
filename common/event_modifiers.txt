@@ -765,6 +765,11 @@ province_target_DAL_celduin_trade_post_removal_modifier = {
 	icon = 36
 }
 
+# Province Modifier
+province_target_province_selectors = {
+	icon = 36
+}
+
 # }
 ##### PROVINCE WEALTH MODIFIERS ##### {
 # Province Modifier

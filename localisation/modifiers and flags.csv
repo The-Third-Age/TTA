@@ -237,6 +237,7 @@ province_target_rgo_change_modifier;Province Target;x
 province_target_looted_province_modifier;Province Target;x
 province_target_raid_loot_modifier;Province Target;x
 province_target_DAL_celduin_trade_post_removal_modifier;Province Target;x
+province_target_province_selectors;Province Target;x
 #####################################;x }
 ##### PROVINCE WEALTH MODIFIERS #####;x {
 #####################################;x

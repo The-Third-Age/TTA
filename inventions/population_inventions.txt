@@ -75,6 +75,7 @@ province_selector_unlock = {
 		modifier = {
 			factor = 100
 			ai = no
+			civilized = yes
 		}
 	}
 	

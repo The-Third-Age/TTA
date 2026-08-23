@@ -602,6 +602,7 @@ strong_leader_beats_saurons_will_loc = { } # Due to our leader's strong will, we
 good_unlock_invention_eagles_loc = { } # Unlocks invention §YEagles§! at the §Ystart of the next month§!, giving the following effects:\nPrestige gain: §G+5.0%§!\nCan use Aerial Support
 evil_unlock_invention_fellbeasts_loc = { } # Unlocks invention §YFellbeasts§! at the §Ystart of the next month§!, giving the following effects:\nPrestige gain: §G+5.0%§!\nCan use Aerial Support
 use_palantiri_loc = { } # Activates events and flavor related to Palantíri.\n\nBe wary! Using a Palantír can be dangerous and one never knows where the other lost ones are and who might be using them...§!
+province_selector_turn_into_colony_loc = { } # The selected province will be turned into a territory. You may see the provinces "flicker" as part of the flip -- that is intentional and unavoidable due to modding limitations
 
 # Static Tooltip Locs - Random
 conversion_to_tribal_loc = { } # §RAny unaccepted soldier pop in the newly conquered lands will convert into tribals§!

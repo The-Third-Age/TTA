@@ -8682,6 +8682,25 @@ country_event = {
 			clr_country_flag = existing_country
 		}
 		
+		# Province Selector Cleanup
+		random_owned = {
+			any_neighbor_province = {
+				limit = {
+					has_building = province_selector
+					owner = { ai = yes }
+				}
+				province_selector = -1
+			}
+			
+			random_neighbor_province = {
+				limit = {
+					has_building = province_selector
+					owner = { ai = no }
+				}
+				owner = { country_event = 5060 }
+			}
+		}
+		
 		# Refire the cleanup event tomorrow
 		country_event = { id = 99250 days = 1 }
 	}
