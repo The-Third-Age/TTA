@@ -13,7 +13,7 @@ civilized = yes
 
 oob = "GON_oob.txt"
 
-prestige = 100
+prestige = 1000
 
 ruling_party = GON_ecthelion_ii
 

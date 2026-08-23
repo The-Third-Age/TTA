@@ -416,6 +416,12 @@ political_decisions = {
 			dynamic_loc_slots = { secede_province = THIS }
 			dynamic_loc_slots = { secede_province = --- }
 			
+			# Removing extra prestige given to ensure that the right effects are applied above
+			GON = { prestige = -900 }
+			ERE = { prestige = -940 }
+			LIN = { prestige = -945 }
+			MOR = { prestige = -920 }
+			
 			# Province/State Renaming variables
 			set_variable = { which = iron_hills_name value = 1 }
 			set_variable = { which = nan_brethil_name value = 2 }

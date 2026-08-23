@@ -11,7 +11,7 @@ government = sauron_dictatorship
 nationalvalue = one_ring_of_power
 literacy = 0.2
 civilized = yes
-prestige = 80
+prestige = 1000
 
 decision = mordor_start_decision
 

@@ -10,7 +10,7 @@ civilized = yes
 
 oob = "ERE_oob.txt"
 
-prestige = 60
+prestige = 1000
 
 ruling_party = ERE_dain_ii
 
