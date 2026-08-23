@@ -491,6 +491,8 @@ knowledge_invention_5_desc;Here's a bonus for finishing all techs in the row!;x
 ################################;x }
 ##### DIPLOMACY INVENTIONS #####;x {
 ################################;x
+rights_of_conquest;Rights of Conquest;x
+rights_of_conquest_desc;By blade and by right, the lands of the fallen pass to the victor — so it has ever been, so it shall ever be.\n\nAs kingdoms grow through war and annexation, their loremasters and councilors set down old customs of conquest into lasting doctrine. Drawing on ancient codes passed down since the first ages of Men, scholars argue that conquest undertaken with proper rite — the offering of terms, the sparing of those who yield, the just stewardship of conquered lands — cannot be counted as mere plunder. Heralds carry these doctrines to neighboring courts, that the deeds of kings might be judged by custom and law rather than fear and rumor alone.;x
 telumendil;Telumendil;x
 telumendil_desc;Telumendil, the Lover of the Heavens, is one of the constellations of Arda;x
 couriers;Couriers;x
