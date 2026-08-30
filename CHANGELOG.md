@@ -54,6 +54,8 @@ All notable changes will be documented in this file.
  - Many more navigable rivers added
    - Most land provinces that newly border the "sea" will be unable to build naval bases
    - River crossings denoted by "islands"
+ - Added province selectors
+   - Can be used to turn states into colonies
 
 ### Graphics
  - Updated diplomacy screen to better work with 4 GPs (instead of 8)
