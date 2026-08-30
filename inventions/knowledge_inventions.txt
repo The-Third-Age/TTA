@@ -133,7 +133,7 @@ silmarils = { # Search and find a silmaril
 		base = 1
 	}
 	
-	effect = { shared_prestige = 5 }
+	effect = { enable_crime = silmaril_expedition_unlock_effect }
 }
 magical_crafting = { # Creating one's own artefacts
 	limit = { magic_5 = 1 }
@@ -142,7 +142,7 @@ magical_crafting = { # Creating one's own artefacts
 		base = 1
 	}
 	
-	effect = { shared_prestige = 5 }
+	effect = { shared_prestige = 25 }
 }
 magical_crafting_warriors = {
 	limit = { magic_5 = 1 }

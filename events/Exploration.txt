@@ -451,7 +451,7 @@ country_event = { # Other country has found Entwives
 }
 
 ########################
-###### Silmarils #######
+###### Silmarils ####### {
 ########################
 country_event = { # Helper event to say you can't find a silmaril unless you can dig deep and greedily
 	id = 50740
@@ -460,6 +460,7 @@ country_event = { # Helper event to say you can't find a silmaril unless you can
 	picture = "silmarils"
 
 	trigger = {
+		ai = no
 		is_greater_power = yes
 		invention = silmarils
 		NOT = { has_global_flag = silmarils_found }
@@ -469,8 +470,8 @@ country_event = { # Helper event to say you can't find a silmaril unless you can
 
 		NOT = {
 			OR = {
-				owns = 843
-				owns = 660
+				owns = 843 # Moria
+				owns = 660 # Erebor
 			}
 		}
 	}
@@ -492,6 +493,7 @@ country_event = { # First attempt
 	trigger = {
 		is_greater_power = yes
 		invention = silmarils
+		money = 100000
 		NOT = { has_global_flag = silmarils_found }
 		NOT = { has_country_flag = searching_for_silmarils }
 		NOT = { has_country_flag = rejected_searching_for_silmarils }
@@ -507,7 +509,7 @@ country_event = { # First attempt
 	option = {
 		name = "Dig deep and greedily!"
 		ai_chance = { factor = 25 }
-		money = -1000
+		treasury = -100000
 		set_country_flag = searching_for_silmarils
 	}
 	option = {
@@ -537,15 +539,21 @@ country_event = { # Attempt fails, try again?
 
 	option = {
 		name = "Try again" # Fund second attempt
-		ai_chance = { factor = 60 }
-		money = -2000
+		treasury = -100000
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0
+				NOT = { money = 100000 }
+			}
+		}
 	}
 	option = {
 		name = "Forget it" # Reject second attempt
-		ai_chance = { factor = 40 }
 		clr_country_flag = searching_for_silmaril
 		set_country_flag = rejected_searching_for_silmaril
 		prestige = -25
+		ai_chance = { factor = 1 }
 	}
 }
 
@@ -559,8 +567,8 @@ country_event = { # Finding Silmaril is now impossible
 		has_country_flag = searching_for_silmaril
 		NOT = {
 			OR = {
-				owns = 843
-				owns = 660
+				owns = 843 # Moria
+				owns = 660 # Erebor
 			}
 		}
 	}
@@ -626,7 +634,7 @@ country_event = { # Other country has found Silmaril
 	}
 }
 
-########################
+######################## }
 ##### Blue Wizards #####
 ########################
 country_event = { # First attempt

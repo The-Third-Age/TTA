@@ -140,3 +140,5 @@ lesser_ring_expedition_unlock_effect = { }
 lesser_ring_expedition_unlock_2_effect = { }
 
 lesser_ring_expedition_unlock_3_effect = { }
+
+silmaril_expedition_unlock_effect = { }
