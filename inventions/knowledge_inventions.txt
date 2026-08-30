@@ -204,6 +204,29 @@ third_lesser_ring = { # Search and find a lesser ring
 	
 	effect = { shared_prestige = 5 }
 }
+black_powder_explosives = {
+	limit = {
+		magic_5 = 1
+		OR = {
+			ruling_party = ISE_saruman
+			ruling_party = ISE_saruman_sauronite
+		}
+	}
+	
+	chance = {
+		base = 0
+		modifier = {
+			factor = 1
+			has_country_flag = ISE_content # Intentionally different as the limit given that ruling_party does not localize the ruling party name in tech for some reason
+		}
+	}
+	effect = {
+		berserkers = {
+			siege = 6
+			supply_consumption = 0.1
+		}
+	}
+}
 ##########################
 # SCHOLARSHIP INVENTIONS #
 ##########################
