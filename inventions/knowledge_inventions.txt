@@ -73,7 +73,7 @@ first_lesser_ring = { # Search and find a lesser ring
 		base = 1
 	}
 	
-	effect = { shared_prestige = 5 }
+	effect = { enable_crime = lesser_ring_expedition_unlock_effect }
 }
 palantiri = { # Gaze into the palantiri
 	limit = { magic_2 = 1 }
@@ -124,7 +124,7 @@ second_lesser_ring = { # Search and find a lesser ring
 		}
 	}
 	
-	effect = { shared_prestige = 5 }
+	effect = { enable_crime = lesser_ring_expedition_unlock_2_effect }
 }
 silmarils = { # Search and find a silmaril
 	limit = { magic_4 = 1 }
@@ -202,7 +202,7 @@ third_lesser_ring = { # Search and find a lesser ring
 		}
 	}
 	
-	effect = { shared_prestige = 5 }
+	effect = { enable_crime = lesser_ring_expedition_unlock_3_effect }
 }
 black_powder_explosives = {
 	limit = {

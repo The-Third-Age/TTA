@@ -134,3 +134,9 @@ northern_waste_expedition_unlock_effect = { }
 rhun_expedition_unlock_effect = { }
 
 harad_expedition_unlock_effect = { }
+
+lesser_ring_expedition_unlock_effect = { }
+
+lesser_ring_expedition_unlock_2_effect = { }
+
+lesser_ring_expedition_unlock_3_effect = { }
