@@ -1053,6 +1053,15 @@ cultural_core_integration = {
 	icon = 7
 }
 
+# Province Modifier
+recently_integrated = {
+	immigrant_attract = 0.25
+	assimilation_rate = 0.5
+	population_growth = 0.002
+	
+	icon = 7
+}
+
 # }
 ##### RGO MODIFIERS ##### {
 # Province Modifier

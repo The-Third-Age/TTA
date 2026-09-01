@@ -356,6 +356,7 @@ province_event = {
 		remove_province_modifier = core_integration
 		remove_province_modifier = cultural_core_integration
 		add_core = THIS
+		add_province_modifier = { name = recently_integrated duration = 365 }
 	}
 }
 
