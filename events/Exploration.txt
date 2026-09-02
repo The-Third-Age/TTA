@@ -899,99 +899,131 @@ country_event = { # Other country has found Pallando
 ########################
 ###### Palantiri #######
 ########################
-country_event = { # Get anor_palantir
+province_event = { # Get anor_palantir
 	id = 50760
 	title = "The Anor Palantir"
 	desc = "EVTDESC50760"
-	picture = "palantir"
 
 	trigger = {
-		invention = palantiri
-		owns = 16
-		NOT = { has_country_modifier = anor_palantir }
+		province_id = 16
+		owner = { invention = palantiri }
+		OR = {
+			NOT = { owner = { has_country_modifier = anor_palantir } }
+			NOT = { has_province_modifier = anor_palantir_province }
+		}
 	}
 
 	mean_time_to_happen = { months = 1 }
 
 	option = {
 		name = "Excellent"
-		ai_chance = { factor = 100 }
-		add_country_modifier = {
-			name = anor_palantir
-			duration = -1
+		owner = {
+			any_country = {
+				limit = { has_country_modifier = anor_palantir }
+				remove_country_modifier = anor_palantir
+			}
+			random_owned = {
+				limit = { NOT = { owner = { has_country_modifier = anor_palantir } } }
+				owner = { add_country_modifier = { name = anor_palantir duration = -1 } }
+			}
 		}
+		add_province_modifier = { name = anor_palantir_province duration = -1 }
 	}
 }
 
-country_event = { # Get orthanc_palantir
+province_event = { # Get orthanc_palantir
 	id = 50761
 	title = "The Orthanc Palantir"
 	desc = "EVTDESC50761"
-	picture = "palantir"
 
 	trigger = {
-		invention = palantiri
-		owns = 811
-		NOT = { has_country_modifier = orthanc_palantir }
+		province_id = 811
+		owner = { invention = palantiri }
+		OR = {
+			NOT = { owner = { has_country_modifier = orthanc_palantir } }
+			NOT = { has_province_modifier = orthanc_palantir_province }
+		}
 	}
 
 	mean_time_to_happen = { months = 1 }
 
 	option = {
 		name = "Excellent"
-		ai_chance = { factor = 100 }
-		add_country_modifier = {
-			name = orthanc_palantir
-			duration = -1
+		owner = {
+			any_country = {
+				limit = { has_country_modifier = orthanc_palantir }
+				remove_country_modifier = orthanc_palantir
+			}
+			random_owned = {
+				limit = { NOT = { owner = { has_country_modifier = orthanc_palantir } } }
+				owner = { add_country_modifier = { name = orthanc_palantir duration = -1 } }
+			}
 		}
+		add_province_modifier = { name = orthanc_palantir_province duration = -1 }
 	}
 }
 
-country_event = { # Get ithil_palantir
+province_event = { # Get ithil_palantir
 	id = 50762
 	title = "The Ithil Palantir"
 	desc = "EVTDESC50762"
-	picture = "palantir"
 
 	trigger = {
-		invention = palantiri
-		owns = 449
-		NOT = { has_country_modifier = ithil_palantir }
+		province_id = 449
+		owner = { invention = palantiri }
+		OR = {
+			NOT = { owner = { has_country_modifier = ithil_palantir } }
+			NOT = { has_province_modifier = ithil_palantir_province }
+		}
 	}
 
 	mean_time_to_happen = { months = 1 }
 
 	option = {
 		name = "Excellent"
-		ai_chance = { factor = 100 }
-		add_country_modifier = {
-			name = ithil_palantir
-			duration = -1
+		owner = {
+			any_country = {
+				limit = { has_country_modifier = ithil_palantir }
+				remove_country_modifier = ithil_palantir
+			}
+			random_owned = {
+				limit = { NOT = { owner = { has_country_modifier = ithil_palantir } } }
+				owner = { add_country_modifier = { name = ithil_palantir duration = -1 } }
+			}
 		}
+		add_province_modifier = { name = ithil_palantir_province duration = -1 }
 	}
 }
 
-country_event = { # Get elostirion_palantir
+province_event = { # Get elostirion_palantir
 	id = 50763
 	title = "The Elostirion Palantir"
 	desc = "EVTDESC50763"
-	picture = "palantir"
 
 	trigger = {
-		invention = palantiri
-		NOT = { has_country_modifier = elostirion_palantir }
-		owns = 933
+		province_id = 933
+		owner = { invention = palantiri }
+		OR = {
+			NOT = { owner = { has_country_modifier = elostirion_palantir } }
+			NOT = { has_province_modifier = elostirion_palantir_province }
+		}
 	}
 
 	mean_time_to_happen = { months = 1 }
 
 	option = {
 		name = "Excellent"
-		ai_chance = { factor = 100 }
-		add_country_modifier = {
-			name = elostirion_palantir
-			duration = -1
+		owner = {
+			any_country = {
+				limit = { has_country_modifier = elostirion_palantir }
+				remove_country_modifier = elostirion_palantir
+			}
+			random_owned = {
+				limit = { NOT = { owner = { has_country_modifier = elostirion_palantir } } }
+				owner = { add_country_modifier = { name = elostirion_palantir duration = -1 } }
+			}
 		}
+		add_province_modifier = { name = elostirion_palantir_province duration = -1 }
 	}
 }
 

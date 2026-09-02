@@ -60,9 +60,9 @@ northern_waste_expeditions = {
 		wilderness_2 = 1
 		any_owned_province = {
 			OR = {
-				continent = north_america
-				continent = europe
-				continent = asia
+				continent = north_america # Eriador
+				continent = europe # Rhovanion
+				continent = asia # Rhun
 			}
 		}
 	}
@@ -73,9 +73,9 @@ northern_waste_expeditions = {
 			invention = wilderness_guides
 			any_owned_province = {
 				OR = {
-					continent = north_america
-					continent = europe
-					continent = asia
+					continent = north_america # Eriador
+					continent = europe # Rhovanion
+					continent = asia # Rhun
 				}
 			}
 		}
@@ -88,7 +88,7 @@ rhun_expeditions = {
 	limit = {
 		wilderness_2 = 1
 		any_owned_province = {
-			continent = asia
+			continent = asia # Harad
 		}
 	}
 	chance = {
@@ -97,7 +97,7 @@ rhun_expeditions = {
 			factor = 2
 			invention = wilderness_guides
 			any_owned_province = {
-				continent = asia
+				continent = asia # Harad
 			}
 		}
 	}
@@ -127,6 +127,58 @@ harad_expeditions = {
 	}
 	effect = {
 		enable_crime = harad_expedition_unlock_effect
+	}
+}
+sea_of_forochel_expeditions = {
+	limit = {
+		wilderness_2 = 1
+		OR = {
+			1376 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+			1375 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+			1147 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+		}
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			invention = palantiri
+			OR = {
+				1376 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+				1375 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+				1147 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+			}
+		}
+	}
+	effect = {
+		enable_crime = bay_of_forochel_expedition_unlock_effect
+	}
+}
+sea_of_belfalas_expeditions = {
+	limit = {
+		wilderness_2 = 1
+		OR = {
+			1100 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+			1101 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+			1102 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+			1103 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+		}
+	}
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			invention = palantiri
+			OR = {
+				1100 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+				1101 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+				1102 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+				1103 = { any_neighbor_province = { owned_by = THIS } } # Icebay of Forochel
+			}
+		}
+	}
+	effect = {
+		enable_crime = sea_of_belfalas_expedition_unlock_effect
 	}
 }
 ######################

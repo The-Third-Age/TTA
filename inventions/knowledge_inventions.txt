@@ -82,7 +82,7 @@ palantiri = { # Gaze into the palantiri
 		base = 3
 	}
 	
-	effect = { shared_prestige = 5 }
+	effect = { enable_crime = static_palantir_unlock_effect }
 }
 blue_wizards = { # Search for the blue wizards
 	limit = { magic_3 = 1 }

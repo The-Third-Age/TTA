@@ -71,6 +71,7 @@
 # Yellow Leader				60						62
 # Saruman Icon				61						63
 # Alliance of Two Towers	62						64
+# Palantir					63						65
 
 #############################
 ##### VANILLA MODIFIERS ##### {
@@ -1423,7 +1424,15 @@ anor_palantir = { # The Palantir currently being held in Minas Tirith
 	influence_modifier = 1
 	prestige = 1
 	global_pop_militancy_modifier = -0.01
-	icon = 19
+	population_tech_research_bonus = 0.02
+	icon = 63
+}
+
+# Province Modifier
+anor_palantir_province = { # The Palantir currently being held in Minas Tirith
+	pop_militancy_modifier = -0.1
+	local_factory_output = 0.25
+	icon = 65
 }
 
 # Country Modifier
@@ -1432,7 +1441,14 @@ orthanc_palantir = { # The Palantir currently being held in Isengard
 	influence_modifier = 1
 	prestige = 1
 	global_pop_militancy_modifier = -0.01
-	icon = 19
+	army_tech_research_bonus = 0.02
+	icon = 63
+}
+
+# Province Modifier
+orthanc_palantir_province = { # The Palantir currently being held in Isengard
+	population_growth = 0.003
+	icon = 65
 }
 
 # Country Modifier
@@ -1441,7 +1457,14 @@ ithil_palantir = { # The Palantir currently being held in Barad-dur
 	influence_modifier = 1
 	prestige = 1
 	global_pop_militancy_modifier = -0.01
-	icon = 19
+	army_tech_research_bonus = 0.02
+	icon = 63
+}
+
+# Province Modifier
+ithil_palantir_province = { # The Palantir currently being held in Barad-dur
+	local_factory_output = 0.50
+	icon = 65
 }
 
 # Country Modifier
@@ -1450,7 +1473,14 @@ elostirion_palantir = { # The Palantir currently being held in Lindon
 	influence_modifier = 1
 	prestige = 1
 	global_pop_militancy_modifier = -0.01
-	icon = 19
+	knowledge_tech_research_bonus = 0.02
+	icon = 63
+}
+
+# Province Modifier
+elostirion_palantir_province = { # The Palantir currently being held in Lindon
+	immigrant_attract = 0.5
+	icon = 65
 }
 
 # Country Modifier
@@ -1459,7 +1489,7 @@ osgiliath_palantir = { # A lost Palantir
 	influence_modifier = 1
 	prestige = 1
 	global_pop_militancy_modifier = -0.01
-	icon = 19
+	icon = 63
 }
 
 # Country Modifier
@@ -1468,7 +1498,7 @@ amonsul_palantir = { # A lost Palantir
 	influence_modifier = 1
 	prestige = 1
 	global_pop_militancy_modifier = -0.01
-	icon = 19
+	icon = 63
 }
 
 # Country Modifier
@@ -1477,7 +1507,7 @@ annuminas_palantir = { # A lost Palantir
 	influence_modifier = 1
 	prestige = 1
 	global_pop_militancy_modifier = -0.01
-	icon = 19
+	icon = 63
 }
 
 # Country Modifier

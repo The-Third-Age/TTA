@@ -2412,6 +2412,41 @@ country_event = {
 		}
 		# }
 		
+		# Cleaning up Palantiri {
+		# Anor Palantir
+		any_country = {
+			limit = {
+				has_country_modifier = anor_palantir
+				NOT = { any_owned_province = { has_province_modifier = anor_palantir_province } }
+			}
+			remove_country_modifier = anor_palantir
+		}
+		# Ithil Palantir
+		any_country = {
+			limit = {
+				has_country_modifier = ithil_palantir
+				NOT = { any_owned_province = { has_province_modifier = ithil_palantir_province } }
+			}
+			remove_country_modifier = ithil_palantir
+		}
+		# Orthanc Palantir
+		any_country = {
+			limit = {
+				has_country_modifier = orthanc_palantir
+				NOT = { any_owned_province = { has_province_modifier = orthanc_palantir_province } }
+			}
+			remove_country_modifier = orthanc_palantir
+		}
+		# Elostirion Palantir
+		any_country = {
+			limit = {
+				has_country_modifier = elostirion_palantir
+				NOT = { any_owned_province = { has_province_modifier = elostirion_palantir_province } }
+			}
+			remove_country_modifier = elostirion_palantir
+		}
+		# }
+		
 		# Refire the cleanup event next month {
 		random_owned = {
 			limit = {

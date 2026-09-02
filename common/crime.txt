@@ -142,3 +142,9 @@ lesser_ring_expedition_unlock_2_effect = { }
 lesser_ring_expedition_unlock_3_effect = { }
 
 silmaril_expedition_unlock_effect = { }
+
+static_palantir_unlock_effect = { }
+
+bay_of_forochel_expedition_unlock_effect = { }
+
+sea_of_belfalas_expedition_unlock_effect = { }

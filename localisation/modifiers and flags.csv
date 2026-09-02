@@ -83,6 +83,9 @@ lesser_ring_expedition_unlock_effect;§WUnlocks §YLesser Ring Expeditions;x
 lesser_ring_expedition_unlock_2_effect;§WUnlocks a §RSecond §YLesser Ring Expedition;x
 lesser_ring_expedition_unlock_3_effect;§WUnlocks a §RThird §YLesser Ring Expedition;x
 silmaril_expedition_unlock_effect;§WUnlocks a §YSilmaril Expedition;x
+static_palantir_unlock_effect;§WUnlocks §YPalantíri §Win §YMinas Tirith, Barad-Dûr, Isengard §Wand §YElostirion;x
+bay_of_forochel_expedition_unlock_effect;§WUnlocks §YIce Bay of Forochel Expeditions;x
+sea_of_belfalas_expedition_unlock_effect;§WUnlocks a §YSea of Belfalas Expeditions;x
 ##################################;x }
 ##### ORGANIZATION MODIFIERS #####;x {
 ##################################;x
@@ -401,12 +404,16 @@ silmaril;Silmaril;x
 silmaril_desc;We have acquired one of the jewels that captured the light of the Two Trees of Valinor.;x
 anor_palantir;Anor Palantir;x
 anor_palantir_desc;One of the great Seeing Stones, the Anor Palantir is housed in Minas Anor, now called Minas Tirith.;x
+anor_palantir_province;Anor Palantir;x
 orthanc_palantir;Orthanc Palantir;x
 orthanc_palantir_desc;The Orthanc Seeing Stone was housed in Isengard. In recent decades it was all but forgotten by the Stewards of Gondor, though Saruman keenly remembered its existence and rediscovered it in the vaults of Isengard.;x
+orthanc_palantir_province;Orthanc Palantir;x
 ithil_palantir;Ithil Palantir;x
 ithil_palantir_desc;The Ithil Seeing Stone was once housed in Minas Ithil. Upon that castle being captured by the Nazgul, the Palantir was moved to Barad-dûr and used exclusively by Sauron.;x
+ithil_palantir_province;Ithil Palantir;x
 elostirion_palantir;Elostirion Palantir;x
 elostirion_palantir_desc;The Elostirion Seeing Stone was unique. It could not communicate with any of the other Palantiri in Middle Earth, instead looking only West to the Undying Lands. It is an object of pilgrimage for elves across Middle Earth.;x
+elostirion_palantir_province;Elostirion Palantir;x
 osgiliath_palantir;Osgiliath Palantir;x
 osgiliath_palantir_desc;The Osgiliath Seeing Stone is the largest and most eminent of the Palantiri. It was lost during the Kin-strife, falling into the river Anduin to never be recovered.;x
 amonsul_palantir;Amon Sûl Palantir;x
