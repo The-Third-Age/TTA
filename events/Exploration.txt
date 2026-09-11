@@ -532,7 +532,7 @@ country_event = { # Attempt fails, try again?
 	picture = "silmarils"
 	
 	trigger = {
-		has_country_flag = searching_for_silmaril
+		has_country_flag = searching_for_silmarils
 	}
 	
 	mean_time_to_happen = { months = 24 }
@@ -550,7 +550,7 @@ country_event = { # Attempt fails, try again?
 	}
 	option = {
 		name = "Forget it" # Reject second attempt
-		clr_country_flag = searching_for_silmaril
+		clr_country_flag = searching_for_silmarils
 		set_country_flag = rejected_searching_for_silmaril
 		prestige = -25
 		ai_chance = { factor = 1 }
@@ -564,7 +564,7 @@ country_event = { # Finding Silmaril is now impossible
 	picture = "silmarils"
 	
 	trigger = {
-		has_country_flag = searching_for_silmaril
+		has_country_flag = searching_for_silmarils
 		NOT = {
 			OR = {
 				owns = 843 # Moria
@@ -577,7 +577,7 @@ country_event = { # Finding Silmaril is now impossible
 
 	option = {
 		name = "Forget it"
-		clr_country_flag = searching_for_silmaril
+		clr_country_flag = searching_for_silmarils
 		set_country_flag = rejected_searching_for_silmaril
 		prestige = -25
 	}
