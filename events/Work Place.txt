@@ -3552,7 +3552,7 @@ province_event = {
 	option = {
 		name = "Of course!"
 		
-		clr_country_flag = generic_rgo_change_lock
+		owner = { clr_country_flag = generic_rgo_change_lock }
 		
 		owner = {
 			# "Hills" RGOs
@@ -3940,7 +3940,7 @@ province_event = {
 	option = {
 		name = "We do not want to change the RGO at this time"
 		
-		clr_country_flag = generic_rgo_change_lock
+		owner = { clr_country_flag = generic_rgo_change_lock }
 		
 		add_province_modifier = { name = locked_rgo duration = 365 }
 		
@@ -3971,7 +3971,7 @@ province_event = {
 	option = {
 		name = "We never want to change this RGO"
 		
-		clr_country_flag = generic_rgo_change_lock
+		owner = { clr_country_flag = generic_rgo_change_lock }
 		
 		add_province_modifier = { name = locked_rgo duration = -1 }
 		

@@ -410,11 +410,6 @@ dynamic_loc_region_target_40 = {
 }
 
 # Province Modifier
-dynamic_loc_slot_selector = {
-	icon = 36
-}
-
-# Province Modifier
 dynamic_loc_province_target_1 = {
 	icon = 36
 }

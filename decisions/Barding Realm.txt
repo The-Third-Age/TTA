@@ -588,7 +588,7 @@ political_decisions = {
 	}
 	
 	AMO_take_gramavuld = {
-		picture = "Rhun/logath_easterlings_marching";
+		picture = "Rhun/logath_easterlings_marching"
 		potential = {
 			tag = AMO
 			has_country_flag = AMO_claimed_gramavuld
@@ -1054,7 +1054,7 @@ political_decisions = {
 			has_country_flag = DAL_content
 			OR = {
 				has_global_flag = invited_the_rivermen
-				has_global_flag = protect_the_rivermen
+				has_global_flag = DAL_protected_the_rivermen
 				AND = {
 					RIV = { exists = no }
 					DA1 = { exists = no }

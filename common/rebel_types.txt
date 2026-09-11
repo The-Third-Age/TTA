@@ -971,7 +971,7 @@ sauronite_rebels = {
 			factor = 999
 			OR = {
 				pop_majority_ideology = lords_of_isengard_sauronite
-				pop_majority_issue = sauronite
+				pop_majority_issue = evil_alignment
 			}
 		}
 	}

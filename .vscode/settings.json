@@ -1,4 +1,7 @@
 {
     "files.encoding": "windows1252",
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "victorianTools.activeMods": [
+        "Lord of the Rings"
+    ]
 }

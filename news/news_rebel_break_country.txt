@@ -36,12 +36,14 @@ generate_article =
 	picture_case = { picture = "news/news_revolution_01.dds" picture = "news/news_revolution_02.dds" picture = "news/news_revolution_03.dds" picture = "news/news_revolution_04.dds" }
 	
 	title_case = { 
-			trigger = { 
-				ruling_party_ideology = communist
-				#<rebels are also commie trigger>
+			trigger = {
+				OR = {
+					ruling_party_ideology = slave_ideology
+					ruling_party_ideology = tribal_ideology
 				}
-		text_add = { PRO_COMMIES} 
 			}
+		text_add = { PRO_COMMIES} 
+	}
 	
 	title_case = { text_add = { REVOLUTION_NEWS_TITLE_LARGE} }
 	

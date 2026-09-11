@@ -1,5 +1,5 @@
 color = { 69 157 208 }
-graphical_culture = EuropeanGC # inherit
+graphical_culture = Generic # inherit
 
 party = {
 	name = "generic_servants"

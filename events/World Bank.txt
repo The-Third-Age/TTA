@@ -6083,7 +6083,7 @@ country_event = {
 				has_country_modifier = erebor_relations_modifier
 				alliance_with = ERE
 			}
-			change_variable = { name = erebor_relations value = 1 }
+			change_variable = { which = erebor_relations value = 1 }
 		}
 		
 		# Guild-led DAL

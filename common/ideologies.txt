@@ -443,12 +443,12 @@ eagles_nobility = {
 	flightlords_of_the_mountains = {
 		color = { 20 130 230 }
 		
-		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+		add_political_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlords_of_the_mountains } }
 		remove_political_reform = { base = 0 }
-		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+		add_social_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlords_of_the_mountains } }
 		remove_social_reform = { base = 0 }
-		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
-		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlord_of_the_mountains } }
+		add_military_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlords_of_the_mountains } }
+		add_economic_reform = { base = 0 modifier = { factor = 1 ruling_party_ideology = flightlords_of_the_mountains } }
 	}
 	
 	lords_of_ravens = {

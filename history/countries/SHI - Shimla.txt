@@ -21,7 +21,7 @@ ruling_party = SHI_fortinbras_ii_took
 upper_house = {
 	took_family = 45
 	brandybuck_family = 25
-	fairbairn_family_family = 20
+	fairbairn_family = 20
 	underhill_family = 10
 }
 penal_reform = hard_labor

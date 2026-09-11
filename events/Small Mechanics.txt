@@ -938,7 +938,7 @@ country_event = {
 	}
 }
 
-country_event  {
+country_event = {
 	id = 5061
 	title = "Return Provinces"
 	desc = "EVTDESC5061"

@@ -47,7 +47,6 @@ conquer_gramavuld_cb # Specific to Amov Clan's Flavor
 establish_celduin_trading_post_cb # Specific to Kingdom of Dale's Master of Laketown Flavor
 add_to_sphere
 take_from_sphere
-change_alignment
 status_quo
 gunboat
 conquest_tiny

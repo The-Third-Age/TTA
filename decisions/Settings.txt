@@ -9,7 +9,6 @@ political_decisions = {
 	view_settings = {
 		potential = {
 			ai = no
-			NOT = { has_global_flag = viewing_settings }
 			NOT = { has_global_flag = no_settings }
 		}
 		

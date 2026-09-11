@@ -406,10 +406,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			has_country_modifier = observer_mode
-		}
-		NOT = { has_country_modifier = just }
+		NOT = { has_country_modifier = observer_mode }
 	}
 	
 	option = {
