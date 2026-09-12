@@ -1290,7 +1290,7 @@ country_event = {
 		
 		add_accepted_culture = dunnish
 		
-		set_global_flag = ISE_bred_uruk_hai
+		set_country_flag = ISE_bred_uruk_hai
 	}
 }
 

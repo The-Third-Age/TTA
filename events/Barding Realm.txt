@@ -1606,7 +1606,7 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = DAL_content
-		has_global_flag = bard_ii_alive
+		has_global_flag = DAL_bard_ii_alive
 		year = 3010
 	}
 	
@@ -1643,7 +1643,7 @@ country_event = {
 	trigger = {
 		has_country_flag = DAL_content
 		has_global_flag = DAL_bard_ii_married
-		has_global_flag = bard_ii_alive
+		has_global_flag = DAL_bard_ii_alive
 		year = 3020
 	}
 	
@@ -1690,7 +1690,7 @@ country_event = {
 	trigger = {
 		has_country_flag = DAL_content
 		has_global_flag = DAL_bard_ii_married
-		has_global_flag = bard_ii_alive
+		has_global_flag = DAL_bard_ii_alive
 		has_global_flag = DAL_girion_ii_alive
 		year = 3025
 	}
@@ -2834,7 +2834,7 @@ province_event = {
 	
 	trigger = {
 		owner = {
-			has_country_flag = DAL
+			has_country_flag = DAL_content
 			ruling_party_ideology = master_of_laketown
 			capital = 654 # Esgaroth
 		}
@@ -2867,7 +2867,7 @@ province_event = {
 	
 	trigger = {
 		owner = {
-			has_country_flag = DAL
+			has_country_flag = DAL_content
 			ruling_party_ideology = master_of_laketown
 			FOR = {
 				any_neighbor_country = {

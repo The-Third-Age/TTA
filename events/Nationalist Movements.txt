@@ -2559,7 +2559,7 @@ province_event = {
 province_event = {
 	id = 15024
 	title = "The Flying University"
-	desc = "EVTDESC15310"
+	desc = "EVTDESC15024"
 	
 	trigger = {
 		NOT = { has_province_modifier = flying_university }

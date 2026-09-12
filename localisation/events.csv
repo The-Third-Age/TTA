@@ -519,8 +519,8 @@ EVTDESC50324;§RThis event does nothing except notify players about Fellowship e
 EVTDESC50325;The Ring has been destroyed!;x
 EVTDESC50326;§RThis event does nothing except notify players about Ring-related events§!. The Fellowship has succeeded! The One Ring has been destroyed, and Sauron is no more.;x
 EVTDESC50327;With the demise of Mordor, we have regained land rightfully belonging to us.;x
-EVTDESC50228;With the demise of Mordor, we have regained land rightfully belonging to us.;x
-EVTDESC50229;With the demise of Mordor, we have become free.;x
+EVTDESC50328;With the demise of Mordor, we have regained land rightfully belonging to us.;x
+EVTDESC50329;With the demise of Mordor, we have become free.;x
 EVTDESC50330;With the destruction of the One Ring, Sauron has fallen and our realm has become crippled.;x
 EVTDESC50331;With the destruction of the One Ring, the link between Nazgûl and this world has been broken. Our leader, the Nazgûl, has fallen, being turned to ashes in $CAPITAL$, and our realm is in chaos.;x
 EVTDESC50358;Mordor is requesting that we give them the Ring. If we follow their request, they will no doubt protect us. However, we would be giving up a powerful artefact. If we reject their request, they will undoubtedly attempt to claim the Ring through force of arms. What is our response?;x
@@ -661,6 +661,7 @@ EVTDESC50963;The rise of the Fishers Guild has been slow but steady. Rising out 
 EVTDESC50964;Since the Fishers Guild started leading the $COUNTRY$, they have worked to decrease the influence of the merchants. Recently, the last nobility privilege was stripped, leaving each individual noble as much legal power as any other man.;x
 EVTDESC50965;With the Merchant's rise back into power, the current lawmakers have raised the question of the capital of $COUNTRY$.Our capital, $CAPITAL$, is more representative of previous leadership, and some feel like Esgaroth is a better fitting location for the capital. After much debate, the ruling council decides that...;x
 EVTDESC50966;The reconstruction of $CAPITAL$ has finished. Among the many refurbishings includes a recreated status of Other Moneybags, the previous Master of Laketown.;x
+EVTDESC50967;The populace of $PROVINCENAME$ is upset at existing trade agreements with the Easterlings. With the rising tensions, it is possible some of the peasantry may try to revolt.;x
 EVTDESC50968;$FROMCOUNTRY$ has requested some land to build a trading post. They undoubtedly hold sway over our realm and have convinced many of the Council of the Realm to support the initiative, but the final say belongs to us. Should we cede this land?;x
 EVTDESC50969;A new trading post in $PROVINCENAME$ has been created! This will create lots of wealth for our realm.;x
 EVTDESC50970;The trading post in $PROVINCENAME$ has been abandoned. As such, the province authority has switched the focus from Precious Goods towards more standard outputs.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n;x
@@ -732,7 +733,9 @@ EVTDESC98000;A nearby group of $COUNTRYCULTURE$ have petitioned to join us.;x
 #############################;x
 EVTDESC99000;This is the monthly event to do any sort of generic cleanup;x
 EVTDESC99001;This is the monthly event to do any sort of cleanup related to DAL flavor.;x
+EVTDESC99002;This is the weekly event to do any sort of generic cleanup;x
 EVTDESC99003;This is the monthly event to do any sort of cleanup associated with the Alliance of Dwarves and Men;x
+EVTDESC99004;This is the yearly event to do any sort of generic cleanup;x
 EVTDESC99006;Your overlord no longer exists, but your connection to them was never severed.;x
 EVTDESC99007;Our voting laws were previously locked. However, due to changed within your realm, it no longer makes sense to keep them locked.;x
 EVTDESC99010;This is the monthly event to do any sort of cleanup related to ISE flavor.;x

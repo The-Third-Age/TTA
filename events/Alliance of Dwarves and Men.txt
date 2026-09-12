@@ -17888,7 +17888,7 @@ country_event = {
 	id = 110150
 	title = "Alliance of Dwarves and Men Voting Handler"
 	desc = ""
-	picture = "organization/alliance_dwarves_men"
+	picture = "organizations/alliance_dwarves_men"
 	
 	is_triggered_only = yes
 	
@@ -20415,7 +20415,7 @@ country_event = {
 country_event = {
 	id = 110166
 	title = "  Alliance of Dwarves and Men - Release Cores"
-	desc = "EVTDESC100166"
+	desc = "EVTDESC110166"
 	picture = "organizations/alliance_dwarves_men_1"
 	
 	is_triggered_only = yes

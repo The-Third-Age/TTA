@@ -2927,9 +2927,9 @@ small_but_efficient = {
 	tariff_efficiency_modifier = 0.3
 	education_efficiency_modifier = 0.05
 	supply_consumption = -0.9
-	poor_income_modifier = 1
-	middle_income_modifier = 3
-	rich_income_modifier = 5
+	poor_income_modifier = 1 #VT - Skip Validation
+	middle_income_modifier = 3 #VT - Skip Validation
+	rich_income_modifier = 5 #VT - Skip Validation
 	
 	icon = 48
 }

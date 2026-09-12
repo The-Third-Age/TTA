@@ -1643,7 +1643,7 @@ country_event = {
 		maroon_color_loc = {}
 		random_owned = {
 			limit = {
-				owner = { has_global_flag = DAL_cultivated_inland_trade }
+				owner = { has_country_flag = DAL_cultivated_inland_trade }
 			}
 			green_color_loc = {}
 		}
@@ -1715,7 +1715,7 @@ country_event = {
 		maroon_color_loc = {}
 		random_owned = {
 			limit = {
-				owner = { has_global_flag = DAL_fishers_guild_political_reformed }
+				owner = { has_country_flag = DAL_fishers_guild_political_reformed }
 			}
 			green_color_loc = {}
 		}
@@ -1727,7 +1727,7 @@ country_event = {
 		maroon_color_loc = {}
 		random_owned = {
 			limit = {
-				owner = { has_global_flag = DAL_fishers_guild_land_reformed }
+				owner = { has_country_flag = DAL_fishers_guild_land_reformed }
 			}
 			green_color_loc = {}
 		}
@@ -1739,7 +1739,7 @@ country_event = {
 		maroon_color_loc = {}
 		random_owned = {
 			limit = {
-				owner = { has_global_flag = DAL_fishers_guild_immigration_reform_modifier }
+				owner = { has_country_modifier = DAL_fishers_guild_immigration_reform_modifier }
 			}
 			green_color_loc = {}
 		}

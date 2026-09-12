@@ -553,14 +553,14 @@ social_reforms = {
 		next_step_only = yes
 		
 		privileged_state_supplies = {
-			rich_income_modifier = 0.25
-			middle_income_modifier = -0.05
-			poor_income_modifier = -0.1
+			rich_income_modifier = 0.25 #VT - Skip Validation
+			middle_income_modifier = -0.05 #VT - Skip Validation
+			poor_income_modifier = -0.1 #VT - Skip Validation
 		}
 		allowed_state_supplies = {
-			rich_income_modifier = 0.1
-			middle_income_modifier = -0.02
-			poor_income_modifier = -0.05
+			rich_income_modifier = 0.1 #VT - Skip Validation
+			middle_income_modifier = -0.02 #VT - Skip Validation
+			poor_income_modifier = -0.05 #VT - Skip Validation
 			administrative_multiplier = 1
 		}
 		restricted_state_supplies = {

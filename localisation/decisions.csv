@@ -2,6 +2,81 @@
 ##### KEYWORD TEXT #####;x {
 ########################;x
 POLITICS_DECISIONS;Decisions: Flavor   §OFluff   §GGeneral   §TQOL   §rSettings§!;x
+##############################;x }
+##### STARTING DECISIONS #####;x {
+##############################
+beo_start_decision_title;Start Decision;x
+beo_start_decision_desc;Start Decision;x
+rad_start_decision_title;Start Decision;x
+rad_start_decision_desc;Start Decision;x
+dal_start_decision_title;Start Decision;x
+dal_start_decision_desc;Start Decision;x
+bre_start_decision_title;Start Decision;x
+bre_start_decision_desc;Start Decision;x
+dnd_start_decision_title;Start Decision;x
+dnd_start_decision_desc;Start Decision;x
+dwm_start_decision_title;Start Decision;x
+dwm_start_decision_desc;Start Decision;x
+eag_start_decision_title;Start Decision;x
+eag_start_decision_desc;Start Decision;x
+erebor_start_decision_title;Start Decision;x
+erebor_start_decision_desc;Start Decision;x
+iro_start_decision_title;Start Decision;x
+iro_start_decision_desc;Start Decision;x
+rav_start_decision_title;Start Decision;x
+rav_start_decision_desc;Start Decision;x
+blue_mountains_start_decision_title;Start Decision;x
+blue_mountains_start_decision_desc;Start Decision;x
+dourhand_start_decision_title;Start Decision;x
+dourhand_start_decision_desc;Start Decision;x
+thorins_halls_start_decision_title;Start Decision;x
+thorins_halls_start_decision_desc;Start Decision;x
+broadbeam_start_decision_title;Start Decision;x
+broadbeam_start_decision_desc;Start Decision;x
+fan_start_decision_title;Start Decision;x
+fan_start_decision_desc;Start Decision;x
+gondor_start_decision_title;Start Decision;x
+gondor_start_decision_desc;Start Decision;x
+dol_amroth_start_decision_title;Start Decision;x
+dol_amroth_start_decision_desc;Start Decision;x
+har_start_decision_title;Start Decision;x
+har_start_decision_desc;Start Decision;x
+iml_start_decision_title;Start Decision;x
+iml_start_decision_desc;Start Decision;x
+ironfist_start_decision_title;Start Decision;x
+ironfist_start_decision_desc;Start Decision;x
+isengard_start_decision_title;Start Decision;x
+isengard_start_decision_desc;Start Decision;x
+lin_start_decision_title;Start Decision;x
+lin_start_decision_desc;Start Decision;x
+lor_start_decision_title;Start Decision;x
+lor_start_decision_desc;Start Decision;x
+mordor_start_decision_title;Start Decision;x
+mordor_start_decision_desc;Start Decision;x
+obs_start_decision_title;Start Decision;x
+obs_start_decision_desc;Start Decision;x
+dor_start_decision_title;Start Decision;x
+dor_start_decision_desc;Start Decision;x
+rhu_start_decision_title;Start Decision;x
+rhu_start_decision_desc;Start Decision;x
+roh_start_decision_title;Start Decision;x
+roh_start_decision_desc;Start Decision;x
+shi_start_decision_title;Start Decision;x
+shi_start_decision_desc;Start Decision;x
+bck_start_decision_title;Start Decision;x
+bck_start_decision_desc;Start Decision;x
+mau_start_decision_title;Start Decision;x
+mau_start_decision_desc;Start Decision;x
+mau_start_decision_title;Start Decision;x
+mau_start_decision_desc;Start Decision;x
+sto_start_decision_title;Start Decision;x
+sto_start_decision_desc;Start Decision;x
+umbar_start_decision_title;Start Decision;x
+umbar_start_decision_desc;Start Decision;x
+wrm_start_decision_title;Start Decision;x
+wrm_start_decision_desc;Start Decision;x
+for_start_decision_title;Start Decision;x
+for_start_decision_desc;Start Decision;x
 ###############################;x }
 ##### POLITICAL DECISIONS #####;x {
 ###############################;x

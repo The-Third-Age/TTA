@@ -592,7 +592,7 @@ country_event = {
 country_event = {
 	id = 2511
 	title = "The $FROMCOUNTRY_ADJ$ Demand"
-	desc = "EVTDESC2651"
+	desc = "EVTDESC2511"
 
 	is_triggered_only = yes
 
@@ -622,7 +622,7 @@ country_event = {
 country_event = {
 	id = 2512
 	title = "Our Lands Returned"
-	desc = "EVTDESC2660"
+	desc = "EVTDESC2512"
 
 	is_triggered_only = yes
 

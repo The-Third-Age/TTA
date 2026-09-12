@@ -230,9 +230,9 @@ country_event = {
 
 # Claim Crisis non GP, e.g target
 country_event = {
-	id = 20104
+	id = 18005
 	title = "The $CRISISAREA$ Crisis"
-	desc = "EVTDESC20104"
+	desc = "EVTDESC18005"
 	picture = "crisis"
 	
 	trigger = {
