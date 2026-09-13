@@ -2,10 +2,10 @@
 # Audax Validator "!" Ignore_1009
 
 # Small Mechanics Decisions: {
-#	Wild Goblins
 #	Outlaws
 #	Palantiri
-#	Aerial Support (Eagles & Fellbeasts)}
+#	Aerial Support (Eagles & Fellbeasts) 
+#	Expeditions }
 
 # Outlaws
 political_decisions = {
@@ -51,7 +51,6 @@ political_decisions = {
 				has_country_modifier = anor_palantir
 				has_country_modifier = orthanc_palantir
 				has_country_modifier = ithil_palantir
-				has_country_modifier = elostirion_palantir
 				has_country_modifier = osgiliath_palantir
 				has_country_modifier = amonsul_palantir
 				has_country_modifier = annuminas_palantir
@@ -196,6 +195,55 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+}
+
+# Expeditions
+political_decisions = {
+	search_bay_of_belfalas = {
+		picture = bay_of_belfalas
+	
+		potential = {
+			is_greater_power = yes
+			NOT = { has_country_flag = sent_bay_of_belfalas_expedition }
+			NOT = { has_global_flag = osgiliath_palantir_activated }
+		}
+	
+		allow = {
+			invention = sea_of_belfalas_expeditions
+			money = 100000
+		}
+	
+		effect = {
+			treasury = -100000
+			set_country_flag = sent_bay_of_belfalas_expedition
+			set_country_flag = exploring_bay_of_belfalas
+			bay_of_belfalas_expedition_loc = { }
+		}
+	}
+	search_bay_of_forochel = {
+		picture = bay_of_forochel
+	
+		potential = { 
+			is_greater_power = yes
+			NOT = { has_country_flag = sent_bay_of_forochel_expedition }
+			OR = {
+				NOT = { has_global_flag = amonsul_palantir_activated }
+				NOT = { has_global_flag = annuminas_palantir_activated }
+			}
+		}
+	
+		allow = {
+			invention = sea_of_forochel_expeditions
+			money = 100000
+		}
+	
+		effect = {
+			treasury = -100000
+			set_country_flag = sent_bay_of_forochel_expedition
+			set_country_flag = exploring_bay_of_forochel
+			bay_of_forochel_expedition_loc = { }
 		}
 	}
 }

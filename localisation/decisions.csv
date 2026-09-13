@@ -4,7 +4,7 @@
 POLITICS_DECISIONS;Decisions: Flavor   §OFluff   §GGeneral   §TQOL   §rSettings§!;x
 ##############################;x }
 ##### STARTING DECISIONS #####;x {
-##############################
+##############################;x
 beo_start_decision_title;Start Decision;x
 beo_start_decision_desc;Start Decision;x
 rad_start_decision_title;Start Decision;x
@@ -616,6 +616,10 @@ acquire_eagles_eag_title;War Eagles;x
 acquire_eagles_eag_desc;Our mastery of war has enabled us to deploy our armies with aerial support;x
 acquire_fellbeasts_title;Tame the Fellbeasts;x
 acquire_fellbeasts_desc;The time has come to tame the Fell Beasts and deploy them with our armies on the battlefied.;x
+search_bay_of_belfalas_title;An Expedition to the Bay of Belfalas;x
+search_bay_of_belfalas_desc;With our knowledge of The Burning of Osgiliath and the rumours surrounding the mouth of the Anduin, our scholars have a rough estimate of where the Osgiliath-stone lays, assuming it has not yet been destroyed. If we so choose, we can send an expedition to search the Bay of Belfalas in an attempt to find the lost Palantír.;x
+search_bay_of_forochel_title;An Expedition to the Bay of Forochel;x
+search_bay_of_forochel_desc;With our knowledge of the Tale of Arvedui and the rumours surrounding the Bay of Belfalas, our scholars have a rough estimate of where the Annûminas-stone and Amon Sûl-stone lay, assuming they has not yet been destroyed. If we so choose, we can send an expedition to search the Bay of Forochel in an attempt to find the lost Palantír.;x
 show_fourth_age_start_date_title;Show the Fourth Age date;x
 show_fourth_age_start_date_desc;The Fourth Age began when the ring was destroyed.\n\nThis is a utility decision to show the current date in the Fourth Age. Mouse over the accept decision button to see the date that the Fourth Age began and what year it is in the Fourth Age.;x
 show_shire_reckoning_date_title;Show the Shire Reckoning date;x

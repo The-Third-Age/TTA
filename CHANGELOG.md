@@ -37,6 +37,11 @@ All notable changes will be documented in this file.
    - Recruitment events now come every 5 years, yielding 10 leaders of the associated type
    - Recruitable leaders improve with the Military Schools invention
 
+### Expeditions
+ - Unlocked with inventions in the Wilderness line
+ - Palantirí discovery folded in
+   - Reworked effects of Palantirí
+
 ### Isengard Flavor
  - Alliance of the Two Towers
    - Forces an alliance between Isengard and Mordor

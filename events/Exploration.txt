@@ -1027,92 +1027,65 @@ province_event = { # Get elostirion_palantir
 	}
 }
 
-country_event = { # First attempt
+# Bay of Belfalas Expedition Returns Empty Handed
+country_event = {
 	id = 50764
-	title = "Search for a Palantir"
+	title = "Bay of Belfalas Expedition Returns Empty Handed"
 	desc = "EVTDESC50764"
 	picture = "palantir"
 
 	trigger = {
-		is_greater_power = yes
-		invention = palantiri
-		OR = {
-			NOT = { has_global_flag = osgiliath_palantir_activated }
-			NOT = { has_global_flag = amonsul_palantir_activated }
-			NOT = { has_global_flag = annuminas_palantir_activated }
-		}
-		NOT = { has_country_modifier = anor_palantir }
-		NOT = { has_country_modifier = orthanc_palantir }
-		NOT = { has_country_modifier = ithil_palantir }
-		NOT = { has_country_modifier = elostirion_palantir }
-		NOT = { has_country_modifier = osgiliath_palantir }
-		NOT = { has_country_modifier = amonsul_palantir }
-		NOT = { has_country_modifier = annuminas_palantir }
-		NOT = { has_country_flag = searching_for_palantiri }
-		NOT = { has_country_flag = rejected_searching_palantiri }
-		year = 2960 # guarantees that Mordor will get Ithil palantir by event instead of searching for one
+		has_country_flag = exploring_bay_of_belfalas
 	}
 
-	mean_time_to_happen = { months = 24 }
+	mean_time_to_happen = { months = 36 }
 
 	option = {
-		name = "Support the mission!"
-		ai_chance = { factor = 25 }
-		money = -10000
-		set_country_flag = searching_for_palantiri
-	}
-	option = {
-		name = "We'll consider this later"
-		ai_chance = { factor = 45 }
-		prestige = -5
-	}
-	option = {
-		name = "Never"
-		ai_chance = { factor = 30 }
-		set_country_flag = rejected_searching_palantiri
+		name = "Well, it was a false hope to begin with"
 		prestige = -10
+		plurality = 5
+		clr_country_flag = exploring_bay_of_belfalas
 	}
 }
 
-country_event = { # Attempt fails, try again?
+# Bay of Belfalas Expedition Returns
+country_event = {
 	id = 50765
-	title = "Failure to find a Palantir"
+	title = "Bay of Belfalas Expedition Returns"
 	desc = "EVTDESC50765"
 	picture = "palantir"
 	
 	trigger = {
-		has_country_flag = searching_for_palantiri
+		has_country_flag = exploring_bay_of_belfalas
 	}
 	
-	mean_time_to_happen = { months = 36 }
+	mean_time_to_happen = { months = 48 }
 
 	option = {
-		name = "Try again" # Fund second attempt
-		ai_chance = { factor = 60 }
-		money = -2000
-	}
-	option = {
-		name = "Forget it" # Reject second attempt
-		ai_chance = { factor = 40 }
-		clr_country_flag = searching_for_palantiri
-		set_country_flag = rejected_searching_palantiri
-		prestige = -25
+		name = "At least something came from it"
+		random_list = {
+			33 = { treasury = 50000 }
+			33 = { research_points = 4000 }
+			33 = {
+				treasury = 25000
+				research_points = 2000
+			}
+		}
+		clr_country_flag = exploring_bay_of_belfalas
 	}
 }
 
 country_event = { # Palantir found - osgiliath_palantir
 	id = 50766
-	title = "Palantir has been found"
+	title = "Bay of Belfalas Expedition Returns"
 	desc = "EVTDESC50766"
 	picture = "palantir"
 
+	fire_only_once = yes
+
 	trigger = {
-		is_greater_power = yes
-		has_country_flag = searching_for_palantiri
+		has_country_flag = exploring_bay_of_belfalas
 		NOT = { has_global_flag = osgiliath_palantir_activated }
-		any_owned_province = {
-			is_coastal = yes
-		}
 	}
 
 	mean_time_to_happen = { months = 240 }
@@ -1120,37 +1093,25 @@ country_event = { # Palantir found - osgiliath_palantir
 	option = {
 		name = "Excellent"
 		prestige = 300
+		plurality = -10
 		set_global_flag = osgiliath_palantir_activated
-		clr_country_flag = searching_for_palantiri
-		add_country_modifier = {
-			name = osgiliath_palantir
-			duration = -1
-		}
-		any_country = {
-			limit = {
-				ai = no
-			}
-			country_event = {
-				id = 50769
-				days = 1
-			}
-		}
+		clr_country_flag = exploring_bay_of_belfalas
+		add_country_modifier = { name = osgiliath_palantir duration = -1 }
 	}
 }
 
 country_event = { # Palantir found - amonsul_palantir
 	id = 50767
-	title = "Palantir has been found"
+	title = "Bay of Forochel Expedition Returns"
 	desc = "EVTDESC50767"
 	picture = "palantir"
 
+	fire_only_once = yes
+
 	trigger = {
-		is_greater_power = yes
-		has_country_flag = searching_for_palantiri
+		has_country_flag = exploring_bay_of_forochel
 		NOT = { has_global_flag = amonsul_palantir_activated }
-		any_owned_province = {
-			is_coastal = yes
-		}
+		invention = sea_of_forochel_expeditions
 	}
 
 	mean_time_to_happen = { months = 240 }
@@ -1158,37 +1119,25 @@ country_event = { # Palantir found - amonsul_palantir
 	option = {
 		name = "Excellent"
 		prestige = 300
+		plurality = -10
 		set_global_flag = amonsul_palantir_activated
-		clr_country_flag = searching_for_palantiri
-		add_country_modifier = {
-			name = amonsul_palantir
-			duration = -1
-		}
-		any_country = {
-			limit = {
-				ai = no
-			}
-			country_event = {
-				id = 50769
-				days = 1
-			}
-		}
+		clr_country_flag = exploring_bay_of_forochel
+		add_country_modifier = { name = amonsul_palantir duration = -1 }
 	}
 }
 
 country_event = { # Palantir found - annuminas_palantir
 	id = 50768
-	title = "Palantir has been found"
+	title = "Bay of Forochel Expedition Returns"
 	desc = "EVTDESC50768"
 	picture = "palantir"
 
+	fire_only_once = yes
+
 	trigger = {
-		is_greater_power = yes
-		has_country_flag = searching_for_palantiri
+		has_country_flag = exploring_bay_of_forochel
 		NOT = { has_global_flag = annuminas_palantir_activated }
-		any_owned_province = {
-			is_coastal = yes
-		}
+		invention = sea_of_forochel_expeditions
 	}
 
 	mean_time_to_happen = { months = 240 }
@@ -1196,43 +1145,68 @@ country_event = { # Palantir found - annuminas_palantir
 	option = {
 		name = "Excellent"
 		prestige = 300
+		plurality = -10
 		set_global_flag = annuminas_palantir_activated
-		clr_country_flag = searching_for_palantiri
-		add_country_modifier = {
-			name = annuminas_palantir
-			duration = -1
-		}
-		any_country = {
-			limit = {
-				ai = no
-			}
-			country_event = {
-				id = 50769
-				days = 1
-			}
-		}
+		clr_country_flag = exploring_bay_of_forochel
+		add_country_modifier = { name = annuminas_palantir duration = -1 }
 	}
 }
 
-country_event = { # Other country has found a palantir
+# Bay of Belfalas Expedition Returns Empty Handed
+country_event = {
 	id = 50769
-	title = "Another realm has found a Palantir"
+	title = "Bay of Forochel Expedition Returns Empty Handed"
 	desc = "EVTDESC50769"
 	picture = "palantir"
 
-	is_triggered_only = yes
+	trigger = {
+		has_country_flag = exploring_bay_of_forochel
+	}
+
+	mean_time_to_happen = { months = 36 }
 
 	option = {
-		name = "Interesting"
-		clr_country_flag = searching_for_palantiri
+		name = "Well, it was a false hope to begin with"
+		prestige = -10
+		plurality = 5
+		clr_country_flag = exploring_bay_of_forochel
+	}
+}
+
+# Bay of Belfalas Expedition Returns
+country_event = {
+	id = 50770
+	title = "Bay of Forochel Expedition Returns"
+	desc = "EVTDESC50770"
+	picture = "palantir"
+	
+	trigger = {
+		has_country_flag = exploring_bay_of_forochel
+	}
+	
+	mean_time_to_happen = { months = 48 }
+
+	option = {
+		name = "At least something came from it"
+		random_list = {
+			33 = { treasury = 50000 }
+			33 = { research_points = 4000 }
+			33 = {
+				treasury = 25000
+				research_points = 2000
+			}
+		}
+		clr_country_flag = exploring_bay_of_forochel
 	}
 }
 
 country_event = { # Gaze into the elostirion_palantir
-	id = 50770
+	id = 50771
 	title = "Gaze into the Elostirion Palantir"
-	desc = "EVTDESC50770"
+	desc = "EVTDESC50771"
 	picture = "palantir"
+
+	fire_only_once = yes
 
 	trigger = {
 		invention = palantiri
@@ -1249,7 +1223,6 @@ country_event = { # Gaze into the elostirion_palantir
 			consciousness = -3
 			militancy = -3
 		}
-		clr_country_flag = searching_for_palantiri
 	}
 }
 

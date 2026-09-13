@@ -1993,6 +1993,7 @@ claim_status_doesnt_own_GON_212_loc;§YHarithilien§!: §RUnowned§!§I;x
 remove_claim_ERE_665_loc;§WWe will lose claims over §!§YTalath Huz§!§I;x
 triggered_event_alliance_of_dwarves_and_men_region_selection_loc;get the 'Alliance of Dwarves and Men - Region Selection' event.§I;x
 nine_loc;9;x
+bay_of_belfalas_expedition_loc;We will send an expedition to the Bay of Belfalas with the purpose of finding the Osgiliath-stone§I;x
 claim_status_owns_DND_863_loc;§YDor-en-Egladil§!: §GOwned§!§I;x
 ISE_isengard_orc_labourers_6000_isengard_loc;Creates a new pop of §Y6000 Orc Isengard Orc Labourers§! in §YIsengard§!§I;x
 claim_status_owns_RHU_580_loc;§YEastern Gathod§!: §GOwned§!§I;x
@@ -3031,6 +3032,7 @@ claim_status_doesnt_own_GON_105_loc;§YLower Morthond Vale§!: §RUnowned§!§I;
 add_claim_ROH_805_loc;§WWe will gain claims over §!§YGap of Rohan§!§I;x
 ISE_half_orc_labourers_3000_mines_of_methedras_loc;\nCreates a new pop of §Y3000 Orc Half Orc Labourers§! in §YMines of Methedras§!§I;x
 add_claim_RHU_1416_loc;§WWe will gain claims over §!§YNorthern Gazar Gord§!§I;x
+bay_of_forochel_expedition_loc;We will send an expedition to the Bay of Forochel with the purpose of finding the Annûminas and Amon-sûl Stones§I;x
 claim_status_doesnt_own_SHI_1030_loc;§YWestmarch§!: §RUnowned§!§I;x
 claim_status_owns_CAR_1208_loc;§YDol Tinereb§!: §GOwned§!§I;x
 maroon_color_loc;§M;x

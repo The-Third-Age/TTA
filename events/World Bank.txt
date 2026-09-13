@@ -1598,6 +1598,21 @@ country_event = {
 			limit = { has_country_modifier = elven_culture_nation }
 			plurality = -0.25
 		}
+
+		# Applying Palantir Effects {
+		random_country = {
+			limit = { has_country_modifier = osgiliath_palantir }
+			plurality = -1
+		}
+		random_country = {
+			limit = { has_country_modifier = amonsul_palantir }
+			plurality = -1
+		}
+		random_country = {
+			limit = { has_country_modifier = annuminas_palantir }
+			plurality = -1
+		}
+		# }
 		
 		# Applying Culture Group Flags (for areas where culture group isn't locced right, like tech) {
 		any_country = {
