@@ -4,5 +4,6 @@
     "victorianTools.activeMods": [
         "Lord of the Rings"
     ],
-    "victorianTools.flags.namePattern": "^(?!((claimed_[A-Z]{3}_\\d+)|(flavor_.*_[1-5]))).*$"
+    "victorianTools.flags.namePattern": "^(?!((claimed_[A-Z]{3}_\\d+)|(flavor_.*_[1-5]))).*$",
+    "victorianTools.mapEditor.provinceFolderPattern": "^middle.*$"
 }
